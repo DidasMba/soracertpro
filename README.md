@@ -1,3 +1,6 @@
-#Documentation of SoraCert Project
-##init
+
+# Documentation of SoraCert Project
+
+## init
+
 git remote add origin SSH_REPO
