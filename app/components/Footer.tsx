@@ -60,7 +60,71 @@ const Footer = ()=>{
 
                            </ul>
                         </div>
-                        
+                        <div className="lg:col-span-3 md:col-span-4 col-span-12">
+                        <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY</h3>
+                           <ul className="list-none mt-6 space-y-2">
+                            <li>
+                                <a
+                                href="#"
+                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                >
+                                  About us</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#"
+                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                >
+                                  Legal information</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#"
+                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                >
+                                  Contact us</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#"
+                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                >
+                                  Blog</a>
+                            </li>
+
+                           </ul>
+
+                        </div>
+                        <div className="lg:col-span-3 md:col-span-4 col-span-12">
+                        <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY</h3>
+                           <ul className="list-none mt-6 space-y-2">
+                            <li>
+                                <a
+                                href="#"
+                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                >
+                                  Phone: 1234567890</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#"
+                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                >
+                                  Email: company@email.com</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#"
+                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                >
+                                  Location: 100 Smart Street, LA, USA</a>
+                            </li>
+                            
+
+                           </ul>
+
+                        </div>
+
 
 
 
