@@ -34,28 +34,28 @@ const Footer = ()=>{
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   About us</a>
                             </li>
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Legal information</a>
                             </li>
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Contact us</a>
                             </li>
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Blog</a>
                             </li>
@@ -68,28 +68,28 @@ const Footer = ()=>{
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   About us</a>
                             </li>
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Legal information</a>
                             </li>
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Contact us</a>
                             </li>
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Blog</a>
                             </li>
@@ -103,21 +103,21 @@ const Footer = ()=>{
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Phone: 1234567890</a>
                             </li>
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Email: company@email.com</a>
                             </li>
                             <li>
                                 <a
                                 href="#"
-                                className="text-gray-300 hover:text-gray-400 Transition-all duration-500 ease-in-out"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
                                 >
                                   Location: 100 Smart Street, LA, USA</a>
                             </li>
@@ -125,16 +125,16 @@ const Footer = ()=>{
 
                            </ul>
                            <div className="flex space-x-4 mt-5">
-                            <a className="text-white hover:text-pink-900 transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
+                            <a className="text-white hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
                               <FaFacebook />
                             </a>
-                            <a className="text-white hover:text-pink-900 transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
+                            <a className="text-white hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
                               <FaTwitter />
                             </a>
-                            <a className="text-white hover:text-pink-900 transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
+                            <a className="text-white hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
                               <FaInstagram />
                             </a>
-                            <a className="text-white hover:text-pink-900 transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
+                            <a className="text-white hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
                               <FaLinkedin />
                             </a>
                            </div>
@@ -142,21 +142,35 @@ const Footer = ()=>{
                         </div>
               </div>
           </div>
-          <div className="mt-20">
-            <div className="h-full flex items-center justify-center mb-5">
-            <form className="w-96 relative" action="">
-            <input 
-         className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
-        type="email"
-        placeholder="Enter your email"
-        aria-label="Email address"
-        required 
-       
-    />
-              <button 
-              type="Submit">
+          
+          <div className="mt-18">
 
-              </button>
+            <div className="h-full flex justify-center mb-5 ">
+            <div className="mr-8">
+              <h3 className="tracking-wide text-gray-300 font-semibold">NEWSLETTER</h3>
+                           <ul className="list-none mt-6 space-y-2">
+                            <li>
+                                <a
+                                href="#"
+                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
+                                >
+                                  Stay upto Date</a>
+                            </li>
+
+                           </ul>
+
+            </div>
+
+
+            <form className="w-96 relative" action="">
+              <input 
+                className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
+                type="email"
+                placeholder="Enter your email"
+                aria-label="Email address"
+                required 
+              />
+              <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="Submit">Submit</button>
 
             </form>
 
