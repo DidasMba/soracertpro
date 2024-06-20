@@ -140,12 +140,17 @@ const Footer = ()=>{
                            </div>
 
                         </div>
-
-
-
-
               </div>
           </div>
+          <div>
+            <form action="mt-20">
+              <input type="email"/>
+
+            </form>
+
+          </div>
+
+
           <div className="border-t border-slate-700">
             <div className="md:text-left text-center contenair mx-auto py-7 px-6">
               <p className="mb-0">
