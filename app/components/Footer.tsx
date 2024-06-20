@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin} from "react-icons/fa";
+
 
 const Footer = ()=>{
     return(
@@ -95,7 +97,7 @@ const Footer = ()=>{
                            </ul>
 
                         </div>
-                        <div className="lg:col-span-3 md:col-span-4 col-span-12">
+                        <div className="lg:col-span-3 md:col-span-4 col-span-12 ">
                         <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY</h3>
                            <ul className="list-none mt-6 space-y-2">
                             <li>
@@ -122,6 +124,20 @@ const Footer = ()=>{
                             
 
                            </ul>
+                           <div className="flex space-x-4 mt-5">
+                            <a className="text-white hover:text-pink-900 transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
+                              <FaFacebook />
+                            </a>
+                            <a className="text-white hover:text-pink-900 transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
+                              <FaTwitter />
+                            </a>
+                            <a className="text-white hover:text-pink-900 transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
+                              <FaInstagram />
+                            </a>
+                            <a className="text-white hover:text-pink-900 transform hover:scale-150 transition-all duration-150 ease-in-out " href="">
+                              <FaLinkedin />
+                            </a>
+                           </div>
 
                         </div>
 
@@ -129,6 +145,20 @@ const Footer = ()=>{
 
 
               </div>
+          </div>
+          <div className="border-t border-slate-700">
+            <div className="md:text-left text-center contenair mx-auto py-7 px-6">
+              <p className="mb-0">
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                , All Rights Reserved.
+
+              </p>
+
+            </div>
+
           </div>
             
           
