@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         customBlue:'rgb(5, 38, 79)',
+        customHoverBlue: 'rgb(83, 223, 252)',
       }
     },
   },

@@ -142,11 +142,26 @@ const Footer = ()=>{
                         </div>
               </div>
           </div>
-          <div>
-            <form action="mt-20">
-              <input type="email"/>
+          <div className="mt-20">
+            <div className="h-full flex items-center justify-center mb-5">
+            <form className="w-96 relative" action="">
+            <input 
+         className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
+        type="email"
+        placeholder="Enter your email"
+        aria-label="Email address"
+        required 
+       
+    />
+              <button 
+              type="Submit">
+
+              </button>
 
             </form>
+
+            </div>
+            
 
           </div>
 
