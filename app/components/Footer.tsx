@@ -160,8 +160,6 @@ const Footer = ()=>{
                            </ul>
 
             </div>
-
-
             <form className="w-96 relative" action="">
               <input 
                 className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
@@ -171,15 +169,9 @@ const Footer = ()=>{
                 required 
               />
               <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="Submit">Submit</button>
-
             </form>
-
-            </div>
-            
-
+            </div>     
           </div>
-
-
           <div className="border-t border-slate-700">
             <div className="md:text-left text-center contenair mx-auto py-7 px-6">
               <p className="mb-0">
@@ -190,12 +182,8 @@ const Footer = ()=>{
                 , All Rights Reserved.
 
               </p>
-
             </div>
-
-          </div>
-            
-          
+          </div>       
         </footer>
       
     )
