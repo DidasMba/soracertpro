@@ -1,8 +1,15 @@
+"use client"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin} from "react-icons/fa";
 
 
 const Footer = ()=>{
+  const [year, setYear] = useState(0);
+
+  useEffect(() => {
+      setYear(new Date().getFullYear());
+  }, []);
     return(
         <footer className="px-6 py-14 bg-customBlue text-white">
            <div className="container mx-auto py-14 px-6">
@@ -168,7 +175,7 @@ const Footer = ()=>{
                 aria-label="Email address"
                 required 
               />
-              <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="Submit">Submit</button>
+              <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="submit">Submit</button>
             </form>
             </div>     
           </div>
@@ -176,9 +183,7 @@ const Footer = ()=>{
             <div className="md:text-left text-center contenair mx-auto py-7 px-6">
               <p className="mb-0">
                 &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
+                 {year}
                 , All Rights Reserved.
 
               </p>
