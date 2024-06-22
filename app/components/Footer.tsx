@@ -2,9 +2,10 @@ import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin} from "react-icons/fa";
 
 
+
 const Footer = ()=>{
     return(
-        <footer className="px-6 py-14 bg-customBlue text-white">
+        <footer className="px-8 bg-customBlue text-white">
            <div className="container mx-auto py-14 px-6">
               <div className="grid md:grid-cols-12 grid-cols-1 gap-7">
 
@@ -180,7 +181,6 @@ const Footer = ()=>{
                   document.write(new Date().getFullYear());
                 </script>
                 , All Rights Reserved.
-
               </p>
             </div>
           </div>       
