@@ -168,15 +168,15 @@ const Footer = ()=>{
                            </ul>
 
             </div>
-            <form className="w-96 relative" action="">
+            <form className="w-96 relative" action="" method="post">
               <input 
-                className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
+                className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue sm:rounded-r-none sm:border-r-0"
                 type="email"
                 placeholder="Enter your email"
                 aria-label="Email address"
                 required 
               />
-              <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="submit">Submit</button>
+              <button className="bg-gray-500 px-8 py-2 mt-2 sm:mt-0 rounded-r-full text-white" type="submit">Submit</button>
             </form>
             </div>     
           </div>
