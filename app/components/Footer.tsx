@@ -194,13 +194,13 @@ const Footer = ()=>{
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-slate-700">
+          <div className="w-full border-t border-slate-700">
                 <div className="md:text-left text-center container mx-auto py-7 px-6">
                     <p className="mb-0">
                         &copy; {year}, All Rights Reserved.
                     </p>
                 </div>
-            </div>
+        </div>
       </div>
   </footer>
       
