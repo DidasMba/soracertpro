@@ -14,7 +14,7 @@ const Footer = ()=>{
       setYear(new Date().getFullYear());
   }, []);
     return(
-      <footer className="px-8 bg-customBlue text-white">
+      <footer className="px-8 bg-customBlue text-white w-full">
       <div className="container mx-auto py-14 px-6">
           <div className="grid md:grid-cols-12 grid-cols-1 gap-6">
               {/* First Column */}
@@ -159,37 +159,38 @@ const Footer = ()=>{
                       </div>
                   </div>
 
-                 {/* Newsletter */}
-                 <div className="mt-18">
-
-                            <div className="h-full flex justify-center mb-5 ">
-                            <div className="mr-5">
-                            <h3 className="tracking-wide text-gray-300 font-semibold">NEWSLETTER</h3>
-                                        <ul className="list-none mt-6 space-y-2">
-                                            <li>
-                                                <a
-                                                href="#"
-                                                className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
-                                                >
-                                                Stay upto Date</a>
-                                            </li>
-
-                                        </ul>
-
-                            </div>  
-                                <form className="w-96 relative flex" action="">
-                                <input 
-                                    className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    aria-label="Email address"
-                                    required 
-                                />
-                                <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="submit">Submit</button>
-                                </form>
-                           </div>     
-                        </div>
+                 
               </div>
+              {/* Newsletter */}
+              <div className="mt-18 flex float-right w-screen justify-center  items-center ">
+
+                <div className=" mb-5 lg:flex md:flex lg:items-center items-start w-screen lg:justify-center md:justify-center lg:ml-0 md:ml-20   ">
+                <div className="mr-5">
+                <h3 className="tracking-wide text-gray-300 font-semibold">NEWSLETTER</h3>
+                            <ul className="list-none mt-6 space-y-2">
+                                <li>
+                                    <a
+                                    href="#"
+                                    className="text-gray-300 hover:text-customHoverBlue Transition-all duration-500 ease-in-out"
+                                    >
+                                    Stay upto Date</a>
+                                </li>
+
+                            </ul>
+
+                </div>  
+                    <form className="w-96 relative flex" action="">
+                    <input 
+                        className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
+                        type="email"
+                        placeholder="Enter your email"
+                        aria-label="Email address"
+                        required 
+                    />
+                    <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="submit">Submit</button>
+                    </form>
+                </div>     
+                </div>
 
           </div>
 
@@ -208,4 +209,3 @@ const Footer = ()=>{
 }
 
 export default Footer; 
-ex
