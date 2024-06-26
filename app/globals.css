@@ -8,3 +8,9 @@
   .nav-link:hover {
     border-bottom: solid rgb(83 223 252 / var(--tw-text-opacity));
   }
+
+  .container {
+    max-width: 1400px;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }

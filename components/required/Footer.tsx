@@ -162,7 +162,7 @@ const Footer = ()=>{
                  
               </div>
               {/* Newsletter */}
-              <div className="mt-18 flex justify-center  items-center ">
+              <div className="mt-18 flex float-right justify-center  items-center ">
 
                 <div className=" mb-5 lg:flex md:flex lg:items-center items-start w-screen lg:justify-center md:justify-center lg:ml-0 md:ml-20   ">
                 <div className="mr-5">
