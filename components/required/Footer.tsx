@@ -164,7 +164,7 @@ const Footer = ()=>{
               {/* Newsletter */}
               <div className="mt-18 flex float-right justify-center  items-center ">
 
-                <div className=" mb-5 lg:flex md:flex lg:items-center items-start w-screen lg:justify-center md:justify-center lg:ml-0 md:ml-20   ">
+                <div className=" mb-5 lg:flex md:flex lg:items-center items-start w-screen lg:justify-center md:justify-center lg:ml-0 md:ml-20">
                 <div className="mr-5">
                 <h3 className="tracking-wide text-gray-300 font-semibold">NEWSLETTER</h3>
                             <ul className="list-none mt-6 space-y-2">
