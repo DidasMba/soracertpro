@@ -51,7 +51,7 @@ const Navbar = () => {
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
-                                    <Link href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 active-link nav-link" aria-current="page">Dashboard</Link>
+                                    <Link href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 nav-link" aria-current="page">Dashboard</Link>
                                     <Link href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 nav-link">Team</Link>
                                     <Link href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 nav-link">Projects</Link>
                                     <Link href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 nav-link">Calendar</Link>

@@ -10,7 +10,25 @@
   }
 
   .image-rounded {
-    border-radius: 1rem; /* or any desired radius value */
+    border-radius: 0.5rem; /* or any desired radius value */
     overflow: hidden;
   }
+
+  .ok a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit; /* Ensures link color matches text color */
+}
+
+.ok a:after {
+    content: "";
+    display: block;
+    width: 70%;
+    border-bottom: 1px solid white; /* Adjust border color here */
+    margin: 0 auto;
+    padding-top: 4px; /* Adjust padding as needed */
+    border-bottom: 2px solid rgb(83, 223, 252);
+}
+
+
   
