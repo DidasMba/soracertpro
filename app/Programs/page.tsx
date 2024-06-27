@@ -12,7 +12,7 @@ export default function Fleets() {
             <h2>chooser your </h2>
            <div className='grid grid-cols-3 gap-5 mt-10'>
             <div className='rounded-2xl overflow-hidden shadow-lg'>
-                <div className='relative'>
+                <div className='relative image-rounded'>
                 <Image className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 <div className="absolute right-0 bottom-0"></div>
               
@@ -20,7 +20,7 @@ export default function Fleets() {
                 <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                 <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et.
+                  Lo ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et.
                 </p>
              </div>
             </div>

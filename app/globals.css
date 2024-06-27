@@ -9,8 +9,8 @@
     border-bottom: solid rgb(83 223 252 / var(--tw-text-opacity));
   }
 
-  .imagepro{
-    aspect-ratio: 16/12;
-    object-fit: cover;
-    border-radius: var(--rounded-2xl);
+  .image-rounded {
+    border-radius: 1rem; /* or any desired radius value */
+    overflow: hidden;
   }
+  
