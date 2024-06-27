@@ -6,9 +6,10 @@ import pro1 from "./images/pro1.jpg";
 
 export default function Fleets() {
   return (
-    <div className='py-24 bg-gray-200'>
+    <div className='py-24'>
       <div className='container'>
-          <h4 className='uppercase front-semibold text-center mb-1 text-red-700 text-xl'>{`vienss`}</h4>
+          <h4 className=''>vienss</h4>
+          <div className="bg-green-500 rounded-lg h-10">Workshop</div>  
         
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
