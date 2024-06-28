@@ -20,7 +20,7 @@
     color: inherit; /* Ensures link color matches text color */
 }
 
-.ok a:after {
+.ok a:hover:after {
     content: "";
     display: block;
     width: 70%;
@@ -28,8 +28,6 @@
     margin: 0 auto;
     padding-top: 4px; /* Adjust padding as needed */
     border-bottom: 2px solid rgb(83, 223, 252);
-    
-
  
 }
 
