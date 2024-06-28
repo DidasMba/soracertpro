@@ -110,10 +110,10 @@ export default function Fleets() {
       <div className='container'>
         
           <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full ">  
-          <a href="imagetitle" className=" px-4">Workshop</a>
-          <a href="imagetitle" className=" px-4">Workshop</a>
-          <a href="imagetitle" className=" px-4">Workshop</a>
-          <a href="imagetitle" className=" px-4">Workshop</a>
+          <a href="#" className=" px-4">Workshop</a>
+          <a href="#" className=" px-4">Workshop</a>
+          <a href="#" className=" px-4">Workshop</a>
+          <a href="#" className=" px-4">Workshop</a>
           </div> 
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
