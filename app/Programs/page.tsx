@@ -109,7 +109,7 @@ export default function Fleets() {
     
       <div className='container'>
 
-          <h1 className="px-10 py-6 ">Online Courses</h1>
+          <h1 className="px-10 py-6 font-bold text-xl mb-2 ">Online Courses</h1>
         
           <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full ">  
           <a href="#" className=" px-4">Workshop</a>
