@@ -13,10 +13,10 @@ const Footer = ()=>{
   }, []);
     return(
         <footer className="px-8 bg-customBlue text-white">
-           <div className="container mx-auto py-14 px-6">
-              <div className="grid md:grid-cols-12 grid-cols-1 gap-7">
+           <div className="container mx-auto py-14 ">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-4 lg:grid-cols-4">
 
-                        <div className="lg:col-span-4 col-span-12">        
+                        <div className="">        
 
                             <a href="/">
                             <img
@@ -36,7 +36,7 @@ const Footer = ()=>{
                             labore et dolore magna aliqua. </p> 
 
                         </div>
-                        <div className="lg:col-span-2 md:col-span-4 col-span-12">
+                        <div className="">
                            <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY</h3>
                            <ul className="list-none mt-6 space-y-2">
                             <li>
@@ -70,7 +70,7 @@ const Footer = ()=>{
 
                            </ul>
                         </div>
-                        <div className="lg:col-span-3 md:col-span-4 col-span-12">
+                        <div className="">
                         <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY</h3>
                            <ul className="list-none mt-6 space-y-2">
                             <li>
@@ -105,7 +105,7 @@ const Footer = ()=>{
                            </ul>
 
                         </div>
-                        <div className="lg:col-span-3 md:col-span-4 col-span-12 ">
+                        <div className=" ">
                         <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY</h3>
                            <ul className="list-none mt-6 space-y-2">
                             <li>
@@ -151,9 +151,10 @@ const Footer = ()=>{
               </div>
           </div>
           
-          <div className="mt-18">
-
-            <div className="h-full flex justify-center mb-5 ">
+          <div className="mt-18 container mx-auto py-9 "> 
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div className=""></div>
+            <div className="">
             <div className="mr-8">
               <h3 className="tracking-wide text-gray-300 font-semibold">NEWSLETTER</h3>
                            <ul className="list-none mt-6 space-y-2">
@@ -168,6 +169,8 @@ const Footer = ()=>{
                            </ul>
 
             </div>
+            </div>
+            <div className="">
             <form className="w-96 relative" action="">
               <input 
                 className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
@@ -178,7 +181,8 @@ const Footer = ()=>{
               />
               <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="submit">Submit</button>
             </form>
-            </div>     
+            </div> 
+            </div>    
           </div>
           <div className="border-t border-slate-700">
             <div className="md:text-left text-center contenair mx-auto py-7 px-6">
@@ -189,6 +193,7 @@ const Footer = ()=>{
               </p>
             </div>
           </div>       
+      
         </footer>
       
     )

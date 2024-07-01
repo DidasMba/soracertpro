@@ -1,9 +1,17 @@
 import Image from "next/image";
-
+import LandiingPage from "@/components/homepage/components/landingpage";
+import FrameComponent6 from "@/components/homepage/components/aboutus";
+import Mission from "@/components/homepage/components/mission";
+import Client from "@/components/homepage/components/client";
+import UpcomingEvents from "@/components/homepage/components/events";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>SoraBody</h1>
+    <main className="">
+     <LandiingPage />
+     <FrameComponent6 />
+     <Mission />
+     <Client />
+     <UpcomingEvents />
     </main>
   );
 }
