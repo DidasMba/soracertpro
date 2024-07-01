@@ -15,17 +15,26 @@ export default function Fleets() {
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
-                <div className='relative image-rounded'>
+                <div className='image-wrapper  relative image-rounded'>
                     <Image
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
+                     <div className="absolute bottom-0 left-0 px-4 py-2 bg-black bg-opacity-50 text-white text-sm">
+                        29 June 2024 {/* Date à ajouter ici */}
+                     </div>
+                     <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-4">
+                <span className="w-2 h-2 bg-red-500 rounded-full mx-1"></span>
+                <span className="w-2 h-2 bg-red-500 rounded-full mx-1"></span>
+                <span className="w-2 h-2 bg-red-500 rounded-full mx-1"></span>
+              </div>
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
                       <p className="text-gray-700 text-base">
                         Lo ipsum dolor sit amet, consectetur adipisicing.
                       </p>
                </div>
+             
             </div>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
                 <div className='relative image-rounded'>
@@ -33,7 +42,7 @@ export default function Fleets() {
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
@@ -46,7 +55,7 @@ export default function Fleets() {
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
@@ -69,7 +78,7 @@ export default function Fleets() {
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
                       <p className="text-gray-700 text-base">
                         Lo ipsum dolor sit amet, consectetur adipisicing.
@@ -82,7 +91,7 @@ export default function Fleets() {
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
@@ -95,7 +104,7 @@ export default function Fleets() {
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
@@ -109,7 +118,7 @@ export default function Fleets() {
     
       <div className='container'>
 
-          <h1 className="px-10 py-6 font-bold text-xl mb-2 ">Online Courses</h1>
+          <h1 className="px-10 py-6 font-bold text-3xl ">Online Courses</h1>
         
           <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full ">  
           <a href="#" className=" px-4">Workshop</a>
@@ -125,9 +134,9 @@ export default function Fleets() {
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
-                      <p className="text-gray-700 text-base">
+                      <p className=" text-gray-700 text-base">
                         consectetur adipisicing.
                       </p>
                </div>
@@ -138,7 +147,7 @@ export default function Fleets() {
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
@@ -151,7 +160,7 @@ export default function Fleets() {
                      className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
                 </div>
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
