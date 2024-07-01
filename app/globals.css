@@ -68,4 +68,24 @@
 }
 
 
+.workshop-list   a {
+  position: relative;
+  padding-left: 15px; /* Ajustez la valeur pour positionner le point correctement */
+}
+.workshop-list  a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px; /* Taille du point */
+  height: 8px; /* Taille du point */
+  background-color: rgb(83, 223, 252); /* Couleur du point en RGB */
+  border-radius: 50%; /* Pour faire un cercle */
+  margin-right: 8px; /* Espace entre le point et le texte */
+}
+
+
+
   
