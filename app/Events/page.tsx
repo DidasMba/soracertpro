@@ -169,25 +169,15 @@ export default function Fleets() {
             <Image
             className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />  
            
-        </div>
+    </div>
         <div className="px-6 py-4">  
       </div>
     </div>
+    
     <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
     <div className='relative image-rounded'>
             <Image
-            className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
-            
-         
-        </div>
-      
-    </div>
-    <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
-    <div className='relative image-rounded'>
-            <Image
-            className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
-           
-          
+            className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />   
         </div>
       
     </div>
