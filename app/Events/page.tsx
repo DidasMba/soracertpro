@@ -11,9 +11,9 @@ export default function Fleets() {
 
       <div className='container'>
       <div className="ok ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full workshop-list ">  
-          <a href="#" className=" px-4">Workshop</a>
-          <a href="#" className=" px-4">Workshop</a>
-          <a href="#" className=" px-4">Workshop</a>
+          <a href="#" className=" px-4">Basket</a>
+          <a href="#" className=" px-4">Party</a>
+          <a href="#" className=" px-4">Concours</a>
           <a href="#" className=" px-4">Workshop</a>
          
           </div> 
