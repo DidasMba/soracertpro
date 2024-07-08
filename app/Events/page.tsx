@@ -16,7 +16,7 @@ export default function Fleets() {
   <a href="#" className="px-4">Concours</a>
   <a href="#" className="px-4">Workshop</a>
   <button className=" bg-customHoverBlue hover:bg-blue-700 text-black font-bold py-1 px-16 rounded-full ml-auto">
-    Button
+    Add calenda
   </button>
 </div>
 
