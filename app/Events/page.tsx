@@ -10,14 +10,16 @@ export default function Fleets() {
     <div className='py-24'>
 
       <div className='container'>
-      <div className="ok ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full workshop-list ">  
-          <a href="#" className=" px-4">Basket</a>
-          <a href="#" className=" px-4">Party</a>
-          <a href="#" className=" px-4">Concours</a>
-          <a href="#" className=" px-4">Workshop</a>
-         
-          </div> 
-        
+      <div className="ok ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full workshop-list flex items-center">
+  <a href="#" className="px-4">Basket</a>
+  <a href="#" className="px-4">Party</a>
+  <a href="#" className="px-4">Concours</a>
+  <a href="#" className="px-4">Workshop</a>
+  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-14 rounded-full ml-auto">
+    Button
+  </button>
+</div>
+
         
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
@@ -87,8 +89,6 @@ export default function Fleets() {
       </div>
 
       <div className='container'>
-        
-          
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
@@ -158,16 +158,34 @@ export default function Fleets() {
           </div>
       </div>
 
+      <h1 className="px-10 py-6 font-bold text-3xl text-center ">Past Events</h1>
+      
       <div className='container'>
 
-     <h1 className="px-10 py-6 font-bold text-3xl text-center ">Past Events</h1>
+          <div className="m-4 grid gap-6 sm:grid-cols-10">
+               {/* Première colonne */}
+               <div className="sm:col-span-4 min-h-[270px] image-rounded  shadow ml-14 relative">
+                  <Image src={pro1} alt="Pro 1" layout="fill" objectFit="cover" />
+               </div>
+               {/* Deuxième colonne */}
+               <div className="sm:col-span-6 min-h-[270px] image-rounded shadow mr-12 relative">
+                  <Image src={pro1} alt="Pro 1" layout="fill" objectFit="cover" />
+               </div>
+          </div>
 
-          
-         <div className="m-4 grid gap-6 sm:grid-cols-10">
-               <div className="sm:col-span-4 min-h-[250px] rounded-xl bg-orange-500 shadow  ml-14"></div>
-               <div className="sm:col-span-6 min-h-[250px] rounded-xl bg-teal-500 shadow  mr-14"></div>
-         </div>
-          
+          <div className="m-4 grid gap-6 sm:grid-cols-10">
+
+                {/* Deuxième colonne */}
+                <div className="sm:col-span-6 min-h-[270px] image-rounded shadow  ml-14 relative">
+                  <Image src={pro1} alt="Pro 1" layout="fill" objectFit="cover" />
+               </div>
+               {/* Première colonne */}
+               <div className="sm:col-span-4 min-h-[270px] image-rounded  shadow mr-12 relative">
+                  <Image src={pro1} alt="Pro 1" layout="fill" objectFit="cover" />
+               </div>
+              
+          </div>
+
           
           </div>
       </div>    
