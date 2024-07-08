@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin} from "react-icons/fa";
+import { Button } from "./ui/button";
 
 
 
@@ -170,8 +171,8 @@ const Footer = ()=>{
 
             </div>
             </div>
-            <div className="">
-            <form className="w-96 relative" action="">
+            <div className="sm:grid-cols-1">
+            <form className="w-full relative" action="">
               <input 
                 className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none border border-transparent hover:border-customHoverBlue focus:border-customHoverBlue"
                 type="email"
@@ -179,7 +180,7 @@ const Footer = ()=>{
                 aria-label="Email address"
                 required 
               />
-              <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="submit">Submit</button>
+              <Button className="bg-gray-500 px-8 py-2 rounded-full w-20 text-white absolute top-0 right-0" type="submit">Submit</Button>
             </form>
             </div> 
             </div>    

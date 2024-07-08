@@ -4,6 +4,7 @@ import FrameComponent6 from "@/components/homepage/components/aboutus";
 import Mission from "@/components/homepage/components/mission";
 import Client from "@/components/homepage/components/client";
 import UpcomingEvents from "@/components/homepage/components/events";
+
 export default function Home() {
   return (
     <main className="">
@@ -12,6 +13,7 @@ export default function Home() {
      <Mission />
      <Client />
      <UpcomingEvents />
+  
     </main>
   );
 }
