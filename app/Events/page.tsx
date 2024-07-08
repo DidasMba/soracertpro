@@ -164,8 +164,8 @@ export default function Fleets() {
 
           
          <div className="m-4 grid gap-6 sm:grid-cols-10">
-               <div className="sm:col-span-4 min-h-[200px] rounded-xl bg-orange-500 shadow p-8 m-8"></div>
-               <div className="sm:col-span-6 min-h-[200px] rounded-xl bg-teal-500 shadow p-8 m-8"></div>
+               <div className="sm:col-span-4 min-h-[250px] rounded-xl bg-orange-500 shadow  ml-14"></div>
+               <div className="sm:col-span-6 min-h-[250px] rounded-xl bg-teal-500 shadow  mr-14"></div>
          </div>
           
           
