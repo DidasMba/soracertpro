@@ -15,7 +15,7 @@ export default function Fleets() {
   <a href="#" className="px-4">Party</a>
   <a href="#" className="px-4">Concours</a>
   <a href="#" className="px-4">Workshop</a>
-  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-14 rounded-full ml-auto">
+  <button style={{ backgroundColor: 'rgb(83, 223, 252)' }} className="hover:bg-blue-700 text-white font-bold py-1 px-16 rounded-full ml-auto">
     Button
   </button>
 </div>
