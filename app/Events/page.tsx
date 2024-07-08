@@ -163,10 +163,9 @@ export default function Fleets() {
      <h1 className="px-10 py-6 font-bold text-3xl text-center ">Past Events</h1>
 
           
-         <div className="m-4 grid gap-4 sm:grid-cols-10">
-          <div></div>
-
-
+         <div className="m-4 grid gap-4 sm:grid-cols-12">
+               <div className="sm:col-span-2 min-h-[250px] rounded-lg bg-orange-500 shadow"></div>
+               <div className="sm:col-span-10 min-h-[100px] rounded-lg bg-teal-500 shadow"></div>
          </div>
           
           
