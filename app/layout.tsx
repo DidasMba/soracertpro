@@ -1,13 +1,9 @@
 import type {Metadata} from 'next'
 import "./globals.css";
-<<<<<<< Updated upstream
-import Footer from '../components/required/Footer';
-import Navbar from '../components/required/navbar';
-=======
+
 import Footer from '@/components/required/Footer';
 import Navbar from '@/components/required/navbar';
 
->>>>>>> Stashed changes
 
 
 export const metadata: Metadata = {
