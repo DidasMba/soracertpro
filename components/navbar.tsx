@@ -47,29 +47,32 @@ const NavBar = () => {
             </span>
             <div className="absolute left-0 mt-2  w-[220px] py-2 rounded-lg shadow-lg bg-white hidden group-hover:block z-50">
               <ul className="py-2 text-sm text-gray-700">
-              <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 1</a></li>
-                <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 2</a></li>
-                <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 3</a></li>
+              <li><Link href="/about-us" className="block px-4 py-2 hover:bg-gray-100">About us</Link></li>
+                <li><Link href="/career" className="block px-4 py-2 hover:bg-gray-100">Career</Link></li>
+                <li><Link href="/resources" className="block px-4 py-2 hover:bg-gray-100">Resources</Link></li>
+                <li><Link href="/faqs" className="block px-4 py-2 hover:bg-gray-100">FAQs</Link></li>
               </ul>
             </div>
           </div>
           <div className="relative group">
             <span  className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
-              SERVICES
+              Community
             </span>
             <div className="absolute left-0 mt-2   w-[220px] rounded-lg shadow-lg bg-white hidden group-hover:block z-50">
               <ul className="py-2 text-sm text-gray-700">
                 <li><Link href="/membership" className="block px-4 py-2 hover:bg-gray-100">Membership</Link></li>
-                <li><Link href="/career" className="block px-4 py-2 hover:bg-gray-100">Career</Link></li>
-                <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 3</a></li>
+            
+                <li><Link href="/events" className="block px-4 py-2 hover:bg-gray-100">Events</Link></li>
+                <li><Link href="/programs" className="block px-4 py-2 hover:bg-gray-100">Programs</Link></li>
+                <li><Link href="/blog" className="block px-4 py-2 hover:bg-gray-100">Blogs</Link></li>
               </ul>
             </div>
           </div>
-          <Link href="/#amenities" className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
-            AMENITIES
+          <Link href="/partners" className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
+            Partners
           </Link>
-          <Link href="/#contact" className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
-            CONTACT
+          <Link href="/contact" className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
+            Contact
           </Link>
         </ul>
         <a className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200" href="#">Sign In</a>
@@ -95,39 +98,40 @@ const NavBar = () => {
                   <a className="block p-4 text-sm font-semibold text-gray-400 rounded" href="#">Home</a>
                 </li>
                 <li className="mb-1">
-                  <Link className="block p-4 text-sm font-semibold text-gray-400  rounded" href="#" onClick={() => toggleDropdown('aboutUs')}>
+                  <span className="block p-4 text-sm font-semibold text-gray-400  rounded"  onClick={() => toggleDropdown('aboutUs')}>
                     About Us
                     {isDropdownOpen.aboutUs && (
                       <div className="ml-4 mt-2 w-44 rounded-lg shadow bg-white">
                         <ul className="py-2 text-sm text-gray-700">
-                          <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Dashboard</a></li>
-                          <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Settings</a></li>
-                          <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Earnings</a></li>
-                          <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Sign out</a></li>
+                          <li><Link href="/about-us" className="block px-4 py-2 hover:bg-gray-100">About us</Link></li>
+                          <li><Link href="/career" className="block px-4 py-2 hover:bg-gray-100">Career</Link></li>
+                          <li><Link href="/resources"className="block px-4 py-2 hover:bg-gray-100">Resources</Link></li>
+                          <li><Link href="/faqs" className="block px-4 py-2 hover:bg-gray-100">FAQs</Link></li>
                         </ul>
                       </div>
                     )}
-                  </Link>
+                  </span>
                 </li>
                 <li className="mb-1">
-                  <Link className="block p-4 text-sm font-semibold text-gray-400  rounded" href="/#services" onClick={() => toggleDropdown('services')}>
-                    Services
+                  <span className="block p-4 text-sm font-semibold text-gray-400  rounded"  onClick={() => toggleDropdown('services')}>
+                  Community
                     {isDropdownOpen.services && (
                       <div className="ml-4 mt-2 w-44 rounded-lg shadow bg-white">
                         <ul className="py-2 text-sm text-gray-700">
-                          <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 1</a></li>
-                          <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 2</a></li>
-                          <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 3</a></li>
+                          <li><Link href="/membership" className="block px-4 py-2 hover:bg-gray-100">Membership</Link></li>
+                          <li><Link href="/events" className="block px-4 py-2 hover:bg-gray-100">Events</Link></li>
+                          <li><Link href="/programs"  className="block px-4 py-2 hover:bg-gray-100">Programs</Link></li>
+                          <li><Link href="/blog" className="block px-4 py-2 hover:bg-gray-100">Blogs</Link></li>
                         </ul>
                       </div>
                     )}
-                  </Link>
+                  </span>
                 </li>
                 <li className="mb-1">
-                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Pricing</a>
+                <Link href="/partners" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Partners</Link>
                 </li>
                 <li className="mb-1">
-                  <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+                <Link href="/contact" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Contact</Link>
                 </li>
               </ul>
             </div>
@@ -136,9 +140,7 @@ const NavBar = () => {
                 <a className="block px-4 py-3 mb-3 leading-loose text-xs text-center text-white font-semibold bg-blue-500 hover:bg-blue-600 rounded-xl" href="#">Sign up</a>
                 <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-gray-400 font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign In</a>
               </div>
-              <p className="my-4 text-xs text-center text-gray-400">
-                <span>Copyright © 2023</span>
-              </p>
+            
             </div>
           </nav>
         </div>
