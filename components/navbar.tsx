@@ -26,9 +26,9 @@ const NavBar = () => {
   return (
     <>
       <nav className="relative px-4 py-4 flex justify-between items-center bg-white shadow-lg z-50">
-        <a className="text-3xl font-bold leading-none" href="#">
+        <Link className="text-3xl font-bold leading-none" href="/">
           <Image src="/logoblack.png" alt="soracert Logo" width={100} height={100} className="h-auto w-auto" />
-        </a>
+        </Link>
         <div className="lg:hidden">
           <button className="navbar-burger flex items-center text-blue-600 p-3" onClick={toggleMenu}>
             <svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -83,9 +83,9 @@ const NavBar = () => {
           <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
           <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
             <div className="flex items-center mb-8">
-              <a className="mr-auto text-3xl font-bold leading-none" href="#">
+              <Link className="mr-auto text-3xl font-bold leading-none" href="/">
                 <Image src="/logoblack.png" alt="soracert Logo" width={100} height={100} className="h-auto w-auto" />
-              </a>
+              </Link>
               <button className="navbar-close" onClick={toggleMenu}>
                 <svg className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -95,7 +95,7 @@ const NavBar = () => {
             <div>
               <ul>
                 <li className="mb-1">
-                  <a className="block p-4 text-sm font-semibold text-gray-400 rounded" href="#">Home</a>
+                  <Link className="block p-4 text-sm font-semibold text-gray-400 rounded" href="/">Home</Link>
                 </li>
                 <li className="mb-1">
                   <span className="block p-4 text-sm font-semibold text-gray-400  rounded"  onClick={() => toggleDropdown('aboutUs')}>

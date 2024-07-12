@@ -67,7 +67,7 @@ const JoinUsSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </p>
       </div>
-      <div className="w-full md:w-1/2 div-section-QZF">
+      <div className="w-full md:w-1/2 div-section-QZF bg-slate-200">
       <div className="">
                 <div className="header-v1o">
                   <p className="lets-get-you-started-4Nu">LET'S GET YOU STARTED</p>
@@ -76,11 +76,11 @@ const JoinUsSection = () => {
                 <form className="group-5-vg1" onSubmit={handleSubmit}>
                 <div className="mb-4">
                 <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                <input type="text" id="full-name" className=" appearance-none border-none rounded w-full py-2 bg-[#fafafa] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style={{border:'none',borderBottom:'solid black',}} placeholder="Leonard John" />
+                <input type="text" id="full-name" className=" appearance-none border-none rounded w-full py-2 bg-slate-200 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style={{border:'none',borderBottom:'solid black',}} placeholder="Leonard John" />
             </div>
             <div className="mb-4">
                 <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
-                <input type="email" id="email" className=" appearance-none border rounded w-full block px-4 py-2 bg-[#fafafa] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  style={{border:'none',borderBottom:'solid black'}} placeholder="admin@abc.com" />
+                <input type="email" id="email" className=" appearance-none border rounded w-full block px-4 py-2  bg-slate-200 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  style={{border:'none',borderBottom:'solid black'}} placeholder="admin@abc.com" />
             </div>
        
    

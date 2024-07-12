@@ -3,7 +3,7 @@
 box-sizing: border-box;
 padding: 2.95rem 1.95rem 5.1rem 3rem;
 align-items: center;
-background-color: #fafafa;
+background-color:rgb(226 232 240 / var(--tw-bg-opacity));
 border-radius: 2.4rem 2.4rem 0 0;
 
 }
