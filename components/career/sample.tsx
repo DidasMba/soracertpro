@@ -5,11 +5,11 @@ const Sample = () => {
 return(
     <>
  <section id="faq-2" className="faq-2 section py-5 max-w-8xl mx-auto" >
-   <div className="flex items-center justify-between mt-4  p-3 m-4 max-w-7xl mx-auto">
+   <div className="flex sm:flex-row flex-col items-center justify-between mt-4  p-3 m-4 max-w-7xl mx-auto">
         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900" style={{textTransform:'uppercase'}}>Popular category</h2>
         <div className="flex space-x-2">
-          <Button variant="outline" className='shadow-lg bg-white text-gray-900 rounding '>
-            <div className="flex
+          <Button variant="outline" className='shadow-lg bg-white text-gray-900'>
+            <div className="flex  p-3
            flex-row  justify-center items-center">
             
             <h5 className="font-mono">View all</h5>
@@ -26,6 +26,7 @@ return(
       <div className=" max-w-7xl mx-auto py-5" data-aos="fade-up"> 
       <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols 
             -4 gap-4 p-5">
+                {[...Array(8)].map((_, index) => (
     <div className=" p-3 gap-2 px-3 bg-transparent" >
       <div className="team-member  flex flex-row  justify-start items-center">
       <div className="pic mr-3"><img src="/first-aid-kit-duotone 1.png" style={{height:'50px', width:'50px' , objectFit:'cover'}} className="img-fluid" alt="" /></div>
@@ -34,80 +35,9 @@ return(
       <p className="texl-sm font-extralight">357 Open position</p>
     </div>
   </div>
-           
-            
-            
-        
       </div>
-      <div className=" p-3 gap-2 px-3 bg-transparent" >
-      <div className="team-member  flex flex-row  justify-start items-center">
-      <div className="pic mr-3"><img src="/pen-nib-duotone 1.png" style={{height:'50px', width:'50px' , objectFit:'contain'}} className="img-fluid" alt="" /></div>
-   <div className="member-info">
-   <h4 className="stretched-link text-lg font-bold">Modern Construction</h4>
-   <p className="texl-sm font-extralight">357 Open position</p>
-    </div>
-  </div>
-        
-      </div><div className=" p-3 gap-2 px-3 bg-transparent" >
-      <div className="team-member  flex flex-row  justify-start items-center">
-      <div className="pic mr-3"><img src="/Vector.png" style={{height:'50px', width:'50px' , objectFit:'contain'}} className="img-fluid" alt="" /></div>
-   <div className="member-info">
-   <h4 className="stretched-link text-lg font-bold">Modern Construction</h4>
-   <p className="texl-sm font-extralight">357 Open position </p>
-    </div>
-  </div>
-</div>
-<div className=" p-3 gap-2 px-3 bg-transparent" >
-      <div className="team-member  flex flex-row  justify-start items-center">
-      <div className="pic mr-3"><img src="/music-notes-duotone 1.png" style={{height:'50px', width:'50px' , objectFit:'contain'}} className="img-fluid" alt="" /></div>
-    <div className="member-info">
-    <h4 className="stretched-link text-lg font-bold">Modern Construction</h4>
-    <p className="texl-sm font-extralight">357 Open position</p>
-    </div>
-  </div>
-
-      </div>
-      <div className=" p-3 gap-2 px-3 bg-transparent" >
-      <div className="team-member  flex flex-row  justify-start items-center">
-      <div className="pic mr-3"><img src="/first-aid-kit-duotone 1.png" style={{height:'50px', width:'50px' , objectFit:'cover'}} className="img-fluid" alt="" /></div>
-      <div className="member-info">
-      <h4 className="stretched-link text-lg font-bold">Modern Construction</h4>
-      <p className="texl-sm font-extralight">357 Open position</p>
-    </div>
-  </div>
-           
-            
-            
-        
-      </div>
-      <div className=" p-3 gap-2 px-3 bg-transparent" >
-      <div className="team-member  flex flex-row  justify-start items-center">
-      <div className="pic mr-3"><img src="/pen-nib-duotone 1.png" style={{height:'50px', width:'50px' , objectFit:'contain'}} className="img-fluid" alt="" /></div>
-   <div className="member-info">
-   <h4 className="stretched-link text-lg font-bold">Modern Construction</h4>
-   <p className="texl-sm font-extralight">357 Open position</p>
-    </div>
-  </div>
-        
-      </div><div className=" p-3 gap-2 px-3 bg-transparent" >
-      <div className="team-member  flex flex-row  justify-start items-center">
-      <div className="pic mr-3"><img src="/Vector.png" style={{height:'50px', width:'50px' , objectFit:'contain'}} className="img-fluid" alt="" /></div>
-   <div className="member-info">
-   <h4 className="stretched-link text-lg font-bold">Modern Construction</h4>
-   <p className="texl-sm font-extralight">357 Open position</p>
-    </div>
-  </div>
-</div>
-<div className=" p-3 gap-2 px-3 bg-transparent" >
-      <div className="team-member  flex flex-row  justify-start items-center">
-      <div className="pic mr-3"><img src="/music-notes-duotone 1.png" style={{height:'50px', width:'50px' , objectFit:'contain'}} alt="" /></div>
-    <div className="member-info">
-        <h4 className="stretched-link text-lg font-bold">Modern Construction</h4>
-        <p className="texl-sm font-extralight">357 Open position</p>
-    </div>
-  </div>
-
-      </div>
+  ))}
+    
       </div>
       </div>
 </section>

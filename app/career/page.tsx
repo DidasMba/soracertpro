@@ -3,7 +3,7 @@ import LandiingPage from "@/components/career/landing";
 import Sample from "@/components/career/sample";
 import Featured from "@/components/career/featured";
 
-export default function Home() {
+export default function Career() {
   return (
     <main className="">
   

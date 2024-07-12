@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "mine";
+  src: url("/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, button, body, ul, li, input, Link, div , section{
+  font-family: 'mine', sans-serif;
+}
+.rounded-circle{border-radius:50% !important}
 
   .active-link{
     border-bottom: solid rgb(83 223 252 / var(--tw-text-opacity));

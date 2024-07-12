@@ -3,7 +3,7 @@ import LandiingPage from "@/components/membership/landing";
 import Pricing from "@/components/membership/pricing";
 
 import Formcon from "@/components/membership/formcon"
-export default function Home() {
+export default function Membership() {
   return (
     <main className="">
   
