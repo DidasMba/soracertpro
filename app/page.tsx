@@ -3,6 +3,7 @@ import LandiingPage from "@/components/homepage/components/landingpage";
 import FrameComponent6 from "@/components/homepage/components/aboutus";
 import Mission from "@/components/homepage/components/mission";
 import Client from "@/components/homepage/components/client";
+import Blog from '@/components/homepage/components/blog'
 import UpcomingEvents from "@/components/homepage/components/events";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
      <FrameComponent6 />
      <Mission />
      <Client />
+     <Blog />
      <UpcomingEvents />
   
     </main>

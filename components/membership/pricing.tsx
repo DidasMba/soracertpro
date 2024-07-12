@@ -30,12 +30,16 @@ return(
         <h2 className="text-md  leading-[38px] font-bold items-center text-[#05264f] justify-center" style={{textDecoration:'uppercase'}}>
        Billed Monthly
         </h2>
-        <div className="items-center justify-center text-center  font-extralight">
-        <button className="w-[157px] py-2 rounded-4xl bg-[#53dffc]  flex flex-row items-start justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
+        <div className="items-center justify-center text-center  font-extralight ">
+        <button className="w-[157px] py-2 rounded-4xl bg-[#53dffc]  flex flex-row items-center justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
                     <a className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1]">
                      Get Started
                     </a>
+                    <svg  
+             
+             className=" w-4 h-4 font-mono justify-start items-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
                   </button>
+                  
         </div>
       </div>
                 </div>
@@ -68,10 +72,13 @@ return(
        Billed Monthly
         </h2>
         <div className="items-center justify-center text-center  font-extralight">
-        <button className="w-[157px] py-2 rounded-4xl bg-[#53dffc]  flex flex-row items-start justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
+        <button className="w-[157px] py-2 rounded-4xl bg-[#53dffc]  flex flex-row items-center justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
                     <a className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1]">
                      Get Started
                     </a>
+                    <svg  
+             
+             className=" w-4 h-4 font-mono justify-start items-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
                   </button>
         </div>
       </div>
@@ -104,11 +111,14 @@ $399
 Billed Monthly
 </h2>
 <div className="items-center justify-center text-center  font-extralight">
-<button className="w-[157px] py-2 rounded-4xl bg-[#53dffc]  flex flex-row items-start justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
-          <a className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1]">
-           Get Started
-          </a>
-        </button>
+<button className="w-[157px] py-2 rounded-4xl bg-[#53dffc]  flex flex-row items-center justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
+                    <a className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1]">
+                     Get Started
+                    </a>
+                    <svg  
+             
+             className=" w-4 h-4 font-mono justify-start items-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+                  </button>
 </div>
 </div>
       </div>

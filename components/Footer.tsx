@@ -35,7 +35,7 @@ const Footer = ()=>{
                 </div>
   
                 {/* Second, Third, and Fourth Columns */}
-                <div className="lg:col-span-8 mx-auto col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-3">
+                <div className="lg:col-span-8 max-w-8xl mx-auto col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-3">
                     <div className="lg:col-span-4  col-span-6">
                         <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY1</h3>
                         <ul className="list-none mt-6 space-y-2">

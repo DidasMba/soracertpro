@@ -161,7 +161,7 @@ const Footer = ()=>{
                  <div className="mt-18">
 
                  <div className="bg-gray-300 px-4 py-8 ">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         <div className="flex flex-col items-center md:flex-row md:justify-between">
           <div className="mb-4 md:mb-0">
             <h2 className="text-2xl font-bold text-[#00224d] ">NEWSLETTER</h2>

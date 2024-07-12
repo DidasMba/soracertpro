@@ -42,9 +42,9 @@ const NavBar = () => {
             HOME
           </Link>
           <div className="relative group">
-            <Link href="#" className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
+            <span className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
               ABOUT US
-            </Link>
+            </span>
             <div className="absolute left-0 mt-2  w-[220px] py-2 rounded-lg shadow-lg bg-white hidden group-hover:block z-50">
               <ul className="py-2 text-sm text-gray-700">
               <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 1</a></li>
@@ -54,13 +54,13 @@ const NavBar = () => {
             </div>
           </div>
           <div className="relative group">
-            <Link href="/#services" className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
+            <span  className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
               SERVICES
-            </Link>
+            </span>
             <div className="absolute left-0 mt-2   w-[220px] rounded-lg shadow-lg bg-white hidden group-hover:block z-50">
               <ul className="py-2 text-sm text-gray-700">
                 <li><Link href="/membership" className="block px-4 py-2 hover:bg-gray-100">Membership</Link></li>
-                <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 2</a></li>
+                <li><Link href="/career" className="block px-4 py-2 hover:bg-gray-100">Career</Link></li>
                 <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Service 3</a></li>
               </ul>
             </div>

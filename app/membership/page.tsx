@@ -1,8 +1,8 @@
 import Image from "next/image";
-import LandiingPage from "@/components/membershi/landing";
-import Pricing from "@/components/membershi/pricing";
+import LandiingPage from "@/components/membership/landing";
+import Pricing from "@/components/membership/pricing";
 
-import Formcon from "@/components/membershi/formcon"
+import Formcon from "@/components/membership/formcon"
 export default function Home() {
   return (
     <main className="">

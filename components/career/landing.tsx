@@ -2,7 +2,7 @@
 
 const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden sm:h-screen h-auto bg-no-repeat bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url(/Frame6821.png)" }}>
+    <div className="relative overflow-hidden sm:h-screen h-auto bg-no-repeat bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url(/Frame682.png)" }}>
       <div className="container p-10 mx-auto max-w-8xl flex justify-start items-center">
         <div className="content  p-2 sm:p-8 rounded-3xl max-w-3xl items-center">
           <h2 className="text-white  text-4xl sm:text-7xl font-bold mb-10">Find A <span className="text-[#53dffc]">Job</span> That
