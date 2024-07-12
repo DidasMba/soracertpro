@@ -1,6 +1,6 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
   .active-link{
     border-bottom: solid rgb(83 223 252 / var(--tw-text-opacity));

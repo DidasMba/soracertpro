@@ -2,8 +2,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin} from "react-icons/fa";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -14,7 +16,11 @@ const Footer = ()=>{
       setYear(new Date().getFullYear());
   }, []);
     return(
+
+      <footer className="px-8 bg-customBlue text-white">
+
       <footer className="px-8 bg-customBlue text-white w-full">
+
       <div className="container mx-auto py-14 px-6">
           <div className="grid md:grid-cols-12 grid-cols-1 gap-6">
               {/* First Column */}
@@ -159,6 +165,48 @@ const Footer = ()=>{
                       </div>
                   </div>
 
+
+                 {/* Newsletter */}
+                 <div className="mt-18">
+
+                 <div className="bg-gray-300 px-4 py-8 ">
+      <div className="max-w-8xl mx-auto">
+        <div className="flex flex-col items-center md:flex-row md:justify-between">
+          <div className="mb-4 md:mb-0">
+            <h2 className="text-2xl font-bold text-[#00224d] ">NEWSLETTER</h2>
+            <p className="text-sm text-[#ff751a]">Stay Up to Date</p>
+          </div>
+          <div className="flex w-full max-w-md items-center rounded-full bg-white px-4 py-2 ">
+            <input
+              className="flex h-10 w-full rounded-full border-none border-input px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1 bg-transparent text-sm outline-none"
+              placeholder="Your Email..."
+              type="email"
+              id="newsletter-emai"
+            />
+            <button className="inline-flex items-center justify-center  rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 ml-2 bg-[#00224d]  text-white hover:bg-[#ff751a]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+                        </div>
+              </div>
+
                  
               </div>
               {/* Newsletter */}
@@ -188,7 +236,7 @@ const Footer = ()=>{
                     <button className="bg-gray-500 px-8 py-2 rounded-full text-white absolute top-0 right-0" type="submit">Submit</button>
                     </form>
                 </div>     
-                </div>
+
 
           </div>
 
