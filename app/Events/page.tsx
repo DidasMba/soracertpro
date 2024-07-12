@@ -37,7 +37,7 @@ export default function Fleets() {
                     <div className="texteone font-bold text-xl mb-2">Nom de l'événement
                     </div>
                       <p className="text-gray-700 text-base">
-                        Localisation
+                        Localisation 
                       </p>
                </div>
             </div>
