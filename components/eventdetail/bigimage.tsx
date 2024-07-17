@@ -10,7 +10,7 @@ const FrameComponent6 = () => {
                 <img
                     src="/soraimg1.JPG"
                     alt='lg'
-                    className='w-full h-full object-cover rounded-full'
+                    className='w-full h-full object-cover rounded-2xl'
                 />
             </div>
 
