@@ -8,7 +8,11 @@ const HeroSection = () => {
           <div>
             <h1 className="font-bold text-blue-500 text-lg">I want to sell</h1>
             <p className="text-sm font-light text-gray-400 pt-4 pb-4">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-            <button className="bg-blue-500 text-white font-bold py-2 px-4">Sell</button>
+            <button className="w-[157px] py-2 rounded-4xl bg-customBlue flex flex-row items-start justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-white" style={{ borderRadius: '20px' }}>
+                    <a className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1]">
+                      Add Calendar
+                    </a>
+            </button>
           </div>
           
           <div>
@@ -16,7 +20,7 @@ const HeroSection = () => {
             <p className="text-sm font-light text-gray-400 pt-4 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim justo vel sagittis pellentesque. Donec auctor quis lectus vel rhoncus. Integer vehicula vehicula sem eget egestas. Duis a leo at enim tempus interdum sit amet sit amet lacus. Morbi in risus turpis. Pellentesque sed lacus vel lectus auctor placerat. Praesent lobortis viverra orci.
 
 Praesent eu congue mi. Aenean at risus et purus elementum aliquet. Fusce tristique lacus dolor, ac facilisis sem aliquet eu. In hac habitasse platea dictumst. Cras lobortis vulputate cursus. Duis nec nisi venenatis, ultrices metus sit amet, aliquam augue. In nec ante nunc. Fusce ornare justo a velit mattis bibendum viverra sit amet erat. </p>
-            <button className=" text-white font-bold py-2 px-6 bg-customBlue rounded-full">Add Calenda</button>
+            <button className=" text-white font-bold py-3 px-6 bg-customBlue rounded-full">Add Calenda</button>
             <a class="hidden lg:inline-block py-2 px-6 bg-customBlue text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
           </div>
         </div>
