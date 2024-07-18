@@ -15,8 +15,7 @@ const FrameComponent6 = () => {
             </div>
 
   </div>
-            
-    
+ 
 </section>
   );
 };
