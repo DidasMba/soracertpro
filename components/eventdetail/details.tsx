@@ -9,9 +9,9 @@ const HeroSection = () => {
         <div className="grid sm:grid-cols-2 gap-8  m-8">
           <div>
 
-          <div className=" p-3 gap-2 px-3 bg-transparent" >
+          <div className=" p-8 gap-2 px-0  bg-transparent" >
                 <div className="team-member  flex flex-row  justify-start items-center">
-                <div className="pic mr-3"><img src="/calend.png" style={{height:'50px', width:'50px' , objectFit:'cover'}} className="img-fluid" alt="" /></div>
+                <div className="pic mr-3"><img src="/calendarm.png" style={{height:'50px', width:'50px' , objectFit:'cover'}} className="img-fluid" alt="" /></div>
                 <div className="member-info">
                 <h4 className="stretched-link text-lg font-bold">Friday</h4>
                 <p className="texl-sm font-extralight">May 24, 2024</p>
@@ -19,11 +19,12 @@ const HeroSection = () => {
               </div>
          </div>
          
+         <div className="border-b border-gray-300 mx-4 w-1/3"></div>
 
-         <div className="flex gap-2">
-         <div className=" p-3 gap-2 px-3 bg-transparent" >
+         <div className="flex gap-4 ">
+         <div className=" p-8 gap-2 px-0 bg-transparent" >
                 <div className="team-member  flex flex-row  justify-start items-center">
-                <div className="pic mr-3"><img src="/clock.png" style={{height:'50px', width:'50px' , objectFit:'cover'}} className="img-fluid" alt="" /></div>
+                <div className="pic mr-3"><img src="/clocks.png" style={{height:'50px', width:'50px' , objectFit:'cover'}} className="img-fluid" alt="" /></div>
                 <div className="member-info">
                 <h4 className="stretched-link text-lg font-bold">Friday</h4>
                 <p className="texl-sm font-extralight">May 24, 2024</p>
@@ -31,7 +32,7 @@ const HeroSection = () => {
               </div>
          </div>
 
-         <div className=" p-3 gap-2 px-3 bg-transparent" >
+         <div className=" p-8 gap-2 px-3 bg-transparent" >
                 <div className="team-member  flex flex-row  justify-start items-center">
                
                 <div className="member-info">
