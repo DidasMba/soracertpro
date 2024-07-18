@@ -5,10 +5,9 @@ const HeroSection = () => {
      
      
       
-      <div className="relative px-4 py-10 bg-orange-800   sm:p-20 ">
-        <div className="grid sm:grid-cols-2 gap-8  m-8">
+      <div className="">
+        <div className="grid sm:grid-cols-2 gap-2 p-12 ">
           <div>
-
           <div className=" p-8 gap-2 px-0  bg-transparent" >
                 <div className="team-member  flex flex-row  justify-start items-center">
                 <div className="pic mr-3"><img src="/calendarm.png" style={{height:'50px', width:'50px' , objectFit:'cover'}} className="img-fluid" alt="" /></div>
@@ -19,7 +18,7 @@ const HeroSection = () => {
               </div>
          </div>
          
-         <div className="border-b border-gray-300 mx-4 w-1/3"></div>
+         <div className="border-b border-gray-200 mx-4 w-3/5"></div>
 
          <div className="flex gap-4 ">
          <div className=" p-8 gap-2 px-0 bg-transparent" >
