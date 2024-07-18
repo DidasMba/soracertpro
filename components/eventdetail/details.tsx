@@ -7,7 +7,9 @@ const HeroSection = () => {
       
       <div className="">
         <div className="grid sm:grid-cols-2 gap-2 p-12 ">
-          <div>
+      
+        <div className="">
+         
           <div className=" p-8 gap-2 px-0  bg-transparent" >
                 <div className="team-member  flex flex-row  justify-start items-center">
                 <div className="pic mr-3"><img src="/calendarm.png" style={{height:'50px', width:'50px' , objectFit:'cover'}} className="img-fluid" alt="" /></div>
@@ -16,7 +18,7 @@ const HeroSection = () => {
                 <p className="texl-sm font-extralight">May 24, 2024</p>
               </div>
               </div>
-         </div>
+           </div>
          
          <div className="border-b border-gray-200 mx-4 w-3/5"></div>
 
