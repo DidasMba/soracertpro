@@ -10,16 +10,19 @@ const HeroSection = () => {
         
        
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
                 <div className='relative image-rounded'>
-                    <Image
+                <div className=""> {/* Dimensions fixes w-80 h-80*/}
+                  <Image
                      className="imagepro object-cover w-full h-full"
                      src="/st1.JPG" 
                      alt="Pro 1"
                      width={500}
                      height={500} 
                      />
+                  </div>
+                    
                      <div className="absolute bottom-0 left-0 px-4 py-2 bg-black bg-opacity-50 text-white text-sm">
                         29 June 2024 {/* Date à ajouter ici */}
                      </div>
@@ -87,7 +90,7 @@ const HeroSection = () => {
       <div className='container'>
         
         
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
             <div className='relative image-rounded'>
                     <Image
@@ -159,7 +162,7 @@ const HeroSection = () => {
       <div className='container'>
 
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
             <div className='relative image-rounded'>
                     <Image
