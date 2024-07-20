@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-
+import {FaStar} from "react-icons/fa"
 
 const HeroSection = () => {
   return (
@@ -123,9 +123,16 @@ const HeroSection = () => {
                 <div className="px-6 py-4">
                     <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
                     </div>
+
+                    <label>
+                    <FaStar />
+                    </label>
+
                     <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
+                      Lo ipsum dolor sit amet, 
                     </p>
+                   
+                  
                </div>
             </div>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
