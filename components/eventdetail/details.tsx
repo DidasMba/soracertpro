@@ -4,7 +4,10 @@ const HeroSection = () => {
     return (
      
      
+      <section className="flex flex-col md:flex-ro justify-center items-center py-12 px-4"  data-aos="fade-up">
       
+        <div className="flex flex-col md:flex-row w-full max-w-6xl w items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
+   
       <div className="">
         <div className="grid sm:grid-cols-2 gap-2 p-12 ">
       
@@ -69,6 +72,10 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+
+      </div>
+      </section>
     
 
 
@@ -77,3 +84,9 @@ const HeroSection = () => {
   };
   
   export default HeroSection;
+
+
+
+
+
+  
