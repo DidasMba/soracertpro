@@ -1,6 +1,9 @@
 "use client";
 import Image from 'next/image';
+import React, { useState } from 'react';
 import {FaStar} from "react-icons/fa"
+
+import StarRating from './starrating';
 
 const HeroSection = () => {
   return (
@@ -42,11 +45,13 @@ const HeroSection = () => {
                     
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
                     </div>
-                    <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
                </div>
             </div>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
@@ -64,11 +69,13 @@ const HeroSection = () => {
                     
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
                     </div>
-                    <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
                </div>
             </div>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
@@ -85,11 +92,13 @@ const HeroSection = () => {
                    
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
                     </div>
-                    <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
                </div>
             </div>
           </div>
@@ -121,18 +130,13 @@ const HeroSection = () => {
                    
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
                     </div>
-
-                    <label>
-                    <FaStar />
-                    </label>
-
-                    <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, 
-                    </p>
-                   
-                  
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
                </div>
             </div>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
@@ -150,11 +154,13 @@ const HeroSection = () => {
                    
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
                     </div>
-                    <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
                </div>
             </div>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
@@ -172,17 +178,17 @@ const HeroSection = () => {
                     
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
                     </div>
-                    <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
                </div>
             </div>
           </div>
       </div>
-      
-
     
       <div className='container'>
         
@@ -209,12 +215,14 @@ const HeroSection = () => {
                   
               </div>
               <div className="px-6 py-4">
-                  <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
-                  </div>
-                  <p className="text-gray-700 text-base">
-                    Lo ipsum dolor sit amet, consectetur adipisicing.
-                  </p>
-             </div>
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
+                    </div>
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
+               </div>
           </div>
           <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
           <div className='relative image-rounded'>
@@ -231,12 +239,14 @@ const HeroSection = () => {
                  
               </div>
               <div className="px-6 py-4">
-                  <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
-                  </div>
-                  <p className="text-gray-700 text-base">
-                    Lo ipsum dolor sit amet, consectetur adipisicing.
-                  </p>
-             </div>
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
+                    </div>
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
+               </div>
           </div>
           <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
           <div className='relative image-rounded'>
@@ -252,12 +262,14 @@ const HeroSection = () => {
                   
               </div>
               <div className="px-6 py-4">
-                  <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
-                  </div>
-                  <p className="text-gray-700 text-base">
-                    Lo ipsum dolor sit amet, consectetur adipisicing.
-                  </p>
-             </div>
+                    <div className="texteone font-bold text-xl mb-2">Skinny Fit Jeans
+                    </div>
+                
+                  <StarRating />
+              
+                  <h2 className="font-bold text-xl ">$145
+                  </h2>
+               </div>
           </div>
         </div>
     </div>
