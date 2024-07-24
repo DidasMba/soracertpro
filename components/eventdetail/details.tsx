@@ -4,11 +4,15 @@ const HeroSection = () => {
     return (
      
      
-      
-      <div className="">
+      <section className="flex flex-col md:flex-ro justify-center items-center py-12 px-4"  data-aos="fade-up">
+        
+        <div className="flex flex-col md:flex-row w-full max-w-6xl w items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
+
         <div className="grid sm:grid-cols-2 gap-2 p-12 ">
       
         <div className="">
+
+          <h2 className=" relative bottom-10 text-3xl font-extrabold tracking-tight text-gray-900" style={{textTransform:'uppercase'}}>About this event</h2>
          
           <div className=" p-8 gap-2 px-0  bg-transparent" >
                 <div className="team-member  flex flex-row  justify-start items-center">
@@ -70,7 +74,12 @@ const HeroSection = () => {
         </div>
       </div>
     
+  
+        </section>
+    
 
+
+     
 
       
     );
