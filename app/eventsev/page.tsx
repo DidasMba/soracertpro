@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Mainevensts from "@/components/membership/mainevents";
-import Pevents from "@/components/membership/pevents";
+import Mainevensts from "@/components/eventsev/mainevents";
+import Pevents from "@/components/eventsev/pevents";
 
 
 export default function Home() {
@@ -9,7 +9,6 @@ export default function Home() {
   
      <Mainevensts />
      <Pevents  />
-
  
     </main>
   );
