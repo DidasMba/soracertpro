@@ -18,7 +18,7 @@ const Footer = ()=>{
                 <div className="lg:col-span-4 col-span-12">
                     <a href="/">
                         <img
-                            src="./Soracertlogo.png"
+                            src="/Soracertlogo.png"
                             width={128}
                             height={82}
                             alt="soracert"

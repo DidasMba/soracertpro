@@ -16,17 +16,17 @@ const UpcomingEvents = () =>{
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
             <div className="group relative">
             <Link href="/">
-              <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="relative w-full h-80 bg-white overflow-hidden shadow-lg" style={{ borderRadius:'10px'}}>
                 <Image
                   alt="Crossover 2023"
-                  className="w-full h-full object-center object-cover rounded-lg"
+                  className="w-full h-full object-center object-cover "
                  
                   height="320"
                   src="/blog-3.png"
                   style={{
                     aspectRatio: "320/320",
                     objectFit: "cover",
-                    borderRadius:'10px'
+                    
                   }}
                   width="320"
                 />
@@ -43,7 +43,7 @@ const UpcomingEvents = () =>{
             </div>
             <div className="group relative">
             <Link href="/">
-              <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg" style={{ borderRadius:'10px'}}>
                 <Image
                   alt="Apostolic Tour"
                   className="w-full h-full object-center object-cover"
@@ -69,7 +69,7 @@ const UpcomingEvents = () =>{
             </div>
             <div className="group relative">
             <Link href="/">
-              <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg" style={{ borderRadius:'10px'}}> 
                 <Image
                   alt="Africa Haguruka24"
                   className="w-full h-full object-center object-cover"
@@ -95,7 +95,7 @@ const UpcomingEvents = () =>{
             </div>
             <div className="group relative">
             <Link href="/">
-              <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden shadow-lg" style={{ borderRadius:'10px'}}>
                 <Image
                   alt="Africa Haguruka24"
                   className="w-full h-full object-center object-cover"

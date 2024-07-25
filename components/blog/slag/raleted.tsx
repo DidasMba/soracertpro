@@ -1,13 +1,9 @@
 "use client";
 import Link from 'next/link'
-import { Button } from "@/components/ui/button"
-export default function Component() {
+const RaletedBlog = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-start max-w-2xl">
-        <h2 className="text-3xl font-bold leading-tight text-gray-900" style={{textTransform:'uppercase'}}>Latest Blog Articles</h2>
-        <div className="mt-4 mb-12 h-1 w-24 bg-black" />
-      </div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+     
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col">
         <Link href="/blog/blog-1">
@@ -71,22 +67,9 @@ export default function Component() {
           </Link>
         </div>
       </div>
-      <div className="mt-8 text-center">
-      <div className="bg-transparent px-4 py-8">
-            <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col items-center">
-                <div className="flex items-center rounded-full bg-[#05264f] px-2 py-1">
-                <Link href="/blog" className="w-[157px] py-2 rounded-4xl bg-[#05264f] flex flex-row items-start justify-start pt-2 px-[19px] pb-[7px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#fff]" style={{ borderRadius: '20px' }}>
-                    <button className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1]">
-                    View All Blog
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
-    </div>
-  )
-}
 
+  );
+};
+
+export default RaletedBlog;

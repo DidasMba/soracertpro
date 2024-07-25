@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "../ui/button"
+import Link from 'next/link'
 
 const Featured = () => {
 return(
@@ -14,7 +15,8 @@ return(
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols 
             -3 gap-4 p-5">
                  {[...Array(9)].map((_, index) => (
-  <Card className="shadow p-4 gap-2 px-5 pr-2 bg-slate-50" >
+                  <Link href='/career/career-1'>
+  <Card className="shadow p-4 gap-2 px-5 pr-2 bg-slate-50" key={index}>
         <h4 className="text-xl font-bold">Techical Support Specialist</h4>
       <div className=" p-2 flex flex-row  justify-start items-center">
   <div className="bg-gray-200 " style={{textTransform:'uppercase', marginRight:'8px' , padding:'0px 0px 2px'}}>part-time</div>
@@ -39,6 +41,7 @@ return(
             
         
       </Card>
+      </Link>
                  ))}
       </div>
       </div>
