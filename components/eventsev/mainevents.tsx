@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const FrameComponent6 = () => {
   return (
-    <div className='py-24'>
+    <div className='py-8'>
       <div className='container'>
         
           <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full ">  
@@ -21,7 +21,7 @@ const FrameComponent6 = () => {
                            alt="Pro 1"
                            width={500}
                            height={500} 
-                           />
+                        />
                   </div>
           
 
