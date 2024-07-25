@@ -12,6 +12,11 @@ const FrameComponent6 = () => {
           <a href="#" className=" px-4">Cybersecurite</a>
           <a href="#" className=" px-4">Mentoring</a>
           <a href="#" className=" px-4">More</a>
+          
+          
+          <button className="absolute right-12 bottom-1 bg-customHoverBlue px-6 py-1 text-black font-bold rounded-full hover:bg-blue-600">
+            Add Calendar
+         </button>
          
           </div> 
 
