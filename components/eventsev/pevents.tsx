@@ -11,7 +11,7 @@ const FrameComponent6 = () => {
         {/* Première colonne */}
         <div className="sm:col-span-4 min-h-[270px] image-rounded  shadow ml-14 relative">
             <Image    
-            src="/ss3.jpg" 
+            src="/ev10.jpg" 
             alt="Pro 1"
             layout="fill" 
             objectFit="cover" />
@@ -39,7 +39,7 @@ const FrameComponent6 = () => {
           {/* Première colonne */}
           <div className="sm:col-span-4 min-h-[270px] image-rounded  shadow mr-12 relative">
               <Image  
-              src="/ss5.jpg" 
+              src="/ev11.jpg" 
               alt="Pro 1" 
               layout="fill" 
               objectFit="cover" />

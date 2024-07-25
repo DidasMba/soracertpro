@@ -7,9 +7,13 @@ const FrameComponent6 = () => {
     <div className='py-8'>
       <div className='container'>
         
-          <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full ">  
-          <a href="#">Workshops</a> 
-          </div>  
+      <div className="ok ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full workshop-list ">  
+          <a href="#" className=" px-4">Concert</a>
+          <a href="#" className=" px-4">Cybersecurite</a>
+          <a href="#" className=" px-4">Mentoring</a>
+          <a href="#" className=" px-4">More</a>
+         
+          </div> 
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
