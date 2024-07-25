@@ -37,12 +37,12 @@ const FrameComponent6 = () => {
                      </div>
                   </div>
                   <div className="px-6 py-4">
-                  <div className="texteone font-bold text-xl mb-2">Name of the Events
-                  </div>
-                     <p className="text-gray-700 text-base">
-                        Lo ipsum dolor sit amet, consectetur adipisicing.
-                     </p>
-                  </div>
+                <div className="texteone font-bold text-xl mb-2">Name of the Events
+                </div>
+                    <p className="text-gray-700 text-base">
+                      Localisation
+                    </p>
+               </div>
             </div>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
             <div className='relative image-rounded'>
@@ -68,10 +68,10 @@ const FrameComponent6 = () => {
                      </div>
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">Name of the Events
-                    </div>
+                <div className="texteone font-bold text-xl mb-2">Name of the Events
+                </div>
                     <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
+                      Localisation
                     </p>
                </div>
             </div>
@@ -102,7 +102,7 @@ const FrameComponent6 = () => {
                 <div className="texteone font-bold text-xl mb-2">Name of the Events
                 </div>
                     <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
+                      Localisation
                     </p>
                </div>
               </div>
@@ -112,9 +112,6 @@ const FrameComponent6 = () => {
 
       <div className='container'>
         
-          <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full ">  
-          <a href="#">Mentoring</a>
-          </div>  
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
             <div className='relative image-rounded'>
@@ -143,9 +140,9 @@ const FrameComponent6 = () => {
                 <div className="px-6 py-4">
                 <div className="texteone font-bold text-xl mb-2">Name of the Events
                 </div>
-                      <p className="text-gray-700 text-base">
-                        Lo ipsum dolor sit amet, consectetur adipisicing.
-                      </p>
+                    <p className="text-gray-700 text-base">
+                      Localisation
+                    </p>
                </div>
             </div>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
@@ -174,7 +171,7 @@ const FrameComponent6 = () => {
                 <div className="texteone font-bold text-xl mb-2">Name of the Events
                 </div>
                     <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
+                      Localisation
                     </p>
                </div>
             </div>
@@ -202,7 +199,7 @@ const FrameComponent6 = () => {
                 <div className="texteone font-bold text-xl mb-2">Name of the Events
                 </div>
                     <p className="text-gray-700 text-base">
-                      Lo ipsum dolor sit amet, consectetur adipisicing.
+                      Localisation
                     </p>
                </div>
             </div>
