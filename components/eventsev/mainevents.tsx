@@ -17,7 +17,7 @@ const FrameComponent6 = () => {
                   <div className="h-80"> {/* Dimensions fixes w-80 h-80*/}
                         <Image
                            className="imagepro object-cover w-full h-full"
-                           src="/ss3.jpg" 
+                           src="/ev2.jpg" 
                            alt="Pro 1"
                            width={500}
                            height={500} 
@@ -37,8 +37,8 @@ const FrameComponent6 = () => {
                      </div>
                   </div>
                   <div className="px-6 py-4">
-                     <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
-                     </div>
+                  <div className="texteone font-bold text-xl mb-2">Name of the Events
+                  </div>
                      <p className="text-gray-700 text-base">
                         Lo ipsum dolor sit amet, consectetur adipisicing.
                      </p>
@@ -49,7 +49,7 @@ const FrameComponent6 = () => {
                  <div className="h-80"> {/* Dimensions fixes w-80 h-80*/}
                         <Image
                            className="imagepro object-cover w-full h-full"
-                           src="/ss3.jpg" 
+                           src="/ev5.jpg" 
                            alt="Pro 1"
                            width={500}
                            height={500} 
@@ -68,7 +68,7 @@ const FrameComponent6 = () => {
                      </div>
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
+                    <div className="texteone font-bold text-xl mb-2">Name of the Events
                     </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
@@ -80,7 +80,7 @@ const FrameComponent6 = () => {
                  <div className="h-80"> {/* Dimensions fixes w-80 h-80*/}
                         <Image
                            className="imagepro object-cover w-full h-full"
-                           src="/ss3.jpg" 
+                           src="/ev6.jpg" 
                            alt="Pro 1"
                            width={500}
                            height={500} 
@@ -99,8 +99,8 @@ const FrameComponent6 = () => {
                      </div>
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
-                    </div>
+                <div className="texteone font-bold text-xl mb-2">Name of the Events
+                </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
                     </p>
@@ -122,7 +122,7 @@ const FrameComponent6 = () => {
                   <div className="h-80"> {/* Dimensions fixes w-80 h-80*/}
                         <Image
                            className="imagepro object-cover w-full h-full"
-                           src="/ss3.jpg" 
+                           src="/ev8.jpg" 
                            alt="Pro 1"
                            width={500}
                            height={500} 
@@ -141,8 +141,8 @@ const FrameComponent6 = () => {
                      </div>
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
-                    </div>
+                <div className="texteone font-bold text-xl mb-2">Name of the Events
+                </div>
                       <p className="text-gray-700 text-base">
                         Lo ipsum dolor sit amet, consectetur adipisicing.
                       </p>
@@ -171,8 +171,8 @@ const FrameComponent6 = () => {
                      </div>
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
-                    </div>
+                <div className="texteone font-bold text-xl mb-2">Name of the Events
+                </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
                     </p>
@@ -183,7 +183,7 @@ const FrameComponent6 = () => {
                  <div className="h-80"> {/* Dimensions fixes w-80 h-80*/}
                         <Image
                            className="imagepro object-cover w-full h-full"
-                           src="/ss3.jpg" 
+                           src="/ev9.jpg" 
                            alt="Pro 1"
                            width={500}
                            height={500} 
@@ -199,8 +199,8 @@ const FrameComponent6 = () => {
                      </div>
                 </div>
                 <div className="px-6 py-4">
-                    <div className="texteone font-bold text-xl mb-2">The Coldest Sunset
-                    </div>
+                <div className="texteone font-bold text-xl mb-2">Name of the Events
+                </div>
                     <p className="text-gray-700 text-base">
                       Lo ipsum dolor sit amet, consectetur adipisicing.
                     </p>
