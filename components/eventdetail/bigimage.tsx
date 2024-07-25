@@ -12,7 +12,7 @@ const FrameComponent6 = () => {
                     alt='lg'
                     className='w-full h-full object-cover rounded-2xl'
                 />
-                      <h2 className=" relative top-10 text-3xl font-extrabold tracking-tight text-gray-900" style={{textTransform:'uppercase'}}>About this event</h2>
+                   
             </div>
 
   </div>

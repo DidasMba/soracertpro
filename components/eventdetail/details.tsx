@@ -4,7 +4,7 @@ const HeroSection = () => {
     return (
      
      
-      <section className="flex flex-col md:flex-ro justify-center items-center py-12 px-4"  data-aos="fade-up">
+      <section className="flex flex-col md:flex-ro justify-center items-center py-1 px-4"  data-aos="fade-up">
         
         <div className="flex flex-col md:flex-row w-full max-w-6xl w items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
 
@@ -20,9 +20,9 @@ const HeroSection = () => {
                 <div className="member-info">
                 <h4 className="stretched-link text-lg font-bold">Friday</h4>
                 <p className="texl-sm font-extralight">May 24, 2024</p>
-              </div>
-              </div>
-           </div>
+          </div>
+          </div>
+          </div>
          
          <div className="border-b border-gray-200 mx-4 w-3/5"></div>
 
