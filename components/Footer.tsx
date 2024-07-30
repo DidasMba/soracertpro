@@ -158,12 +158,7 @@ const Footer = ()=>{
   
                    {/* Newsletter */}
                    <div className="mt-18  lg:col-span-12 col-span-12  py-9 w-full flex flex-col md:flex-row "> 
-            <div className="sm:w-1/3 w-full">
-            <div className="mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold text-[#fff] ">NEWSLETTER</h2>
-            <p className="text-sm text-[#fff]">Stay Up to Date</p>
-          </div>
-            </div>
+           
             <div className="sm:w-2/3  w-full flex sm:items-center items-start rounded-full bg-white px-4 py-2 ">
             <input
               className="flex h-10 w-full rounded-full border-none border-input px-3 py-2 text-black bg-transparent text-sm outline-none"
@@ -204,7 +199,7 @@ const Footer = ()=>{
                   </div>
           </div>
         </div>
-    </footer>
+        </footer>
         
       )
   }
