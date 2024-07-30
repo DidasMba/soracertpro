@@ -1,7 +1,8 @@
 "use client"
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin} from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
 
 
 const Footer = ()=>{
@@ -16,73 +17,83 @@ const Footer = ()=>{
     <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
       {/* Columns1 */}
       <div className="lg:col-span-2 col-span-12">
-        <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY1</h3>
+        <h3 className="tracking-wide text-gray-300 font-semibold">A PROPOS</h3>
         <ul className="list-none mt-6 space-y-2">
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              About us
+            Mission et Vision
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Legal information
+            Équipe dirigeante
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Contact us
+            Partenaires et sponsors
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Blog
+              Membre
             </a>
           </li>
         </ul>
       </div>
         {/* Columns2 */}
       <div className="lg:col-span-2 col-span-12">
-        <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY2</h3>
+        <h3 className="tracking-wide text-gray-300 font-semibold">LIENS RAPIDES</h3>
         <ul className="list-none mt-6 space-y-2">
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              About us
+             Accueil
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Legal information
+            Événements
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Contact us
+            Programmes
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Blog
+            Ressources
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
+            Blog
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
+            Communauté
             </a>
           </li>
         </ul>
       </div>
            {/* Columns3 */}
       <div className="lg:col-span-2 col-span-12">
-        <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY3</h3>
+        <h3 className="tracking-wide text-gray-300 font-semibold">RESSOURCES</h3>
         <ul className="list-none mt-6 space-y-2">
           <li>
             <a href="tel:1234567890" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Phone: 1234567890
+              Guides et tutoriels
             </a>
           </li>
           <li>
             <a href="mailto:company@email.com" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Email: company@email.com
+              Études de cas  
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Location: 100 Smart Street, LA, USA
+            Vidéos et webinaires
             </a>
           </li>
         </ul>
@@ -146,24 +157,30 @@ const Footer = ()=>{
       </div>
           {/* Columns6 */}
       <div className="lg:col-span-2 col-span-12">
-        <h3 className="tracking-wide text-gray-300 font-semibold">NEW COLUMN 3</h3>
+        <h3 className="tracking-wide text-gray-300 font-semibold">CONTACT</h3>
         <ul className="list-none mt-6 space-y-2">
-          <li>
-            <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Link 1
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Link 2
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Link 3
-            </a>
-          </li>
-        </ul>
+              <li className="flex items-center">
+                <FaPhone className="mr-2" />
+                <a href="tel:1234567890" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
+                 1234567890
+                </a>
+              </li>
+              
+              <li className="flex items-center">
+                <FaMapMarkerAlt className="mr-2" />
+                <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
+                 100 Smart Street, LA, USA
+                </a>
+              </li>
+              <li className="flex items-center">
+              <FaPhone className="mr-2" />
+                <a href="mailto:company@email.com" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
+                company@email.com
+                </a>
+              </li>
+            </ul>
+
+                        
       </div>
 
     </div>
