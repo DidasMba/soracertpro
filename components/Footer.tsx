@@ -75,6 +75,11 @@ const Footer = ()=>{
             Communauté
             </a>
           </li>
+          <li>
+            <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
+            Carrières
+            </a>
+          </li>
         </ul>
       </div>
            {/* Columns3 */}
@@ -115,37 +120,37 @@ const Footer = ()=>{
 
      {/* Columns4 */}
       <div className="lg:col-span-2 col-span-12">
-        <h3 className="tracking-wide text-gray-300 font-semibold">NEW COLUMN 1</h3>
+        <h3 className="tracking-wide text-gray-300 font-semibold">ENGAGEMENT COMMUNAUTAIRE</h3>
         <ul className="list-none mt-6 space-y-2">
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Link 1
+            Témoignages des membres
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Link 2
+            Histoires de succès
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Link 3
+            Programmes de mentorat
             </a>
           </li>
         </ul>
       </div>
          {/* Columns5 */}
       <div className="lg:col-span-2 col-span-12">
-        <h3 className="tracking-wide text-gray-300 font-semibold">NEW COLUMN 2</h3>
+        <h3 className="tracking-wide text-gray-300 font-semibold">BOUTIQUE</h3>
         <ul className="list-none mt-6 space-y-2">
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Link 1
+            Merchandising
             </a>
           </li>
           <li>
             <a href="#" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
-              Link 2
+            Ressources premium
             </a>
           </li>
           <li>
