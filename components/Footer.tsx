@@ -14,7 +14,7 @@ const Footer = ()=>{
         <footer className="px-8 bg-customBlue text-white">
   <div className="container mx-auto py-14 px-6">
     <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
-      {/* Columns */}
+      {/* Columns1 */}
       <div className="lg:col-span-2 col-span-12">
         <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY1</h3>
         <ul className="list-none mt-6 space-y-2">
@@ -40,6 +40,7 @@ const Footer = ()=>{
           </li>
         </ul>
       </div>
+        {/* Columns2 */}
       <div className="lg:col-span-2 col-span-12">
         <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY2</h3>
         <ul className="list-none mt-6 space-y-2">
@@ -65,6 +66,7 @@ const Footer = ()=>{
           </li>
         </ul>
       </div>
+           {/* Columns3 */}
       <div className="lg:col-span-2 col-span-12">
         <h3 className="tracking-wide text-gray-300 font-semibold">COMPANY3</h3>
         <ul className="list-none mt-6 space-y-2">
@@ -99,7 +101,8 @@ const Footer = ()=>{
           </a>
         </div>
       </div>
-      {/* New Columns */}
+
+     {/* Columns4 */}
       <div className="lg:col-span-2 col-span-12">
         <h3 className="tracking-wide text-gray-300 font-semibold">NEW COLUMN 1</h3>
         <ul className="list-none mt-6 space-y-2">
@@ -120,6 +123,7 @@ const Footer = ()=>{
           </li>
         </ul>
       </div>
+         {/* Columns5 */}
       <div className="lg:col-span-2 col-span-12">
         <h3 className="tracking-wide text-gray-300 font-semibold">NEW COLUMN 2</h3>
         <ul className="list-none mt-6 space-y-2">
@@ -140,6 +144,7 @@ const Footer = ()=>{
           </li>
         </ul>
       </div>
+          {/* Columns6 */}
       <div className="lg:col-span-2 col-span-12">
         <h3 className="tracking-wide text-gray-300 font-semibold">NEW COLUMN 3</h3>
         <ul className="list-none mt-6 space-y-2">
@@ -160,6 +165,7 @@ const Footer = ()=>{
           </li>
         </ul>
       </div>
+
     </div>
     {/* Newsletter */}
     <div className="mt-18 lg:col-span-12 col-span-12 py-9">
