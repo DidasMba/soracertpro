@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 
-
 const Footer = ()=>{
     const [year, setYear] = useState(0);
   
@@ -102,20 +101,7 @@ const Footer = ()=>{
             </a>
           </li>
         </ul>
-        <div className="flex space-x-4 mt-5">
-          <a className="text-white hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out" href="" aria-label="Facebook">
-            <FaFacebook />
-          </a>
-          <a className="text-white hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out" href="" aria-label="Twitter">
-            <FaTwitter />
-          </a>
-          <a className="text-white hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out" href="" aria-label="Instagram">
-            <FaInstagram />
-          </a>
-          <a className="text-white hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out" href="" aria-label="LinkedIn">
-            <FaLinkedin />
-          </a>
-        </div>
+        
       </div>
 
      {/* Columns4 */}
@@ -178,7 +164,7 @@ const Footer = ()=>{
                 </a>
               </li>
               <li className="flex items-center">
-              <FaPhone className="mr-2" />
+              <FaEnvelope className="mr-2" />
                 <a href="mailto:company@email.com" className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out">
                 company@email.com
                 </a>
@@ -188,21 +174,55 @@ const Footer = ()=>{
                         
       </div>
 
+      <div className="flex space-x-4 mt-5">
+          <a className="text-white text-2xl hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out" href="" aria-label="Facebook">
+            <FaFacebook />
+          </a>
+          <a className="text-white text-2xl hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out" href="" aria-label="Twitter">
+            <FaTwitter />
+          </a>
+          <a className="text-white text-2xl hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out" href="" aria-label="Instagram">
+            <FaInstagram />
+          </a>
+          <a className="text-white text-2xl hover:text-customHoverBlue transform hover:scale-150 transition-all duration-150 ease-in-out" href="" aria-label="LinkedIn">
+            <FaLinkedin />
+          </a>
+        </div>
+
+    
+
     </div>
-    {/* Newsletter */}
-    <div className="mt-18 lg:col-span-12 col-span-12 py-9">
-      {/* Add newsletter form here */}
-    </div>
-    {/* Copyright */}
-    <div className="border-t border-slate-700">
-      <div className="md:text-left text-center container mx-auto py-7 px-6">
+    <div className="lg:col-span-4 col-span-12 mt-8">
+                    <a href="/">
+                        <img
+                            src="/Soracertlogo.png"
+                            width={128}
+                            height={82}
+                            alt="soracert"
+                            className="brand-2"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                        />
+                    </a>
+                   
+                </div>
+    
+  </div>
+
+
+
+  {/* Copyright */}
+  <div className="border-t border-slate-700">
+  <div className="text-center md:text-right container mx-auto py-7 px-6">
+   
         <p className="mb-0">
           &copy; {year}, All Rights Reserved.
         </p>
       </div>
     </div>
-  </div>
-</footer>
+
+
+    
+        </footer>
 
         
       )
