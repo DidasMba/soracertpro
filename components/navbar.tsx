@@ -43,7 +43,7 @@ const NavBar = () => {
           </Link>
           <div className="relative group">
             <span className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
-              ABOUT US
+              About Us
             </span>
             <div className="absolute left-0 mt-2  w-[220px] py-2 rounded-lg shadow-lg bg-white hidden group-hover:block z-50">
               <ul className="py-2 text-sm text-gray-700">
@@ -69,10 +69,10 @@ const NavBar = () => {
             </div>
           </div>
           <Link href="/partners" className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
-            PARTNERS
+            Evenement
           </Link>
           <Link href="/contact" className="h-10 px-3 py-3 rounded-md text-xs font-bold transition-colors focus:outline-none  bg-transparent">
-            CONTACT
+            Programmes
           </Link>
         </ul>
         <a className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200" href="#">Sign In</a>
