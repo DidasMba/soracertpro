@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "@headlessui/react": "^2.1.0",
-    "@heroicons/react": "^2.1.4",
+    "@heroicons/react": "^2.1.5",
+    "@mui/icons-material": "^5.16.5",
+    "@mui/material": "^5.16.5",
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "aos": "^2.3.4",
