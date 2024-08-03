@@ -42,7 +42,7 @@ const HomePage = () => {
         {slides.map((slide, index) => (
           <div key={slide.id}>
             <div
-              className={`slide-container p-2 h-auto sm:h-screen flex justify-start text-left ${index === activeSlide ? 'active' : ''}`}
+              className={`slide-container p-2 h-[80vh]  flex justify-start text-left ${index === activeSlide ? 'active' : ''}`}
               style={{
                 backgroundImage: `url(${slide.imageUrl})`,
               }}
@@ -64,7 +64,40 @@ const HomePage = () => {
             </div>
           </div>
         ))}
+    
       </Slider>
+      
+	
+					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 top-[-110px]">
+						<div className="model-search-content">
+              <div className=" flex p-4  md:p-[53px] justify-center items-center">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
+          <div className="text-center">
+            <p className="text-2xl font-bold text-[#05264f]">20.5 million</p>
+            <p className="text-muted-foreground font-extralight">Students since our start in 1997</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-[#05264f]">29,700</p>
+            <p className="text-muted-foreground font-extralight">Educators around the world</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-[#05264f]">11,700</p>
+            <p className="text-muted-foreground font-extralight">Organizations offering our courses</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-[#05264f]">190</p>
+            <p className="text-muted-foreground font-extralight">Countries where we serve learners</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-[#05264f]">95%</p>
+            <p className="text-muted-foreground font-extralight">Students obtained a job or new educational opportunity</p>
+          </div>
+        </div>
+      </div>
+					
+						</div>
+					</div>
+
     </section>
   );
 };
