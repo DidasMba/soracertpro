@@ -54,8 +54,8 @@ const HomePage = () => {
                   <p className="mt-4 max-w-2xl text-xl py-2 font-light" data-aos="zoom-out" data-aos-delay="200">
                     {slide.description}
                   </p>
-                  <button className="w-[157px] py-2 rounded-4xl bg-[#fff] flex flex-row items-start justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
-                    <a className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1]">
+                  <button className="w-[157px] py-2 rounded-4xl  bg-customHoverBlue flex flex-row items-start justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
+                    <a className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1] ">
                       Learn more
                     </a>
                   </button>
