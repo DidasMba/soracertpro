@@ -1,21 +1,26 @@
 import Image from "next/image";
 import LandiingPage from "@/components/homepage/components/landingpage";
 import FrameComponent6 from "@/components/homepage/components/aboutus";
-import Mission from "@/components/homepage/components/mission";
 import Client from "@/components/homepage/components/client";
 import Blog from '@/components/homepage/components/blog'
 import UpcomingEvents from "@/components/homepage/components/events";
+import SectionDegaul from "@/components/homepage/components/section-degaul";
+import DegaulSection from "@/components/homepage/components/degaul-section";
+import Description from "@/components/homepage/components/description";
 
 export default function Home() {
   return (
     <main className="">
      <LandiingPage />
      <FrameComponent6 />
-     <Mission />
      <Client />
+     <SectionDegaul />
+     <Description />
+     <DegaulSection />
      <Blog />
      <UpcomingEvents />
-  
+
+     
     </main>
   );
 }
