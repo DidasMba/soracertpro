@@ -13,7 +13,6 @@ const HomePage = () => {
       id: 1,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia placeat non, excepturi facere dolores fugit quos impedit, in minus rerum quis. Consectetur ratione nemo fugiat repudiandae corporis magnam ad!',
-      imageUrl: '/Bg-image.png',
     },
     {
       id: 2,
@@ -31,6 +30,7 @@ const HomePage = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
+  
     slidesToShow: 1,
     slidesToScroll: 1,
     beforeChange: (current:any, next:any) => setActiveSlide(next),
@@ -66,7 +66,6 @@ const HomePage = () => {
         ))}
     
       </Slider>
-      
 	
 					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 top-[-110px]">
 						<div className="model-search-content">
@@ -90,6 +89,8 @@ const HomePage = () => {
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold text-[#05264f]">95%</p>
+            
+            
             <p className="text-muted-foreground font-extralight">Students obtained a job or new educational opportunity</p>
           </div>
         </div>

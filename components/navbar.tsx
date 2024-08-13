@@ -1,18 +1,27 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { FaSearch, FaChevronDown } from 'react-icons/fa';
-
 
 import Image from 'next/image';
 import Link from 'next/link';
 
 const navigation = [
   { name: 'Accueil', href: '#', current: true },
-  { name: 'Team', href: '#', current: false, icon: <FaChevronDown /> },
+  {
+    name: 'Team',
+    href: '#',
+    current: false,
+    icon: <FaChevronDown />,
+    subItems: [
+      { name: 'Team 1', href: '#team1' },
+      { name: 'Team 2', href: '#team2' },
+      { name: 'Team 3', href: '#team3' },
+    ],
+  },
   { name: 'Projects', href: '#', current: false },
   { name: 'Événements', href: '#', current: false },
   { name: 'Programmes', href: '#', current: false },
-]
+];
 
 function classNames(...classes: (string | false | null | undefined)[]): string {
   return classes.filter(Boolean).join(' ');
