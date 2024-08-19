@@ -11,7 +11,7 @@
 }
 .model-search-content {
   background: #fff;
-  box-shadow:0 10px 40px 0px rgba(38,40,64,.2);
+  box-shadow:0 10px 40px 0px rgba(4, 221, 181, 0.864);
   position: relative;
   align-items: center;
   justify-content: center;
@@ -19,6 +19,14 @@
   border-radius: 3px;
 }
 
+.model-search-content2 {
+  background: #fff;
+  box-shadow:0 10px 40px 0px rgba(4, 221, 181, 0.864);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
 
 h1, h2, h3, h4, h5, h6, p, span, a, button, body, ul, li, input, Link, div , section{
   font-family: 'mine', sans-serif;
