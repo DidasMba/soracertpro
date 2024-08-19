@@ -80,7 +80,6 @@ export default function Example() {
               <a href="/request-demo" className="home-s8-btn main-nav-feature-btn text-center bg-customHoverBlue text-black   px-4 py-2 font-normal rounded">Se connecter</a>
             </div>
 
-
           </div>
         </div>
       </div>
