@@ -25,13 +25,13 @@ const Navbar: React.FC = () => {
         <div className="justify-start hidden md:flex md:space-x-8 rtl:space-x-reverse flex-grow">
           <ul className="flex space-x-4 md:space-x-8">
             <li>
-              <a href="#" className="block py-2 px-3 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Accueil</a>
+              <a href="#" className="block py-2 px-3 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-customHoverBlue  md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Accueil</a>
             </li>
             <li className="relative">
               <button 
                 id="mega-menu-dropdown-button" 
                 onClick={toggleDropdown} 
-                className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-customHoverBlue  dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Projets <FaChevronDown className="w-2.5 h-2.5 ms-3" />
               </button>
@@ -40,22 +40,22 @@ const Navbar: React.FC = () => {
                   <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
                     <ul className="space-y-4" aria-labelledby="mega-menu-dropdown-button">
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue ">
                           About Us
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue ">
                           Libra
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           Resources
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           Pro Version
                         </a>
                       </li>
@@ -64,22 +64,22 @@ const Navbar: React.FC = () => {
                   <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
                     <ul className="space-y-4">
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           Blog
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           Newsletter
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           Playground
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           License
                         </a>
                       </li>
@@ -88,17 +88,17 @@ const Navbar: React.FC = () => {
                   <div className="p-4">
                     <ul className="space-y-4">
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           Contact Us
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           Support Center
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                        <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
                           Terms
                         </a>
                       </li>
