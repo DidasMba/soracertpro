@@ -15,8 +15,7 @@ const Navbar: React.FC = () => {
         {/* Conteneur du logo */}
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
           <a href="#" className="flex items-center">
-            <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          <img src="/logoblack.png" alt="soracert Logo" width={100} height={100} className="h-auto w-auto" />
           </a>
         </div>
         
