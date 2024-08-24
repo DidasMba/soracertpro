@@ -16,9 +16,15 @@ const Navbar: React.FC = () => {
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
         <a href="#" className="flex items-center">
            
-            <img src="/logoblack.png" alt="soracert Logo" width={100} height={100} className="h-8" />
-       
-          </a>
+            <img src="/logoblack.png" alt="soracert Logo" width={128} height={82} className="h-8" style={{ maxWidth: '100%', height: 'auto' }} />
+            
+        </a>
+
+          
+          
+          
+          
+
         </div>
         
         {/* Conteneur des liens de navigation */}
