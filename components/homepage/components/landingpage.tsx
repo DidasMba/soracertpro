@@ -66,7 +66,6 @@ const HomePage = () => {
         ))}
     
       </Slider>
-	
 					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 top-[-110px]">
 						<div className="model-search-content">
               <div className=" flex p-4  md:p-[53px] justify-center items-center">
@@ -88,9 +87,7 @@ const HomePage = () => {
             <p className="text-muted-foreground font-extralight">Countries where we serve learners</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold text-[#05264f]">95%</p>
-            
-            
+            <p className="text-2xl font-bold text-[#05264f]">95%</p>      
             <p className="text-muted-foreground font-extralight">Students obtained a job or new educational opportunity</p>
           </div>
         </div>

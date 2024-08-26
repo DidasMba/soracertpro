@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -19,12 +20,6 @@ const Navbar: React.FC = () => {
             <img src="/logoblack.png" alt="soracert Logo" width={128} height={82} className="h-8" style={{ maxWidth: '100%', height: 'auto' }} />
             
         </a>
-
-          
-          
-          
-          
-
         </div>
         
         {/* Conteneur des liens de navigation */}
