@@ -159,7 +159,6 @@ export default function Fleets() {
       <div className='container'>
 
 <h1 className="px-10 py-6 font-bold text-3xl text-center ">Past Events</h1>
-
  
 <div className='container'>
 
