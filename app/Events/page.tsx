@@ -87,8 +87,6 @@ export default function Fleets() {
       </div>
 
       <div className='container'>
-        
-          
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}

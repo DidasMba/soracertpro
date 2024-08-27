@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
         {/* Conteneur du logo */}
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -26,7 +26,8 @@ const Navbar: React.FC = () => {
         <div className="justify-start hidden md:flex md:space-x-8 rtl:space-x-reverse flex-grow">
           <ul className="flex space-x-4 md:space-x-8">
             <li>
-              <a href="#" className="block py-2 px-3 text-customHoverBlue border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-customHoverBlue  md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Accueil</a>
+              <Link href="#homepage" className="block py-2 px-3 text-customHoverBlue border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-customHoverBlue  md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Accueil
+               </Link>
             </li>
             <li className="relative">
               <button 
