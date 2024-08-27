@@ -9,7 +9,7 @@ import pro1 from "./images/pro1.jpg";
 
 export default function Fleets() {
   return (
-    <div className='py-24'>
+    <div className='py-2'>
       <div className='container'>
         
           <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full ">  
@@ -161,7 +161,7 @@ export default function Fleets() {
     
       <div className='container'>
 
-          <h1 className="px-10 py-6 font-bold text-3xl ">Online Courses</h1>
+          <h1 className="px-10 py-6 font-bold text-3xl ">Cours en ligne</h1>
         
           <div className="ok ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full workshop-list ">  
           <a href="#" className=" px-4">Workshop</a>
@@ -238,12 +238,5 @@ export default function Fleets() {
       </div>
       
     </div>
-
-    
-
-
-
-
-
   )
 }
