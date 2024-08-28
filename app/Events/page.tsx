@@ -7,7 +7,7 @@ import pro1 from "./images/pro1.jpg";
 
 export default function Fleets() {
   return (
-    <div className='py-24'>
+    <div className='py-2'>
 
       <div className='container'>
       <div className="ok ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full workshop-list ">  

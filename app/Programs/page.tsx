@@ -42,7 +42,7 @@ export default function Fleets() {
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
             <div className='relative image-rounded'>
                     <Image
-                     className="imagepro" src={pro1} alt="Pro 1" width={500} height={500} />
+                     className="imagepro" src="/blog-2.png" alt="Pro 1" width={500} height={500} />
                      <div className="absolute bottom-0 left-0 px-4 py-2 bg-black bg-opacity-50 text-white text-sm">
                         29 June 2024 {/* Date à ajouter ici */}
                      </div>
