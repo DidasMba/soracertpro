@@ -18,8 +18,8 @@ export default function Fleets() {
     <a href="#" className="px-4">Workshop</a>
   </div>
 
-  <a href="#" className="text-black font-bold bg-customHoverBlue rounded-2xl focus:ring-4 text-sm px-2 py-1 md:px-3 md:py-1 dark:hover:bg-blue-700 focus:outline-none ml-auto">
-      Se connecter
+  <a href="#" className="text-black font-bold bg-customHoverBlue rounded-2xl focus:ring-4 text-sm px-2 py-1 md:px-3 md:py-1 focus:outline-none ml-auto">
+  Ajouter calendrier
     </a>
           </div> 
         
