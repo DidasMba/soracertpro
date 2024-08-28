@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
         <div className="justify-start hidden md:flex md:space-x-8 rtl:space-x-reverse flex-grow">
           <ul className="flex space-x-4 md:space-x-8">
             <li>
-              <Link href="#homepage" className="block py-2 px-3 text-customHoverBlue border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-customHoverBlue  md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Accueil
+              <Link href="#" className="block py-2 px-3 text-customHoverBlue border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-customHoverBlue  md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Accueil
                </Link>
             </li>
             <li className="relative">
@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
               )}
             </li>
             <li>
-              <Link href="#Events"   className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue  dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              <Link href=""   className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue  dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
               >Événements
 
               </Link>
