@@ -10,12 +10,17 @@ export default function Fleets() {
     <div className='py-2'>
 
       <div className='container'>
-      <div className="ok ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full workshop-list ">  
-          <a href="#" className=" px-4">Workshop</a>
-          <a href="#" className=" px-4">Workshop</a>
-          <a href="#" className=" px-4">Workshop</a>
-          <a href="#" className=" px-4">Workshop</a>
-         
+      <div className="ok ok relative bg-customBlue h-10 px-6 py-2  rounded-full flex items-center">
+      <div className="flex flex-grow space-x-4 text-white">
+    <a href="#" className="px-4">Workshop</a>
+    <a href="#" className="px-4">Workshop</a>
+    <a href="#" className="px-4">Workshop</a>
+    <a href="#" className="px-4">Workshop</a>
+  </div>
+
+  <a href="#" className="text-black font-bold bg-customHoverBlue rounded-2xl focus:ring-4 text-sm px-2 py-1 md:px-3 md:py-1 dark:hover:bg-blue-700 focus:outline-none ml-auto">
+      Se connecter
+    </a>
           </div> 
         
         
