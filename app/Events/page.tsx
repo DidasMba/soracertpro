@@ -12,18 +12,17 @@ export default function Fleets() {
       <div className='container'>
       <div className="ok ok relative bg-customBlue h-10 px-6 py-2  rounded-full flex items-center">
       <div className="flex flex-grow space-x-4 text-white">
-    <a href="#" className="px-4">Workshop</a>
-    <a href="#" className="px-4">Workshop</a>
-    <a href="#" className="px-4">Workshop</a>
-    <a href="#" className="px-4">Workshop</a>
+    <a href="#" className="px-4">Billetterie</a>
+    <a href="#" className="px-4">Concours</a>
+    <a href="#" className="px-4">Contenu Multimédia</a>
+    <a href="#" className="px-4">Sponsors et Partenaires
+    </a>
   </div>
 
   <a href="#" className="text-black font-bold bg-customHoverBlue rounded-2xl focus:ring-4 text-sm px-2 py-1 md:px-3 md:py-1 focus:outline-none ml-auto">
-  Ajouter calendrier
+  Programme et Agenda
     </a>
           </div> 
-        
-        
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
             <div className='relative image-rounded'>
