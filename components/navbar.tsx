@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         </div>
         
         {/* Conteneur des liens de navigation */}
-        <div className="justify-start hidden md:flex md:space-x-8 rtl:space-x-reverse flex-grow">
+        <div className="justify-start hidden  md:flex md:space-x-8 rtl:space-x-reverse flex-grow">
           <ul className="flex space-x-4 md:space-x-8">
             <li>
               <Link href="#" className="block py-2 px-3 text-customHoverBlue border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-customHoverBlue  md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Accueil
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                 Projets <FaChevronDown className="w-2.5 h-2.5 ms-3" />
               </button>
               {isDropdownOpen && (
-                <div id="mega-menu-dropdown" className="absolute z-10 grid w-auto md:w-[500px] md:top-10 md:right-100 grid-cols-2 text-sm bg-white border border-gray-100 shadow-md dark:border-gray-700 md:grid-cols-3 font-normal rounded dark:bg-gray-700">
+                <div id="mega-menu-dropdown" className="absolute z-10 grid w-auto md:w-[500px] md:top-10 md:right-100 grid-cols-2 text-sm border border-gray-100 bg-gray-100 shadow-md dark:border-gray-700 md:grid-cols-3 font-normal rounded dark:bg-gray-700">
                   <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
                     <ul className="space-y-4" aria-labelledby="mega-menu-dropdown-button">
                       <li>
