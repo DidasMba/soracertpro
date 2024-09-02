@@ -6,14 +6,14 @@ export default function Fleets() {
   return (
     <div className='py-2'>
       <div className='container mx-auto px-4'>
-      <div className="relative bg-customBlue h-10 px-4 py-2 rounded-full flex items-center">
-  <div className="flex flex-grow space-x-2 text-white">
-    <a href="#" className="px-2 sm:px-4">Billetterie</a>
-    <a href="#" className="px-2 sm:px-4">Concours</a>
-    <a href="#" className="px-2 sm:px-4">Contenu Multimédia</a>
-    <a href="#" className="px-2 sm:px-4">Sponsors et Partenaires</a>
+      <div className="relative bg-customBlue min-h-10 h-auto px-2 sm:px-4 py-2 rounded-full flex flex-col sm:flex-row items-start sm:items-center">
+  <div className="flex flex-col items-center justify-center sm:flex-row flex-grow space-y-1 sm:space-y-0 sm:space-x-2 text-white">
+    <a href="#" className="px-2 sm:px-4 text-xs sm:text-sm">Billetterie</a>
+    <a href="#" className="px-2 sm:px-4 text-xs sm:text-sm">Concours</a>
+    <a href="#" className="px-2 sm:px-4 text-xs sm:text-sm">Contenu Multimédia</a>
+    <a href="#" className="px-2 sm:px-4 text-xs sm:text-sm">Sponsors et Partenaires</a>
   </div>
-  <a href="#" className="text-black font-bold bg-customHoverBlue rounded-2xl focus:ring-4 text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-1 focus:outline-none ml-auto">
+  <a href="#" className="text-black font-bold bg-customHoverBlue rounded-2xl focus:ring-4 text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-1 focus:outline-none mt-2 sm:mt-0">
     Programme et Agenda
   </a>
 </div>
