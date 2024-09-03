@@ -163,12 +163,14 @@ export default function Fleets() {
 
           <h1 className="px-10 py-6 font-bold text-3xl ">Cours en ligne</h1>
         
-          <div className="ok ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full workshop-list ">  
-          <a href="#" className=" px-4">Workshop</a>
-          <a href="#" className=" px-4">Workshop</a>
-          <a href="#" className=" px-4">Workshop</a>
-         
-          </div> 
+          <div className="ok relative bg-customBlue h-10 px-4 md:px-6 py-2 text-white rounded-full workshop-list">
+  <div className="flex flex-wrap justify-center md:justify-start">
+    <a href="#" className="px-2 md:px-4">Workshop</a>
+    <a href="#" className="px-2 md:px-4">Workshop</a>
+    <a href="#" className="px-2 md:px-4">Workshop Merci</a>
+  </div>
+</div>
+
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
             <div className=''> {/* Div contenant la generalite le texet est l image on peut y ajouter rounded-2xl  et shadow-lg dans className */}
