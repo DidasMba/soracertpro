@@ -3,22 +3,22 @@ import React from 'react';
 
 export default function Fleets() {
   const imagesSection1 = [
-    "/bien.jpg",
-    "/bien2.jpg",
-    "/bien3.jpg",
-  ]; // Images pour la première section
+    { src: "/bien.jpg", title: "Premier titre pour la première image", text: "Premier texte pour la première image" },
+    { src: "/bien2.jpg", title: "Deuxième titre pour la deuxième image", text: "Deuxième texte pour la deuxième image" },
+    { src: "/bien3.jpg", title: "Troisième titre pour la troisième image", text: "Troisième texte pour la troisième image" },
+  ]; // Images, titres et textes pour la première section
 
   const imagesSection2 = [
-    "/bien4.JPG",
-    "/latest property 1.png",
-    "/bien5.JPG",
-  ]; // Images pour la deuxième section
+    { src: "/bien4.JPG", title: "Premier titre pour la première image", text: "Premier texte pour la première image" },
+    { src: "/latest property 1.png", title: "Deuxième titre pour la deuxième image", text: "Deuxième texte pour la deuxième image" },
+    { src: "/bien5.JPG", title: "Troisième titre pour la troisième image", text: "Troisième texte pour la troisième image" },
+  ]; // Images, titres et textes pour la deuxième section
 
   const imagesSection3 = [
-    "/blog-1.png",
-    "/blog-2.png",
-    "/blog-3.png",
-  ]; // Images pour la troisième section
+    { src: "/blog-1.png", title: "Premier titre pour la première image", text: "Premier texte pour la première image" },
+    { src: "/blog-2.png", title: "Deuxième titre pour la deuxième image", text: "Deuxième texte pour la deuxième image" },
+    { src: "/blog-3.png", title: "Troisième titre pour la troisième image", text: "Troisième texte pour la troisième image" },
+  ]; // Images, titres et textes pour la troisième section
 
   return (
     <div className='py-2'>
@@ -28,13 +28,13 @@ export default function Fleets() {
           <a href="#">Workshop</a>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
-          {imagesSection1.map((image, index) => (
+          {imagesSection1.map((item, index) => (
             <div key={index} className=''>  {/*rounded-2xl shadow-lg Code pour le rounded et shadowe */}
               <div className='relative image-rounded overflow-hidden'>
                 <div className="w-full h-64 relative">
                   <Image
                     className="imagepro object-cover"
-                    src={image}
+                    src={item.src}
                     alt={`Pro ${index + 1}`}
                     layout="fill"
                   />
@@ -49,9 +49,9 @@ export default function Fleets() {
                 </div>
               </div>
               <div className="px-6 py-4">
-                <div className="texteone font-bold text-xl mb-2">The Coldest Sunset</div>
+                <div className="texteone font-bold text-xl mb-2">{item.title}</div>
                 <p className="text-gray-700 text-base">
-                  Lo ipsum dolor sit amet, consectetur adipisicing.
+                  {item.text}
                 </p>
               </div>
             </div>
@@ -65,14 +65,13 @@ export default function Fleets() {
           <a href="#">Workshop</a>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
-          {imagesSection2.map((image, index) => (
+          {imagesSection2.map((item, index) => (
             <div key={index} className=''>   {/*rounded-2xl shadow-lg Code pour le rounded et shadowe */}
-              {/* Code similaire pour afficher l'image */}
               <div className='relative image-rounded overflow-hidden'>
                 <div className="w-full h-64 relative">
                   <Image
                     className="imagepro object-cover"
-                    src={image}
+                    src={item.src}
                     alt={`Pro ${index + 1}`}
                     layout="fill"
                   />
@@ -87,12 +86,11 @@ export default function Fleets() {
                 </div>
               </div>
               <div className="px-6 py-4">
-                <div className="texteone font-bold text-xl mb-2">The Coldest Sunset</div>
+                <div className="texteone font-bold text-xl mb-2">{item.title}</div>
                 <p className="text-gray-700 text-base">
-                  Lo ipsum dolor sit amet, consectetur adipisicing.
+                  {item.text}
                 </p>
               </div>
-              
             </div>
           ))}
         </div>
@@ -109,14 +107,13 @@ export default function Fleets() {
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
-          {imagesSection3.map((image, index) => (
-            <div key={index} className=''>
-              {/*rounded-2xl shadow-lg Code pour le rounded et shadowe */}
+          {imagesSection3.map((item, index) => (
+            <div key={index} className='rounded-2xl shadow-lg'>
               <div className='relative image-rounded overflow-hidden'>
                 <div className="w-full h-64 relative">
                   <Image
                     className="imagepro object-cover"
-                    src={image}
+                    src={item.src}
                     alt={`Pro ${index + 1}`}
                     layout="fill"
                   />
@@ -131,9 +128,9 @@ export default function Fleets() {
                 </div>
               </div>
               <div className="px-6 py-4">
-                <div className="texteone font-bold text-xl mb-2">The Coldest Sunset</div>
+                <div className="texteone font-bold text-xl mb-2">{item.title}</div>
                 <p className="text-gray-700 text-base">
-                  Lo ipsum dolor sit amet, consectetur adipisicing.
+                  {item.text}
                 </p>
               </div>
             </div>
