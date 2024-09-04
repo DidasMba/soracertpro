@@ -2,30 +2,39 @@ import Image from "next/image";
 import React from 'react';
 
 export default function Fleets() {
-  const images = [
-    "/blog-1.png",
+  const imagesSection1 = [
+    "/bien.jpg",
     "/bien2.jpg",
-    "/blog-3.png",
+    "/bien3.jpg",
+  ]; // Images pour la première section
+
+  const imagesSection2 = [
+    "/bien4.JPG",
+    "/latest property 1.png",
+    "/bien5.JPG",
+  ]; // Images pour la deuxième section
+
+  const imagesSection3 = [
     "/blog-1.png",
+    "/blog-2.png",
     "/blog-3.png",
-    "/bien4.JPG"
-  ]; // Liste des images
+  ]; // Images pour la troisième section
 
   return (
     <div className='py-2'>
       <div className='container'>
+        {/* Première section */}
         <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full">
           <a href="#">Workshop</a>
         </div>
-
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
-          {images.map((image, index) => (
-            <div key={index} className='rounded-2xl shadow-lg'>
+          {imagesSection1.map((image, index) => (
+            <div key={index} className=''>  {/*rounded-2xl shadow-lg Code pour le rounded et shadowe */}
               <div className='relative image-rounded overflow-hidden'>
                 <div className="w-full h-64 relative">
                   <Image
                     className="imagepro object-cover"
-                    src={image} // Utilisation de l'image du tableau
+                    src={image}
                     alt={`Pro ${index + 1}`}
                     layout="fill"
                   />
@@ -50,19 +59,20 @@ export default function Fleets() {
         </div>
       </div>
 
+      {/* Deuxième section */}
       <div className='container'>
         <div className="ok relative bg-customBlue h-10 px-6 py-2 text-white rounded-full">
           <a href="#">Workshop</a>
         </div>
-
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
-          {images.map((image, index) => (
-            <div key={index} className='rounded-2xl shadow-lg'>
+          {imagesSection2.map((image, index) => (
+            <div key={index} className=''>   {/*rounded-2xl shadow-lg Code pour le rounded et shadowe */}
+              {/* Code similaire pour afficher l'image */}
               <div className='relative image-rounded overflow-hidden'>
                 <div className="w-full h-64 relative">
                   <Image
                     className="imagepro object-cover"
-                    src={image} // Utilisation de l'image du tableau
+                    src={image}
                     alt={`Pro ${index + 1}`}
                     layout="fill"
                   />
@@ -82,11 +92,13 @@ export default function Fleets() {
                   Lo ipsum dolor sit amet, consectetur adipisicing.
                 </p>
               </div>
+              
             </div>
           ))}
         </div>
       </div>
 
+      {/* Troisième section */}
       <div className='container'>
         <h1 className="px-10 py-6 font-bold text-3xl">Cours en ligne</h1>
         <div className="ok relative bg-customBlue md:h-10 h-auto px-4 py-4 md:py-2 text-white rounded-full workshop-list">
@@ -97,18 +109,20 @@ export default function Fleets() {
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
-          {[...images].map((image, index) => (
-            <div key={index} className='rounded-2xl shadow-lg'>
-              <div className='relative image-rounded'>
-                <Image
-                  className="imagepro"
-                  src={image}
-                  alt={`Pro ${index + 1}`}
-                  width={500}
-                  height={500}
-                />
+          {imagesSection3.map((image, index) => (
+            <div key={index} className=''>
+              {/*rounded-2xl shadow-lg Code pour le rounded et shadowe */}
+              <div className='relative image-rounded overflow-hidden'>
+                <div className="w-full h-64 relative">
+                  <Image
+                    className="imagepro object-cover"
+                    src={image}
+                    alt={`Pro ${index + 1}`}
+                    layout="fill"
+                  />
+                </div>
                 <div className="absolute bottom-0 left-0 px-4 py-2 bg-black bg-opacity-50 text-white text-sm">
-                  29 June 2024 {/* Date à ajouter ici */}
+                  29 June 2024
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 flex justify-end pb-4 pr-3">
                   <span className="w-2 h-2 bg-white rounded-full mx-1"></span>
