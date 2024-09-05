@@ -19,24 +19,27 @@ export default function Fleets() {
 const imagesSection3 = [
     {
       src: "/blog-1.png",
-      title: "Premier titre pour la première image",
+      title: "Premier titre",
       text: "Premier texte pour la première image",
       rating: 4.8,
       reviews: 104683,
+      text2: "Bigineer • Professional Certificate • 3 months",
     },
     {
       src: "/blog-2.png",
-      title: "Deuxième titre pour la deuxième image",
+      title: "Deuxième titre",
       text: "Deuxième texte pour la deuxième image",
       rating: 4.6,
       reviews: 5000,
+      text2: "Bigineer • Professional Certificate • 2 months",
     },
     {
       src: "/blog-3.png",
-      title: "Troisième titre pour la troisième image",
+      title: "Troisième titre ",
       text: "Troisième texte pour la troisième image",
       rating: 4.7,
       reviews: 7000,
+      text2: "Bigineer • Professional Certificate • 6 months",
     },
   ]; // Images, titres, textes, évaluations et critiques pour la troisième section
 
@@ -154,9 +157,12 @@ const imagesSection3 = [
                   {item.text}
                 </p>
                 <div className="flex items-center mt-6">
-                <FaStar className="text-yellow-500" />
+                <FaStar className="text-blue-700" />
                 <span className="ml-2">{item.rating} ({item.reviews} avis)</span>
               </div>
+              <p className="text-gray-700 text-base">
+                  {item.text2}
+                </p>
               </div>
             </div>
           ))}
