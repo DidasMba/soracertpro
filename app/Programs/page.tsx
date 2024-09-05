@@ -1,24 +1,44 @@
 import Image from "next/image";
 import React from 'react';
+import { FaStar } from "react-icons/fa6";
+
+
 
 export default function Fleets() {
   const imagesSection1 = [
-    { src: "/bien.jpg", title: "Premier titre pour la première image", text: "Premier texte pour la première image" },
-    { src: "/bien2.jpg", title: "Deuxième titre pour la deuxième image", text: "Deuxième texte pour la deuxième image" },
-    { src: "/bien3.jpg", title: "Troisième titre pour la troisième image", text: "Troisième texte pour la troisième image" },
+    { src: "/bien.jpg", title: "Premier titre ", text: "Premier texte pour la première image" },
+    { src: "/bien2.jpg", title: "Deuxième titre ", text: "Deuxième texte pour la deuxième image" },
+    { src: "/bien3.jpg", title: "Troisième titre ", text: "Troisième texte pour la troisième image" },
   ]; // Images, titres et textes pour la première section
 
   const imagesSection2 = [
-    { src: "/bien4.JPG", title: "Premier titre pour la première image", text: "Premier texte pour la première image" },
-    { src: "/latest property 1.png", title: "Deuxième titre pour la deuxième image", text: "Deuxième texte pour la deuxième image" },
-    { src: "/bien5.JPG", title: "Troisième titre pour la troisième image", text: "Troisième texte pour la troisième image" },
+    { src: "/bien4.JPG", title: "Premier titre ", text: "Premier texte pour la première image" },
+    { src: "/latest property 1.png", title: "Deuxième titre ", text: "Deuxième texte pour la deuxième image" },
+    { src: "/bien5.JPG", title: "Troisième titre ", text: "Troisième texte pour la troisième image" },
   ]; // Images, titres et textes pour la deuxième section
-
-  const imagesSection3 = [
-    { src: "/blog-1.png", title: "Premier titre pour la première image", text: "Premier texte pour la première image" },
-    { src: "/blog-2.png", title: "Deuxième titre pour la deuxième image", text: "Deuxième texte pour la deuxième image" },
-    { src: "/blog-3.png", title: "Troisième titre pour la troisième image", text: "Troisième texte pour la troisième image" },
-  ]; // Images, titres et textes pour la troisième section
+const imagesSection3 = [
+    {
+      src: "/blog-1.png",
+      title: "Premier titre pour la première image",
+      text: "Premier texte pour la première image",
+      rating: 4.8,
+      reviews: 104683,
+    },
+    {
+      src: "/blog-2.png",
+      title: "Deuxième titre pour la deuxième image",
+      text: "Deuxième texte pour la deuxième image",
+      rating: 4.6,
+      reviews: 5000,
+    },
+    {
+      src: "/blog-3.png",
+      title: "Troisième titre pour la troisième image",
+      text: "Troisième texte pour la troisième image",
+      rating: 4.7,
+      reviews: 7000,
+    },
+  ]; // Images, titres, textes, évaluations et critiques pour la troisième section
 
   return (
     <div className='py-2'>
@@ -53,6 +73,7 @@ export default function Fleets() {
                 <p className="text-gray-700 text-base">
                   {item.text}
                 </p>
+                
               </div>
             </div>
           ))}
@@ -132,6 +153,10 @@ export default function Fleets() {
                 <p className="text-gray-700 text-base">
                   {item.text}
                 </p>
+                <div className="flex items-center mt-6">
+                <FaStar className="text-yellow-500" />
+                <span className="ml-2">{item.rating} ({item.reviews} avis)</span>
+              </div>
               </div>
             </div>
           ))}
