@@ -1,30 +1,33 @@
 import Image from "next/image";
 import React from 'react';
 import pro1 from "./images/pro1.jpg";
-import { FaStar, FaMapMarkerAlt, FaCalendarAlt, FaShareAlt, FaHeart } from "react-icons/fa";
+import {FaMapMarkerAlt, FaCalendarAlt, FaShareAlt, FaHeart, FaDollarSign } from "react-icons/fa";
 
-
+// Ajoute le champ pour le prix dans les données des événements
 const events = [
   {
     src: "/so4.jpg",
     date: "29 June 2024",
     title: "Nom de l'événement 1",
     location: "Localisation 1",
-    rating: 4.5
+    rating: 4.5,
+    price: "From 80 $"  // Ajoute le prix ici
   },
   {
     src: "/so1.jpg",
     date: "30 June 2024",
     title: "Nom de l'événement 2",
     location: "Localisation 2",
-    rating: 4.7
+    rating: 4.7,
+    price: "Free"  // Ajoute le prix ici
   },
   {
     src: "/bien.jpg",
     date: "01 July 2024",
     title: "Nom de l'événement 3",
     location: "Localisation 3",
-    rating: 4.8
+    rating: 4.8,
+    price: "From 50 $"  // Ajoute le prix ici
   }
 ];
 
@@ -60,9 +63,9 @@ export default function Fleets() {
                 <div className="absolute bottom-0 left-0 px-2 sm:px-4 py-2 bg-black bg-opacity-50 text-white text-xs sm:text-sm flex items-center">
                   <FaCalendarAlt className="mr-2" /> {event.date}
                 </div>
-                <div className="absolute bottom-0 right-0 px-4 py-2 flex space-x-3">
-                  <FaShareAlt className="text-white" />
-                  <FaHeart className="text-white" />
+                <div className="absolute bottom-0 right-0 px-4 py-2 flex space-x-4">
+                  <FaShareAlt className="text-white text-3xl" />
+                  <FaHeart className="text-white text-3xl" />
                 </div>
               </div>
               <div className="px-4 sm:px-6 py-4">
@@ -70,9 +73,10 @@ export default function Fleets() {
                 <p className="text-gray-700 text-base flex items-center">
                   <FaMapMarkerAlt className="mr-2" /> {event.location}
                 </p>
-                <div className="flex items-center mt-4">
-                  <span className="ml-2">{event.rating} <FaStar className="text-yellow-500" /></span>
-                </div>
+                <p className="text-gray-700 text-base flex items-center mt-2">
+                  <FaDollarSign className="mr-2" /> {event.price}
+                </p>
+               
               </div>
             </div>
           ))}
@@ -103,3 +107,4 @@ export default function Fleets() {
     </div>
   );
 }
+
