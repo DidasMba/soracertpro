@@ -1,13 +1,14 @@
 import Image from "next/image";
 import React from 'react';
 import pro1 from "./images/pro1.jpg";
-import {FaMapMarkerAlt, FaCalendarAlt, FaShareAlt, FaHeart, FaDollarSign } from "react-icons/fa";
+import { FaMapMarkerAlt, FaCalendarAlt, FaShareAlt, FaHeart, FaDollarSign, FaClock } from "react-icons/fa";
 
-// Ajoute le champ pour le prix dans les données des événements
+// Ajoute le champ pour l'heure dans les données des événements
 const events = [
   {
     src: "/so4.jpg",
     date: "29 June 2024",
+    time: "18:00",  // Ajoute l'heure ici
     title: "Nom de l'événement 1",
     location: "Localisation 1",
     rating: 4.5,
@@ -16,6 +17,7 @@ const events = [
   {
     src: "/so1.jpg",
     date: "30 June 2024",
+    time: "15:00",  // Ajoute l'heure ici
     title: "Nom de l'événement 2",
     location: "Localisation 2",
     rating: 4.7,
@@ -24,10 +26,21 @@ const events = [
   {
     src: "/bien.jpg",
     date: "01 July 2024",
+    time: "20:00",  // Ajoute l'heure ici
     title: "Nom de l'événement 3",
     location: "Localisation 3",
     rating: 4.8,
     price: "From 50 $"  // Ajoute le prix ici
+  },
+  // Ajoute un quatrième événement
+  {
+    src: "/so3.jpg",
+    date: "05 July 2024",
+    time: "10:00",  // Ajoute l'heure ici
+    title: "Nom de l'événement 4",
+    location: "Localisation 4",
+    rating: 4.6,
+    price: "From 70 $"  // Ajoute le prix ici
   }
 ];
 
@@ -48,10 +61,20 @@ export default function Fleets() {
           </a>
         </div>
 
+        {/* Explore more events */}
+        <div className="flex items-center mt-10 mb-5 space-x-2 justify-end">
+  <span className="text-lg">Explore more events</span>
+  <svg id="chevron-right-chunky_svg__eds-icon--chevron-right-chunky_svg" x="0" y="0" viewBox="0 0 24 24" xmlSpace="preserve" className="w-5 h-5">
+    <path id="chevron-right-chunky_svg__eds-icon--chevron-right-chunky_base" fillRule="evenodd" clipRule="evenodd" d="M10.2 17l5-5-5-5-1.4 1.4 3.6 3.6-3.6 3.6z"></path>
+  </svg>
+</div>
+
+
+
         {/* Cartes d'événements */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
           {events.map((event, index) => (
-            <div key={index} className=''>
+            <div key={index} className='rounded-2xl shadow-lg'>
               <div className='relative image-rounded'>
                 <Image
                   className="imagepro"
@@ -62,6 +85,9 @@ export default function Fleets() {
                 />
                 <div className="absolute bottom-0 left-0 px-2 sm:px-4 py-2 bg-black bg-opacity-50 text-white text-xs sm:text-sm flex items-center">
                   <FaCalendarAlt className="mr-2" /> {event.date}
+                  <span className="ml-4 flex items-center">
+                    <FaClock className="mr-2" /> {event.time}
+                  </span>
                 </div>
                 <div className="absolute bottom-0 right-0 px-4 py-2 flex space-x-4">
                   <FaShareAlt className="text-white text-3xl" />
@@ -76,7 +102,6 @@ export default function Fleets() {
                 <p className="text-gray-700 text-base flex items-center mt-2">
                   <FaDollarSign className="mr-2" /> {event.price}
                 </p>
-               
               </div>
             </div>
           ))}
@@ -107,4 +132,3 @@ export default function Fleets() {
     </div>
   );
 }
-
