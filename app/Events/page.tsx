@@ -9,7 +9,7 @@ const events = [
     src: "/so4.jpg",
     date: "29 June 2024",
     time: "18:00",  // Ajoute l'heure ici
-    title: "Nom de l'événement 1",
+    title: "Kinshasa",
     location: "Localisation 1",
     rating: 4.5,
     price: "From 80 $"  // Ajoute le prix ici
@@ -28,7 +28,7 @@ const events = [
     date: "01 July 2024",
     time: "20:00",  // Ajoute l'heure ici
     title: "Nom de l'événement 3",
-    location: "Localisation 3",
+    location: "Lubumbashi",
     rating: 4.8,
     price: "From 50 $"  // Ajoute le prix ici
   },
@@ -62,12 +62,12 @@ export default function Fleets() {
         </div>
 
         {/* Explore more events */}
-        <div className="flex items-center mt-10 mb-5 space-x-2 justify-end">
+        <a href="/events" className="flex items-center mt-10 mb-5 space-x-2 justify-end">
   <span className="text-lg">Explore more events</span>
   <svg id="chevron-right-chunky_svg__eds-icon--chevron-right-chunky_svg" x="0" y="0" viewBox="0 0 24 24" xmlSpace="preserve" className="w-5 h-5">
     <path id="chevron-right-chunky_svg__eds-icon--chevron-right-chunky_base" fillRule="evenodd" clipRule="evenodd" d="M10.2 17l5-5-5-5-1.4 1.4 3.6 3.6-3.6 3.6z"></path>
   </svg>
-</div>
+</a>
 
 
 
