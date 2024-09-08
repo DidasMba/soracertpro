@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
                 onClick={toggleDropdown} 
                 className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue  dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Projets <FaChevronDown className="w-2.5 h-2.5 ms-3" />
+                Ressources <FaChevronDown className="w-2.5 h-2.5 ms-3" />
               </button>
               {isDropdownOpen && (
                 <div id="mega-menu-dropdown" className="absolute z-10 grid w-auto md:w-[500px] md:top-10 md:right-100 grid-cols-2 text-sm border border-gray-100 bg-gray-100 shadow-md dark:border-gray-700 md:grid-cols-3 font-normal rounded dark:bg-gray-700">
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
                     <ul className="space-y-4" aria-labelledby="mega-menu-dropdown-button">
                       <li>
                         <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue ">
-                          About Us
+                          Blog
                         </a>
                       </li>
                       <li>
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
                       </li>
                       <li>
                         <a href="#" className="text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
-                          Resources
+                        Ressources
                         </a>
                       </li>
                       <li>
@@ -122,6 +122,11 @@ const Navbar: React.FC = () => {
             <li>
               <Link href="/Programs" className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
                 Programmes
+              </Link>
+            </li>
+            <li>
+              <Link href="/Programs" className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+              Adhésion
               </Link>
             </li>
           </ul>

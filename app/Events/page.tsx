@@ -49,7 +49,7 @@ export default function Fleets() {
     <div className='py-2'>
       <div className='container mx-auto px-4'>
         {/* Barre de navigation */}
-        <div className="relative bg-customBlue min-h-10 h-auto px-2 sm:px-4 py-2 rounded-full flex flex-col sm:flex-row items-center justify-center">
+        <div className="ok relative bg-customBlue min-h-10 h-auto px-2 sm:px-4 py-2 rounded-full flex flex-col sm:flex-row items-center justify-center">
           <div className="flex flex-col sm:flex-row flex-grow items-center sm:items-center text-center space-y-1 sm:space-y-0 sm:space-x-2 text-white">
             <a href="#" className="px-2 sm:px-4 text-xs sm:text-sm">Billetterie</a>
             <a href="#" className="px-2 sm:px-4 text-xs sm:text-sm">Concours</a>
