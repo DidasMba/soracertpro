@@ -47,17 +47,17 @@ const Navbar: React.FC = () => {
                     <ul className="space-y-4" aria-labelledby="mega-menu-dropdown-button">
                       <li>
                         <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue ">
-                          Blog
+                        Adhésion
                         </a>
                       </li>
                       <li>
                         <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue ">
-                          Libra
+                          Blog
                         </a>
                       </li>
                       <li>
                         <a href="#" className="text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue">
-                        Ressources
+                        Partenaire
                         </a>
                       </li>
                       <li>
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link href="/Programs" className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
-              Adhésion
+              Carrière
               </Link>
             </li>
           </ul>
