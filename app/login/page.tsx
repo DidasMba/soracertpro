@@ -22,7 +22,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+      <div className="bg-white shadow-lg rounded-3xl p-8 max-w-md w-full">
         <h3 className="text-2xl font-semibold text-center mb-6">Welcome back</h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -32,7 +32,7 @@ const Login = () => {
             <input
               type="email"
               placeholder="e.g example@email.com"
-              className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="mt-1 p-3 w-full border border-gray-300 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               id="session-email-input"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -52,7 +52,7 @@ const Login = () => {
             <input
               type="password"
               placeholder="Enter password"
-              className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="mt-1 p-3 w-full border border-gray-300 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               id="session-password-input"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -62,7 +62,7 @@ const Login = () => {
 
           <button
             type="submit"
-            className="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 mt-1"
+            className="w-full bg-indigo-600 text-white py-3 rounded-full hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 mt-1"
           >
             Sign in
           </button>
@@ -87,4 +87,3 @@ const Login = () => {
 };
 
 export default Login;
-
