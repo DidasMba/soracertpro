@@ -124,11 +124,11 @@ const Navbar: React.FC = () => {
                 Programmes
               </Link>
             </li>
-            {/*<li> */}
+            {/* <li>
               <Link href="/career" className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
               Carrière
               </Link>
-            {/* </li> */}
+            </li> */}
           </ul>
         </div>
         {/* Boutons Login et Sign up */}
