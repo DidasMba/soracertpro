@@ -157,8 +157,10 @@ const imagesSection3 = [
                   {item.text}
                 </p>
                 <div className="flex items-center mt-6">
+
                 <FaStar className="text-blue-700" />
-                <span className="ml-2">{item.rating} ({item.reviews} avis)</span>
+        
+                <span className="ml-2">{item.rating}  ({item.reviews} avis)</span>
               </div>
               <p className="text-gray-700 text-base">
                   {item.text2}
