@@ -72,23 +72,23 @@ const HomePage = () => {
     <div className="flex p-4 md:p-[53px] justify-center items-center">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-gray-300">
         <div className="text-center py-4 md:py-0 md:px-4">
-          <p className="text-2xl font-bold text-[#05264f]">3000</p>
+          <p className="text-3xl font-bold text-[#05264f]">3000</p>
           <p className="text-muted-foreground font-extralight">Etudiants depuis notre création en 2022</p>
         </div>
         <div className="text-center py-4 md:py-0 md:px-4">
-          <p className="text-2xl font-bold text-[#05264f]">1000</p>
+          <p className="text-3xl font-bold text-[#05264f]">1000</p>
           <p className="text-muted-foreground font-extralight">Éducateurs du monde entier</p>
         </div>
         <div className="text-center py-4 md:py-0 md:px-4">
-          <p className="text-2xl font-bold text-[#05264f]">100</p>
+          <p className="text-3xl font-bold text-[#05264f]">100</p>
           <p className="text-muted-foreground font-extralight">Organismes proposant nos cours</p>
         </div>
         <div className="text-center py-4 md:py-0 md:px-4">
-          <p className="text-2xl font-bold text-[#05264f]">190</p>
+          <p className="text-3xl font-bold text-[#05264f]">190</p>
           <p className="text-muted-foreground font-extralight">Pays où nous servons les apprenants</p>
         </div>
         <div className="text-center py-4 md:py-0 md:px-4">
-          <p className="text-2xl font-bold text-[#05264f]">95%</p>
+          <p className="text-3xl font-bold text-[#05264f]">90%</p>
           <p className="text-muted-foreground font-extralight">Etudiants ont obtenu un emploi ou une nouvelle possibilité de formation</p>
         </div>
       </div>
