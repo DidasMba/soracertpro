@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@font-face {
-  font-family: "mine";
-  src: url("/Poppins/Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
 .model-search-content {
   background: #fff;
-  box-shadow:0 10px 40px 0px rgba(4, 221, 181, 0.864);
+  box-shadow: 0 10px 40px 0px rgba(4, 221, 181, 0.864);
   position: relative;
   align-items: center;
   justify-content: center;
@@ -21,50 +14,54 @@
 
 .model-search-content2 {
   background: #fff;
-  box-shadow:0 10px 40px 0px rgba(4, 221, 181, 0.864);
+  box-shadow: 0 10px 40px 0px rgba(4, 221, 181, 0.864);
   position: relative;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a, button, body, ul, li, input, Link, div , section{
-  font-family: 'mine', sans-serif;
+.rounded-circle {
+  border-radius: 50% !important
 }
 
-.rounded-circle{border-radius:50% !important}
+.active-link {
+  border-bottom: solid rgb(83 223 252 / var(--tw-text-opacity));
+}
 
-  .active-link{
-    border-bottom: solid rgb(83 223 252 / var(--tw-text-opacity));
-  }
-  .nav-link:hover {
-    border-bottom: solid rgb(83 223 252 / var(--tw-text-opacity));
-  }
+.nav-link:hover {
+  border-bottom: solid rgb(83 223 252 / var(--tw-text-opacity));
+}
 
-  .image-rounded {
-    border-radius: 0.5rem; /* or any desired radius value */
-    overflow: hidden;
-  }
+.image-rounded {
+  border-radius: 0.5rem;
+  /* or any desired radius value */
+  overflow: hidden;
+}
 
-  .ok a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit; /* Ensures link color matches text color */
+.ok a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  /* Ensures link color matches text color */
 }
 
 .ok a:hover:after {
-    content: "";
-    display: block;
-    width: 70%;
-    border-bottom: 1px solid white; /* Adjust border color here */
-    margin: 0 auto;
-    padding-top: 4px; /* Adjust padding as needed */
-    border-bottom: 2px solid rgb(83, 223, 252);
- 
+  content: "";
+  display: block;
+  width: 70%;
+  border-bottom: 1px solid white;
+  /* Adjust border color here */
+  margin: 0 auto;
+  padding-top: 4px;
+  /* Adjust padding as needed */
+  border-bottom: 2px solid rgb(83, 223, 252);
+
 }
 
 .texteone:hover {
-  color: rgb(83, 223, 252); /* Couleur au survol */
+  color: rgb(83, 223, 252);
+  /* Couleur au survol */
 }
 
 .image-wrapper {
@@ -100,24 +97,27 @@ h1, h2, h3, h4, h5, h6, p, span, a, button, body, ul, li, input, Link, div , sec
 }
 
 
-.workshop-list   a {
+.workshop-list a {
   position: relative;
-  padding-left: 15px; /* Ajustez la valeur pour positionner le point correctement */
+  padding-left: 15px;
+  /* Ajustez la valeur pour positionner le point correctement */
 }
-.workshop-list  a::before {
+
+.workshop-list a::before {
   content: "";
   display: block;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 8px; /* Taille du point */
-  height: 8px; /* Taille du point */
-  background-color: rgb(83, 223, 252); /* Couleur du point en RGB */
-  border-radius: 50%; /* Pour faire un cercle */
-  margin-right: 8px; /* Espace entre le point et le texte */
+  width: 8px;
+  /* Taille du point */
+  height: 8px;
+  /* Taille du point */
+  background-color: rgb(83, 223, 252);
+  /* Couleur du point en RGB */
+  border-radius: 50%;
+  /* Pour faire un cercle */
+  margin-right: 8px;
+  /* Espace entre le point et le texte */
 }
-
-
-
-  
