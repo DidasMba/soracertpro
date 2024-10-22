@@ -11,7 +11,7 @@ import Description from "@/components/homepage/components/description";
 
 export default function Home() {
     return (
-        <main className='font-monteserrat'>
+        <main className='relative overflow-x-hidden'>
             <LandiingPage />
             <FrameComponent6 />
             <Client />

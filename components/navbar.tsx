@@ -1,235 +1,85 @@
 /** @format */
-
 "use client";
-import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { navItems } from "@/utils/constant";
+import Image from "next/image";
 import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import SignButton from "./Button";
+import { usePathname } from "next/navigation";
+import { LuMenu } from "react-icons/lu";
+import NavMob from "./NavMob";
 
 const Navbar: React.FC = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const pathName = usePathname();
+    const [isNavMobOpen, setIsNavMobOpen] = useState(false);
 
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 40);
+        };
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <nav className='bg-gray-100 border-gray-200 dark:bg-gray-900'>
-            <div className='flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4'>
-                {/* Conteneur du logo */}
-                <div className='flex items-center space-x-3 rtl:space-x-reverse'>
-                    <a href='#' className='flex items-center'>
-                        <img
-                            src='/logoblack.png'
-                            alt='soracert Logo'
-                            width={128}
-                            height={82}
-                            className='h-8'
-                            style={{ maxWidth: "100%", height: "auto" }}
-                        />
-                    </a>
-                </div>
-                {/* Conteneur des liens de navigation */}
-                <div className='justify-start hidden  md:flex md:space-x-8 rtl:space-x-reverse flex-grow'>
-                    <ul className='flex space-x-4 md:space-x-8'>
-                        <li>
+        <header
+            className={`fixed top-0 right-0 flex items-center left-0 w-full h-16 inset-0 ${
+                isScrolled ? "bg-gray-100" : "backdrop-blur-sm bg-white/30"
+            }  z-50 duration-300 transition-colors ease-in-out`}
+        >
+            <nav className='max-w-7xl mx-auto w-full px-6 flex gap-8 lg:justify-normal justify-between items-center'>
+                <Link href={"/"}>
+                    <Image
+                        height={55}
+                        width={100}
+                        src='/logoblack.png'
+                        alt='logo'
+                    />
+                </Link>
+                <div className='flex-1 lg:flex  sm:hidden hidden justify-between items-center'>
+                    <ul className='flex gap-8 flex-row'>
+                        {navItems.map((item) => (
                             <Link
-                                href='#'
-                                className='block py-2 px-3 text-customHoverBlue border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-customHoverBlue  md:dark:hover:bg-transparent dark:border-gray-700'
-                                aria-current='page'
+                                key={item.id}
+                                href={item.href}
+                                className={`font-semibold text-customBlue hover:text-customHoverBlue ${
+                                    pathName.includes(item.pageName!) &&
+                                    `text-customHoverBlue text-sm`
+                                }`}
                             >
-                                Accueil
+                                {item.name}
+                                {item.hasDropdow && <div></div>}
                             </Link>
-                        </li>
-                        <li className='relative'>
-                            <button
-                                id='mega-menu-dropdown-button'
-                                onClick={toggleDropdown}
-                                className='flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue  dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700'
-                            >
-                                Ressources{" "}
-                                <FaChevronDown className='w-2.5 h-2.5 ms-3' />
-                            </button>
-                            {isDropdownOpen && (
-                                <div
-                                    id='mega-menu-dropdown'
-                                    className='absolute z-10 grid w-auto md:w-[500px] md:top-10 md:right-100 grid-cols-2 text-sm border border-gray-100 bg-gray-100 shadow-md dark:border-gray-700 md:grid-cols-3 font-normal rounded dark:bg-gray-700'
-                                >
-                                    <div className='p-4 pb-0 text-gray-900 md:pb-4 dark:text-white'>
-                                        <ul
-                                            className='space-y-4'
-                                            aria-labelledby='mega-menu-dropdown-button'
-                                        >
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue '
-                                                >
-                                                    Adhésion
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue '
-                                                >
-                                                    Blog
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    Partenaire
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    Pro Version
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='p-4 pb-0 text-gray-900 md:pb-4 dark:text-white'>
-                                        <ul className='space-y-4'>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    Blog
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    Newsletter
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    Playground
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    License
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='p-4'>
-                                        <ul className='space-y-4'>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400  hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    Contact Us
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    Support Center
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href='#'
-                                                    className='text-gray-500 dark:text-gray-400 hover:text-customHoverBlue  dark:hover:text-customHoverBlue'
-                                                >
-                                                    Terms
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            )}
-                        </li>
-                        <li>
-                            <Link
-                                href='/Events'
-                                className='flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue  dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700'
-                            >
-                                Événements
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href='/Programs'
-                                className='flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700'
-                            >
-                                Programmes
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href='/career'
-                                className='flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-customHoverBlue md:p-0 dark:text-white md:dark:hover:text-customHoverBlue dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700'
-                            >
-                                Carrière
-                            </Link>
-                        </li>
+                        ))}
                     </ul>
+                    <div className='flex flex-row gap-4'>
+                        <SignButton
+                            text="S'inscrire"
+                            href='#'
+                            variant='light'
+                        />
+                        <SignButton
+                            text='Se connecter'
+                            href='#'
+                            variant='dark'
+                        />
+                    </div>
                 </div>
-                {/* Boutons Login et Sign up */}
-                <div className='flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse md:order-2'>
-                    <a
-                        href='#'
-                        className='text-black bg-gray-50  font-normal rounded  dark:text-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300  text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800'
-                    >
-                        S'inscrire
-                    </a>
-                    <a
-                        href='#'
-                        className='text-black bg-customHoverBlue  font-normal rounded  hover:bg-customHoverBlue  focus:ring-4 focus:ring-blue-300 text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'
-                    >
-                        Se connecter
-                    </a>
-                    <button
-                        onClick={toggleMenu}
-                        type='button'
-                        className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
-                    >
-                        <span className='sr-only'>Open main menu</span>
-                        <svg
-                            className='w-5 h-5'
-                            aria-hidden='true'
-                            xmlns='http://www.w3.org/2000/svg'
-                            fill='none'
-                            viewBox='0 0 17 14'
-                        >
-                            <path
-                                stroke='currentColor'
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                strokeWidth='2'
-                                d='M1 1h15M1 7h15M1 13h15'
-                            />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
+                <LuMenu
+                    onClick={() => setIsNavMobOpen(true)}
+                    className='block sm:block lg:hidden'
+                    size={30}
+                />
+                <NavMob
+                    isNavMobOpen={isNavMobOpen}
+                    setIsNavMobOpen={setIsNavMobOpen}
+                />
+            </nav>
+        </header>
     );
 };
 

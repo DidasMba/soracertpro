@@ -3,14 +3,14 @@
 export const navItems = [
     {
         id: 1,
-        pageName: "",
+        pageName: "home",
         name: "Accueil",
         href: "/",
         hasDropdow: false,
     },
     {
         id: 2,
-        key: "resource",
+        pathName: "resource",
         name: "Ressources",
         href: "/",
         hasDropdow: true,
