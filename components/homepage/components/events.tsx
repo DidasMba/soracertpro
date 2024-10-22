@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const UpcomingEvents = () =>{
 
-       
+
     return (
       <div className="bg-[#f8fafc] py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

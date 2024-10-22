@@ -42,7 +42,7 @@ const HomePage = () => {
         {slides.map((slide, index) => (
           <div key={slide.id}>
             <div
-              className={`slide-container p-2 h-[80vh]  flex justify-start text-left ${index === activeSlide ? 'active' : ''}`}
+              className={`slide-container p-2 h-[80vh] bg-cover bg-no-repeat flex justify-start text-left ${index === activeSlide ? 'active' : ''}`}
               style={{
                 backgroundImage: `url(${slide.imageUrl})`,
               }}
@@ -66,35 +66,39 @@ const HomePage = () => {
         ))}
     
       </Slider>
-					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 top-[-110px]">
-						<div className="model-search-content">
-              <div className=" flex p-4  md:p-[53px] justify-center items-center">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
-          <div className="text-center">
-            <p className="text-2xl font-bold text-[#05264f]">20.5 million</p>
-            <p className="text-muted-foreground font-extralight">Students since our start in 1997</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-[#05264f]">29,700</p>
-            <p className="text-muted-foreground font-extralight">Educators around the world</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-[#05264f]">11,700</p>
-            <p className="text-muted-foreground font-extralight">Organizations offering our courses</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-[#05264f]">190</p>
-            <p className="text-muted-foreground font-extralight">Countries where we serve learners</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-[#05264f]">95%</p>      
-            <p className="text-muted-foreground font-extralight">Students obtained a job or new educational opportunity</p>
-          </div>
+       
+ <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 top-[-110px]">
+  <div className="model-search-content">
+    <div className="flex p-4 md:p-[53px] justify-center items-center">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-gray-300">
+        <div className="text-center py-4 md:py-0 md:px-4">
+          <p className="text-3xl font-bold text-[#05264f]">3000</p>
+          <p className="text-muted-foreground font-extralight">Etudiants depuis notre création en 2022</p>
+        </div>
+        <div className="text-center py-4 md:py-0 md:px-4">
+          <p className="text-3xl font-bold text-[#05264f]">1000</p>
+          <p className="text-muted-foreground font-extralight">Éducateurs du monde entier</p>
+        </div>
+        <div className="text-center py-4 md:py-0 md:px-4">
+          <p className="text-3xl font-bold text-[#05264f]">100</p>
+          <p className="text-muted-foreground font-extralight">Organismes proposant nos cours</p>
+        </div>
+        <div className="text-center py-4 md:py-0 md:px-4">
+          <p className="text-3xl font-bold text-[#05264f]">190</p>
+          <p className="text-muted-foreground font-extralight">Pays où nous servons les apprenants</p>
+        </div>
+        <div className="text-center py-4 md:py-0 md:px-4">
+          <p className="text-3xl font-bold text-[#05264f]">90%</p>
+          <p className="text-muted-foreground font-extralight">Etudiants ont obtenu un emploi ou une nouvelle possibilité de formation</p>
         </div>
       </div>
-					
-						</div>
-					</div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
     </section>
   );
