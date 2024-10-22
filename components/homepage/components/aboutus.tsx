@@ -8,7 +8,7 @@ const FrameComponent6 = () => {
         <div className="flex flex-col md:flex-row w-full max-w-6xl w items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
         <div className="w-full md:w-1/2 flex items-center"  data-aos="fade-up" data-aos-delay="200">
             <div className="place-items-center py-3 p-3  max-w-2xl">
-             <div className="text-3xl font-bold uppercase  text-[#05264f] mb-5 py-4">Acquérir des bases solides en travaillant sur des projets concrets
+             <div className="text-3xl font-bold uppercase  text-[#05264f] mb-5 py-4">Apprenez auprès d'experts du secteur qui vous consacreront du temps.
              <div className="mt-4 mb-3 h-1 w-24 bg-[#05264f] justify-start items-start" />
              </div>
              
