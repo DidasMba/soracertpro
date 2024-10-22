@@ -42,7 +42,7 @@ const HomePage = () => {
         {slides.map((slide, index) => (
           <div key={slide.id}>
             <div
-              className={`slide-container p-2 h-[80vh]  flex justify-start text-left ${index === activeSlide ? 'active' : ''}`}
+              className={`slide-container p-2 h-[80vh] bg-cover bg-no-repeat flex justify-start text-left ${index === activeSlide ? 'active' : ''}`}
               style={{
                 backgroundImage: `url(${slide.imageUrl})`,
               }}
