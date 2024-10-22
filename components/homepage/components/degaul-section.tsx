@@ -41,7 +41,7 @@ const DegaulSection = () => {
              
            
             <p className="mt-4 max-w-2xl mx-auto text-md py-2 font-extralight">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains..</p>
             <div className=" flex justify-center items-center py-5">
         
           </div>

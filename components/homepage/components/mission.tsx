@@ -8,7 +8,8 @@ return(
         <h2 className="text-4xl font-bold leading-tight text-[#05264f] py-2">Lorem Ipsum Header</h2>
         <div className="mt-4 mb-3 h-1 w-24 bg-[#05264f] mx-auto" />
         <div className="mt-4 max-w-2xl mx-auto text-xl py-2 font-extralight">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Évoluez avec la communauté SoraCert,
+innovez avec la technologie.
         </div>
       </div>
       <div className=" max-w-3xl mx-auto py-5" data-aos="fade-up"> 
