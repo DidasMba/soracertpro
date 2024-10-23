@@ -20,8 +20,10 @@ const config = {
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
                 customBlue: "rgb(5, 38, 79)",
-                customHoverBlue: "rgb(83, 223, 252)",
-                customButton: "(83, 223, 252)",
+                // customHoverBlue: "rgb(83, 223, 252)", 
+                customHoverBlue: "rgb(72, 209, 204)", 
+                // customButton: "rgb(83, 223, 252)", 
+                customButton: "rgb(83, 223, 252)", 
                 backgroundImage: {
                     "gradient-radial":
                         "radial-gradient(var(--tw-gradient-stops))",
