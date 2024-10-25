@@ -4,11 +4,11 @@ import React from 'react';
 const Page = () => {
   return (
     <header className="container mx-auto mt-3 px-4">
-      <div className="flex flex-col lg:flex-row justify-between bg-sand rounded-xl">
+      <div className="flex flex-col lg:flex-row justify-between bg-gray-500 rounded-xl">
         
         {/* Left Column - Text Content */}
         <div className="w-full lg:w-1/2 p-4 lg:py-8 lg:pl-8">
-          <span className="inline-block bg-red-500 text-red-700 uppercase text-xs font-bold px-3 py-2 rounded-md">
+          <span className="inline-block bg-red-500 text-wite uppercase text-xs font-bold px-3 py-2 rounded-md">
             Live events
           </span>
 
@@ -41,6 +41,8 @@ const Page = () => {
     </header>
   );
 };
+
+
 
 export default Page;
 
