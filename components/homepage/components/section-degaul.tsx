@@ -102,12 +102,8 @@ const SectionDegaul = () => {
        <div className="py-5">
     
           
-          <Card className="grid grid-cols-2 md:grid-cols-3  gap-2 text-center items-center justify-center  p-9 shadow-lg model-search-content2" style={{borderRadius:'20px'}}>
+          <Card className="grid grid-cols-2 md:grid-cols-3  gap-2 text-center items-center justify-center  p-9 shadow-lg rounded-xl">
 
-
-
-     
-         
             <div className=" text-center items-center justify-center">
       <p className="text-2xl font-bold text-[#05264f]">100 + </p>
       <p className="text-muted-foreground text-sm font-extralight">Personnes</p>

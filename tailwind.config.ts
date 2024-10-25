@@ -1,5 +1,6 @@
 /** @format */
 
+import { MonteCarlo } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -19,6 +20,7 @@ const config = {
                 ring: "hsl(var(--ring))",
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
+                // customBlue: "rgb(5, 38, 79)",
                 customBlue: "rgb(5, 38, 79)",
                 // customHoverBlue: "rgb(83, 223, 252)", 
                 customHoverBlue: "rgb(72, 209, 204)", 
@@ -81,6 +83,7 @@ const config = {
             },
             fontFamily: {
                 monteserrat: ["Montserrat", "sans-serif"],
+                
             },
         },
     },

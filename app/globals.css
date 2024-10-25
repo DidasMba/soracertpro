@@ -4,7 +4,7 @@
 
 .model-search-content {
   background: #fff;
-  box-shadow: 0 10px 40px 0px rgba(4, 221, 181, 0.864);
+  /* box-shadow: 0 10px 40px 0px rgba(4, 221, 181, 0.864); */
   position: relative;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
 
 .model-search-content2 {
   background: #fff;
-  box-shadow: 0 10px 40px 0px rgba(4, 221, 181, 0.864);
+  /* box-shadow: 0 10px 40px 0px rgba(4, 221, 181, 0.864); */
   position: relative;
   align-items: center;
   justify-content: center;

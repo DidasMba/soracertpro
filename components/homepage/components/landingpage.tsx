@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from '@/components/ui/button';
+import CountUp from 'react-countup';
 
 const HomePage = () => {
   const slides = [
@@ -68,8 +69,8 @@ const HomePage = () => {
       </Slider>
        
  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 top-[-110px]">
-  <div className="model-search-content">
-    <div className="flex p-4 md:p-[53px] justify-center items-center">
+  <div className="model-search-content shadow-lg">
+    <div className="flex p-4 md:p-6 justify-center items-center">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-gray-300">
         <div className="text-center py-4 md:py-0 md:px-4">
           <p className="text-3xl font-bold text-[#05264f]">3000</p>
