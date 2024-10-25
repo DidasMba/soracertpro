@@ -1,10 +1,86 @@
 import Image from "next/image";
 import React from 'react';
 
-import { FaMapMarkerAlt, FaCalendarAlt, FaShareAlt, FaHeart, FaDollarSign, FaClock } from "react-icons/fa";
+const Page = () => {
+  return (
+    <header className="container mx-auto mt-3 px-4">
+      <div className="flex flex-col lg:flex-row justify-between bg-sand rounded-xl">
+        
+        {/* Left Column - Text Content */}
+        <div className="w-full lg:w-1/2 p-4 lg:py-8 lg:pl-8">
+          <span className="inline-block bg-red-500 text-red-700 uppercase text-xs font-bold px-3 py-2 rounded-md">
+            Live events
+          </span>
+
+          <div className="flex flex-col mt-4">
+            <h1 className="text-3xl font-semibold mb-3">
+              Explore our live events, talks, and free workshops
+            </h1>
+
+            <p className="hidden md:block text-lg mb-3 max-w-lg">
+              Jump into a free workshop on UX design or data analytics, attend
+              our students' demo days, or join us for an interactive info
+              session to find out more about Le Wagon.
+            </p>
+          </div>
+        </div>
+
+        {/* Right Column - Image */}
+        <div className="w-full lg:w-1/2 p-4 lg:p-8">
+          <img
+            width="547"
+            height="340"
+            alt="events at Le Wagon"
+            srcSet="https://www-img.lewagon.com/9YQnNEbxRiHNYSAmxT13BndU9UNh_UoCVvoMSz4bWE0/rs:fill:1094:680/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 2x, https://www-img.lewagon.com/QriKXWmZ6Peh0NRfkq_--QLcGc4d2qLYws2YdIlsgUY/rs:fill:547:340/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 547w, https://www-img.lewagon.com/IqVNCXn4SxqOMa1W-Vgbwa8ld-7SauJQuTR-4vQ_v0E/rs:fill:336:209/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 1x"
+            className="w-full h-auto object-cover rounded-md"
+            loading="lazy"
+            src="https://www-img.lewagon.com/IqVNCXn4SxqOMa1W-Vgbwa8ld-7SauJQuTR-4vQ_v0E/rs:fill:336:209/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq"
+          />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Page;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { FaMapMarkerAlt, FaCalendarAlt, FaShareAlt, FaHeart, FaDollarSign, FaClock } from "react-icons/fa";
 
 // Ajoute le champ pour l'heure dans les données des événements
-const events = [
+// const events = [
   // {
   //   src: "/so4.jpg",
   //   date: "29 June 2024",
@@ -42,10 +118,10 @@ const events = [
   //   rating: 4.6,
   //   price: "From 70 $"  // Ajoute le prix ici
   // }
-];
+// ];
 
-export default function Fleets() {
-  return (
+// export default function Fleets() {
+  // return (
 //     <div className='py-2'>
 //       <div className='container mx-auto px-4'>
 //         {/* Barre de navigation */}
@@ -130,5 +206,5 @@ export default function Fleets() {
 //         </div>
 //       </div>
 //     </div>
-  );
-}
+  // );
+// }
