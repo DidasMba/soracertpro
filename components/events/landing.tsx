@@ -2,7 +2,17 @@
 
 const landing = () => {
   return (
-    <div>landing</div>
+    <div>landinghdggdy
+      <h1>BIENMERCI</h1>
+      <h1>BIENMERCI</h1>
+      <h1>BIENMERCI</h1>
+      <h1>BIENMERCI</h1><h1>BIENMERCI</h1>
+      <h1>BIENMERCI</h1>
+      
+    </div>
+
+
+    
   )
 }
 
