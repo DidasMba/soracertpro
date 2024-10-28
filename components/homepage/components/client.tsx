@@ -4,8 +4,8 @@ import React from 'react'
 const Client = () => {
   return (
     <>
-     <section id="faq-2" className="faq-2 section py-5 max-w-full " >
-     <div className="text-center container" data-aos="fade-up">
+     <section id="faq-2" className=" max-w-7xl mx-auto w-full faq-2 section py-5 max-w-full " >
+     <div className=" max-w-7xl mx-auto w-full text-center container" data-aos="fade-up">
         <h2 className="text-sm font-extrabold leading-tight  py-1">Témoignages.</h2>
        
         <div className="mt-4 max-w-2xl mx-auto text-2xl py-2 font-bold text-[#05264f]">
