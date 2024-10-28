@@ -83,13 +83,7 @@ const NavMob: FC<{
                                             className={`${
                                                 isDropped ? "flex" : "hidden"
                                             } flex-col pt-2`}
-                                        >
-                                            <a href=''>Accied uiela</a>
-                                            <a href=''>Acciedd</a>
-                                            <a href=''>Acciedd</a>
-                                            <a href=''>Acciedd</a>
-                                            <a href=''>Acciedd</a>
-                                        </div>
+                                        ></div>
                                     </ul>
                                 )}
                             </Link>
