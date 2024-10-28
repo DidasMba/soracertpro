@@ -36,7 +36,9 @@ export default function RootLayout({
                     shadow='0 0 10px #2299DD,0 0 5px #2299DD'
                 />
                 <Navbar />
-               <div className="mt-20">{children}</div>
+                <div className="mt-20">
+                 {children}
+                </div>
                 <Footer />
             </body>
         </html>

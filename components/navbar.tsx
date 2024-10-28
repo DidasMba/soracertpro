@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
                     />
                 </Link>
                 <div className='flex-1 lg:flex  sm:hidden hidden justify-between items-center'>
-                    <ul className='flex gap-8 flex-row'>
+                 <ul className='flex gap-8 flex-row'>
                         {navItems.map((item) => (
                             <Link
                                 key={item.id}
@@ -55,7 +55,9 @@ const Navbar: React.FC = () => {
                                 {item.hasDropdow && <div></div>}
                             </Link>
                         ))}
-                    </ul>
+                    </ul> 
+                   
+
                     <div className='flex flex-row gap-4'>
                         <SignButton
                             text="S'inscrire"

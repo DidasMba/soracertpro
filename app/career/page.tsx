@@ -7,9 +7,10 @@ export default function Career() {
   return (
     <main className="">
   
-     <LandiingPage />
+    <LandiingPage />
     <Sample />
     <Featured />
+  
     </main>
   );
 }
