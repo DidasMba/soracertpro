@@ -1,13 +1,13 @@
 import Image from "next/image";
-import LandiingPage from "@/components/events/landing";
+import LandingPage from "@/components/events/landing";
 
 
-export default function Career() {
+export default function AboutUs() {
   return (
     <main className="">
   
-    <LandiingPage />
-    
+   <LandingPage />
+   
     </main>
   );
 }
