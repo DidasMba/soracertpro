@@ -23,7 +23,8 @@ const config = {
                 // customBlue: "rgb(5, 38, 79)",
                 customBlue: "rgb(5, 38, 79)",
                 // customHoverBlue: "rgb(83, 223, 252)", 
-                customHoverBlue: "rgb(72, 209, 204)", 
+                customHoverBlue: "rgb(15, 221, 204)",
+
                 // customButton: "rgb(83, 223, 252)", 
                 customButton: "rgb(83, 223, 252)", 
                 backgroundImage: {
