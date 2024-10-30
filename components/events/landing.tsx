@@ -71,7 +71,7 @@ const HeroSection = () => {
             <div className="rounded overflow-hidden">
               <img
                 src="https://www-img.lewagon.com/6vtJYbvc7CWGJA8DfkQEGmtoUdpADsXX7CHkvIpWBSY/rs:fill:270:135/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35"
-                srcSet="https://www-img.lewagon.com/VsD1XzqdVUNUtXl3BMosDoju9IfzulSnSoO3aR2GvYc/rs:fill:540:270/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35 2x, https://www-img.lewagon.com/6vtJYbvc7CWGJA8DfkQEGmtoUdpADsXX7CHkvIpWBSY/rs:fill:270:135/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35 270w"
+                src="https://www-img.lewagon.com/VsD1XzqdVUNUtXl3BMosDoju9IfzulSnSoO3aR2GvYc/rs:fill:540:270/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35 2x, https://www-img.lewagon.com/6vtJYbvc7CWGJA8DfkQEGmtoUdpADsXX7CHkvIpWBSY/rs:fill:270:135/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35 270w"
                 alt="Alumni Stories: From bootcamp to the gaming industry"
                 width="270"
                 height="135"
@@ -102,7 +102,7 @@ const HeroSection = () => {
               <div className="w-full lg:w-1/3 text-center">
                 <a
                   href="/events/alumni-stories-from-bootcamp-to-the-gaming-industry-KMR5Q8"
-                  className="bg-blue-600 text-black font-bold py-2 lg:py-3 rounded w-full block   bg-customHoverBlue transition rounded-2xl  bg-customHoverBlue"
+                  className="bg-blue-600 text-black font-bold py-2 lg:py-3 rounded w-full block bg-customHoverBlue transition rounded-1xl  bg-customHoverBlue"
                 >
                   Register now
                 </a>
