@@ -102,7 +102,7 @@ const HeroSection = () => {
               <div className="w-full lg:w-1/3 text-center">
                 <a
                   href="/events/alumni-stories-from-bootcamp-to-the-gaming-industry-KMR5Q8"
-                  className="bg-blue-600 text-white py-2 lg:py-3 rounded w-full block bg-customHoverBlue transition rounded-2xl  bg-customHoverBlue"
+                  className="bg-blue-600 text-black font-bold py-2 lg:py-3 rounded w-full block   bg-customHoverBlue transition rounded-2xl  bg-customHoverBlue"
                 >
                   Register now
                 </a>
