@@ -86,38 +86,20 @@ const HeroSection = () => {
           {/* Content Column */}
           <div className="w-full lg:w-3/4 flex flex-col lg:flex-row items-center">
             <div className="flex flex-col w-full lg:flex-row justify-between items-center lg:items-start">
-              {/* <div className="w-full lg:w-2/3 mb-4 lg:mb-0 lg:pr-6 space-x-6">
-                <span className="badge bg-yellow-200 text-yellow-800  px-2 py-1 rounded uppercase text-xs font-semibold">
+              <div className="w-full lg:w-2/3 mb-4 lg:mb-0 lg:pr-6 space-x-6">
+                <span className="badge bg-yellow-200 text-yellow-800 my-2 px-2 py-1 rounded uppercase text-xs font-semibold">
                   Talk
                 </span>
-                <h2 className="text-lg font-medium my-2">
+                <h2 className="text-lg font-bold font-medium my-2">
                   Alumni Stories: From bootcamp to the gaming industry
                 </h2>
                 <div className="flex flex-col lg:flex-row items-start lg:items-center text-sm">
-                  <small className="text-red-600 font-semibold mb-1 lg:mb-0">
+                  <small className="text-red-600 font-bold mb-1 lg:mb-0">
                     Tue, October 29 • 13:00 pm (Canada/Eastern Time)
                   </small>
                 </div>
                 <p className="text-xs mt-1">En line</p>
-              </div> */}
-              <div className="w-full lg:w-2/3 mb-4 lg:mb-0 lg:pr-6 flex items-start space-x-6">
-  <span className="badge bg-yellow-200 text-yellow-800 px-2 py-1 rounded uppercase text-xs font-semibold">
-    Talk
-  </span>
-  <div className="flex-1">
-    <h2 className="text-lg font-medium my-2">
-      Alumni Stories: From bootcamp to the gaming industry
-    </h2>
-    <div className="flex flex-col lg:flex-row items-start lg:items-center text-sm">
-      <small className="text-red-600 font-semibold mb-1 lg:mb-0">
-        Tue, October 29 • 13:00 pm (Canada/Eastern Time)
-      </small>
-    </div>
-    <p className="text-xs mt-1">En ligne</p>
-  </div>
-</div>
-
-
+              </div>
               <div className="w-full lg:w-1/3 text-center">
                 <a
                   href=""
