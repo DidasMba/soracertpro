@@ -87,18 +87,127 @@ const HeroSection = () => {
           <div className="w-full lg:w-3/4 flex flex-col lg:flex-row items-center">
             <div className="flex flex-col w-full lg:flex-row justify-between items-center lg:items-start">
               <div className="w-full lg:w-2/3 mb-4 lg:mb-0 lg:pr-6 space-x-6">
-                <span className="badge bg-yellow-200 text-yellow-800 my-2 px-2 py-1 rounded uppercase text-xs font-semibold">
+               
+               <span className="badge bg-yellow-200 text-yellow-800 my-2 px-2 py-1 rounded uppercase text-xs font-semibold">
                   Talk
                 </span>
-                <h2 className="text-lg font-bold font-medium my-2">
+               <h2 className="text-lg font-bold my-2">
                   Alumni Stories: From bootcamp to the gaming industry
-                </h2>
+               </h2>
+
+              
+               
+                
                 <div className="flex flex-col lg:flex-row items-start lg:items-center text-sm">
-                  <small className="text-red-600 font-bold mb-1 lg:mb-0">
+                  <small className="text-red-600 font-bold mb-1 lg:mb-0 ">
                     Tue, October 29 • 13:00 pm (Canada/Eastern Time)
                   </small>
                 </div>
-                <p className="text-xs mt-1">En line</p>
+                <p className="text-xs mt-1 text-bold">En line</p>
+              </div>
+              <div className="w-full lg:w-1/3 text-center">
+                <a
+                  href=""
+                  className="bg-blue-600 text-black font-bold py-2 lg:py-5 rounded w-full block bg-customHoverBlue transition rounded-1xl  bg-customHoverBlue"
+                >
+                  Enregistrer Maintenant
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article className="card bg-white border p-6 rounded mb-3 relative hover:bg-gray-50">
+        <div className="flex flex-col lg:flex-row">
+          {/* Image Column */}
+          <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
+            <div className="rounded overflow-hidden">
+              <img
+                src="https://www-img.lewagon.com/6vtJYbvc7CWGJA8DfkQEGmtoUdpADsXX7CHkvIpWBSY/rs:fill:270:135/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35"
+                srcSet="https://www-img.lewagon.com/VsD1XzqdVUNUtXl3BMosDoju9IfzulSnSoO3aR2GvYc/rs:fill:540:270/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35 2x, https://www-img.lewagon.com/6vtJYbvc7CWGJA8DfkQEGmtoUdpADsXX7CHkvIpWBSY/rs:fill:270:135/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35 270w"
+                alt="Alumni Stories: From bootcamp to the gaming industry"
+                width="270"
+                height="135"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Content Column */}
+          <div className="w-full lg:w-3/4 flex flex-col lg:flex-row items-center">
+            <div className="flex flex-col w-full lg:flex-row justify-between items-center lg:items-start">
+              <div className="w-full lg:w-2/3 mb-4 lg:mb-0 lg:pr-6 space-x-6">
+               
+               <span className="badge bg-yellow-200 text-yellow-800 my-2 px-2 py-1 rounded uppercase text-xs font-semibold">
+                  Talk
+                </span>
+               <h2 className="text-lg font-bold my-2">
+                  Alumni Stories: From bootcamp to the gaming industry
+               </h2>
+
+              
+               
+                
+                <div className="flex flex-col lg:flex-row items-start lg:items-center text-sm">
+                  <small className="text-red-600 font-bold mb-1 lg:mb-0 ">
+                    Tue, October 29 • 13:00 pm (Canada/Eastern Time)
+                  </small>
+                </div>
+                <p className="text-xs mt-1 text-bold">En line</p>
+              </div>
+              <div className="w-full lg:w-1/3 text-center">
+                <a
+                  href=""
+                  className="bg-blue-600 text-black font-bold py-2 lg:py-5 rounded w-full block bg-customHoverBlue transition rounded-1xl  bg-customHoverBlue"
+                >
+                  Enregistrer Maintenant
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article className="card bg-white border p-6 rounded mb-3 relative hover:bg-gray-50">
+        <div className="flex flex-col lg:flex-row">
+          {/* Image Column */}
+          <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
+            <div className="rounded overflow-hidden">
+              <img
+                src="https://afropean.com/wp-content/uploads/2016/06/tech_conference_audience.png"
+                srcSet="https://afropean.com/wp-content/uploads/2016/06/tech_conference_audience.png"
+                alt="Alumni Stories: From bootcamp to the gaming industry"
+                width="270"
+                height="135"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Content Column */}
+          <div className="w-full lg:w-3/4 flex flex-col lg:flex-row items-center">
+            <div className="flex flex-col w-full lg:flex-row justify-between items-center lg:items-start">
+              <div className="w-full lg:w-2/3 mb-4 lg:mb-0 lg:pr-6 space-x-6">
+               
+               <span className="badge bg-yellow-200 text-yellow-800 my-2 px-2 py-1 rounded uppercase text-xs font-semibold">
+                  Talk
+                </span>
+               <h2 className="text-lg font-bold my-2">
+                  Alumni Stories: From bootcamp to the gaming industry
+               </h2>
+
+              
+               
+                
+                <div className="flex flex-col lg:flex-row items-start lg:items-center text-sm">
+                  <small className="text-red-600 font-bold mb-1 lg:mb-0 ">
+                    Tue, October 29 • 13:00 pm (Canada/Eastern Time)
+                  </small>
+                </div>
+                <p className="text-xs mt-1 text-bold">En line</p>
               </div>
               <div className="w-full lg:w-1/3 text-center">
                 <a
