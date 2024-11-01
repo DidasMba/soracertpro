@@ -49,54 +49,7 @@ const HeroSection = () => {
             </div>
 
             <div className='max-w-7xl mx-auto w-full container pt-3 pt-xl-5 pb-5'>
-                <h1 className='text-2xl font-bold mb-4'>Filters</h1>
-                <div className='mb-6'>
-                    <h2 className='text-lg font-semibold'>Topic</h2>
-                    <div className='flex flex-wrap mb-2'>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            All
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            Online
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            On-site
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            Replay
-                        </button>
-                    </div>
-                </div>
-
-                <div className='mb-6'>
-                    <h2 className='text-lg font-semibold'>Language</h2>
-                    <div className='flex flex-wrap mb-2'>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            All
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            English
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            French
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            Español - LA
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            Spanish
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            German
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            Portuguese
-                        </button>
-                        <button className='border rounded-full px-4 py-1 mx-1'>
-                            日本語
-                        </button>
-                    </div>
-                </div>
+            
                 <h1 className='text-2xl font-bold mb-4'>
                     Events that match your search
                 </h1>
