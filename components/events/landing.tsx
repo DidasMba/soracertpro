@@ -9,8 +9,8 @@ import EventTile from "./EventTile";
 const HeroSection = () => {
     return (
         <header className='max-w-7xl mx-auto w-full container'>
-            <div className='row justify-content-between bg-gray-200 border rounded-sm-24px'>
-                <div className='col-12 col-lg-6 d-flex align-items-center'>
+            <div className='row justify-content-between grid grid-cols-1 lg:grid-cols-2 bg-blue-200 border rounded-sm-24px'>
+                <div className='flex items-center px-6 py-4 '>
                     <div className='pt-3 py-lg-5 ps-lg-5'>
                         <span className='w-auto bg-code-red py-2 px-3 rounded-2 text-uppercase text-red fs-12 fw-bold text-predot'>
                             Live events
@@ -30,7 +30,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-12 col-lg-6'>
+                <div className=' bg-black'>
                     <div className='pb-3 p-lg-5'>
                         <img
                             width='547'

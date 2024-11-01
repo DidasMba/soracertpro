@@ -31,7 +31,7 @@ const EventTile: React.FC<{
                 <div className='w-full lg:w-3/4 flex flex-col lg:flex-row items-center'>
                     <div className='flex flex-col w-full lg:flex-row justify-between items-center lg:items-start'>
                         <div className='w-full lg:w-2/3 mb-4 lg:mb-0'>
-                            <span className='bg-[#d9f6f4] text-customHoverBlue px-2 py-1 rounded uppercase text-xs font-semibold'>
+                            <span className='bg-[#d9f6f4] text-customBlue px-2 py-1 rounded uppercase text-xs font-semibold'>
                                 {category}
                             </span>
                             <h2 className='text-lg font-bold my-2'>{title}</h2>
@@ -46,7 +46,7 @@ const EventTile: React.FC<{
                         <div className='w-full lg:w-1/3 text-center'>
                             <a
                                 href=''
-                                className='text-white font-bold py-2 lg:py-5 rounded w-full block transition rounded-1xl  bg-customHoverBlue'
+                                className='text-white font-bold py-2 lg:py-5 rounded w-full block transition rounded-1xl  bg-customBlue'
                             >
                                 Enregistrer Maintenant
                             </a>
