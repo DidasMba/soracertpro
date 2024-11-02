@@ -10,7 +10,7 @@ const EventTile: React.FC<{
     location: string;
 }> = ({ title, image, location, date, category }) => {
     return (
-        <article className='card  rounded mb-3 relative hover:bg-gray-50'>
+        <article className='card bg-white border p-6 rounded mb-3 relative hover:bg-gray-50'>
             <div className='flex flex-col lg:flex-row lg:gap-6 gap-4'>
                 {/* Image Column */}
                 <div className='w-full lg:w-1/4 mb-4 lg:mb-0'>
