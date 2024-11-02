@@ -48,7 +48,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div> */}
-            <div className='row justify-between rounded-2xl grid grid-cols-1 lg:grid-cols-2 shadow-md py-6 bg-[#f1fbfe] border border-gray-300'>
+            <div className='row justify-between rounded-2xl grid grid-cols-1 lg:grid-cols-2 shadow-md py-6 bg-[#f1fbfe]'>
     <div className='flex items-center px-8 py-6'>
         <div className='pt-4 ps-lg-5'>
             <span className='w-auto bg-red-500 text-white py-2 px-4 rounded-md text-uppercase text-red text-xs font-semibold'>
@@ -57,10 +57,10 @@ const HeroSection = () => {
 
             <div className='flex flex-col mt-6'>
                 <h1 className='text-4xl lg:text-5xl font-extrabold mb-4 text-gray-800'>
-                    Explore Our Live Events, Talks, and Free Workshops
+                    Explorez nos événements en direct, conférences et ateliers gratuits.
                 </h1>
                 <p className='hidden md:block text-lg leading-relaxed mb-4 text-gray-700 max-w-[95%]'>
-                    Jump into a free workshop on UX design or data analytics, attend our students' demo days, or join us for an interactive info session to find out more about Le Wagon.
+                Participez à un atelier gratuit sur le design UX ou l'analyse des données, assistez aux journées de démonstration de nos étudiants, ou rejoignez-nous pour une session d'information interactive afin d'en savoir plus sur SoraCert.
                 </p>
             </div>
         </div>
