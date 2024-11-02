@@ -166,7 +166,7 @@ const HeroSection = () => {
                 </div>
                 {/* Show More Buttons */}
                 <div className='flex justify-center mt-4'>
-                    <button className='text-blue-500 font-semibold'>
+                    <button className='font-semibold text-[#05264f]'>
                         Afficher plus d'événements
                     </button>
                 </div>
