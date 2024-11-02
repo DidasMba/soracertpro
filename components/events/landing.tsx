@@ -86,7 +86,7 @@ const HeroSection = () => {
 
             <div className='max-w-7xl mx-auto w-full container pt-3 pt-xl-5 pb-5'>
 
-                <h1 className='text-2xl font-bold mb-4'>
+                <h1 className='text-2xl bg-white border b pb-2 font-bold mb-4'>
                     Events that match your search
                 </h1>
                 <div className='mb-6 col-12 col-lg-10 ps-xl-5'>
