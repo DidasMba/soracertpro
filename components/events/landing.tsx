@@ -56,7 +56,7 @@ const HeroSection = () => {
             </span>
 
             <div className='flex flex-col mt-6'>
-                <h1 className='text-4xl lg:text-5xl font-extrabold mb-4 text-gray-800'>
+                <h1 className='text-4xl lg:text-5xl font-extrabold mb-4 text-[#05264f]'>
                     Explorez nos événements en direct, conférences et ateliers gratuits.
                 </h1>
                 <p className='hidden md:block text-lg leading-relaxed mb-4 text-gray-700 max-w-[95%]'>
@@ -167,7 +167,7 @@ const HeroSection = () => {
                 {/* Show More Buttons */}
                 <div className='flex justify-center mt-4'>
                     <button className='text-blue-500 font-semibold'>
-                        Show more event
+                        Afficher plus d'événements
                     </button>
                 </div>
             </div>
