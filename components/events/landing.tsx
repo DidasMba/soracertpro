@@ -166,7 +166,7 @@ const HeroSection = () => {
                 </div>
                 {/* Show More Buttons */}
                 <div className='flex justify-between mt-4'>
-                    <button className='text-blue-500 font-semibold'>
+                    <button className='text-blue-500 font-semibold text-center'>
                         Show more events
                     </button>
                 </div>
