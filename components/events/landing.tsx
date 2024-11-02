@@ -9,7 +9,7 @@ import EventTile from "./EventTile";
 const HeroSection = () => {
     return (
         <header className='max-w-7xl mx-auto w-full container'>
-            <div className='row justify-content-between grid grid-cols-1 lg:grid-cols-2 bg-[#aed4d1] border rounded-sm-24px'>
+            {/* <div className='row justify-content-between rounded-2xl grid grid-cols-1 lg:grid-cols-2 shadow-sm py-4 bg-[#f1fbfe] border rounded-sm-24px'>
                 <div className='flex items-center px-6 py-4 '>
                     <div className='pt-3 py-lg-5 ps-lg-5'>
                         <span className='w-auto bg-code-red py-2 px-3 rounded-2 text-uppercase text-red fs-12 fw-bold text-predot'>
@@ -17,7 +17,7 @@ const HeroSection = () => {
                         </span>
 
                         <div className='d-flex flex-column mt-4'>
-                            <h1 className='main-title mb-3'>
+                            <h1 className='font- mb-3 '>
                                 Explore Our Live Events, Talks, and Free
                                 Workshops
                             </h1>
@@ -31,25 +31,61 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className=''>
-                    <div className='pb-3 p-lg-5'>
+                    <div className='w-[548px] h-[340px] rounded-2xl'>
                         <img
                             width='547'
                             height='340'
+                            
                             alt='Participants engaging in events at Le Wagon'
                             srcSet='
                 https://www-img.lewagon.com/9YQnNEbxRiHNYSAmxT13BndU9UNh_UoCVvoMSz4bWE0/rs:fill:1094:680/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 2x,
                 https://www-img.lewagon.com/QriKXWmZ6Peh0NRfkq_--QLcGc4d2qLYws2YdIlsgUY/rs:fill:547:340/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 547w,
                 https://www-img.lewagon.com/IqVNCXn4SxqOMa1W-Vgbwa8ld-7SauJQuTR-4vQ_v0E/rs:fill:336:209/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 1x'
-                            className='img-fluid object-fit-cover rounded-2 w-100'
+                            className='img-fluid object-cover rounded-2 w-full h-full rounded-lg'
                             loading='lazy'
                             src='https://www-img.lewagon.com/IqVNCXn4SxqOMa1W-Vgbwa8ld-7SauJQuTR-4vQ_v0E/rs:fill:336:209/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq'
                         />
                     </div>
                 </div>
+            </div> */}
+            <div className='row justify-between rounded-2xl grid grid-cols-1 lg:grid-cols-2 shadow-md py-6 bg-[#f1fbfe] border border-gray-300'>
+    <div className='flex items-center px-8 py-6'>
+        <div className='pt-4 ps-lg-5'>
+            <span className='w-auto bg-red-500 text-white py-2 px-4 rounded-md text-uppercase text-red text-xs font-semibold'>
+                Live events
+            </span>
+
+            <div className='flex flex-col mt-6'>
+                <h1 className='text-4xl lg:text-5xl font-extrabold mb-4 text-gray-800'>
+                    Explore Our Live Events, Talks, and Free Workshops
+                </h1>
+                <p className='hidden md:block text-lg leading-relaxed mb-4 text-gray-700 max-w-[95%]'>
+                    Jump into a free workshop on UX design or data analytics, attend our students' demo days, or join us for an interactive info session to find out more about Le Wagon.
+                </p>
             </div>
+        </div>
+    </div>
+    <div className='flex justify-center items-center p-4'>
+        <div className='w-[548px] h-[340px] rounded-2xl overflow-hidden shadow-lg'>
+            <img
+                width='547'
+                height='340'
+                alt='Participants engaging in events at Le Wagon'
+                srcSet='
+                    https://www-img.lewagon.com/9YQnNEbxRiHNYSAmxT13BndU9UNh_UoCVvoMSz4bWE0/rs:fill:1094:680/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 2x,
+                    https://www-img.lewagon.com/QriKXWmZ6Peh0NRfkq_--QLcGc4d2qLYws2YdIlsgUY/rs:fill:547:340/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 547w,
+                    https://www-img.lewagon.com/IqVNCXn4SxqOMa1W-Vgbwa8ld-7SauJQuTR-4vQ_v0E/rs:fill:336:209/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 1x'
+                className='w-full h-full object-cover'
+                loading='lazy'
+                src='https://www-img.lewagon.com/IqVNCXn4SxqOMa1W-Vgbwa8ld-7SauJQuTR-4vQ_v0E/rs:fill:336:209/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq'
+            />
+        </div>
+    </div>
+</div>
+
 
             <div className='max-w-7xl mx-auto w-full container pt-3 pt-xl-5 pb-5'>
-            
+
                 <h1 className='text-2xl font-bold mb-4'>
                     Events that match your search
                 </h1>
