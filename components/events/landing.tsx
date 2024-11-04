@@ -94,6 +94,11 @@ const HeroSection = () => {
                     <h2 className='text-2xl font-semibold text-gray-800 mb-8 mt-8'>
                         Categories
                     </h2>
+                     
+
+                     
+                    
+                    
                     <EventTile
                         title='Alumni Stories: From bootcamp to the gaming industry'
                         date='Tue, October 29 • 13:00 pm (Canada/EasternTime)'
