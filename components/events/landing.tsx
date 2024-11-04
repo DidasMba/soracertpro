@@ -82,15 +82,16 @@ const HeroSection = () => {
         </div>
     </div>
 </div>
-
-
             <div className='max-w-7xl mx-auto w-full container pt-3 pt-xl-5 pb-5'>
 
-                <h1 className='text-2xl bg-white border-b pb-2 font-bold mb-4'>
+                <h1 className='text-2xl mt-8 bg-white border-b pb-4 font-bold'>
                     Events that match your search
                 </h1>
+                <div>
+                    
+                </div>
                 <div className='mb-6 col-12 col-lg-10 ps-xl-5'>
-                    <h2 className='text-2xl font-semibold text-gray-800 mb-4'>
+                    <h2 className='text-2xl font-semibold text-gray-800 mb-8 mt-8'>
                         Categories
                     </h2>
                     <EventTile
