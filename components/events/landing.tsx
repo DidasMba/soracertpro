@@ -95,8 +95,11 @@ const HeroSection = () => {
                         Categories
                     </h2>
                      
-
-                     
+                   <div className="flex space-x-4">
+                            <span>Atelier</span>
+                            <span>Hackaton</span>
+                            <span>Conférence</span>
+                    </div>
                     
                     
                     <EventTile
