@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from '@/components/ui/button';
 import CountUp from 'react-countup';
+import { statBanner } from '@/utils/constant';
 
 const HomePage = () => {
   const slides = [
@@ -31,10 +32,10 @@ const HomePage = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-  
+
     slidesToShow: 1,
     slidesToScroll: 1,
-    beforeChange: (current:any, next:any) => setActiveSlide(next),
+    beforeChange: (current: any, next: any) => setActiveSlide(next),
   };
 
   return (
@@ -65,28 +66,24 @@ const HomePage = () => {
             </div>
           </div>
         ))}
-    
+
       </Slider>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 top-[-110px]">
-          <div className="model-search-content shadow-lg">
-            <div className="flex p-4 md:p-6 justify-center items-center">
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-gray-300">
-                <div className="text-center py-4 md:py-0 md:px-4">
-                  <p className="text-3xl font-bold text-[#05264f]">1000</p>
-                  <p className="text-muted-foreground font-extralight">Éducateurs du monde entier</p>
+      <div className="mx-auto max-w-7xl px-4 rounded-lg sm:px-6 lg:px-8 top-[-110px]">
+        <div className="bg-white relative -top-[90px]  rounded-2xl shadow-lg">
+          <div className="flex p-4 md:p-6 justify-center items-center">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
+              {statBanner.map((item) => (
+                <div key={item.id} className="text-center py-4 md:py-0 md:px-4">
+                  <p className="text-3xl font-bold text-[#05264f]">
+                    <CountUp start={0.0}duration={3} end={item.num} />
+                  </p>
+                  <p className="text-muted-foreground font-extralight">{item.label}</p>
                 </div>
-                <div className="text-center py-4 md:py-0 md:px-4">
-                  <p className="text-3xl font-bold text-[#05264f]">100</p>
-                  <p className="text-muted-foreground font-extralight">Organismes proposant nos cours</p>
-                </div>
-                <div className="text-center py-4 md:py-0 md:px-4">
-                  <p className="text-3xl font-bold text-[#05264f]">190</p>
-                  <p className="text-muted-foreground font-extralight">Pays où nous servons les apprenants</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
+      </div>
     </section>
   );
 };

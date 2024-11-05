@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.model-search-content {
-  background: #fff;
-  /* box-shadow: 0 10px 40px 0px rgba(4, 221, 181, 0.864); */
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  top: -90px;
-  border-radius: 3px;
-}
 
 .model-search-content2 {
   background: #fff;
@@ -18,7 +9,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
+  border-radius: 50px;
 }
 
 .rounded-circle {

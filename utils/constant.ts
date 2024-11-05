@@ -44,3 +44,27 @@ export const navItems = [
         hasDropdow: false,
     },
 ];
+
+
+export const statBanner = [
+    {
+        id: 1,
+        label: "Estudiants depuis notre création en 2022",
+        num: 100
+    },
+    {
+        id: 2,
+        label: "Éducateurs du monde entier",
+        num: 190
+    },
+    {
+        id: 3,
+        label: "Organismes proposant nos cours",
+        num: 900
+    },
+    {
+        id: 4,
+        label: "Pays où nous servons les apprenants",
+        num: 40
+    }
+]
