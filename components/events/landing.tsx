@@ -2,6 +2,7 @@
 
 "use client";
 
+import Image from "next/image";
 import EventTile from "./EventTile";
 
 // import image from 'next/image',
@@ -70,15 +71,13 @@ const HeroSection = () => {
             <img
                 width='547'
                 height='340'
-                alt='Participants engaging in events at Le Wagon'
-                srcSet='
-                    https://www-img.lewagon.com/9YQnNEbxRiHNYSAmxT13BndU9UNh_UoCVvoMSz4bWE0/rs:fill:1094:680/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 2x,
-                    https://www-img.lewagon.com/QriKXWmZ6Peh0NRfkq_--QLcGc4d2qLYws2YdIlsgUY/rs:fill:547:340/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 547w,
-                    https://www-img.lewagon.com/IqVNCXn4SxqOMa1W-Vgbwa8ld-7SauJQuTR-4vQ_v0E/rs:fill:336:209/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq 1x'
+                alt='Participants engaging in events at'
+                
                 className='w-full h-full object-cover'
                 loading='lazy'
-                src='https://www-img.lewagon.com/IqVNCXn4SxqOMa1W-Vgbwa8ld-7SauJQuTR-4vQ_v0E/rs:fill:336:209/plain/s3://wagon-www/ix44dhf0omvhqnfs8eo4ieo4hhkq'
+                src='https://res.cloudinary.com/dnzidlufh/image/upload/v1729605148/event/cada8ku8vh6dqt8jqudd.jpg'
             />
+              
         </div>
     </div>
 </div>
@@ -95,7 +94,7 @@ const HeroSection = () => {
                         Categories
                     </h2>
                      
-                   <div className="flex space-x-4">
+                   <div className="flex mt-4 mb-8 font-semibold space-x-4">
                             <span>Atelier</span>
                             <span>Hackaton</span>
                             <span>Conférence</span>
@@ -108,7 +107,7 @@ const HeroSection = () => {
                         location={"En ligne"}
                         category={"Atelier"}
                         image={
-                            "https://www-img.lewagon.com/6vtJYbvc7CWGJA8DfkQEGmtoUdpADsXX7CHkvIpWBSY/rs:fill:270:135/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35"
+                            "https://photos.google.com/u/0/share/AF1QipOrUUNX0pwVhpCAV_btGty9RFBg43OGM_D-1HCjwUSfb9AmY93DhNSvlJg8ftFpOg/photo/AF1QipPIOmTT4EM_8zil9kjKKrpIXivW4LU5I9skKYtA?key=SVR2S3hmQlBYcVJ5NjR2aFVTbUFGb25PTDk4cEx3"
                         }
                     />
                     <EventTile
@@ -130,48 +129,7 @@ const HeroSection = () => {
                         }
                     />
 
-                    {/* {[
-      {
-        title: "Alumni Stories: From bootcamp to the gaming industry",
-        type: "Talk",
-        date: "Tue, October 29 • 13:00 pm (Canada/Eastern Time)",
-        location: "Online"
-      },
-      {
-        title: "Data Science Foundations Free Online course",
-        type: "Workshop",
-        date: "Mon, November 4 • 19:00 pm (Asia/Tokyo Time)",
-        location: "Online"
-      },
-      {
-        title: "Growth Marketing bootcamp info session",
-        type: "Info session",
-        date: "Tue, November 5 • 18:30 pm (Europe/Paris Time)",
-        location: "Online"
-      },
-      {
-        title: "Tech Careers in Times of the AI Revolution",
-        type: "Talk",
-        date: "Wed, November 6 • 18:00 pm (Europe/Berlin Time)",
-        location: "Online"
-      },
-      {
-        title: "Online Q&A: Launching a career in data & AI",
-        type: "Info session",
-        date: "Thu, November 7 • 18:30 pm (Europe/Berlin Time)",
-        location: "Online"
-      }
-    ].map((event, index) => (
-      <div key={index} className="border p-4 rounded-lg mb-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <h3 className="font-bold text-xl text-gray-700 mb-2">{event.title}</h3>
-        <p className="text-gray-500">{event.type}</p>
-        <p className="text-gray-500">{event.date}</p>
-        <p className="text-gray-500 mb-4">{event.location}</p>
-        <button className="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition-colors duration-300">
-          Register Now
-        </button>
-      </div>
-    ))} */}
+               
                 </div>
                 {/* Show More Buttons */}
                 <div className='flex justify-center mt-4'>
