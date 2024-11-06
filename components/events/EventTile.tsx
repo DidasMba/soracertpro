@@ -17,7 +17,7 @@ const EventTile: React.FC<{
                     <div className='rounded overflow-hidden'>
                         <img
                             src={image}
-                          
+                            srcSet='https://www-img.lewagon.com/VsD1XzqdVUNUtXl3BMosDoju9IfzulSnSoO3aR2GvYc/rs:fill:540:270/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35 2x, https://www-img.lewagon.com/6vtJYbvc7CWGJA8DfkQEGmtoUdpADsXX7CHkvIpWBSY/rs:fill:270:135/plain/s3://wagon-www/w8zpkhwi22ag51yz4rp1bf5a3t35 270w'
                             alt='Alumni Stories: From bootcamp to the gaming industry'
                             width='270'
                             height='135'

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .model-search-content2 {
   background: #fff;
   /* box-shadow: 0 10px 40px 0px rgba(4, 221, 181, 0.864); */
@@ -11,7 +10,6 @@
   justify-content: center;
   border-radius: 50px;
 }
-
 .rounded-circle {
   border-radius: 50% !important
 }
@@ -29,7 +27,6 @@
   /* or any desired radius value */
   overflow: hidden;
 }
-
 .ok a {
   display: inline-block;
   text-decoration: none;
@@ -47,9 +44,7 @@
   padding-top: 4px;
   /* Adjust padding as needed */
   border-bottom: 2px solid rgb(83, 223, 252);
-
 }
-
 .texteone:hover {
   color: rgb(83, 223, 252);
   /* Couleur au survol */
@@ -58,7 +53,6 @@
 .image-wrapper {
   position: relative;
 }
-
 .image-wrapper .date {
   position: absolute;
   bottom: 0;
@@ -68,7 +62,6 @@
   padding: 4px 8px;
   font-size: 12px;
 }
-
 .image-wrapper .slide-indicators {
   position: absolute;
   bottom: 8px;
@@ -78,7 +71,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .image-wrapper .slide-indicators span {
   width: 8px;
   height: 8px;
