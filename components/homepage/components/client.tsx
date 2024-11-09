@@ -4,7 +4,7 @@ import React from 'react'
 const Client = () => {
   return (
     <>
-     <section id="faq-2" className=" max-w-7xl mx-auto w-full faq-2 section py-5" >
+     <section id="faq-2" className=" max-w-7xl mx-auto w-full faq-2 section py-5 max-w-full " >
      <div className=" max-w-7xl mx-auto w-full text-center container" data-aos="fade-up">
         <h2 className="text-sm font-extrabold leading-tight  py-1">Témoignages.</h2>
        
@@ -201,12 +201,10 @@ const Client = () => {
         </div>
         </div>
    
-        
       </Card>
                 </div>
 
         </div>
-
 
      </section>
       

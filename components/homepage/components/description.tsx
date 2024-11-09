@@ -2,7 +2,7 @@ import React from 'react';
 
 const Description = () => {
   return (
-    <div className="container mx-auto px-4 lg:px-9 pt-10 py-8">
+    <div className="container mx-auto px-4 lg:px-9 pt-10 py-12 bg-[#f8fafc] max-w-7xl sm:px-6">
       {/* Header Section */}
       <div className="text-center flex flex-col items-center mb-8 md:mb-12">
         <span className="text-purple-400 font-bold uppercase text-sm mb-3">Formation & Accompagnement</span>
@@ -22,16 +22,16 @@ const Description = () => {
           />
         </div>
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <h3 className="text-2xl font-bold pb-4">Formation & Accompagnements</h3>
+          <h3 className="text-2xl font-bold pb-4">Nous aidons les jeunes a lancer leurs carrieres</h3>
           <p className="text-lg">
-          Nous accompagnons les jeunes dans leur parcours de formation et de developpement
+          Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains..
           </p>
         </div>
       </div>
 
       {/* Row 2 */}
       <div className="flex flex-col md:flex-row justify-between items-center text-black mb-8">
-        <div className="w-full md:w-5/12 mb-8 md:mb-0">
+        <div className="w-full md:w-5/12 mb-8 md:mb-0">  
           <img
             src="/latest property 1.png"
             alt="Expert guidance"
