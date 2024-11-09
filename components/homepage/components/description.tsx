@@ -5,8 +5,8 @@ const Description = () => {
     <div className="container mx-auto px-4 lg:px-9 pt-10 py-12 bg-[#f8fafc] max-w-7xl sm:px-6">
       {/* Header Section */}
       <div className="text-center flex flex-col items-center mb-8 md:mb-12">
-        <span className="text-purple-400 font-bold uppercase text-sm mb-3">Formation & Accompagnement</span>
-        <h2 className="text-black text-3xl lg:text-4xl font-semibold mb-4">
+        <span className="text-purple-400 font-bold uppercase text-sm mb-3 ">Formation & Accompagnement</span>
+        <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-[#05264f]">
         Nous accompagnons les jeunes dans leur parcours de formation et de developpement
         </h2>
       </div>
@@ -22,7 +22,7 @@ const Description = () => {
           />
         </div>
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <h3 className="text-2xl font-bold pb-4">Nous aidons les jeunes a lancer leurs carrieres</h3>
+          <h3 className="text-2xl font-bold pb-4 text-[#05264f]">Nous aidons les jeunes a lancer leurs carrieres</h3>
           <p className="text-lg">
           Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains..
           </p>
@@ -40,7 +40,7 @@ const Description = () => {
           />
         </div>
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <h3 className="text-2xl font-bold pb-4">Certification & Bourses</h3>
+          <h3 className="text-2xl font-bold pb-4 text-[#05264f]">Certification & Bourses</h3>
           <p className="text-lg">
           Nous offrons des Certification reconnues et des Bourses des formations internationales.
           </p>
@@ -58,7 +58,7 @@ const Description = () => {
           />
         </div>
         <div className="w-full md:w-5/12 mb-8 md:mb-0">
-          <h3 className="text-2xl font-bold pb-4">Communaute</h3>
+          <h3 className="text-2xl font-bold pb-4 text-[#05264f]">Communaute</h3>
           <p className="text-lg">
           Nous sommes une Communaute des passionnes da la technologie et de innovation.
           </p>
