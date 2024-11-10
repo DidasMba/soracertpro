@@ -4,6 +4,7 @@
 
 import Image from "next/image";
 import EventTile from "./EventTile";
+import Speaker from "./Speaker";
 
 // import image from 'next/image',
 
@@ -138,6 +139,7 @@ const HeroSection = () => {
                     </button>
                 </div>
             </div>
+            <Speaker />
         </header>
     );
 };

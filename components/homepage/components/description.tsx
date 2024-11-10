@@ -5,7 +5,7 @@ const Description = () => {
     <div className="container mx-auto px-4 lg:px-9 pt-10 py-12 bg-[#f8fafc] max-w-7xl sm:px-6">
       {/* Header Section */}
       <div className="text-center flex flex-col items-center mb-8 md:mb-12">
-        <span className="text-purple-400 font-bold uppercase text-sm mb-3 ">Formation & Accompagnement</span>
+        <span className="font-bold uppercase text-sm mb-3 ">Formation & Accompagnement</span>
         <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-[#05264f]">
         Nous accompagnons les jeunes dans leur parcours de formation et de developpement
         </h2>
