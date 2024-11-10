@@ -5,6 +5,7 @@
 import Image from "next/image";
 import EventTile from "./EventTile";
 import Speaker from "./Speaker";
+import Program from "./Program";
 
 // import image from 'next/image',
 
@@ -140,6 +141,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <Speaker />
+            <Program />
         </header>
     );
 };
