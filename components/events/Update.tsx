@@ -4,7 +4,7 @@ const Update: React.FC = () => {
   return (
     <section id="newsletter" aria-label="Newsletter">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative -mx-4 overflow-hidden bg-[#a3c2cd] px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
+        <div className="relative -mx-4 overflow-hidden rounded-2xl bg-[#f1fbfe] px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           
           {/* Background Image */}
           <img 
