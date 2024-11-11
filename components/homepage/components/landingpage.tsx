@@ -1,93 +1,83 @@
-'use client';
+/** @format */
 
-import './home.css';
-import React, { useEffect, useRef, useState } from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Button } from '@/components/ui/button';
-import CountUp from 'react-countup';
-import { statBanner } from '@/utils/constant';
+"use client";
+
+import "./home.css";
+import React from "react";
+import banner from "@/assets/banner.png";
+import bannerMob from "@/assets/banner-mob.png";
+
+import CountUp from "react-countup";
+import { statBanner } from "@/utils/constant";
+import Image from "next/image";
 
 const HomePage = () => {
-  const slides = [
-    {
-      id: 1,
-      title: 'Lorem ipsum',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia placeat non, excepturi facere dolores fugit quos impedit, in minus rerum quis. Consectetur ratione nemo fugiat repudiandae corporis magnam ad!',
-    },
-    {
-      id: 2,
-      title: 'consectetur elit 2',
-      description: 'Step into elegance with this beautifully designed interior. Every detail has been thoughtfully curated to create a harmonious and inviting space. Perfect for those who appreciate refined aesthetics and a cozy atmosphere.',
-      imageUrl: '/blog-3.png',
-    },
-  ];
-
-  const [activeSlide, setActiveSlide] = useState(0);
-  const sliderRef = useRef<Slider>(null);
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    beforeChange: (current: any, next: any) => setActiveSlide(next),
-  };
-
-  return (
-    <section className='containemain '>
-      <Slider ref={sliderRef} {...settings} className='w-full'>
-        {slides.map((slide, index) => (
-          <div key={slide.id}>
-            <div
-              className={`slide-container p-2 h-[80vh] bg-cover bg-no-repeat flex justify-start text-left ${index === activeSlide ? 'active' : ''}`}
-              style={{
-                backgroundImage: `url(${slide.imageUrl})`,
-              }}
-            >
-              <div className="overlay"></div>
-              <div className="text-container flex-col p-8">
-                <div className='container'>
-                  <h1 className="text-5xl font-bold py-4" data-aos="zoom-out">{slide.title}</h1>
-                  <p className="mt-4 max-w-2xl text-xl py-2 font-light" data-aos="zoom-out" data-aos-delay="200">
-                    {slide.description}
-                  </p>
-                  <button className="w-[157px] py-2 rounded-4xl  bg-customHoverBlue flex flex-row items-start justify-start pt-3 px-[19px] pb-[11px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#05264f]" style={{ borderRadius: '20px' }}>
-                    <a className="[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1] ">
-                      Learn moree
-                    </a>
-                  </button>
+    return (
+        <section className='relative w-full'>
+            <div className='bg-slate-500 h-[48.8125rem] md:h-[39.9rem] w-full relative'>
+                <Image
+                    src={banner}
+                    alt='banner'
+                    className='w-full h-full object-cover hidden md:block'
+                    width={1440}
+                    height={638}
+                />
+                <Image
+                    src={bannerMob}
+                    alt='banner'
+                    className='w-full h-full block md:hidden object-cover'
+                    width={1440}
+                    height={638}
+                />
+                <div className='absolute h-full w-full top-0 right-0 left-0 bottom-0 bg-black bg-opacity-50'>
+                    <div className='max-w-7xl mx-auto px-4 md:px-8 flex items-center h-full'>
+                        <div className='text-white w-full md:max-w-xl lg:max-w-2xl flex flex-col gap-6 lg:gap-8 items-start'>
+                            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl'>
+                                Évoluez avec la communauté SoraCert,
+                                <br />
+                                <span className='bg-gradient-to-r from-blue-400 via-customButton to-customHoverBlue inline-block text-transparent bg-clip-text'>
+                                    innovez avec la technologie.
+                                </span>
+                            </h1>
+                            <p className='font-semibold text-sm lg:text-base'>
+                                Nous offrons l'accès à la technologie à ceux qui
+                                en ont le plus besoin.
+                            </p>
+                            <button className='bg-customBlue hover:bg-customButton hover:text-customBlue transition-all ease-in-out duration-300  w-auto text-white px-8 py-3 rounded-3xl text-sm md:text-base font-semibold'>
+                                Explorer
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        ))}
-
-      </Slider>
-
-
-      <div className="mx-auto max-w-7xl px-4 rounded-lg sm:px-6 lg:px-8 top-[-110px]">
-        <div className="bg-white relative -top-[90px]  rounded-2xl shadow-lg">
-          <div className="flex p-4 md:p-6 justify-center items-center">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
-              {statBanner.map((item) => (
-                <div key={item.id} className="text-center py-4 md:py-0 md:px-4">
-                  <p className="text-3xl font-bold text-[#05264f]">
-                    <CountUp start={0.0}duration={3} end={item.num} />
-                  </p>
-                  <p className="text-muted-foreground font-extralight">{item.label}</p>
+            <div className='mx-auto max-w-7xl px-4 rounded-lg sm:px-6 lg:px-8 top-[-110px]'>
+                <div className='bg-white relative -top-[90px]  rounded-2xl shadow-lg'>
+                    <div className='flex p-4 md:p-6 justify-center items-center'>
+                        <div className='grid grid-cols-1 gap-4 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-300'>
+                            {statBanner.map((item) => (
+                                <div
+                                    key={item.id}
+                                    className='text-center py-4 md:py-0 md:px-4'
+                                >
+                                    <p className='text-3xl font-bold text-[#05264f]'>
+                                        <CountUp
+                                            className='bg-gradient-to-r from-blue-400 via-customButton to-customHoverBlue inline-block text-transparent bg-clip-text'
+                                            start={0.0}
+                                            duration={3}
+                                            end={item.num}
+                                        />
+                                    </p>
+                                    <p className='text-muted-foreground text-xs font-semibold md:text-base text-gray-500'>
+                                        {item.label}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-              ))}
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default HomePage;
