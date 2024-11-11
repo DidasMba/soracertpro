@@ -15,9 +15,9 @@ export default function Home() {
             <LandiingPage />
             <FrameComponent6 />
             <Client />
-            <SectionDegaul />
+            {/* <SectionDegaul /> */}
             <Description />
-            <DegaulSection />
+            {/* <DegaulSection /> */}
             <Blog />
             <UpcomingEvents />
         </main>
