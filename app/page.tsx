@@ -2,7 +2,7 @@
 
 import LandiingPage from "@/components/homepage/components/landingpage";
 import FrameComponent6 from "@/components/homepage/components/aboutus";
-import Client from "@/components/homepage/components/client";
+import Testimonial from "@/components/homepage/components/Testimonial";
 import Blog from "@/components/homepage/components/blog";
 import UpcomingEvents from "@/components/homepage/components/events";
 import SectionDegaul from "@/components/homepage/components/section-degaul";
@@ -14,7 +14,7 @@ export default function Home() {
         <main className='relative overflow-x-hidden'>
             <LandiingPage />
             <FrameComponent6 />
-            <Client />
+            <Testimonial />
             {/* <SectionDegaul /> */}
             <Description />
             {/* <DegaulSection /> */}
