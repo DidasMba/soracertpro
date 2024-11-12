@@ -69,10 +69,6 @@ const HeroSection = () => {
                      text={` Participez à un atelier gratuit sur le design UX ou l'analyse des données, assistez aux journées de démonstration de nos étudiants, ou rejoignez-nous pour une session d'information interactive afin d'en savoir plus sur SoraCert.`}
                 
                 />
-
-                <p className='hidden md:block text-lg leading-relaxed mb-4  max-w-[95%]'>
-                Participez à un atelier gratuit sur le design UX ou l'analyse des données, assistez aux journées de démonstration de nos étudiants, ou rejoignez-nous pour une session d'information interactive afin d'en savoir plus sur SoraCert.
-                </p>
             </div>
         </div>
     </div>
