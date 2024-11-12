@@ -7,6 +7,8 @@ import EventTile from "./EventTile";
 import Speaker from "./Speaker";
 import Program from "./Program";
 import Update from "./Update";
+import Heading from "@/components/common/Heading";
+import Paragrah from "@/components/common/Paragrah";
 
 // import image from 'next/image',
 
@@ -63,6 +65,11 @@ const HeroSection = () => {
                 <h1 className='text-4xl lg:text-5xl font-extrabold mb-4 text-[#05264f]'>
                     Explorez nos événements en direct, conférences et ateliers gratuits.
                 </h1>
+                <Paragrah
+                     text={` Participez à un atelier gratuit sur le design UX ou l'analyse des données, assistez aux journées de démonstration de nos étudiants, ou rejoignez-nous pour une session d'information interactive afin d'en savoir plus sur SoraCert.`}
+                
+                />
+
                 <p className='hidden md:block text-lg leading-relaxed mb-4  max-w-[95%]'>
                 Participez à un atelier gratuit sur le design UX ou l'analyse des données, assistez aux journées de démonstration de nos étudiants, ou rejoignez-nous pour une session d'information interactive afin d'en savoir plus sur SoraCert.
                 </p>
