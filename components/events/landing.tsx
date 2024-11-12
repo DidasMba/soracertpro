@@ -62,9 +62,10 @@ const HeroSection = () => {
             </span>
 
             <div className='flex flex-col mt-6'>
-                <h1 className='text-4xl lg:text-5xl font-extrabold mb-4 text-[#05264f]'>
-                    Explorez nos événements en direct, conférences et ateliers gratuits.
-                </h1>
+                <Heading 
+                   text={` Explorez nos événements en direct, conférences et ateliers gratuits.`}
+                
+                />
                 <Paragrah
                      text={` Participez à un atelier gratuit sur le design UX ou l'analyse des données, assistez aux journées de démonstration de nos étudiants, ou rejoignez-nous pour une session d'information interactive afin d'en savoir plus sur SoraCert.`}
                 
