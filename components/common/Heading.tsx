@@ -2,7 +2,10 @@
 
 import React from "react";
 
-const Heading: React.FC<{ text: string }> = ({ text }) => {
+const Heading: React.FC<{ text: string; variant?: "black" | "white" }> = ({
+    text,
+    variant = "black",
+}) => {
     return (
         <div>
             <h1 className='text-3xl font-bold uppercase  text-[#05264f] mb-3 py-4'>
