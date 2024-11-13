@@ -2,7 +2,6 @@
 
 import Heading from "@/components/common/Heading";
 import Paragrah from "@/components/common/Paragrah";
-import type { NextPage } from "next";
 
 const FrameComponent6 = () => {
     return (

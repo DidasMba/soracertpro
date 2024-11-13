@@ -6,7 +6,6 @@ import "./home.css";
 import React from "react";
 import banner from "@/assets/banner.png";
 import bannerMob from "@/assets/banner-mob.png";
-
 import CountUp from "react-countup";
 import { statBanner } from "@/utils/constant";
 import Image from "next/image";
