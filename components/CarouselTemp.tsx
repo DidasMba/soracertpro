@@ -20,7 +20,7 @@ export default function HeroBanner() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <button className='rounded bg-white px-6 py-2 font-semibold text-gray-800 transition-all hover:bg-gray-200'>
-                        Learn moreee
+                        Learn more
                     </button>
                 </div>
             </div>
