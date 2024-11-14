@@ -12,11 +12,11 @@ const HowWeWorkTile: React.FC<{
     isReverted?: boolean;
 }> = ({ title, imageURL, isReverted = false, content }) => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 my-6 md:my-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 my-6 md:my-8'>
             <div
-                className={`h-[400px] ${
+                className={`md:h-[400px] max-h-[400px] ${
                     isReverted ? "md:order-2" : "md:order-1"
-                } rounded-xl overflow-hidden`}
+                } rounded-xl  overflow-hidden`}
             >
                 <Image
                     src={imageURL}
