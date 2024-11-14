@@ -25,7 +25,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <body className={montserrat.className}>
+            <body
+                suppressHydrationWarning={true}
+                className={montserrat.className}
+            >
                 <NextTopLoader
                     color='#00224d'
                     initialPosition={0.08}
@@ -36,9 +39,7 @@ export default function RootLayout({
                     shadow='0 0 10px #2299DD,0 0 5px #2299DD'
                 />
                 <Navbar />
-                <div className="mt-20">
-                 {children}
-                </div>
+                <div className='mt-20'>{children}</div>
                 <Footer />
             </body>
         </html>
