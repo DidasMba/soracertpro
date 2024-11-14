@@ -109,3 +109,27 @@ export const testimonials: Testimonial[] = [
         rating: 5,
     },
 ];
+
+export const howWeWorkContents = [
+    {
+        id: 1,
+        title: "Nous aidons les jeunes a lancer leurs carrieres",
+        content:
+            "Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains.",
+        imageURL: "/latest property 1.png",
+    },
+    {
+        id: 2,
+        title: "Certification & Bourses",
+        content:
+            "Nous offrons des Certification reconnues et des Bourses des formations internationales.",
+        imageURL: "/bien2.jpg",
+    },
+    {
+        id: 3,
+        title: "Communaute",
+        content:
+            "Nous sommes une Communaute des passionnes da la technologie et de innovation.",
+        imageURL: "/aboutus.png",
+    },
+];
