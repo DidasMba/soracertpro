@@ -16,7 +16,7 @@ const TestimonialModal: React.FC<{
     setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
 }> = ({ content, username, avatar, setOpenModal, timeAgo }) => {
     return (
-        <div className='fixed inset-0 backdrop-blur-md w-full z-[999] flex items-center h-full top-0 right-0 bottom-0 left-0'>
+        <div className='fixed inset-0 backdrop-blur-md w-full z-[999] flex items-center px-6 h-full top-0 right-0 bottom-0 left-0'>
             <div className='px-6 py-4 max-w-xl w-full mx-auto bg-white text-gray-800 rounded-xl shadow-md'>
                 <div className='flex justify-end w-full'>
                     <button
@@ -37,7 +37,7 @@ const TestimonialModal: React.FC<{
                 </div>
 
                 <Paragrah text={content} />
-                <div className='w-full grid grid-cols-1 lg:grid-cols-2'>
+                <div className='w-full grid grid-cols-1 lg:grid-cols-2 justify-items-center'>
                     <div className='my-2 rounded-xl w-48 h-48 lg:w-54 lg:h-54 '>
                         <Image
                             className='h-full rounded-xl object-cover w-full'
@@ -47,7 +47,7 @@ const TestimonialModal: React.FC<{
                             height={208}
                         />
                     </div>
-                    <div className='w-full flex items-center '>
+                    <div className='w-full lg:flex hidden items-center '>
                         <AnimatedWavingHand />
                     </div>
                 </div>

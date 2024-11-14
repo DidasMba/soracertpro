@@ -76,7 +76,7 @@ export default function GalleryImage() {
     };
 
     return (
-        <div className='w-full overflow-hidden bg-gray-50 py-12'>
+        <div className='w-full overflow-hidden bg-white py-12'>
             <div className='space-y-8'>
                 {/* Top row - right to left */}
                 <div className='w-full'>
@@ -84,11 +84,6 @@ export default function GalleryImage() {
                         {images.map((image) => (
                             <div key={image.id} className='px-2'>
                                 <div className='relative overflow-hidden rounded-lg'>
-                                    <div className='absolute top-0 left-0 z-10 bg-black bg-opacity-50 px-2 py-1'>
-                                        <span className='text-xs font-semibold text-white'>
-                                            {image.category}
-                                        </span>
-                                    </div>
                                     <div className='relative h-[400px] w-full overflow-hidden'>
                                         <Image
                                             src={image.src}

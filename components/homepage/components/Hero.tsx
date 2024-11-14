@@ -10,7 +10,7 @@ import CountUp from "react-countup";
 import { statBanner } from "@/utils/constant";
 import Image from "next/image";
 
-const HomePage = () => {
+const Hero = () => {
     return (
         <section className='relative w-full'>
             <div className='bg-slate-500 h-[48.8125rem] md:h-[39.9rem] w-full relative'>
@@ -79,4 +79,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Hero;

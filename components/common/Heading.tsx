@@ -8,10 +8,10 @@ const Heading: React.FC<{ text: string; variant?: "black" | "white" }> = ({
 }) => {
     return (
         <div>
-            <h1 className='text-3xl font-bold uppercase  text-[#05264f] mb-3 py-4'>
+            <h2 className='md:text-3xl text-2xl  font-bold  text-customBlue py-4'>
                 {text}
-            </h1>
-            <div className='mt-4 mb-3 h-1 w-24 bg-[#05264f]'></div>
+            </h2>
+            <div className='mb-3 h-1 w-24 bg-customBlue'></div>
         </div>
     );
 };

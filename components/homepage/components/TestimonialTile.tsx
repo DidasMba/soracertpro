@@ -13,7 +13,7 @@ const TestimonialTile: React.FC<{
     const [openModal, setOpenModal] = useState<boolean>(false);
     return (
         <div className='px-4 flex flex-col gap-4'>
-            <div className='rounded-2xl p-6 bg-gray-50 shadow-xl'>
+            <div className='rounded-2xl p-6 bg-gray-50 shadow-xl hover:-translate-y-3 duration-300 transition-all ease-in-out'>
                 <p className='mb-4 text-gray-700'>
                     {content.substring(0, 170)}...{" "}
                 </p>
