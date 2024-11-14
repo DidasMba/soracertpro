@@ -14,8 +14,10 @@ const HowWeWorkTile: React.FC<{
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 my-6 md:my-8'>
             <div
-                className={`md:h-[400px] max-h-[400px] ${
-                    isReverted ? "md:order-2" : "md:order-1"
+                className={`md:h-[300px] max-h-[300px] flex ${
+                    isReverted
+                        ? "md:order-2 justify-end"
+                        : "md:order-1 justify-start"
                 } rounded-xl  overflow-hidden`}
             >
                 <Image
@@ -23,12 +25,12 @@ const HowWeWorkTile: React.FC<{
                     width={300}
                     height={400}
                     alt={title}
-                    className='object-cover w-full rounded-xl transform transition-transform duration-300 ease-in-out hover:scale-105 '
+                    className='object-cover w-full float-end  md:w-[80%] rounded-xl transform transition-transform duration-300 ease-in-out hover:scale-105 '
                 />
             </div>
             <div
                 className={`${
-                    isReverted ? "md:order-1" : "md:order-1"
+                    isReverted ? "md:order-1" : "md:order-2"
                 } flex items-center`}
             >
                 <div>
