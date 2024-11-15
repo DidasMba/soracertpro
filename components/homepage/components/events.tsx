@@ -7,7 +7,7 @@ const UpcomingEvents = () =>{
 
 
     return (
-      <div className="bg-[#f8fafc] py-12">
+      <div className="bg-[#f1fbfe] py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
      {/* <div className="text-start">
            
@@ -39,8 +39,8 @@ const UpcomingEvents = () =>{
               
                 <div className="absolute inset-0 p-4 flex justify-between items-end">
                 <div>
-                    <p className="text-lg font-medium text-white">Lorem Ipsum</p>
-                    <p className="text-sm font-light text-white"> 100 Smart Street, LA, USA</p>
+                    <p className="text-lg font-medium text-white">Atelier de Développement Web - React.js</p>
+                    <p className="text-sm font-light text-white">Lubumbashi, 05 av. Maman Yemo</p>
                   </div>
                 </div>
               </div>
@@ -65,8 +65,8 @@ const UpcomingEvents = () =>{
              
                 <div className="absolute inset-0 p-4 flex justify-between items-end">
                   <div>
-                    <p className="text-lg font-medium text-white">Lorem Ipsum</p>
-                    <p className="text-sm font-light text-white"> 100 Smart Street, LA, USA</p>
+                    <p className="text-lg font-medium text-white">Séminaire sur la Sécurité Informatique 2024</p>
+                    <p className="text-sm font-light text-white">Lubumbashi, 05 av. Maman Yemo</p>
                   </div>
                 </div>
               </div>
@@ -91,8 +91,8 @@ const UpcomingEvents = () =>{
                
                 <div className="absolute inset-0 p-4 flex justify-between items-end">
                 <div>
-                    <p className="text-lg font-medium text-white">Lorem Ipsum</p>
-                    <p className="text-sm font-light text-white"> 100 Smart Street, LA, USA</p>
+                    <p className="text-lg font-medium text-white">Webinaire : Les Dernières Tendances en Blockchain</p>
+                    <p className="text-sm font-light text-white"> En ligne</p>
                   </div>
                 </div>
               </div>

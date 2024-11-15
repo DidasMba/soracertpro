@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import Link from 'next/link';
 
 const EventTile: React.FC<{
     title: string;
@@ -43,6 +44,7 @@ const EventTile: React.FC<{
                             </div>
                             <p className='text-xs mt-1 text-bold'>{location}</p>
                         </div>
+                        <Link href='/events/events'>
                         <div className='w-full lg:w-1/3 text-center'>
                             <a
                                 href=''
@@ -52,6 +54,7 @@ const EventTile: React.FC<{
                     
                             </a>
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>

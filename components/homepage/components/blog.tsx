@@ -27,8 +27,10 @@ export default function Component() {
                             }}
                             width='200'
                         />
-                        <h3 className='text-lg font-semibold'>Lorem Ipsum</h3>
-                        <p className='text-sm text-gray-600 mt-1'>Workshops</p>
+                        <h3 className='text-lg font-semibold'>5G : Impacts et opportunités pour les entreprises en 2024
+                        </h3>
+                        <p className='text-sm text-gray-600 mt-1'>Publié le 5 novembre 2024
+                        </p>
                         <div className='py-2'></div>
                     </Link>
                 </div>
@@ -47,9 +49,9 @@ export default function Component() {
                             width='200'
                         />
                         <h3 className='text-lg font-semibold'>
-                            Best environment for rental
+                        Les dernières innovations en matière d'intelligence artificielle
                         </h3>
-                        <p className='text-sm text-gray-600 mt-1'>Lifestyle</p>
+                        <p className='text-sm text-gray-600 mt-1'>Publié le 14 novembre 2024</p>
                         <div className='py-2'></div>
                     </Link>
                 </div>
@@ -68,9 +70,9 @@ export default function Component() {
                             width='200'
                         />
                         <h3 className='text-lg font-semibold'>
-                            Boys Hostel Apartment
+                        Les technologies qui redéfinissent l'avenir du cloud computing
                         </h3>
-                        <p className='text-sm text-gray-600 mt-1'>Property</p>
+                        <p className='text-sm text-gray-600 mt-1'>Publié le 10 novembre 2024</p>
                         <div className='py-2'></div>
                     </Link>
                 </div>

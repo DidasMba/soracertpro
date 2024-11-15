@@ -4,9 +4,8 @@
 
 import Image from "next/image";
 import EventTile from "./EventTile";
-import Speaker from "./Speaker";
-import Program from "./Program";
-import Update from "./Update";
+
+// import Update from "./Update";
 import Heading from "@/components/common/Heading";
 import Paragrah from "@/components/common/Paragrah";
 
@@ -90,7 +89,7 @@ const HeroSection = () => {
             <div className='max-w-7xl mx-auto w-full container pt-3 pt-xl-5 pb-5'>
 
                 <h1 className='text-2xl mt-8 bg-white border-b pb-4 font-bold'>
-                    Events that match your search
+                Événements correspondant à votre recherche
                 </h1>
                 <div>
                     
@@ -144,9 +143,9 @@ const HeroSection = () => {
                     </button>
                 </div>
             </div>
-            <Speaker />
-            <Program />
-            <Update />
+    
+          
+            {/* <Update /> */}
         </header>
     );
 };
