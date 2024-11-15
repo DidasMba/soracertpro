@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Heading from '@/components/common/Heading';
 
 
 const UpcomingEvents = () =>{
@@ -8,12 +9,16 @@ const UpcomingEvents = () =>{
     return (
       <div className="bg-[#f8fafc] py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-start">
+     {/* <div className="text-start">
            
             <p className=" font-extrabold sm:text-4xl sm:tracking-tight lg:text-3xl mt-4 max-w-1xl text-[#05264f]  text-xl ">Événement à Venir</p>
             <div className="mt-4 mb-3 h-1 w-24 bg-[#05264f] justify-start items-start" />
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+          </div> */}
+
+          <Heading 
+              text = {`Événement à Venir`}
+          />
+          <div className=" grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
             <div className="group relative">
             <Link href="/">
               <div className="relative w-full h-80 bg-white overflow-hidden shadow-lg" style={{ borderRadius:'10px'}}>
