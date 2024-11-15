@@ -67,6 +67,7 @@ const config = {
                 lg: "var(--radius)",
                 md: "calc(var(--radius) - 2px)",
                 sm: "calc(var(--radius) - 4px)",
+                "1xl": "1rem", // Taille personnalisée
             },
             keyframes: {
                 "accordion-down": {

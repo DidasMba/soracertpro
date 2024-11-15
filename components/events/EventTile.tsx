@@ -44,17 +44,23 @@ const EventTile: React.FC<{
                             </div>
                             <p className='text-xs mt-1 text-bold'>{location}</p>
                         </div>
-                        <Link href='/events/events'>
+                        {/* <Link href='/events/events'>
                         <div className='w-full lg:w-1/3 text-center'>
-                            <a
-                                href=''
-                                className='text-white font-bold py-2 lg:py-5 rounded w-full block transition rounded-1xl  bg-customBlue'
-                            >
+                            <button className='text-white font-bold py-2 lg:py-5  w-full block transition rounded-1xl bg-customBlue'>
                                 Enregistrer Maintenant
-                    
-                            </a>
+                            </button>
                         </div>
-                        </Link>
+                       </Link> */}
+
+<Link
+    href="/events/events"
+    className="w-full lg:w-1/3 text-center block text-white font-bold py-2 lg:py-5 rounded bg-customBlue transition hover:bg-customHoverBlue"
+>
+    Enregistrer Maintenant
+</Link>
+
+
+
                     </div>
                 </div>
             </div>

@@ -32,9 +32,15 @@ const Careersinglepage = () => {
        </div>
                 <div className="flex flex-row items-center bg-[#05264f] px-2 py-1 text-white">
                 <Link href="/blog" className="w-[200px] py-2 rounded-4xl bg-[#05264f] flex flex-row items-center justify-center pt-2  pb-[8px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#fff]" style={{ borderRadius: '20px' }}>
-                    <button className="">
+                    {/* <button className="">
                   Apply
-                    </button>
+                    </button> */}
+
+                <div className='w-full lg:w-1/3 text-center'>
+                        <span className='text-white font-bold py-2 lg:py-5 rounded w-full block transition rounded-1xl bg-customBlue'>
+                            Enregistrer Maintenant
+                        </span>
+                    </div>
                     <svg  
              
              className=" w-4 h-4 font-mono justify-center items-center text-white" style={{marginLeft:'8px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>

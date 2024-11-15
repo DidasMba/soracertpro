@@ -254,9 +254,30 @@ Bs Graduation
        </div>
        <div className="flex items-center  bg-slate-200 px-2 py-1 " style={{marginLeft:'8px'}}>
               <button className="py-2 rounded-4xl bg-slate-200 flex flex-row items-center justify-center pt-1  pb-[4px] box-border">
-              <svg  
+              {/* <svg  
              
-             className=" w-5 h-5 font-mono justify-center items-center text-black"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></button>
+             className=" w-5 h-5 font-mono justify-center items-center text-black"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+             
+             </svg> */}
+             {/* <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6">
+  <path d="M14 7l5 5-5 5M19 12H5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+</svg> */}
+
+
+<svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6">
+  <path 
+    d="M14 7l5 5-5 5M19 12H5" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+  />
+</svg>
+
+
+             
+             </button>
        </div>
        
 </div>
