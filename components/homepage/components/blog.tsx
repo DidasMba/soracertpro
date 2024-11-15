@@ -86,7 +86,7 @@ export default function Component() {
                                     style={{ borderRadius: "20px" }}
                                 >
                                     <button className='[text-decoration:none] h-[23px] flex-1 relative font-semibold text-[inherit] inline-block z-[1]'>
-                                        View All Blog
+                                    Voir tous les blogs
                                     </button>
                                 </Link>
                             </div>
