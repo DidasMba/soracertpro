@@ -18,7 +18,7 @@ const UpcomingEvents = () =>{
           <Heading 
               text = {`Événement à Venir`}
           />
-          <div className=" grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
             <div className="group relative">
             <Link href="/">
               <div className="relative w-full h-80 bg-white overflow-hidden shadow-lg" style={{ borderRadius:'10px'}}>
