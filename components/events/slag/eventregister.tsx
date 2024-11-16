@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 import React from 'react'
 
-const Careersinglepage = () => {
+const Eventregister = () => {
   return (
     <>
       <section id="faq-2" className="faq-2 section py-5 max-w-8xl mx-auto" >
@@ -33,7 +33,7 @@ const Careersinglepage = () => {
                   <div className="flex flex-row items-center bg-[#05264f] px-2 py-1 text-white">
                     <Link href="/blog" className="w-[200px] py-2 rounded-4xl bg-[#05264f] flex flex-row items-center justify-center pt-2  pb-[8px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#fff]" style={{ borderRadius: '20px' }}>
                       <button className="">
-                        Apply
+                        Enregister Maintenant
                       </button>
                       <svg
 
@@ -55,7 +55,7 @@ const Careersinglepage = () => {
       <section className="flex flex-col md:flex-ro justify-center items-center py-12 px-4" data-aos="fade-up">
         <div className="flex flex-col md:flex-row w-full max-w-7xl  justify-between space-y-8 md:space-y-0 md:space-x-8">
           <div className="w-full md:w-3/5 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-            <h3 className='text-lg font-bold'>Description</h3>
+            <h3 className='text-lg font-bold'>Description E</h3>
             <br />
             <p>Session d'information du Growth Marketing Bootcamp
               par l'équipe en ligne de SoraCert
@@ -115,12 +115,7 @@ const Careersinglepage = () => {
                     </div>
                   </div>
                 </div>
-
-
-
                 <div className='flex flex-col h-[20px]' />
-
-
                 <div className="flex flex-col justify-center items-center">
                   <div className="self-stretch flex flex-row items-start justify-center">
                     <svg className=" w-8 h-6 font-mono justify-center items-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M232.5 5.171C247.4-1.718 264.6-1.718 279.5 5.171L498.1 106.2C506.6 110.1 512 118.6 512 127.1C512 137.3 506.6 145.8 498.1 149.8L279.5 250.8C264.6 257.7 247.4 257.7 232.5 250.8L13.93 149.8C5.438 145.8 0 137.3 0 127.1C0 118.6 5.437 110.1 13.93 106.2L232.5 5.171zM498.1 234.2C506.6 238.1 512 246.6 512 255.1C512 265.3 506.6 273.8 498.1 277.8L279.5 378.8C264.6 385.7 247.4 385.7 232.5 378.8L13.93 277.8C5.438 273.8 0 265.3 0 255.1C0 246.6 5.437 238.1 13.93 234.2L67.13 209.6L219.1 279.8C242.5 290.7 269.5 290.7 292.9 279.8L444.9 209.6L498.1 234.2zM292.9 407.8L444.9 337.6L498.1 362.2C506.6 366.1 512 374.6 512 383.1C512 393.3 506.6 401.8 498.1 405.8L279.5 506.8C264.6 513.7 247.4 513.7 232.5 506.8L13.93 405.8C5.438 401.8 0 393.3 0 383.1C0 374.6 5.437 366.1 13.93 362.2L67.13 337.6L219.1 407.8C242.5 418.7 269.5 418.7 292.9 407.8V407.8z" /></svg>
@@ -134,8 +129,6 @@ const Careersinglepage = () => {
                     </div>
                   </div>
                 </div>
-
-
 
               </div>
             </Card>
@@ -293,4 +286,4 @@ const Careersinglepage = () => {
   )
 }
 
-export default Careersinglepage
+export default Eventregister

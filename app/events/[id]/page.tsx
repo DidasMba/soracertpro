@@ -1,11 +1,10 @@
-import Careersinglepage from "@/components/career/slag/pagecareer";
-
+import Eventregister from "@/components/events/slag/eventregister";
 
 export default function Career() {
   return (
     <main className="">
   
-  <Careersinglepage />
+  <Eventregister />
 
     </main>
   );

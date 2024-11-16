@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 import React from 'react'
+import sponsor from 'react'
 
 const Careersinglepage = () => {
   return (
@@ -13,7 +14,7 @@ const Careersinglepage = () => {
             <div className=" p-2 flex flex-row  justify-start items-center">
 
               <div className="member-info">
-                <p className="texl-sm font-extralight">At Facebook</p>
+                <p className="texl-sm font-extralight">At Facebookggggggg</p>
               </div>
               <div className="bg-gray-200 " style={{ textTransform: 'uppercase', marginLeft: '8px', padding: '0px 0px 2px' }}>part-time</div>
             </div>
@@ -53,7 +54,7 @@ const Careersinglepage = () => {
       <section className="flex flex-col md:flex-ro justify-center items-center py-12 px-4" data-aos="fade-up">
         <div className="flex flex-col md:flex-row w-full max-w-7xl  justify-between space-y-8 md:space-y-0 md:space-x-8">
           <div className="w-full md:w-3/5 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-            <h3 className='text-lg font-bold'>Job Description</h3>
+            <h3 className='text-lg font-bold'>Description ev</h3>
             <br />
             <p>Velstar is a Shopify Plus agency, and we partner with brands to help them grow, we also do the same with our people!
               <br />
