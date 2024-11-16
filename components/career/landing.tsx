@@ -22,14 +22,14 @@ const HeroSection = () => {
                     id="newsletter-email"
                   />
                   <button className="inline-flex items-center justify-center rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 ml-2 bg-[#00224d] hover:text-[#00224d] text-white hover:bg-[#53dffc]">
-                  <svg>
-  <path 
-    strokeLinecap="round"  // Corrected from stroke-linecap
-    strokeLinejoin="round"  // Corrected from stroke-linejoin
-    fillRule="evenodd"      // Corrected from fill-rule
-    d="M10 10 H 90 V 90 H 10 Z" 
-  />
-</svg>
+                    <svg>
+                      <path 
+                        strokeLinecap="round"  // Corrected from stroke-linecap
+                        strokeLinejoin="round"  // Corrected from stroke-linejoin
+                        fillRule="evenodd"      // Corrected from fill-rule
+                        d="M10 10 H 90 V 90 H 10 Z" 
+                      />
+                    </svg>
 
                   </button>
                 </div>

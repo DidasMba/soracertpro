@@ -52,15 +52,12 @@ const EventTile: React.FC<{
                         </div>
                        </Link> */}
 
-<Link
-    href="/events/events"
-    className="w-full lg:w-1/3 text-center block text-white font-bold py-2 lg:py-5 rounded bg-customBlue transition hover:bg-customHoverBlue"
->
-    Enregistrer Maintenant
-</Link>
-
-
-
+                        <Link
+                            href="/events/events"
+                            className="w-full lg:w-1/3 text-center block text-white font-bold py-2 lg:py-5 rounded bg-customBlue transition hover:bg-customHoverBlue"
+                        >
+                            Enregistrer Maintenant
+                        </Link>
                     </div>
                 </div>
             </div>

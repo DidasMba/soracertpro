@@ -2,7 +2,7 @@
 
 "use client";
 
-import Image from "next/image";
+
 import EventTile from "./EventTile";
 
 // import Update from "./Update";
@@ -100,9 +100,9 @@ const HeroSection = () => {
                     </h2>
                      
                    <div className="flex mt-4 mb-8 font-semibold space-x-4">
-                            <span>Atelier</span>
-                            <span>Hackaton</span>
-                            <span>Conférence</span>
+                            <button>Atelier</button>
+                            <button>Hackaton</button>
+                            <button>Conférence</button>
                     </div>
                     
                     
