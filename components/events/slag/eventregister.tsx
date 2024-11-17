@@ -13,7 +13,7 @@ const Eventregister = () => {
             <div className=" p-2 flex flex-row  justify-start items-center">
 
               <div className="member-info">
-                <p className="texl-sm font-extralight">At Facebook</p>
+                <p className="texl-sm font-extralight">Par Soracert</p>
               </div>
               <div className="bg-gray-200 " style={{ textTransform: 'uppercase', marginLeft: '8px', padding: '0px 0px 2px' }}>part-time</div>
             </div>
@@ -151,42 +151,13 @@ const Eventregister = () => {
                   </div>
                   <div className="self-stretch flex flex-col items-center justify-center mx-auto">
                     <h2 className="text-sm font-extralight items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
-                      Job Level:
+                      Localisation:
                     </h2>
                     <div className="items-center justify-center text-center  text-sm font-extrabold">
-                      Entry Level
+                     En ligne
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-center items-center">
-                  <div className="self-stretch flex flex-row items-start justify-center">
-                    <svg className=" w-8 h-6 font-mono justify-center items-center" style={{ marginBottom: '3px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M447.1 96h-172.1L226.7 50.75C214.7 38.74 198.5 32 181.5 32H63.1c-35.35 0-64 28.66-64 64v320c0 35.34 28.65 64 64 64h384c35.35 0 64-28.66 64-64V160C511.1 124.7 483.3 96 447.1 96zM463.1 416c0 8.824-7.178 16-16 16h-384c-8.822 0-16-7.176-16-16V96c0-8.824 7.178-16 16-16h117.5c4.273 0 8.293 1.664 11.31 4.688L255.1 144h192c8.822 0 16 7.176 16 16V416z" /></svg>
-                  </div>
-                  <div className="self-stretch flex flex-col items-center justify-center  mx-auto">
-                    <h2 className="text-sm font-extralight items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
-                      Experience:
-                    </h2>
-                    <div className="items-center justify-center text-center  text-sm font-extrabold">
-                      2 - 3 Years
-
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <div className="self-stretch flex flex-row items-start justify-center">
-                    <svg className=" w-8 h-6 font-mono justify-center items-center" style={{ marginBottom: '3px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M24 32C37.25 32 48 42.75 48 56V408C48 421.3 58.75 432 72 432H488C501.3 432 512 442.7 512 456C512 469.3 501.3 480 488 480H72C32.24 480 0 447.8 0 408V56C0 42.75 10.75 32 24 32zM128 136C128 122.7 138.7 112 152 112H360C373.3 112 384 122.7 384 136C384 149.3 373.3 160 360 160H152C138.7 160 128 149.3 128 136zM296 208C309.3 208 320 218.7 320 232C320 245.3 309.3 256 296 256H152C138.7 256 128 245.3 128 232C128 218.7 138.7 208 152 208H296zM424 304C437.3 304 448 314.7 448 328C448 341.3 437.3 352 424 352H152C138.7 352 128 341.3 128 328C128 314.7 138.7 304 152 304H424z" /></svg>
-                  </div>
-                  <div className="self-stretch flex flex-col items-center justify-center  mx-auto">
-                    <h2 className="text-sm font-extralight items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
-                      Education:
-                    </h2>
-                    <div className="items-center justify-center text-center  text-sm font-extrabold">
-                      Bs Graduation
-                    </div>
-                  </div>
-                </div>
-
-
               </div>
               <hr />
               <h3 className='text-lg font-bold py-2'>Invite tes amis Maintenant:</h3>

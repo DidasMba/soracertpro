@@ -1,12 +1,17 @@
 // components/Sponsorships.tsx
 import React from 'react';
+import Heading from '@/components/common/Heading'
 
 const Sponsorships = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-        Current sponsorships for our workshops and speakers.
-      </h2>
+      <Heading 
+          text = {`Les sponsors actuels de nos ateliers et intervenants`}
+          noLine={true}
+          uppercase={false}
+          center={true}
+      />
+    
       <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
         <div className="flex items-center justify-center">
           <img
