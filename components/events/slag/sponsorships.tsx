@@ -1,6 +1,13 @@
 // components/Sponsorships.tsx
 import React from 'react';
 import Heading from '@/components/common/Heading'
+import voda from "@/assets/images.png";
+import cisc from "@/assets/cisco.png";
+import oracle from "@/assets/oracle.png";
+import redhate from "@/assets/redhate.png";
+import certiport from "@/assets/certiport.png";
+import comptia from "@/assets/comptia.png";
+import Image from "next/image";
 
 const Sponsorships = () => {
   return (
@@ -14,63 +21,64 @@ const Sponsorships = () => {
     
       <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
         <div className="flex items-center justify-center">
-          <img
+          <Image
             alt="Transistor"
             loading="lazy"
-            width="158"
-            height="48"
+            width="160"
+            height="50"
             decoding="async"
-            src="/_next/static/media/transistor.a1e38d49.svg"
+            src={voda}
           />
         </div>
+    
         <div className="flex items-center justify-center">
-          <img
+          <Image
             alt="Tuple"
             loading="lazy"
-            width="105"
-            height="48"
+            width="200"
+            height="40"
             decoding="async"
-            src="/_next/static/media/tuple.2f54ed03.svg"
+            src={cisc}
           />
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             alt="StaticKit"
             loading="lazy"
             width="127"
             height="48"
             decoding="async"
-            src="/_next/static/media/statickit.2e06fcea.svg"
+            src={oracle}
           />
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             alt="Mirage"
             loading="lazy"
             width="138"
             height="48"
             decoding="async"
-            src="/_next/static/media/mirage.e12f40ad.svg"
+            src={redhate}
           />
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             alt="Laravel"
             loading="lazy"
             width="136"
             height="48"
             decoding="async"
-            src="/_next/static/media/laravel.6faebf7c.svg"
+            src={certiport}
           />
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             alt="Statamic"
             loading="lazy"
             width="147"
             height="48"
             decoding="async"
-            src="/_next/static/media/statamic.923101b6.svg"
+            src={comptia}
           />
         </div>
       </div>
