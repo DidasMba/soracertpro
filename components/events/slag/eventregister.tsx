@@ -9,7 +9,7 @@ const Eventregister = () => {
       <section id="faq-2" className="faq-2 section py-5 max-w-8xl mx-auto" >
         <div className="flex sm:flex-row flex-col items-center justify-between mt-4  p-3 m-4 max-w-7xl mx-auto">
           <div className='flex flex-col'>
-            <h2 className="text-xl font-extrabold tracking-tight text-gray-900" style={{ textTransform: 'uppercase' }}>Senior UX Designer</h2>
+            <h2 className="text-xl font-extrabold tracking-tight text-gray-900" style={{ textTransform: 'uppercase' }}>Cybersécurité et Protection des Utilisateurs en Ligne</h2>
             <div className=" p-2 flex flex-row  justify-start items-center">
 
               <div className="member-info">
@@ -57,38 +57,23 @@ const Eventregister = () => {
           <div className="w-full md:w-3/5 flex flex-col" data-aos="fade-up" data-aos-delay="200">
             <h3 className='text-lg font-bold'>Description E</h3>
             <br />
-            <p>Session d'information du Growth Marketing Bootcamp
-              par l'équipe en ligne de SoraCert
-              <br />
-              Rejoignez-nous en ligne pour découvrir le Growth Marketing !
-              The role will involve translating project specifications into clean, test-driven, easily maintainable code. You will work with the Project and Development teams as well as with the Technical Director, adhering closely to project plans and delivering work that meets functional & non-functional requirements. You will have the opportunity to create new, innovative, secure and scalable features for our clients on the Shopify platform
-              <br />
+            <p>Protéger les utilisateurs dans un monde numérique de plus en plus sophistiqué
+              
+              La nouvelle génération d’utilisateurs du web est avertie et méfiante. Ils maîtrisent les outils de développement, détectent les tentatives de phishing et connaissent les meilleures pratiques pour sécuriser leurs activités en ligne. Mais les cybermenaces évoluent tout aussi rapidement.
 
-              Le marketing de croissance est-il la prochaine étape dans votre carrière ? Que vous soyez un professionnel cherchant à maîtriser les techniques marketing innovantes ou un entrepreneur désireux d'élargir votre entreprise, découvrez comment ce bootcamp peut vous aider à transformer et exécuter votre stratégie de croissance pour vos futurs projets. Notre programme est conçu pour vous doter des derniers outils GenAI et no-code pour stimuler et optimiser la croissance.
+              Lors de cette conférence, Soracert vous invite à découvrir :
 
-              Obtenez un aperçu approfondi de SoraCert et de notre Growth Marketing Bootcamp, y compris le programme, les formats d'apprentissage et le support de carrière. Cette session est aussi une excellente occasion de poser toutes vos questions sur le processus de candidature et les prochaines étapes pour votre carrière.
+              Les dernières tendances en matière de cybersécurité.
+              Comment détecter et neutraliser les "dark patterns" utilisés par les acteurs malveillants pour manipuler les utilisateurs.
+              Les meilleures pratiques pour sécuriser vos données personnelles et professionnelles.
+              Des démonstrations en direct de techniques de cyberattaques courantes et comment les contrer.
 
-              Ce que vous apprendrez :
-              - Curriculum complet : Explorez le programme couvrant tous les aspects du marketing de croissance, y compris le marketing digital, l'analyse, l'IA et les techniques no-code comme la prochaine génération du marketing.
-              -Formats d'apprentissage flexibles** : Découvrez nos différents formats d'apprentissage adaptés à votre emploi du temps et à votre style d'apprentissage, que vous préfériez des sessions en ligne ou en personne. Découvrez dans quelle ville européenne se déroulera notre premier Bootcamp en personne !
-              -Support de carrière : Comprenez les services de support de carrière que nous offrons, y compris des sessions de coaching individuel, la rédaction de CV et la préparation aux entretiens.
+                              💡 Au programme :
+                ✅ Les dernières tendances en cybersécurité
+                ✅ Identifier et contrer les "dark patterns" et autres menaces numériques
+                ✅ Démonstrations en direct d’attaques et solutions pratiques
 
-              Veuillez noter : cet événement se déroulera en Francais.
-
-              Programme :
-              👉 17:00 - 18:00 BST / 18:00 - 19:00 CEST : Introduction à SoraCert et présentation du Soracert, des formats d'apprentissage, du support de carrière et du processus de candidature
-              👉 8:00 - 18:15 BST / 19:00 - 19:15 CEST : Session de questions-réponses
-
-              Nous avons hâte de vous rencontrer en ligne !
-
-              Vous voulez en savoir plus ?
-              SoraCert est un bootcamp de codage classé parmi les meilleurs au monde, avec 45 campus et une communauté de plus de 25 500 anciens élèves. Nos diplômés ont fait carrière dans des entreprises technologiques de premier plan et des startups à travers le monde.
-
-              Nous proposons une variété de formations, y compris le **Développement Web**, **Analyse de Données**, **Science des Données**, **Ingénierie des Données** et **No-code**, adaptées à la fois aux débutants et aux professionnels expérimentés. Découvrez nos formations sur **soracert.com**.
-
-              Ne manquez pas cette occasion de faire passer votre carrière au niveau supérieur !
-
-              À bientôt ! 👋
+                Rejoignez-nous pour devenir un acteur proactif de votre sécurité numérique !
 
             </p>
 
@@ -108,9 +93,6 @@ const Eventregister = () => {
                     <h2 className="text-xl leading-[38px] font-bold items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
                       Gratuite
                     </h2>
-                    <div className="items-center justify-center text-center  font-extralight">
-                      Yearly salary
-                    </div>
                   </div>
                 </div>
                 <div className='flex flex-col h-[20px]' />
@@ -207,7 +189,7 @@ const Eventregister = () => {
 
               </div>
               <hr />
-              <h3 className='text-lg font-bold py-2'>Share this job:</h3>
+              <h3 className='text-lg font-bold py-2'>Invite tes amis Maintenant:</h3>
               <div className=" p-2 flex sm:flex-row flex-col justify-start items-center">
                 <div className="flex flex-row items-center bg-slate-200 py-1 text-black">
                   <Link href="/blog" className="w-[150px] py-2 rounded-4xl bg-slate-200 flex flex-row items-center justify-center pt-1  pb-[6px] box-border whitespace-nowrap z-[1] text-center text-sm text-black" style={{ borderRadius: '20px' }}>
@@ -245,16 +227,6 @@ const Eventregister = () => {
                   </div>
                   <div className="flex items-center  bg-slate-200 px-2 py-1 " style={{ marginLeft: '8px' }}>
                     <button className="py-2 rounded-4xl bg-slate-200 flex flex-row items-center justify-center pt-1  pb-[4px] box-border">
-                      {/* <svg  
-             
-             className=" w-5 h-5 font-mono justify-center items-center text-black"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
-             
-             </svg> */}
-                      {/* <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6">
-  <path d="M14 7l5 5-5 5M19 12H5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-</svg> */}
-
-
                       <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6">
                         <path
                           d="M14 7l5 5-5 5M19 12H5"
