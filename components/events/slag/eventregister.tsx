@@ -97,18 +97,16 @@ const Eventregister = () => {
             <Card className="p-9 shadow-lg " style={{ borderRadius: '20px' }}>
               <div className="flex sm:flex-row flex-col justify-between">
 
-
-
                 <div className="flex flex-col justify-center items-center">
                   <div className="self-stretch flex flex-row items-start justify-center">
 
                     <div className=" rounded-xl bg-whitesmoke-200 hidden" />
-                    Salary (USD)
+                    Participation
 
                   </div>
                   <div className="self-stretch flex flex-col items-center justify-center gap-[2px] mx-auto">
                     <h2 className="text-xl leading-[38px] font-bold items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
-                      $100,000 - $120,000
+                      Gratuite
                     </h2>
                     <div className="items-center justify-center text-center  font-extralight">
                       Yearly salary
@@ -122,10 +120,10 @@ const Eventregister = () => {
                   </div>
                   <div className="self-stretch flex flex-col items-center justify-center gap-[8px] mx-auto">
                     <h2 className="text-xl leading-[38px] font-bold items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
-                      Job Location
+                      Location
                     </h2>
                     <div className="items-center justify-center text-center  font-extralight">
-                      Dhaka, Bangladesh
+                      Lubumbashi
                     </div>
                   </div>
                 </div>
@@ -133,7 +131,7 @@ const Eventregister = () => {
               </div>
             </Card>
             <Card className="p-6 shadow-lg " style={{ borderRadius: '20px' }}>
-              <h3 className='text-lg font-bold py-2'>Job Overview</h3>
+              <h3 className='text-lg font-bold py-2'>Calendrier</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols 
             -3 gap-4 p-5">
 
@@ -145,7 +143,7 @@ const Eventregister = () => {
                   </div>
                   <div className="self-stretch flex flex-col items-center justify-center mx-auto">
                     <h2 className="text-sm font-extralight items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
-                      Job Posted:
+                    Date
                     </h2>
                     <div className="items-center justify-center text-center  text-sm font-extrabold">
                       14 Jun, 2021
@@ -158,10 +156,10 @@ const Eventregister = () => {
                   </div>
                   <div className="self-stretch flex flex-col items-center justify-center mx-auto">
                     <h2 className="text-sm font-extralight items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
-                      Job expire in:
+                      Heure:
                     </h2>
                     <div className="items-center justify-center text-center  text-sm font-extrabold">
-                      14 Aug, 2021
+                     20 : 00
                     </div>
                   </div>
                 </div>
