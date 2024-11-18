@@ -9,8 +9,8 @@ const Portrait: React.FC = () => {
   return (
     <header className="">
      <Separator
-                description={`Chez Soracert, nous offrons un parcours unique pour les jeunes passionnés de technologie, alliant formation et accompagnement personnalisé. Nos programmes inspirants et immersifs permettent à chaque participant de renforcer ses compétences, de développer sa confiance et de se préparer à réussir dans un secteur en pleine croissance.`}
-                title={`Formation et développement des jeunes chez Soracert: un accompagnement vers l'excellence.`}
+                description={`Apprendre la cybersécurité`}
+                title={` Avec la multiplication des menaces en ligne., il est crucial de sensibiliser, d’éduquer et de former les professionnels, les entreprises et les particuliers aux bonnes pratiques de sécurité informatique. `}
                 imgUrl={HowItwork}
                 imgUrlMob={HowItworkMob}
                 id='how-it-work-separator'
