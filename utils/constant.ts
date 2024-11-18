@@ -1,5 +1,14 @@
 /** @format */
 
+import coaching from "@/assets/program/coaching.png";
+import coaching_thumb from "@/assets/program/thumbnail/coaching.png";
+
+import webdesign from "@/assets/program/webdesign.png";
+import webdesign_thumbnail from "@/assets/program/thumbnail/webdesign-thumbnail.png";
+
+import webdev from "@/assets/program/webdev.png";
+import webdev_thumbnail from "@/assets/program/thumbnail/webdev-thumbnail.png";
+
 export const navItems = [
     {
         id: 1,
@@ -132,4 +141,64 @@ export const howWeWorkContents = [
             "Nous sommes une Communaute des passionnes da la technologie et de innovation.",
         imageURL: "/aboutus.png",
     },
+];
+
+export const programmData = [
+    {
+        id: 1,
+        title: "HTML & CSS Fundamentals",
+        description:
+            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+        thumbnail: coaching_thumb,
+        image: coaching,
+        slug: "webdev",
+        alt: "HTML and CSS logo",
+        location: "En ligne",
+        date: "2024-04-15",
+    },
+    {
+        id: 2,
+        title: "JavaScript Essentials",
+        description:
+            "Maîtrisez le langage dynamique du web : JavaScript pour des applications web interactives.",
+        thumbnail: webdev_thumbnail,
+        image: webdev,
+        slug: "wed_design",
+        alt: "JavaScript logo",
+        location: "Centre Soracert",
+        date: "2024-07-22",
+    },
+    {
+        id: 3,
+        title: "React for Web Development",
+        description:
+            "Construisez des interfaces utilisateur efficaces et évolutives avec React, une bibliothèque JavaScript populaire.",
+        thumbnail: webdesign_thumbnail,
+        image: webdesign,
+        slug: "network",
+        alt: "React logo",
+        location: "En ligne",
+        date: "2024-11-12",
+    },
+];
+
+export const TimmingOptions = [
+    { id: "tous", label: "Tout" },
+    { id: "jour", label: "Jour" },
+    { id: "semaine", label: "Semaine" },
+    { id: "mois", label: "Mois" },
+    { id: "annee", label: "Annee" },
+];
+
+export const locationOptions = [
+    { id: "online", label: "En ligne" },
+    { id: "onsite", label: "Presentielle" },
+    { id: "replay", label: "Replay" },
+];
+
+export const programWebOptions = [
+    { id: "tous", label: "Tout" },
+    { id: "webdev", label: "Wed development" },
+    { id: "wed_design", label: "Design" },
+    { id: "network", label: "IT Reseaux" },
 ];
