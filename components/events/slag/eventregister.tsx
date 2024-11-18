@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import Heading from '@/components/common/Heading'
 import Link from 'next/link'
 import React from 'react'
 
@@ -9,7 +10,9 @@ const Eventregister = () => {
       <section id="faq-2" className="faq-2 section py-5 max-w-8xl mx-auto" >
         <div className="flex sm:flex-row flex-col items-center justify-between mt-4  p-3 m-4 max-w-7xl mx-auto">
           <div className='flex flex-col'>
-            <h2 className="text-xl font-extrabold tracking-tight text-gray-900" style={{ textTransform: 'uppercase' }}>Cybersécurité et Protection des Utilisateurs en Ligne</h2>
+           <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#05264f] max-w-4xl'>
+           Cybersécurité et Protection des Utilisateurs en Ligne                           
+            </h1>
             <div className=" p-2 flex flex-row  justify-start items-center">
 
               <div className="member-info">
@@ -55,7 +58,7 @@ const Eventregister = () => {
       <section className="flex flex-col md:flex-ro justify-center items-center py-12 px-4" data-aos="fade-up">
         <div className="flex flex-col md:flex-row w-full max-w-7xl  justify-between space-y-8 md:space-y-0 md:space-x-8">
           <div className="w-full md:w-3/5 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-            <h3 className='text-lg font-bold'>Description</h3>
+            <h3 className='text-lg font-bold'>Description </h3>
             <br />
             <p>Protéger les utilisateurs dans un monde numérique de plus en plus sophistiqué
               
