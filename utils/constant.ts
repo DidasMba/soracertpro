@@ -151,6 +151,7 @@ export const programmData = [
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
         thumbnail: coaching_thumb,
         image: coaching,
+        slug: "webdev",
         alt: "HTML and CSS logo",
         location: "En ligne",
         date: "2024-04-15",
@@ -162,6 +163,7 @@ export const programmData = [
             "Maîtrisez le langage dynamique du web : JavaScript pour des applications web interactives.",
         thumbnail: webdev_thumbnail,
         image: webdev,
+        slug: "wed_design",
         alt: "JavaScript logo",
         location: "Centre Soracert",
         date: "2024-07-22",
@@ -173,6 +175,7 @@ export const programmData = [
             "Construisez des interfaces utilisateur efficaces et évolutives avec React, une bibliothèque JavaScript populaire.",
         thumbnail: webdesign_thumbnail,
         image: webdesign,
+        slug: "network",
         alt: "React logo",
         location: "En ligne",
         date: "2024-11-12",
@@ -189,6 +192,13 @@ export const TimmingOptions = [
 
 export const locationOptions = [
     { id: "online", label: "En ligne" },
-    { id: "onsite", label: "En Presentielle" },
+    { id: "onsite", label: "Presentielle" },
     { id: "replay", label: "Replay" },
+];
+
+export const programWebOptions = [
+    { id: "tous", label: "Tout" },
+    { id: "webdev", label: "Wed development" },
+    { id: "wed_design", label: "Design" },
+    { id: "network", label: "IT Reseaux" },
 ];
