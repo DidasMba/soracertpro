@@ -7,7 +7,7 @@ import HowItwork from "@/assets/how-we-work.png";
 
 const Portrait: React.FC = () => {
   return (
-    <header className="container my-lg-32px">
+    <header className="">
      <Separator
                 description={`Chez Soracert, nous offrons un parcours unique pour les jeunes passionnés de technologie, alliant formation et accompagnement personnalisé. Nos programmes inspirants et immersifs permettent à chaque participant de renforcer ses compétences, de développer sa confiance et de se préparer à réussir dans un secteur en pleine croissance.`}
                 title={`Formation et développement des jeunes chez Soracert: un accompagnement vers l'excellence.`}
