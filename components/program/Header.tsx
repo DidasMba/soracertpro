@@ -55,11 +55,13 @@ const Header = () => {
                                 apprentissage pratique et mentorat expert.
                             </span>
                         </h1>
-                        <SignButton
-                            variant='dark'
-                            href='#'
-                            text='Explorer nos programmes'
-                        />
+                        <div>
+                            <SignButton
+                                variant='dark'
+                                href='#'
+                                text='Explorer nos programmes'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

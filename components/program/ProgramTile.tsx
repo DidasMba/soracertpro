@@ -16,7 +16,7 @@ const ProgramTile: React.FC<{
             <div className='flex flex-col lg:flex-row lg:gap-6 gap-4'>
                 {/* Image Column */}
                 <div className='w-full lg:w-1/4 mb-4 lg:mb-0'>
-                    <div className='rounded h-[90px] w-[180px]'>
+                    <div className='rounded lg:h-[90px] h-[150px] lg:w-[180px] w-full'>
                         <Image
                             src={image}
                             alt={title}
@@ -35,7 +35,7 @@ const ProgramTile: React.FC<{
                             <h2 className='text-lg font-bold my-2'>{title}</h2>
 
                             <div className='flex flex-col lg:flex-row items-start lg:items-center text-sm'>
-                                <small className='text-gray-600 font-bold mb-1 lg:mb-0 '>
+                                <small className='text-blue font-bold mb-1 lg:mb-0 '>
                                     {date}
                                 </small>
                             </div>
