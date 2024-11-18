@@ -13,21 +13,20 @@ const Eventregister = () => {
           <div className='flex flex-col'>
            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#05264f] max-w-4xl'>
            Cybersécurité et Protection des Utilisateurs en Ligne                           
-            </h1>
-            <div className=" p-2 flex flex-row  justify-start items-center">
-
+          </h1>
+          <div className=" p-2 flex flex-row  justify-start items-center">
               <div className="member-info">
                 <p className="texl-sm font-extralight">Par Soracert</p>
               </div>
               <div className="bg-gray-200 " style={{ textTransform: 'uppercase', marginLeft: '8px', padding: '0px 0px 2px' }}>part-time</div>
-            </div>
+          </div>
           </div>
           <div className="flex space-x-2">
 
             <div className="bg-transparent px-4 py-8">
               <div className="max-w-7xl mx-auto">
 
-                <div className="flex flex-row items-center ">
+                
                   {/* <div className="flex flex-row items-center  bg-slate-200 px-2 py-1 " style={{ marginRight: '8px' }}>
                     <button className="py-2 rounded-4xl bg-slate-200 flex flex-row items-center justify-center pt-2  pb-[8px] box-border">
                       <svg
@@ -53,10 +52,8 @@ const Eventregister = () => {
                       />
 
                   {/* </div> */}
-                  <div>
-
-                  </div>
-                </div>
+                 
+                
               </div>
             </div>
           </div>
