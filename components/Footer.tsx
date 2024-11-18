@@ -214,14 +214,7 @@ const Footer = () => {
                                     Ressources premium
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    href='#'
-                                    className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
-                                >
-                                    Link 3
-                                </a>
-                            </li>
+                          
                         </ul>
                     </div>
                     {/* Columns6 */}
@@ -236,7 +229,7 @@ const Footer = () => {
                                     href='tel:1234567890'
                                     className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
                                 >
-                                    1234567890
+                                    +243 997 235 577
                                 </a>
                             </li>
 
@@ -246,7 +239,7 @@ const Footer = () => {
                                     href='#'
                                     className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
                                 >
-                                    100 Smart Street, LA, USA
+                                    Av. du Cadastre, Lubumbashi, Congo - Kinshasa
                                 </a>
                             </li>
                             <li className='flex items-center'>
@@ -255,7 +248,7 @@ const Footer = () => {
                                     href='mailto:company@email.com'
                                     className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
                                 >
-                                    company@email.com
+                                    Support@soracert.com
                                 </a>
                             </li>
                         </ul>
