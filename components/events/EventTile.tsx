@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from 'next/link';
+import SignButton from "@/components/Button";
 
 const EventTile: React.FC<{
     title: string;
@@ -51,13 +52,20 @@ const EventTile: React.FC<{
                             </button>
                         </div>
                        </Link> */}
-
-                        <Link
+                        
+                        {/* <Link
                             href="/events/events"
                             className="w-full lg:w-1/3 text-center block text-white font-bold py-2 lg:py-5 rounded bg-customBlue transition hover:bg-customHoverBlue"
                         >
                             Enregistrer Maintenant
-                        </Link>
+                        </Link> */}
+
+                                    <SignButton
+                                
+                                            text="Enregister Maintenant"
+                                            href={`/events/events`}
+                                            variant='dark'
+                                    />
                     </div>
                 </div>
             </div>
