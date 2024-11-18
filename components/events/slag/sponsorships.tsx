@@ -19,7 +19,7 @@ const Sponsorships = () => {
           center={true}
       />
     
-      <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+      <div className="mx-auto mt-19 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
         <div className="flex items-center justify-center">
           <Image
             alt="Transistor"

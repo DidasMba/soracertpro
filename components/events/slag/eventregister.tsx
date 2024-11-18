@@ -55,7 +55,7 @@ const Eventregister = () => {
       <section className="flex flex-col md:flex-ro justify-center items-center py-12 px-4" data-aos="fade-up">
         <div className="flex flex-col md:flex-row w-full max-w-7xl  justify-between space-y-8 md:space-y-0 md:space-x-8">
           <div className="w-full md:w-3/5 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-            <h3 className='text-lg font-bold'>Description E</h3>
+            <h3 className='text-lg font-bold'>Description</h3>
             <br />
             <p>Protéger les utilisateurs dans un monde numérique de plus en plus sophistiqué
               
@@ -112,6 +112,7 @@ const Eventregister = () => {
 
               </div>
             </Card>
+           
             <Card className="p-6 shadow-lg " style={{ borderRadius: '20px' }}>
               <h3 className='text-lg font-bold py-2'>Calendrier</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols 
@@ -217,10 +218,10 @@ const Eventregister = () => {
                 </div>
               </div>
             </Card>
-
           </div>
 
-        </div>
+      </div>
+      
       </section>
 
     </>
