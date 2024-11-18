@@ -9,6 +9,7 @@ import certiport from "@/assets/certiport.png";
 import comptia from "@/assets/comptia.png";
 import Image from "next/image";
 
+
 const Sponsorships = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
