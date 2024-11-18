@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Heading from '@/components/common/Heading'
+import SignButton from "@/components/Button";
 import Link from 'next/link'
 import React from 'react'
 
@@ -27,14 +28,14 @@ const Eventregister = () => {
               <div className="max-w-7xl mx-auto">
 
                 <div className="flex flex-row items-center ">
-                  <div className="flex flex-row items-center  bg-slate-200 px-2 py-1 " style={{ marginRight: '8px' }}>
+                  {/* <div className="flex flex-row items-center  bg-slate-200 px-2 py-1 " style={{ marginRight: '8px' }}>
                     <button className="py-2 rounded-4xl bg-slate-200 flex flex-row items-center justify-center pt-2  pb-[8px] box-border">
                       <svg
 
                         className=" w-5 h-5 font-mono justify-center items-center text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"> <path d="M 5 5 L 5 27 L 27 27 L 27 9.59375 L 26.71875 9.28125 L 22.71875 5.28125 L 22.40625 5 Z M 7 7 L 10 7 L 10 13 L 22 13 L 22 7.4375 L 25 10.4375 L 25 25 L 23 25 L 23 16 L 9 16 L 9 25 L 7 25 Z M 12 7 L 16 7 L 16 9 L 18 9 L 18 7 L 20 7 L 20 11 L 12 11 Z M 11 18 L 21 18 L 21 25 L 11 25 Z" /></svg> </button>
-                  </div>
-                  <div className="flex flex-row items-center bg-[#05264f] px-2 py-1 text-white">
-                    <Link href="/blog" className="w-[200px] py-2 rounded-4xl bg-[#05264f] flex flex-row items-center justify-center pt-2  pb-[8px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#fff]" style={{ borderRadius: '20px' }}>
+                  </div> */}
+                  {/* <div className=""> */}
+                    {/* <Link href="/blog" className="w-[200px] py-2 rounded-4xl bg-[#05264f] flex flex-row items-center justify-center pt-2  pb-[8px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#fff]" style={{ borderRadius: '20px' }}>
                       <button className="">
                         Enregister Maintenant
                       </button>
@@ -42,9 +43,16 @@ const Eventregister = () => {
 
                         className=" w-4 h-4 font-mono justify-center items-center text-white" style={{ marginLeft: '8px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" /></svg>
 
-                    </Link>
+                    </Link> */}
+                    
+                    <SignButton
+                    
+                            text="Enregister Maintenant"
+                            href='#'
+                            variant='dark'
+                      />
 
-                  </div>
+                  {/* </div> */}
                   <div>
 
                   </div>
