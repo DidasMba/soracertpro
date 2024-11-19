@@ -89,7 +89,7 @@ const HeroSection = () => {
             <div className='max-w-7xl mx-auto w-full container pt-3 pt-xl-5 pb-5'>
 
                 <h1 className='text-2xl mt-8 bg-white border-b pb-4 font-bold'>
-                Événements correspondant à votre recherche
+                   Événements correspondant à votre recherche
                 </h1>
                 <div>
                     
@@ -105,7 +105,7 @@ const HeroSection = () => {
                             <button>Conférence</button>
                     </div>
                     
-                    
+                    //pull donnee de api
                     <EventTile
                         title='Alumni Stories: From bootcamp to the gaming industry'
                         date='Tue, October 29 • 13:00 pm (Canada/EasternTime)'
@@ -132,9 +132,7 @@ const HeroSection = () => {
                         image={
                             "https://afropean.com/wp-content/uploads/2016/06/tech_conference_audience.png"
                         }
-                    />
-
-               
+                    />               
                 </div>
                 {/* Show More Buttons */}
                 <div className='flex justify-center mt-4'>
