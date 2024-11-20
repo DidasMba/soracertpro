@@ -11,68 +11,37 @@ const Eventregister = () => {
       <section id="faq-2" className="faq-2 section py-5 max-w-8xl mx-auto" >
         <div className="flex sm:flex-row flex-col items-center justify-between mt-4  p-3 m-4 max-w-7xl mx-auto">
           <div className='flex flex-col'>
-           <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#05264f] max-w-4xl'>
-           Cybersécurité et Protection des Utilisateurs en Ligne                           
-          </h1>
-          <div className=" p-2 flex flex-row  justify-start items-center">
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#05264f] max-w-4xl'>
+              Cybersécurité et Protection des Utilisateurs en Ligne
+            </h1>
+            <div className=" p-2 flex flex-row  justify-start items-center">
               <div className="member-info">
                 <p className="texl-sm font-extralight">Par Soracert</p>
               </div>
               <div className="bg-gray-200 " style={{ textTransform: 'uppercase', marginLeft: '8px', padding: '0px 0px 2px' }}>part-time</div>
-          </div>
-          </div>
-          <div className="flex space-x-2">
-
-            <div className="bg-transparent px-4 py-8">
-              <div className="max-w-7xl mx-auto">
-
-                
-                  {/* <div className="flex flex-row items-center  bg-slate-200 px-2 py-1 " style={{ marginRight: '8px' }}>
-                    <button className="py-2 rounded-4xl bg-slate-200 flex flex-row items-center justify-center pt-2  pb-[8px] box-border">
-                      <svg
-
-                        className=" w-5 h-5 font-mono justify-center items-center text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"> <path d="M 5 5 L 5 27 L 27 27 L 27 9.59375 L 26.71875 9.28125 L 22.71875 5.28125 L 22.40625 5 Z M 7 7 L 10 7 L 10 13 L 22 13 L 22 7.4375 L 25 10.4375 L 25 25 L 23 25 L 23 16 L 9 16 L 9 25 L 7 25 Z M 12 7 L 16 7 L 16 9 L 18 9 L 18 7 L 20 7 L 20 11 L 12 11 Z M 11 18 L 21 18 L 21 25 L 11 25 Z" /></svg> </button>
-                  </div> */}
-                  {/* <div className=""> */}
-                    {/* <Link href="/blog" className="w-[200px] py-2 rounded-4xl bg-[#05264f] flex flex-row items-center justify-center pt-2  pb-[8px] box-border whitespace-nowrap z-[1] text-center text-sm text-[#fff]" style={{ borderRadius: '20px' }}>
-                      <button className="">
-                        Enregister Maintenant
-                      </button>
-                      <svg
-
-                        className=" w-4 h-4 font-mono justify-center items-center text-white" style={{ marginLeft: '8px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" /></svg>
-
-                    </Link> */}
-                    
-                    <SignButton
-                    
-                            text="Enregister Maintenant"
-                            href='#'
-                            variant='dark'
-                      />
-
-                  {/* </div> */}
-                 
-                
-              </div>
             </div>
           </div>
+          <SignButton
+              text="Enregister Maintenant"
+              href='#'
+              variant='dark'
+            />
         </div>
       </section>
 
       <section className="flex flex-col md:flex-ro justify-center items-center py-12 px-4" data-aos="fade-up">
         <div className="flex flex-col md:flex-row w-full max-w-7xl  justify-between space-y-8 md:space-y-0 md:space-x-8">
           <div className="w-full md:w-3/5 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-            <Heading 
-                  text={`Description `}
-                  noLine={true}
-                  uppercase={false}
+            <Heading
+              text={`Description `}
+              noLine={true}
+              uppercase={false}
 
             />
-          
+
             <br />
             <p>Protéger les utilisateurs dans un monde numérique de plus en plus sophistiqué
-              
+
               La nouvelle génération d’utilisateurs du web est avertie et méfiante. Ils maîtrisent les outils de développement, détectent les tentatives de phishing et connaissent les meilleures pratiques pour sécuriser leurs activités en ligne. Mais les cybermenaces évoluent tout aussi rapidement.
 
               Lors de cette conférence, Soracert vous invite à découvrir :
@@ -82,12 +51,12 @@ const Eventregister = () => {
               Les meilleures pratiques pour sécuriser vos données personnelles et professionnelles.
               Des démonstrations en direct de techniques de cyberattaques courantes et comment les contrer.
 
-                              💡 Au programme :
-                ✅ Les dernières tendances en cybersécurité
-                ✅ Identifier et contrer les "dark patterns" et autres menaces numériques
-                ✅ Démonstrations en direct d’attaques et solutions pratiques
+              💡 Au programme :
+              ✅ Les dernières tendances en cybersécurité
+              ✅ Identifier et contrer les "dark patterns" et autres menaces numériques
+              ✅ Démonstrations en direct d’attaques et solutions pratiques
 
-                Rejoignez-nous pour devenir un acteur proactif de votre sécurité numérique !
+              Rejoignez-nous pour devenir un acteur proactif de votre sécurité numérique !
 
             </p>
 
@@ -126,7 +95,7 @@ const Eventregister = () => {
 
               </div>
             </Card>
-           
+
             <Card className="p-6 shadow-lg " style={{ borderRadius: '20px' }}>
               <h3 className='text-lg font-bold py-2'>Calendrier</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols 
@@ -140,7 +109,7 @@ const Eventregister = () => {
                   </div>
                   <div className="self-stretch flex flex-col items-center justify-center mx-auto">
                     <h2 className="text-sm font-extralight items-center text-[#05264f] justify-center" style={{ textDecoration: 'uppercase' }}>
-                    Date
+                      Date
                     </h2>
                     <div className="items-center justify-center text-center  text-sm font-extrabold">
                       14 Jun, 2021
@@ -156,7 +125,7 @@ const Eventregister = () => {
                       Heure:
                     </h2>
                     <div className="items-center justify-center text-center  text-sm font-extrabold">
-                     20 : 00
+                      20 : 00
                     </div>
                   </div>
                 </div>
@@ -169,7 +138,7 @@ const Eventregister = () => {
                       Localisation:
                     </h2>
                     <div className="items-center justify-center text-center  text-sm font-extrabold">
-                     En ligne
+                      En ligne
                     </div>
                   </div>
                 </div>
@@ -234,8 +203,8 @@ const Eventregister = () => {
             </Card>
           </div>
 
-      </div>
-      
+        </div>
+
       </section>
 
     </>
