@@ -4,14 +4,12 @@ import React from "react";
 import Landing from "@/components/blog/slag/landing";
 import Blogdetails from "@/components/blog/slag/details";
 import RaletedBlog from "@/components/blog/slag/raleted";
-import { Params } from "next/dist/server/request/params";
 
-type PageProps = {
-    params: Params
-}
+type Params = Promise<{ rcdId: string }>
 
-export default function SingleBlogpage({params}: PageProps) {
-    const { id } = params
+ async function SingleBlogpage(props:{params: Params}) {
+    const param = await props.params
+    const id = param.rcdId
     return (
         <>
             <Landing />
@@ -20,3 +18,5 @@ export default function SingleBlogpage({params}: PageProps) {
         </>
     );
 }
+
+export default SingleBlogpage
