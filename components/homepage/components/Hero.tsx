@@ -32,7 +32,7 @@ const Hero = () => {
                     <div className='max-w-7xl mx-auto px-4 md:px-8 flex items-center h-full'>
                         <div className='text-white w-full md:max-w-xl lg:max-w-2xl flex flex-col gap-6 lg:gap-8 items-start'>
                             <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl'>
-                                Évoluez avec la communauté SoraCert,
+                                SoraCert,
                                 <br />
                                 <span className='bg-gradient-to-r from-blue-400 via-customButton to-customHoverBlue inline-block text-transparent bg-clip-text'>
                                     innovez avec la technologie.
