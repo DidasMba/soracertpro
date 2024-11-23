@@ -11,7 +11,7 @@ export default function Component() {
                 <Heading
                     text={`Derniers articles de blog`}
                 
-                />
+                /> 
             <div className='mt-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
             <div className="group relative">
                     <Link href='/blog/1'>

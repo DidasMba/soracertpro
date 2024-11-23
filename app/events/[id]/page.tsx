@@ -5,11 +5,9 @@ import Portrait from "@/components/events/slag/portrait"
 export default function Event() {
   return (
     <main className="">
-  
   <Portrait />
   <Eventregister />
   <Sponsorships />
-
     </main>
   );
 }

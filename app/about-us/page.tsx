@@ -6,8 +6,7 @@ import TrustedCompany from "@/components/aboutus/trusted";
 
 export default function AboutUs() {
   return (
-    <main className="">
-  
+    <main className="">  
      <LandiingPage />
     <Aboutus />
     <MeetOurTeam />
