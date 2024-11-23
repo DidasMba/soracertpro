@@ -2,54 +2,54 @@ import React from 'react';
 
 function Recherche() {
   return (
-    <header className="py-16 sm:text-center">
-      <h1 className="mb-4 text-3xl sm:text-4xl tracking-tight text-slate-900 font-extrabold dark:text-slate-200">
-        Latest Updates
-      </h1>
-      <p className="text-lg text-slate-700 dark:text-slate-400">
-        All the latest Tailwind CSS news, straight from the&nbsp;team.
+    <header className="bg-[#f1fbfe] py-16 px-6 sm:px-12 sm:text-center bg-gradient-to-b  dark:from-gray-800 dark:to-gray-900">
+    
+      <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#05264f] max-w-4xl'>
+          Restez informé !
+      </h1> 
+      <p className="mb-8 text-lg text-gray-600 dark:text-gray-300">
+        Subscribe to our newsletter and never miss the latest updates from our
+        team.
       </p>
-      <section className="mt-3 max-w-sm sm:mx-auto sm:px-4">
-        <h2 className="sr-only">Sign up for our newsletter</h2>
+      <section className="max-w-xl mx-auto">
+        <h2 className="sr-only">Newsletter Subscription</h2>
         <form
           action="https://app.convertkit.com/forms/3181837/subscriptions"
           method="post"
-          className="flex flex-wrap -mx-2"
+          className="flex flex-col sm:flex-row items-center gap-4"
         >
-          <div className="px-2 grow-[9999] basis-64 mt-3">
-            <div className="group relative">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-                className="w-6 h-full absolute inset-y-0 left-3 text-slate-400 pointer-events-none group-focus-within:text-sky-500 dark:group-focus-within:text-slate-400"
-              >
-                <path d="M5 7.92C5 6.86 5.865 6 6.931 6h10.138C18.135 6 19 6.86 19 7.92v8.16c0 1.06-.865 1.92-1.931 1.92H6.931A1.926 1.926 0 0 1 5 16.08V7.92Z"></path>
-                <path d="m6 7 6 5 6-5"></path>
-              </svg>
-              <input
-                name="email_address"
-                type="email"
-                required
-                autoComplete="email"
-                aria-label="Email address"
-                className="appearance-none shadow rounded-md ring-1 ring-slate-900/5 leading-5 sm:text-sm border border-transparent py-2 placeholder:text-slate-400 pl-12 pr-3 block w-full text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white dark:bg-slate-700/20 dark:ring-slate-200/20 dark:focus:ring-sky-500 dark:text-white"
-                placeholder="Subscribe via email"
-              />
-            </div>
-          </div>
-          <div className="px-2 grow flex mt-3">
-            <button
-              type="submit"
-              className="bg-sky-500 flex-auto shadow text-white rounded-md text-sm border-y border-transparent py-2 font-semibold px-3 hover:bg-sky-600 dark:hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-300 dark:focus:ring-offset-slate-900 dark:focus:ring-sky-700"
+          {/* Email Input */}
+          <div className="relative flex-grow w-full">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"
             >
-              Subscribe
-            </button>
+              <path d="M5 7.92C5 6.86 5.865 6 6.931 6h10.138C18.135 6 19 6.86 19 7.92v8.16c0 1.06-.865 1.92-1.931 1.92H6.931A1.926 1.926 0 0 1 5 16.08V7.92Z"></path>
+              <path d="m6 7 6 5 6-5"></path>
+            </svg>
+            <input
+              name="email_address"
+              type="email"
+              required
+              autoComplete="email"
+              aria-label="Email address"
+              placeholder="Enter your email"
+              className="w-full py-3 pl-12 pr-4 rounded-1xl shadow-sm text-gray-900 placeholder-gray-500 bg-white dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white focus:ring-2 focus:ring-sky-500 focus:outline-none border border-gray-300 dark:border-gray-600"
+            />
           </div>
+          {/* Subscribe Button */}
+          <button
+            type="submit"
+            className="py-3 px-6 bg-sky-500 rounded-1xl text-white font-semibold  shadow-md hover:bg-sky-600 dark:bg-sky-600 dark:hover:bg-sky-500 focus:ring-2 focus:ring-offset-2 focus:ring-sky-400 dark:focus:ring-offset-gray-900"
+          >
+            Subscribe
+          </button>
         </form>
       </section>
     </header>
