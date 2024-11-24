@@ -48,7 +48,7 @@ function Recherche() {
             type="submit"
             className="py-3 px-6  bg-[#05264f] rounded-1xl text-white font-semibold  shadow-md hover:bg-[#05264f] dark:bg-[#05264f] dark:hover: focus:ring-2 focus:ring-offset-2 focus:ring-[#05264f] dark:focus:ring-offset-gray-900"
           >
-            Subscribe
+            S'abonner
           </button>
         </form>
       </section>
