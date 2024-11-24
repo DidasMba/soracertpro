@@ -1,13 +1,11 @@
-import Image from "next/image";
-import LandingPage from "@/components/events/landing";
+/** @format */
 
+import EventList from "@/components/events/EventList";
 
 export default function AboutUs() {
-  return (
-    <main className="">
-  
-   <LandingPage />
-   
-    </main>
-  );
+    return (
+        <main className=''>
+            <EventList />
+        </main>
+    );
 }

@@ -2,7 +2,7 @@
 
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Section from "../common/Section";
 import {
     locationOptions,
@@ -19,6 +19,8 @@ const ProgramList = () => {
     const [selectedLocation, setSelectedLocation] = useState("tous");
 
     const [category, setCategory] = useState("tous");
+
+    useEffect(() => {}, []);
 
     return (
         <Section id='program-list'>
