@@ -53,7 +53,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div> */}
-            <div className='row justify-between rounded-2xl grid grid-cols-1 lg:grid-cols-2 shadow-md py-6 bg-[#f1fbfe]'>
+            <div className='row justify-between rounded-2xl grid grid-cols-1 lg:grid-cols-2 shadow-md py-6 '>
     <div className='flex items-center px-8 py-6'>
         <div className='pt-4 ps-lg-5'>
             <span className='w-auto bg-red-500 text-white py-2 px-4 rounded-md text-uppercase text-red text-xs font-semibold'>
