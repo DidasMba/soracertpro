@@ -1,6 +1,6 @@
 "use client";
 
-import "./home.css";
+import "./landing.css";
 import React from "react";
 import banner from "@/assets/banner.png";
 import bannerMob from "@/assets/banner-mob.png";
