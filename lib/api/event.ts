@@ -4,10 +4,12 @@ import { Event } from "@/type";
 
 const API_URL = "http://localhost:8080/api/v1";
 
-export const getAllEvents = async () => {
+export const getAllEvents = async (date: string, category: string) => {
     try {
         const events: { status: string; message: string; data: Array<Event> } =
-            await fetch(`${API_URL}/event/published`).then((res) => res.json());
+            await fetch(
+                `${API_URL}/event/published?date=${date}&eventType=${category}`
+            ).then((res) => res.json());
         return events;
     } catch (error) {
         console.log(error);

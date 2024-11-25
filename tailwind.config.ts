@@ -11,6 +11,9 @@ const config = {
         "./app/**/*.{ts,tsx}",
         "./src/**/*.{ts,tsx}",
     ],
+    daisyui: {
+        themes: ["light"],
+    },
     prefix: "",
     theme: {
         extend: {
@@ -22,11 +25,11 @@ const config = {
                 foreground: "hsl(var(--foreground))",
                 // customBlue: "rgb(5, 38, 79)",
                 customBlue: "rgb(5, 38, 79)",
-                // customHoverBlue: "rgb(83, 223, 252)", 
+                // customHoverBlue: "rgb(83, 223, 252)",
                 customHoverBlue: "rgb(15, 221, 204)",
 
-                // customButton: "rgb(83, 223, 252)", 
-                customButton: "rgb(83, 223, 252)", 
+                // customButton: "rgb(83, 223, 252)",
+                customButton: "rgb(83, 223, 252)",
                 backgroundImage: {
                     "gradient-radial":
                         "radial-gradient(var(--tw-gradient-stops))",
@@ -85,11 +88,11 @@ const config = {
             },
             fontFamily: {
                 monteserrat: ["Montserrat", "sans-serif"],
-                
             },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+
+    plugins: [require("tailwindcss-animate"), require("daisyui")],
 } satisfies Config;
 
 export default config;

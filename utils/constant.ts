@@ -202,3 +202,23 @@ export const programWebOptions = [
     { id: "wed_design", label: "Design" },
     { id: "network", label: "IT Reseaux" },
 ];
+
+export const categoryEventOptions = [
+    {
+        id: "all",
+        label: "Tous",
+    },
+    { id: "CONFERENCE", label: "Conference" },
+    { id: "ATELIER", label: "Atelier" },
+    { id: "HACKATHON", label: "Hackathon" },
+];
+
+export const dateEventFilter = [
+    {
+        id: "all",
+        label: "Tous",
+    },
+    { id: "today", label: "Aujourdhui" },
+    { id: "week", label: "Hebdomadaire" },
+    { id: "month", label: "Mensuel" },
+];
