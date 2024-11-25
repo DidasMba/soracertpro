@@ -2,7 +2,7 @@ import React from 'react'
 import Heading from "@/components/common/Heading"
 import Link from "next/link";
 
-const Blogue = () => {
+const Bl = () => {
   return (
     <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
             <Heading
@@ -97,7 +97,7 @@ const Blogue = () => {
   )
 }
 
-export default Blogue
+export default Bl;
 
 
 

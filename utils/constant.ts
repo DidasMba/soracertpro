@@ -205,8 +205,8 @@ export const programWebOptions = [
 
 export const blogueWebOptions = [
     { id: "tous", label: "Tout" },
-    { id: "webdev", label: "Wed development" },
-    { id: "wed_design", label: "Telecom" },
-    { id: "network", label: "IT Reseaux" },
-    { id: "network", label: "Design" },
+    { id: "dev", label: "Wed development" },
+    { id: "tel", label: "Telecom" },
+    { id: "reseau", label: "IT Reseaux" },
+    { id: "graphic", label: "Design" },
 ]

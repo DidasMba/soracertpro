@@ -33,6 +33,7 @@ const Blpop = () => {
             </div>
             <div className='flex flex-col'>
                 <Link href='/blog/2'>
+    
                     <img
                         alt='Best environment for rental'
                         className='h-[18rem] w-full object-cover rounded-lg mb-4'
