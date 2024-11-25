@@ -182,6 +182,45 @@ export const programmData = [
     },
 ];
 
+export const    blogueData = [
+    {
+        id: 1,
+        title: "Les 10 Langages de Programmation les Plus Demandés en 2024",
+        description:
+            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+        thumbnail: coaching_thumb,
+        image: coaching,
+        slug: "webdev",
+        alt: "HTML and CSS logo",
+        location: "En ligne",
+        date: "2024-04-15",
+    },
+    {
+        id: 2,
+        title: "Comment Protéger Vos Données en Ligne",
+        description:
+            "Maîtrisez le langage dynamique du web : JavaScript pour des applications web interactives.",
+        thumbnail: webdev_thumbnail,
+        image: webdev,
+        slug: "wed_design",
+        alt: "JavaScript logo",
+        location: "Centre Soracert",
+        date: "2024-07-22",
+    },
+    {
+        id: 3,
+        title: "Les Bases de la Cryptographie pour les Développeurs",
+        description:
+            "Construisez des interfaces utilisateur efficaces et évolutives avec React, une bibliothèque JavaScript populaire.",
+        thumbnail: webdesign_thumbnail,
+        image: webdesign,
+        slug: "network",
+        alt: "React logo",
+        location: "En ligne",
+        date: "2024-11-12",
+    },
+];
+
 export const TimmingOptions = [
     { id: "tous", label: "Tout" },
     { id: "jour", label: "Jour" },
