@@ -6,21 +6,23 @@ import FilterButton from '../program/common/FilterButton';
 import {
 
   blogueWebOptions,
- 
+
 } from "@/utils/constant";
 
-
 function Recherche() {
-  
+
 
   const [category, setCategory] = useState("tous");
 
   return (
-                        <FilterButton
-                          options={blogueWebOptions}
-                          selectedItem={category}
-                          setSelectedItem={setCategory}
-                        />
+    <Section id="">
+      <FilterButton
+        options={blogueWebOptions}
+        selectedItem={category}
+        setSelectedItem={setCategory}
+      />
+    </Section>
+
   );
 }
 
