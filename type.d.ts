@@ -35,8 +35,8 @@ export type Event = {
     slug: string;
     theme: string;
     description: string;
-    start_date: Date;
-    end_date: Date;
+    start_date: string;
+    end_date: string;
     location: string;
     price?: number;
     coordinates?: Record<string, unknown>;

@@ -10,11 +10,11 @@ const FilterButton: React.FC<TRadioCategory> = ({
     setSelectedItem,
 }) => {
     return (
-        <div className='flex flex-row gap-2 flex-wrap my-2'>
+        <div className='flex flex-row gap-2 flex-wrap md:flex-wrap my-2'>
             {options.map((item) => (
                 <button
                     onClick={() => setSelectedItem(item.id)}
-                    className={`border duration-300 hover:bg-customBlue hover:text-white border-customBlue px-6 py-1 rounded-2xl font-semibold ${
+                    className={`border duration-300 hover:bg-customBlue hover:text-white border-customBlue whitespace-nowrap px-6 py-1 w-auto rounded-2xl font-semibold ${
                         selectedItem === item.id
                             ? "bg-customBlue text-white"
                             : "text-customBlue"

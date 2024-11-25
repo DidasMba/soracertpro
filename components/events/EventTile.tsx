@@ -2,6 +2,7 @@
 
 import React from "react";
 import SignButton from "@/components/Button";
+import { formatDateTimeToFrench } from "@/helper/funct";
 
 const EventTile: React.FC<{
     title: string;
@@ -39,7 +40,7 @@ const EventTile: React.FC<{
 
                             <div className='flex flex-col lg:flex-row items-start lg:items-center text-sm'>
                                 <small className='text-gray-600 font-bold mb-1 lg:mb-0 '>
-                                    {date}
+                                    {formatDateTimeToFrench(date)}
                                 </small>
                             </div>
                             <p className='text-xs mt-1 text-bold'>{location}</p>
