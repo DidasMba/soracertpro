@@ -10,7 +10,7 @@ const Radios: React.FC<TRadio> = ({
     setSelectedDate,
 }) => {
     return (
-        <div className='flex flex-col gap-3 p-4'>
+        <div className='flex md:flex-col flex-row flex-wrap gap-3 p-4'>
             {options.map((option) => (
                 <label
                     key={option.id}
