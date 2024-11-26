@@ -58,7 +58,7 @@ const ProgramList = () => {
                 </div>
                 <div className='flex flex-col gap-4 col-span-6'>
                     <h2 className='text-sm lg:text-base font-bold text-customBlue'>
-                        Explorez nos programmes et trouvez celui qui vous
+                        programmes et trouvez celui qui vous
                         passionne.
                     </h2>
                     <FilterButton
