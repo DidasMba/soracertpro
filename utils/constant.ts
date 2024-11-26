@@ -209,7 +209,7 @@ export const    blogueData = [
     },
     {
         id: 3,
-        title: "Les Bases de la Cryptographie pour les Développeurs",
+        title: "React for Web Development",
         description:
             "Construisez des interfaces utilisateur efficaces et évolutives avec React, une bibliothèque JavaScript populaire.",
         thumbnail: webdesign_thumbnail,
