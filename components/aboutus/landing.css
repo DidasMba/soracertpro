@@ -1,0 +1,137 @@
+/** @format */
+
+.slide-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.animate-wave {
+    animation: wave 3s ease-in-out;
+}
+
+.rounding {
+    border-radius: 50px;
+}
+
+.slide-container.active {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+}
+
+.text-container {
+    position: relative;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navigation-buttons .button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 768px) {
+    .slide-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
+    .text-container .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .text-container h1 {
+        font-size: 2rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-container p {
+        font-size: 0.875rem;
+    }
+
+    button {
+        width: 80px;
+        padding: 8px;
+    }
+}
