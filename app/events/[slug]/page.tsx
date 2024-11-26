@@ -1,17 +1,29 @@
 /** @format */
 
-import { Params } from "next/dist/server/request/params";
+import { Metadata } from "next";
 import DetailEvent from "@/components/events/details/Detail";
 
 type TEvent = {
-    params: Params;
+    params: {
+        slug: string;
+    };
 };
 
-export default function EventDetail({ params }: TEvent) {
-    const { slug } = params;
+// Dynamic Metadata (Optional)
+export async function generateMetadata({ params }: TEvent): Promise<Metadata> {
+    const slug = params.slug; // Access slug directly from params
+    return {
+        title: `Event Details - ${slug}`,
+    };
+}
+
+// Fetch Data Dynamically
+export default async function EventDetail({ params }: TEvent) {
+    const slug = params.slug; // `params` is awaited in server-side rendering.
+
     return (
         <main className=''>
-            <DetailEvent slug={slug?.toString()!} />
+            <DetailEvent slug={slug} />
         </main>
     );
 }

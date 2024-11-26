@@ -54,6 +54,11 @@ export type Event = {
     EventSponsor: EventSponsor[];
 };
 
+type Pattern = {
+    avatar: string;
+    company: string;
+};
+
 export type EventSponsor = {
     id: number;
     eventId: number;
