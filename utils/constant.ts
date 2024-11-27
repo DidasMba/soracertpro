@@ -220,7 +220,7 @@ export const dateEventFilter = [
 export const LocationOptions = [
     { id: "all", label: "Tous" },
     { id: "ONLINE", label: "En Ligne" },
-    { id: "ONSITE", label: "En Presentielle" },
+    { id: "ONSITE", label: "Presentielle" },
     { id: "REPLAY", label: "En Replay" },
 ];
 
