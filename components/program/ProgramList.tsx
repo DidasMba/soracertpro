@@ -2,25 +2,32 @@
 
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Section from "../common/Section";
 import {
-    locationOptions,
+    CategoryProgramOptions,
+    dateEventFilter,
+    LocationOptions,
     programmData,
-    programWebOptions,
-    TimmingOptions,
 } from "@/utils/constant";
 import ProgramTile from "./ProgramTile";
 import Radios from "./common/Radios";
 import FilterButton from "./common/FilterButton";
+import { useQuery } from "@tanstack/react-query";
+import { fetchAllProgram } from "@/lib/api/program";
+import { IoWarningOutline } from "react-icons/io5";
 
 const ProgramList = () => {
-    const [selectedDate, setSelectedDate] = useState("tous");
-    const [selectedLocation, setSelectedLocation] = useState("tous");
+    const [selectedDate, setSelectedDate] = useState("all");
+    const [selectedLocation, setSelectedLocation] = useState("all");
 
-    const [category, setCategory] = useState("tous");
+    const [category, setCategory] = useState("all");
 
-    useEffect(() => {}, []);
+    const { data, isLoading } = useQuery({
+        queryKey: ["programs", selectedDate, category, selectedLocation],
+        queryFn: () =>
+            fetchAllProgram(selectedDate, category, selectedLocation),
+    });
 
     return (
         <Section id='program-list'>
@@ -31,7 +38,7 @@ const ProgramList = () => {
                             Filtrer
                         </h4>
                         <Radios
-                            options={TimmingOptions}
+                            options={dateEventFilter}
                             selectedDate={selectedDate}
                             setSelectedDate={setSelectedDate}
                         />
@@ -41,7 +48,7 @@ const ProgramList = () => {
                                 Trouvees
                             </h4>
                             <Radios
-                                options={locationOptions}
+                                options={LocationOptions}
                                 selectedDate={selectedLocation}
                                 setSelectedDate={setSelectedLocation}
                             />
@@ -54,22 +61,41 @@ const ProgramList = () => {
                         passionne.
                     </h2>
                     <FilterButton
-                        options={programWebOptions}
+                        options={CategoryProgramOptions}
                         selectedItem={category}
                         setSelectedItem={setCategory}
                     />
-                    <div className='flex flex-col gap-2'>
-                        {programmData.map((item) => (
-                            <ProgramTile
-                                key={item.id}
-                                title={item.title}
-                                image={item.thumbnail}
-                                location={item.location}
-                                date={item.date}
-                                id={item.id}
-                            />
-                        ))}
-                    </div>
+                    {isLoading ? (
+                        <div className='flex justify-center min-h-[40svh] items-center'>
+                            <span className='loading loading-spinner loading-lg'></span>
+                        </div>
+                    ) : (
+                        <div>
+                            {data?.data.length !== 0 ? (
+                                <div className='flex flex-col gap-2'>
+                                    {data?.data.map((item) => (
+                                        <ProgramTile
+                                            key={item.id}
+                                            title={item.title}
+                                            image={item.thumbnail}
+                                            location={item.location}
+                                            date={item.date_from}
+                                            slug={item.slug}
+                                        />
+                                    ))}
+                                </div>
+                            ) : (
+                                <div className='flex  items-center w-full justify-center py-8'>
+                                    <div className='flex flex-col items-center'>
+                                        <IoWarningOutline size={40} />
+                                        <p className='text-base font-semibold text-center'>
+                                            Pas Programme trouver
+                                        </p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    )}
                 </div>
             </div>
         </Section>

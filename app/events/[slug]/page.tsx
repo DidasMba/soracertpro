@@ -9,7 +9,6 @@ type TEvent = {
     };
 };
 
-// Dynamic Metadata (Optional)
 export async function generateMetadata({ params }: TEvent): Promise<Metadata> {
     const slug = params.slug; // Access slug directly from params
     return {
@@ -17,7 +16,6 @@ export async function generateMetadata({ params }: TEvent): Promise<Metadata> {
     };
 }
 
-// Fetch Data Dynamically
 export default async function EventDetail({ params }: TEvent) {
     const slug = params.slug; // `params` is awaited in server-side rendering.
 

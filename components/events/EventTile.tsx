@@ -17,12 +17,10 @@ const EventTile: React.FC<{
             <div className='flex flex-col lg:flex-row lg:gap-6 gap-4'>
                 {/* Image Column */}
                 <div className='w-full lg:w-1/4 mb-4 lg:mb-0'>
-                    <div className='rounded overflow-hidden'>
+                    <div className='rounded lg:h-[90px] h-[150px] overflow-hidden'>
                         <img
                             src={image}
                             alt='Alumni Stories: From bootcamp to the gaming industry'
-                            width='270'
-                            height='135'
                             className='w-full h-full object-cover'
                             loading='lazy'
                         />

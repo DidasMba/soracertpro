@@ -24,7 +24,7 @@ const Header = () => {
         arrows: false,
     };
     return (
-        <Section id='header'>
+        <Section id='header-program'>
             <div className='w-full grid lg:grid-cols-5 grid-cols-1 gap-8'>
                 <div className='overflow-hidden w-full lg:col-span-3 col-span-1 rounded-xl bg-white'>
                     <Slider {...settings} className='h-full'>

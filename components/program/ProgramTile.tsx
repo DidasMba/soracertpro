@@ -3,14 +3,15 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import SignButton from "../Button";
+import { formatDateTimeToFrench } from "@/helper/funct";
 
 const ProgramTile: React.FC<{
     title: string;
     image: string | StaticImageData;
     date: string;
     location: string;
-    id: number;
-}> = ({ title, image, location, date, id }) => {
+    slug: string;
+}> = ({ title, image, location, date, slug }) => {
     return (
         <article className='card bg-white border p-6 rounded mb-3 relative hover:bg-gray-50'>
             <div className='flex flex-col lg:flex-row lg:gap-6 gap-4'>
@@ -36,7 +37,7 @@ const ProgramTile: React.FC<{
 
                             <div className='flex flex-col lg:flex-row items-start lg:items-center text-sm'>
                                 <small className='text-blue font-bold mb-1 lg:mb-0 '>
-                                    {date}
+                                    {formatDateTimeToFrench(date)}
                                 </small>
                             </div>
                             <p className='text-xs mt-1 text-bold'>{location}</p>
@@ -44,7 +45,7 @@ const ProgramTile: React.FC<{
                         <div className='w-full lg:w-1/3 text-center'>
                             <SignButton
                                 variant='dark'
-                                href={`/programs/${id}`}
+                                href={`/programs/${slug}`}
                                 text='En savoir plus'
                             />
                         </div>
