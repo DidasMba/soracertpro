@@ -25,28 +25,38 @@ export const navItems = [
         hasDropdow: true,
         children: [
             {
-                id: 1,
-                key: "resource",
-                name: "Ressources",
+                pathName: "membership",
+                text: "Membership",
+                href: "/membership",
+            },
+            {
+                pathName: "carieure",
+                text: "Carieure",
                 href: "#",
             },
             {
-                id: 2,
-                key: "resource",
-                name: "Ressources",
+                pathName: "partner",
+                text: "Nos Partenaire",
                 href: "#",
             },
         ],
     },
     {
         id: 3,
+        pageName: "about",
+        name: "A Propos",
+        href: "/about",
+        hasDropdow: false,
+    },
+    {
+        id: 4,
         pageName: "programs",
         name: "Nos Programmes",
         href: "/programs",
         hasDropdow: false,
     },
     {
-        id: 4,
+        id: 5,
         pageName: "events",
         name: "Nos Événements",
         href: "/events",
@@ -182,7 +192,7 @@ export const programmData = [
     },
 ];
 
-export const    blogueData = [
+export const blogueData = [
     {
         id: 1,
         title: "Les 10 Langages de Programmation les Plus Demandés en 2024",

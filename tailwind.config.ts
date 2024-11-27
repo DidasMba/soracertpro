@@ -91,7 +91,9 @@ const config = {
             },
         },
     },
-
+    variants: {
+        display: ["group-hover"],
+    },
     plugins: [require("tailwindcss-animate"), require("daisyui")],
 } satisfies Config;
 
