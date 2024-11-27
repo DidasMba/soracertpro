@@ -28,7 +28,7 @@ function Recherche() {
                             <BlogueTile
                                   key={item.id}
                                   title={item.title}
-                                  description={item.title}
+                                  titredescription={item.titredescription}
                                   image={item.thumbnail}
                                   location={item.location}
                                   date={item.date}
