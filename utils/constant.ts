@@ -208,17 +208,14 @@ export const categoryEventOptions = [
 ];
 
 export const dateEventFilter = [
-    {
-        id: "all",
-        label: "Tous",
-    },
+    { id: "all", label: "Tous" },
     { id: "today", label: "Aujourdhui" },
     { id: "week", label: "Hebdomadaire" },
     { id: "month", label: "Mensuel" },
 ];
 
 export const LocationOptions = [
-    { id: "all", label: "Tous" },
+    { id: "tous", label: "Tous" },
     { id: "ONLINE", label: "En Ligne" },
     { id: "ONSITE", label: "Presentielle" },
     { id: "REPLAY", label: "En Replay" },

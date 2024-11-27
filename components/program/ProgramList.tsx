@@ -8,7 +8,6 @@ import {
     CategoryProgramOptions,
     dateEventFilter,
     LocationOptions,
-    programmData,
 } from "@/utils/constant";
 import ProgramTile from "./ProgramTile";
 import Radios from "./common/Radios";
@@ -19,7 +18,7 @@ import { IoWarningOutline } from "react-icons/io5";
 
 const ProgramList = () => {
     const [selectedDate, setSelectedDate] = useState("all");
-    const [selectedLocation, setSelectedLocation] = useState("all");
+    const [selectedLocation, setSelectedLocation] = useState("tous");
 
     const [category, setCategory] = useState("all");
 
@@ -33,21 +32,23 @@ const ProgramList = () => {
         <Section id='program-list'>
             <div className='grid grid-cols-1 gap-6 md:grid-cols-7 my-8'>
                 <div className='col-span-1 '>
-                    <div className='md:flex hidden flex-col gap-3 py-8'>
-                        <h4 className='text-xs md:text-base font-semibold'>
+                    <div className='flex flex-col gap-3 py-8'>
+                        <h4 className='text-lg md:text-base font-semibold'>
                             Filtrer
                         </h4>
                         <Radios
+                            name='date-filter'
                             options={dateEventFilter}
                             selectedDate={selectedDate}
                             setSelectedDate={setSelectedDate}
                         />
                         <hr className='bg-gray-500' />
                         <div>
-                            <h4 className='text-xs md:text-base font-semibold'>
+                            <h4 className='text-base font-semibold'>
                                 Trouvees
                             </h4>
                             <Radios
+                                name='location-filter'
                                 options={LocationOptions}
                                 selectedDate={selectedLocation}
                                 setSelectedDate={setSelectedLocation}
