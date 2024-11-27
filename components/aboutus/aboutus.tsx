@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Heading from "../common/Heading";
 
 
 const FrameComponent6 = () => {
@@ -26,16 +27,15 @@ const FrameComponent6 = () => {
           <div className="w-full md:w-1/2 flex items-center"  data-aos="fade-up" data-aos-delay="200">
             <div className="place-items-center py-3 p-3  max-w-2xl">
             <h2 className="text-md font-bold leading-tight text-[#05264f] py-2">About Us</h2>
-             <div className="text-3xl font-bold uppercase  text-[#05264f] mb-5 py-4">Lorem Ipsum
+             {/* <div className="text-3xl font-bold uppercase  text-[#05264f] mb-5 py-4">Lorem Ipsum
              Header
              <div className="mt-4 mb-3 h-1 w-24 bg-[#05264f] justify-start items-start" />
-             </div>
-             
-           
+             </div> */}
+             <Heading 
+               text = {`Lorem Ipsum Header`}
+             />
             <p className="mt-4 max-w-2xl mx-auto text-xl py-2 font-extralight">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        
-         
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
            
           </div>

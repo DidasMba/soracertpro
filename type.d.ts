@@ -96,7 +96,6 @@ export type Participant = {
 
 export type TProgram = {
     id: number;
-    slug: string;
     title: string;
     description: string;
     location: string;
@@ -115,3 +114,29 @@ export type TProgram = {
     createdAt: string;
     updatedAt: string;
 };
+// export type TPblogue = {
+//     id: number;
+//     title: string;
+//     titredescription: string;
+//     description: string | StaticImageData;
+//     thumbnail: string;
+//     image: string;
+//     slug: string;
+//     title: string;
+//     description: string;
+//     location: string;
+//     programCategory: string;
+//     edition: string;
+//     images: string[];
+//     thumbnail: string;
+//     price: number;
+//     date_from: string;
+//     date_to: string;
+//     isLaunched: boolean;
+//     userId: number;
+//     programSponsor: any[]; // Adjust to the specific structure of sponsors if known
+//     ProgramTutor: any[]; // Adjust to the specific structure of tutors if known
+//     participants: any[];
+//     createdAt: string;
+//     updatedAt: string;
+// };

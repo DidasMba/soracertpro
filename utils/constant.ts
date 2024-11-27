@@ -143,6 +143,17 @@ export const howWeWorkContents = [
     },
 ];
 
+
+export const aboutusContents = [
+    {
+        id: 1,
+        title: "Nous aidons les jeunes a lancer leurs carrieres",
+        content:
+            "Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains.",
+        imageURL: "/latest property 1.png",
+    },
+]
+
 export const programmData = [
     {
         id: 1,
@@ -182,10 +193,11 @@ export const programmData = [
     },
 ];
 
-export const    blogueData = [
+export const blogueData = [
     {
         id: 1,
         title: "Les 10 Langages de Programmation les Plus Demandés en 2024",
+        titredescription: "Découvrez les langages de programmation incontournables en 2024. Que vous soyez débutant ou développeur expérimenté, apprenez...",
         description:
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
         thumbnail: coaching_thumb,
@@ -198,6 +210,7 @@ export const    blogueData = [
     {
         id: 2,
         title: "Comment Protéger Vos Données en Ligne",
+        titredescription:"appprenez les meilleures pratiques et astuces essentielles pour protéger vos données en ligne. De la gestion des mots de passe à la navigation sécurisée, découvrez comment...",
         description:
             "Maîtrisez le langage dynamique du web : JavaScript pour des applications web interactives.",
         thumbnail: webdev_thumbnail,
@@ -210,6 +223,7 @@ export const    blogueData = [
     {
         id: 3,
         title: "React for Web Development",
+        titredescription: "Découvrez des conseils pratiques pour sécuriser vos informations personnelles en ligne. Apprenez à éviter les cyberattaques, à utiliser des outils de protection efficaces...",
         description:
             "Construisez des interfaces utilisateur efficaces et évolutives avec React, une bibliothèque JavaScript populaire.",
         thumbnail: webdesign_thumbnail,

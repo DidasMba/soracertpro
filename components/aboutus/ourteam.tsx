@@ -4,32 +4,33 @@ const teamMembers = [
   {
     name: "John Carter",
     role: "CEO & Co-Founder",
-    imageSrc: "/Image Placeholder.png",
+    imageSrc: "/sora2.jpg", // Assurez-vous que l'image est dans le dossier 'public/images'
+    
   },
   {
     name: "Jane Doe",
     role: "CTO",
-    imageSrc: "/Image Placeholder 2.png",
+    imageSrc: "/images/image2.png",
   },
   {
     name: "Michael Smith",
     role: "Lead Developer",
-    imageSrc: "/Image Placeholder 3.png",
+    imageSrc: "/images/image3.png",
   },
   {
     name: "Sarah Brown",
     role: "Project Manager",
-    imageSrc: "/Image Placeholder 4.png",
+    imageSrc: "/images/image4.png",
   },
   {
     name: "Emily Davis",
     role: "Marketing Director",
-    imageSrc: "/Image Placeholder 5.png",
+    imageSrc: "/images/image5.png",
   },
   {
     name: "James Wilson",
     role: "UX/UI Designer",
-    imageSrc: "/Image Placeholder 6.png",
+    imageSrc: "/images/image6.png",
   },
 ];
 
@@ -37,14 +38,14 @@ const MeetOurTeam = () => {
   return (
     <>
       <section id="faq-2" className="faq-2 section py-5 max-w-full">
-        <div className="text-center container" data-aos="fade-up">
+        <div className="text-center">
           <h2 className="text-4xl font-bold leading-tight text-[#05264f] py-2">
-            Meet our team members
+           Rencontrez notre équipe dirigeante
           </h2>
-
           <div className="mt-4 max-w-2xl mx-auto text-xl py-2 font-extralight">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat
-            gravida malesuada quam commodo id integer nam.
+          Chez Soracert, notre leadership repose sur une équipe dévouée de professionnels expérimentés et passionnés. 
+          Ensemble, ils guident notre vision pour offrir des
+           solutions innovantes et fiables. Découvrez qui se cache derrière notre succès.
           </div>
         </div>
         <div className="max-w-6xl mx-auto py-5" data-aos="fade-up">
@@ -63,7 +64,7 @@ const MeetOurTeam = () => {
                       loading="lazy"
                       alt={member.name}
                       style={{ borderRadius: "100px", objectFit: "cover" }}
-                      src={member.imageSrc}
+                      src={`https://avatar.iran.liara.run/username?username=${member.name}`}
                     />
                   </div>
 
