@@ -1,8 +1,7 @@
 /** @format */
 
 import { Event } from "@/type";
-
-const API_URL = "http://localhost:8080/api/v1";
+import { API_URL } from "./baseUrl";
 
 export const getAllEvents = async (date: string, category: string) => {
     try {
