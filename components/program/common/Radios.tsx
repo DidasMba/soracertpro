@@ -8,9 +8,10 @@ const Radios: React.FC<TRadio> = ({
     selectedDate,
     options,
     setSelectedDate,
+    name,
 }) => {
     return (
-        <div className='flex flex-col gap-3 p-4'>
+        <div className='flex md:flex-col flex-row flex-wrap gap-3 p-4'>
             {options.map((option) => (
                 <label
                     key={option.id}
@@ -19,7 +20,7 @@ const Radios: React.FC<TRadio> = ({
                     <div className='relative flex items-center'>
                         <input
                             type='radio'
-                            name='options'
+                            name={name}
                             value={option.id}
                             checked={selectedDate === option.id}
                             onChange={(e) => setSelectedDate(e.target.value)}
