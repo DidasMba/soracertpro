@@ -14,7 +14,7 @@ const Careersinglepage = () => {
             <div className=" p-2 flex flex-row  justify-start items-center">
 
               <div className="member-info">
-                <p className="texl-sm font-extralight">At Facebookggggggg</p>
+                <p className="texl-sm font-extralight">At Facebook</p>
               </div>
               <div className="bg-gray-200 " style={{ textTransform: 'uppercase', marginLeft: '8px', padding: '0px 0px 2px' }}>part-time</div>
             </div>
