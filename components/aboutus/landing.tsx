@@ -54,19 +54,18 @@ const HeroSection = () => {
                     <div className='max-w-7xl mx-auto px-4 md:px-8 flex items-center h-full'>
                         <div className='text-white w-full md:max-w-xl lg:max-w-2xl flex flex-col gap-6 lg:gap-8 items-start'>
                             <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl'>
-                                SoraCert,
+                            Votre portail 
                                 <br />
                                 <span className='bg-gradient-to-r from-blue-400 via-customButton to-customHoverBlue inline-block text-transparent bg-clip-text'>
-                                    innovez avec la technologie.
+                                vers l’excellence technologique et éducative
                                 </span>
                             </h1>
                             <p className='font-semibold text-sm lg:text-base'>
-                                Nous offrons l'accès à la technologie à ceux qui
-                                en ont le plus besoin.
+                            Une combinaison unique de formation, certifications et événements technologiques
                             </p>
-                            <button className='bg-customBlue hover:bg-customButton hover:text-customBlue transition-all ease-in-out duration-300  w-auto text-white px-8 py-3 rounded-3xl text-sm md:text-base font-semibold'>
+                            {/* <button className='bg-customBlue hover:bg-customButton hover:text-customBlue transition-all ease-in-out duration-300  w-auto text-white px-8 py-3 rounded-3xl text-sm md:text-base font-semibold'>
                                 Explorer
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
