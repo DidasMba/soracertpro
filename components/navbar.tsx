@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
                 isScrolled ? "bg-gray-100" : "backdrop-blur-sm bg-white/30"
             }  z-50 duration-300 transition-colors ease-in-out`}
         >
-            <nav className='max-w-7xl mx-auto w-full px-6 flex gap-8 lg:justify-normal justify-between items-center'>
+            <nav className='max-w-7xl mx-auto w-full px-4 md:px-8 flex gap-8 lg:justify-normal justify-between items-center'>
                 <Link href={"/"}>
                     <Image
                         height={55}
