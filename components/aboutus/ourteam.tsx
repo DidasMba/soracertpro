@@ -64,7 +64,7 @@ const MeetOurTeam = () => {
                       loading="lazy"
                       alt={member.name}
                       style={{ borderRadius: "100px", objectFit: "cover" }}
-                      src={`https://avatar.iran.liara.run/username?username=${member.name}`}
+                      src="https://avatar.iran.liara.run/username?username=${member.name}"
                     />
                   </div>
 
