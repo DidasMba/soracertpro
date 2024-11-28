@@ -277,3 +277,8 @@ export const CategoryProgramOptions = [
     { id: "NETWORK", label: "IT Reseaux" },
     { id: "DATAANALYSIS", label: "Data Analysis" },
 ];
+
+export const gender = [
+    { value: "MALE", label: "Masculin" },
+    { value: "FEMALE", label: "Feminin" },
+];

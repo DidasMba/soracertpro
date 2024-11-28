@@ -21,6 +21,18 @@ enum EventType {
     CONFERENCE = "CONFERENCE",
 }
 
+type TextFieldType = {
+    label: string;
+    placeholder: string;
+    error: string;
+    touched: boolean;
+    name: string;
+    value: string | number;
+    type: React.HTMLInputTypeAttribute;
+    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    handleBlur: (e: React.FocusEvent<HTMLInputElement, Element>) => void;
+};
+
 export type Event = {
     id: number;
     slug: string;
