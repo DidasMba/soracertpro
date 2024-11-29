@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Paragrah from "../common/Paragrah";
+import Heading from "../common/Heading";
 
 const teamMembers = [
   {
@@ -43,6 +44,12 @@ const MeetOurTeam = () => {
           <h2 className="text-4xl font-bold leading-tight text-[#05264f] py-2">
            Rencontrez notre équipe dirigeante
           </h2>
+          <Heading 
+          text = {`Rencontrez notre équipe dirigeante`}
+          noLine={true}
+          uppercase={false}
+          center={true}
+      />
 
           {/* <Paragrah 
               text = {` Chez Soracert, notre leadership repose sur une équipe dévouée de professionnels expérimentés et passionnés. 
