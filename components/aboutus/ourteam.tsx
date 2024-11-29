@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Paragrah from "../common/Paragrah";
 
 const teamMembers = [
   {
@@ -42,11 +43,18 @@ const MeetOurTeam = () => {
           <h2 className="text-4xl font-bold leading-tight text-[#05264f] py-2">
            Rencontrez notre équipe dirigeante
           </h2>
-          <div className="mt-4 max-w-2xl mx-auto text-xl py-2 font-extralight">
+
+          {/* <Paragrah 
+              text = {` Chez Soracert, notre leadership repose sur une équipe dévouée de professionnels expérimentés et passionnés. 
+          Ensemble, ils guident notre vision pour offrir des
+           solutions innovantes et fiables. Découvrez qui se cache derrière notre succès.`}
+          /> */}
+          <div className="mt-4 max-w-2xl mx-auto text-base md:text-lg py-2 font-medium">
+          
           Chez Soracert, notre leadership repose sur une équipe dévouée de professionnels expérimentés et passionnés. 
           Ensemble, ils guident notre vision pour offrir des
            solutions innovantes et fiables. Découvrez qui se cache derrière notre succès.
-          </div>
+          </div> 
         </div>
         <div className="max-w-6xl mx-auto py-5" data-aos="fade-up">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-5">
@@ -64,7 +72,7 @@ const MeetOurTeam = () => {
                       loading="lazy"
                       alt={member.name}
                       style={{ borderRadius: "100px", objectFit: "cover" }}
-                      src="https://avatar.iran.liara.run/username?username=${member.name}"
+                      src={`https://avatar.iran.liara.run/username?username=${member.name}`}
                     />
                   </div>
 
