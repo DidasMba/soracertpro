@@ -9,12 +9,22 @@ import TextField from "../common/TextField";
 import SelectInput from "../common/SelectInput";
 import { gender } from "@/utils/constant";
 import Button from "../common/Button";
+import { membershipSchema } from "@/utils/validations/membership";
+import { useMutation } from "@tanstack/react-query";
+import { createMember } from "@/lib/api/membership";
+import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 const FormMemberShip = () => {
+    const { mutateAsync: createMemberFn } = useMutation({
+        mutationFn: createMember,
+    });
+    const router = useRouter();
     const [previewUrl, setPreviewUrl] = useState<string>(
         "https://avatar.iran.liara.run/username?username=avatar"
     );
     const [isHovered, setIsHovered] = useState(false);
+    const [selectedFile, setSelectedFile] = useState<File | null>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,29 +32,65 @@ const FormMemberShip = () => {
         if (file) {
             const url = URL.createObjectURL(file);
             setPreviewUrl(url);
+            setSelectedFile(file);
         }
     };
 
     const handleClick = () => {
         fileInputRef.current?.click();
     };
-    const { values, handleBlur, handleChange, handleSubmit, errors, touched } =
-        useFormik({
-            initialValues: {
-                firstname: "",
-                lastname: "",
-                email: "",
-                password: "",
-                confirmPassword: "",
-                gender: "",
-                username: "",
-            },
-            onSubmit: async () => {},
-        });
+    const {
+        values,
+        handleBlur,
+        handleChange,
+        handleSubmit,
+        errors,
+        touched,
+        isSubmitting,
+    } = useFormik({
+        initialValues: {
+            firstname: "",
+            lastname: "",
+            email: "",
+            password: "",
+            confirmPassword: "",
+            gender: "",
+            username: "",
+        },
+        validationSchema: membershipSchema,
+        onSubmit: async (value, { resetForm }) => {
+            const newValue = {
+                firstname: value.firstname,
+                lastname: value.lastname,
+                email: value.email,
+                password: value.password,
+                gender: value.gender,
+                username: value.username,
+                avatar: selectedFile,
+            };
+            try {
+                const response = await createMemberFn(newValue);
+                if (response) {
+                    toast.success("Enregistrer avec success");
+                    setTimeout(() => {
+                        router.push("/membership/success");
+                        resetForm();
+                        setPreviewUrl(
+                            "https://avatar.iran.liara.run/username?username=avatar"
+                        );
+                        setSelectedFile(null);
+                    }, 2000);
+                }
+            } catch (error) {
+                toast.error("Echec de l'enregistrement");
+                console.log(error);
+            }
+        },
+    });
     return (
         <form
             onSubmit={handleSubmit}
-            className='flex flex-col gap-4 md:gap-5 border border-gray-200 rounded-xl p-4'
+            className='flex flex-col gap-4 md:gap-5 border border-gray-200 rounded-xl md:p-6 p-4'
         >
             <div className='relative w-40 h-40 mx-auto'>
                 <div
@@ -181,7 +227,11 @@ const FormMemberShip = () => {
                 />
             </FormGroup>
             <div className='flex items-start'>
-                <Button type='submit' text='Enregistrer' />
+                <Button
+                    isLoading={isSubmitting}
+                    type='submit'
+                    text='Enregistrer'
+                />
             </div>
         </form>
     );
