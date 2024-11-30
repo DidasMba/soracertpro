@@ -12,7 +12,7 @@ const nextConfig = {
     },
     images:{
         remotePatterns:[{hostname:"photos.google.com"}],
-        remotePatterns: [{hostname: "https://avatar.iran.liara.run/username?username=${member.name}"}]// Add the required hostname here
+        remotePatterns: [{hostname:"avatar.iran.liara.run"}]// Add the required hostname here
     }
 };
 

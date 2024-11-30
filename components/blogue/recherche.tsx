@@ -12,7 +12,6 @@ import BlogueTile from "@/components/blogue/BlogueTile";
 
 function Recherche() {
 
-
   const [category, setCategory] = useState("tous");
 
   return (
@@ -30,9 +29,10 @@ function Recherche() {
                                   title={item.title}
                                   titredescription={item.titredescription}
                                   image={item.thumbnail}
-                                  location={item.location}
+                                 
                                   date={item.date}
                                   id={item.id}
+                                
                               />
                           ))}
                       </div>

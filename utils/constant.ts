@@ -143,17 +143,6 @@ export const howWeWorkContents = [
     },
 ];
 
-
-export const aboutusContents = [
-    {
-        id: 1,
-        title: "Nous aidons les jeunes a lancer leurs carrieres",
-        content:
-            "Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains.",
-        imageURL: "/latest property 1.png",
-    },
-]
-
 export const programmData = [
     {
         id: 1,

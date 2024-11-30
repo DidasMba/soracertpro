@@ -35,10 +35,10 @@ const FrameComponent6: NextPage = () => {
             {/* <h2 className="text-md font-bold leading-tight text-[#05264f] py-2">
               About Us
             </h2> */}
-            <Heading text={`Lorem Ipsum Header`} />
+            <Heading text={`À propos`} />
             <Paragraph
               text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "SoraCert est une plateforme technologique qui propose formation, certification et événements pour accompagner étudiants, professionnels et entreprises. Grâce à la blockchain et à l’IA, elle offre des solutions modernes et des certifications reconnues, favorisant l’évolution dans un monde en transformation."
               }
             />
           </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import LandiingPage from "@/components/aboutus/landing";
 import Aboutus from "@/components/aboutus/aboutus";
 import MeetOurTeam from "@/components/aboutus/ourteam";
-import TrustedCompany from "@/components/aboutus/trusted";
+import History from "@/components/aboutus/history";
 
 export default function AboutUs() {
   return (
@@ -10,7 +10,7 @@ export default function AboutUs() {
      <LandiingPage />
     <Aboutus />
     <MeetOurTeam />
-    <TrustedCompany />
+    <History />
     </main>
   );
 }

@@ -41,9 +41,9 @@ const MeetOurTeam = () => {
     <>
       <section id="faq-2" className="faq-2 section py-5 max-w-full">
         <div className="text-center">
-          <h2 className="text-4xl font-bold leading-tight text-[#05264f] py-2">
+          {/* <h2 className="text-4xl font-bold leading-tight text-[#05264f] py-2">
            Rencontrez notre équipe dirigeante
-          </h2>
+          </h2> */}
           <Heading 
           text = {`Rencontrez notre équipe dirigeante`}
           noLine={true}

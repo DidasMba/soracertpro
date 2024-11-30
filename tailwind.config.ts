@@ -89,6 +89,15 @@ const config = {
             fontFamily: {
                 monteserrat: ["Montserrat", "sans-serif"],
             },
+            fontSize: {
+                '2xl': '1.5rem', // 24px
+                '3xl': '1.875rem', // 30px
+                '4xl': '2.25rem', // 36px
+                '8xl': '6rem', // 96px, or adjust to your desired size
+                
+
+                'custom-large': '3rem', // 48px (custom size)
+            },
         },
     },
 

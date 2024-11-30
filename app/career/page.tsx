@@ -10,7 +10,6 @@ export default function Career() {
     <LandiingPage />
     <Sample />
     <Featured />
-  
     </main>
   );
 }
