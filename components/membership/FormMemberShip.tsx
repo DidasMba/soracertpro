@@ -20,12 +20,11 @@ const FormMemberShip = () => {
         mutationFn: createMember,
     });
     const router = useRouter();
-    const [previewUrl, setPreviewUrl] = useState<string>(
-        "https://avatar.iran.liara.run/username?username=avatar"
-    );
+    const [previewUrl, setPreviewUrl] = useState<string>("");
     const [isHovered, setIsHovered] = useState(false);
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
+    const [errorImage, setErrorImage] = useState<boolean>(false);
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
@@ -33,6 +32,7 @@ const FormMemberShip = () => {
             const url = URL.createObjectURL(file);
             setPreviewUrl(url);
             setSelectedFile(file);
+            setErrorImage(false);
         }
     };
 
@@ -69,17 +69,21 @@ const FormMemberShip = () => {
                 avatar: selectedFile,
             };
             try {
-                const response = await createMemberFn(newValue);
-                if (response) {
-                    toast.success("Enregistrer avec success");
-                    setTimeout(() => {
-                        router.push("/membership/success");
-                        resetForm();
-                        setPreviewUrl(
-                            "https://avatar.iran.liara.run/username?username=avatar"
-                        );
-                        setSelectedFile(null);
-                    }, 2000);
+                if (previewUrl.length !== 0) {
+                    const response = await createMemberFn(newValue);
+                    if (response) {
+                        toast.success("Enregistrer avec success");
+                        setTimeout(() => {
+                            router.push("/membership/success");
+                            resetForm();
+                            setPreviewUrl(
+                                "https://avatar.iran.liara.run/username?username=avatar"
+                            );
+                            setSelectedFile(null);
+                        }, 2000);
+                    }
+                } else {
+                    setErrorImage(true);
                 }
             } catch (error) {
                 toast.error("Echec de l'enregistrement");
@@ -108,7 +112,11 @@ const FormMemberShip = () => {
                     }}
                 >
                     <img
-                        src={previewUrl}
+                        src={
+                            previewUrl?.length !== 0
+                                ? previewUrl
+                                : "https://avatar.iran.liara.run/username?username=avatar"
+                        }
                         alt='Profile'
                         className='w-full h-full object-cover'
                     />
@@ -139,6 +147,11 @@ const FormMemberShip = () => {
                     className='hidden'
                     aria-hidden='true'
                 />
+                {errorImage && (
+                    <p className='text-red-400 italic text-sm text-center  font-medium'>
+                        Profile est obligatoire
+                    </p>
+                )}
             </div>
             <FormGroup col='col-2'>
                 <TextField

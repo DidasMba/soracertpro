@@ -6,6 +6,8 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar";
 import { Montserrat } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import NextTopLoader from "nextjs-toploader";
 import QueryProvider from "@/lib/QueryProvider";
@@ -41,7 +43,10 @@ export default function RootLayout({
                         shadow='0 0 10px #2299DD,0 0 5px #2299DD'
                     />
                     <Navbar />
-                    <div className='mt-20'>{children}</div>
+                    <div className='mt-20'>
+                        {children}
+                        <ToastContainer />
+                    </div>
                     <Footer />
                 </body>
             </QueryProvider>

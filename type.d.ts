@@ -33,6 +33,23 @@ type TextFieldType = {
     handleBlur: (e: React.FocusEvent<HTMLInputElement, Element>) => void;
 };
 
+export type UserResponse = {
+    firstname: string;
+    lastname: string;
+    email: string;
+    gender: string;
+};
+
+export type UserDataInput = {
+    firstname: string;
+    lastname: string;
+    avatar?: File | null;
+    username?: string;
+    email: string;
+    password: string;
+    gender: string;
+};
+
 export type Event = {
     id: number;
     slug: string;
