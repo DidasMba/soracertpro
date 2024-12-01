@@ -245,7 +245,7 @@ export const categoryEventOptions = [
         title: "Commencement ",   
         date: "2024-04-15",
         description:
-            "Fondée par Degaul, Iyinoluwa Aboyeji, Andela a lancé son premier cycle de recrutement à Lagos, au Nigeria, recrutant sa première cohorte de six ingénieurs logiciels nigérians après avoir reçu 700 candidatures..",
+            "Fondée par Degaul BANZA, **SoraCert** a lancé son premier cycle de recrutement à Lubumbashi, en RDCongo, recrutant sa première cohorte de six ingénieurs logiciels Congolais après avoir reçu 100 candidatures..",
     },
     {
         id: 2,
@@ -293,4 +293,12 @@ export const CategoryProgramOptions = [
     { id: "WEBDEVELOPMENT", label: "Web Development" },
     { id: "NETWORK", label: "IT Reseaux" },
     { id: "DATAANALYSIS", label: "Data Analysis" },
+
+    {
+        id: 5,
+        title: "commencement 4",   
+        date: "2024-04-15",
+        description:
+            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+    },
 ];

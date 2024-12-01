@@ -34,7 +34,7 @@ const ProgramTile: React.FC<{
                     <div className='flex flex-col w-full lg:flex-row justify-between items-center lg:items-start'>
                         <div className='w-full lg:w-2/3 mb-4 lg:mb-0'>
                             <h2 className='text-lg font-bold my-2'>{title}</h2>
-
+                      
                             <div className='flex flex-col lg:flex-row items-start lg:items-center text-sm'>
                                 <small className='text-blue font-bold mb-1 lg:mb-0 '>
                                     {formatDateTimeToFrench(date)}

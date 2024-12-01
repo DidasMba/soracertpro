@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Recherche from '@/components/blogue/recherche'
-import BlogueList from '@/components/blogue/BlogueList';
+// import BlogueList from '@/components/blogue/BlogueList';
 
 export default function Blogue() {
     return (

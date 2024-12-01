@@ -9,11 +9,6 @@ const UpcomingEvents = () =>{
     return (
       <div className="bg-[#f1fbfe] py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-     {/* <div className="text-start">
-           
-            <p className=" font-extrabold sm:text-4xl sm:tracking-tight lg:text-3xl mt-4 max-w-1xl text-[#05264f]  text-xl ">Événement à Venir</p>
-            <div className="mt-4 mb-3 h-1 w-24 bg-[#05264f] justify-start items-start" />
-          </div> */}
 
           <Heading 
               text = {`Événement à Venir`}

@@ -12,7 +12,7 @@ const HistorySec: React.FC<HistorySecProps> = ({ title, date, description }) => 
 
    <section>
    
-       <li className="relative mb-6 sm:mb-0 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-4">
+       <li className="relative mb-6 sm:mb-0">
       {/* Circle and line indicator */}
       <div className="flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
         <svg

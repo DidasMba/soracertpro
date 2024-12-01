@@ -23,7 +23,7 @@ const History = () => {
     </div>
       </div>
     
-      <ol className="items-center sm:flex">
+      <ol className="grid grid-cols-1 lg:grid-cols-5">
         {historyData.map((step) => (
           <HistorySec
             key={step.id}
