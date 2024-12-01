@@ -4,17 +4,25 @@ import HistorySec from "./HistorySec";
 import { historyData } from "@/utils/constant";
 const History = () => {
   return (
-    <div className="p-8 bg-[#f1fbfe] dark:bg-gray-900">
-       <div>
-      <Heading 
-        text = {`Notre Histoire`}
+  <div className="bg-[#f1fbfe] py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+      <div>
+      <div>
+       <Heading 
+          text = {`Notre Histoire`}
+          noLine={true}
+          uppercase={false}
+          center={true}
       />
-       <div className="mt-4 max-w-2xl mx-auto text-base md:text-lg py-2 font-medium">
-          
-          Chez Soracert, notre leadership repose sur une équipe dévouée de professionnels expérimentés et passionnés. 
+    
+       <div className="mb-8 max-w-2xl mx-auto text-base md:text-lg py-8 font-medium">
+       SoraCert a toujours su connecter la confiance à l'innovation tout au long de son histoire. 
       </div> 
 
     </div>
+      </div>
+    
       <ol className="items-center sm:flex">
         {historyData.map((step) => (
           <HistorySec
@@ -25,6 +33,7 @@ const History = () => {
           />
         ))}
       </ol>
+    </div>
     </div>
   );
 };
