@@ -240,6 +240,12 @@ export const programWebOptions = [
 ];
 
 export const categoryEventOptions = [
+    { id: "CONFERENCE", label: "Conference" },
+    { id: "ATELIER", label: "Atelier" },
+    { id: "HACKATHON", label: "Hackathon" },
+];
+
+export const historyData = [
     {
         id: 1,
         title: "Commencement ",   
@@ -268,10 +274,14 @@ export const categoryEventOptions = [
         description:
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
     },
-    { id: "CONFERENCE", label: "Conference" },
-    { id: "ATELIER", label: "Atelier" },
-    { id: "HACKATHON", label: "Hackathon" },
-];
+    {
+        id: 5,
+        title: "commencement 4",   
+        date: "2024-04-15",
+        description:
+            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+    },
+]
 
 export const dateEventFilter = [
     { id: "all", label: "Tous" },
