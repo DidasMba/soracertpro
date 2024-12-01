@@ -241,8 +241,32 @@ export const programWebOptions = [
 
 export const categoryEventOptions = [
     {
-        id: "all",
-        label: "Tous",
+        id: 1,
+        title: "Commencement ",   
+        date: "2024-04-15",
+        description:
+            "Fondée par Degaul, Iyinoluwa Aboyeji, Andela a lancé son premier cycle de recrutement à Lagos, au Nigeria, recrutant sa première cohorte de six ingénieurs logiciels nigérians après avoir reçu 700 candidatures..",
+    },
+    {
+        id: 2,
+        title: "commencement 2 ",   
+        date: "2024-04-15",
+        description:
+            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+    },
+    {
+        id: 3,
+        title: "commencement 3",   
+        date: "2024-04-15",
+        description:
+            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+    },
+    {
+        id: 4,
+        title: "commencement 4",   
+        date: "2024-04-15",
+        description:
+            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
     },
     { id: "CONFERENCE", label: "Conference" },
     { id: "ATELIER", label: "Atelier" },
