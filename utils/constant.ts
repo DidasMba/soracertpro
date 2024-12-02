@@ -30,6 +30,11 @@ export const navItems = [
                 href: "/sora/membership",
             },
             {
+                pathName: "blogue",
+                text: "Blog",
+                href: "/sora/blogue",
+            },
+            {
                 pathName: "carieure",
                 text: "Carieure",
                 href: "#",
