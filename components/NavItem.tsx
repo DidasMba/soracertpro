@@ -17,7 +17,7 @@ const NavItem: React.FC<{
             <Link
                 href={href}
                 className={`font-semibold text-customBlue flex items-center gap-1 hover:text-customHoverBlue ${
-                    isActive && `text-customHoverBlue text-sm`
+                    isActive && `text-customHoverBlue`
                 }`}
             >
                 {text}

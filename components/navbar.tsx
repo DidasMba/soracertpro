@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
             }  z-50 duration-300 transition-colors ease-in-out`}
         >
             <nav className='max-w-7xl mx-auto w-full px-4 md:px-8 flex gap-8 lg:justify-normal justify-between items-center'>
-                <Link href={"/"}>
+                <Link href={"/sora/home"}>
                     <Image
                         height={55}
                         width={100}

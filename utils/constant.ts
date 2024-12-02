@@ -14,7 +14,7 @@ export const navItems = [
         id: 1,
         pageName: "home",
         name: "Accueil",
-        href: "/",
+        href: "/sora/home",
         hasDropdow: false,
     },
     {
@@ -27,7 +27,12 @@ export const navItems = [
             {
                 pathName: "membership",
                 text: "Membership",
-                href: "/membership",
+                href: "/sora/membership",
+            },
+            {
+                pathName: "blogue",
+                text: "Blog",
+                href: "/sora/blogue",
             },
             {
                 pathName: "carieure",
@@ -45,21 +50,21 @@ export const navItems = [
         id: 3,
         pageName: "about",
         name: "A Propos",
-        href: "/about",
+        href: "/sora/about-us",
         hasDropdow: false,
     },
     {
         id: 4,
         pageName: "programs",
         name: "Nos Programmes",
-        href: "/programs",
+        href: "/sora/programs",
         hasDropdow: false,
     },
     {
         id: 5,
         pageName: "events",
         name: "Nos Événements",
-        href: "/events",
+        href: "/sora/events",
         hasDropdow: false,
     },
 ];
@@ -196,7 +201,8 @@ export const blogueData = [
     {
         id: 1,
         title: "Les 10 Langages de Programmation les Plus Demandés en 2024",
-        titredescription: "Découvrez les langages de programmation incontournables en 2024. Que vous soyez débutant ou développeur expérimenté, apprenez...",
+        titredescription:
+            "Découvrez les langages de programmation incontournables en 2024. Que vous soyez débutant ou développeur expérimenté, apprenez...",
         description:
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
         thumbnail: coaching_thumb,
@@ -209,7 +215,8 @@ export const blogueData = [
     {
         id: 2,
         title: "Comment Protéger Vos Données en Ligne",
-        titredescription:"appprenez les meilleures pratiques et astuces essentielles pour protéger vos données en ligne. De la gestion des mots de passe à la navigation sécurisée, découvrez comment...",
+        titredescription:
+            "appprenez les meilleures pratiques et astuces essentielles pour protéger vos données en ligne. De la gestion des mots de passe à la navigation sécurisée, découvrez comment...",
         description:
             "Maîtrisez le langage dynamique du web : JavaScript pour des applications web interactives.",
         thumbnail: webdev_thumbnail,
@@ -222,7 +229,8 @@ export const blogueData = [
     {
         id: 3,
         title: "React for Web Development",
-        titredescription: "Découvrez des conseils pratiques pour sécuriser vos informations personnelles en ligne. Apprenez à éviter les cyberattaques, à utiliser des outils de protection efficaces...",
+        titredescription:
+            "Découvrez des conseils pratiques pour sécuriser vos informations personnelles en ligne. Apprenez à éviter les cyberattaques, à utiliser des outils de protection efficaces...",
         description:
             "Construisez des interfaces utilisateur efficaces et évolutives avec React, une bibliothèque JavaScript populaire.",
         thumbnail: webdesign_thumbnail,
@@ -258,40 +266,40 @@ export const categoryEventOptions = [
 export const historyData = [
     {
         id: 1,
-        title: "Commencement ",   
+        title: "Commencement ",
         date: "2024-04-15",
         description:
             "Fondée par Degaul BANZA, **SoraCert** a lancé son premier cycle de recrutement à Lubumbashi, en RDCongo, recrutant sa première cohorte de six ingénieurs logiciels Congolais après avoir reçu 100 candidatures..",
     },
     {
         id: 2,
-        title: "commencement 2 ",   
+        title: "commencement 2 ",
         date: "2024-04-15",
         description:
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
     },
     {
         id: 3,
-        title: "commencement 3",   
+        title: "commencement 3",
         date: "2024-04-15",
         description:
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
     },
     {
         id: 4,
-        title: "commencement 4",   
+        title: "commencement 4",
         date: "2024-04-15",
         description:
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
     },
     {
         id: 5,
-        title: "commencement 4",   
+        title: "commencement 4",
         date: "2024-04-15",
         description:
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
     },
-]
+];
 
 export const dateEventFilter = [
     { id: "all", label: "Tous" },
@@ -313,14 +321,6 @@ export const CategoryProgramOptions = [
     { id: "WEBDEVELOPMENT", label: "Web Development" },
     { id: "NETWORK", label: "IT Reseaux" },
     { id: "DATAANALYSIS", label: "Data Analysis" },
-
-    {
-        id: 5,
-        title: "commencement 4",   
-        date: "2024-04-15",
-        description:
-            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
-    },
 ];
 
 export const gender = [
