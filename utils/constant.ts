@@ -25,28 +25,38 @@ export const navItems = [
         hasDropdow: true,
         children: [
             {
-                id: 1,
-                key: "resource",
-                name: "Ressources",
+                pathName: "membership",
+                text: "Membership",
+                href: "/membership",
+            },
+            {
+                pathName: "carieure",
+                text: "Carieure",
                 href: "#",
             },
             {
-                id: 2,
-                key: "resource",
-                name: "Ressources",
+                pathName: "partner",
+                text: "Nos Partenaire",
                 href: "#",
             },
         ],
     },
     {
         id: 3,
+        pageName: "about",
+        name: "A Propos",
+        href: "/about",
+        hasDropdow: false,
+    },
+    {
+        id: 4,
         pageName: "programs",
         name: "Nos Programmes",
         href: "/programs",
         hasDropdow: false,
     },
     {
-        id: 4,
+        id: 5,
         pageName: "events",
         name: "Nos Événements",
         href: "/events",
@@ -311,4 +321,9 @@ export const CategoryProgramOptions = [
         description:
             "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
     },
+];
+
+export const gender = [
+    { value: "MALE", label: "Masculin" },
+    { value: "FEMALE", label: "Feminin" },
 ];
