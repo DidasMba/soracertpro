@@ -3,8 +3,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import Footer from "@/components/Footer";
-import Navbar from "@/components/navbar";
 import { Montserrat } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -42,12 +40,11 @@ export default function RootLayout({
                         easing='ease'
                         shadow='0 0 10px #2299DD,0 0 5px #2299DD'
                     />
-                    <Navbar />
+
                     <div className='mt-20'>
                         {children}
                         <ToastContainer />
                     </div>
-                    <Footer />
                 </body>
             </QueryProvider>
         </html>

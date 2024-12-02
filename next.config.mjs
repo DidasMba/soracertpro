@@ -8,12 +8,18 @@ const nextConfig = {
         remotePatterns: [
             { hostname: "photos.google.com" },
             { hostname: "res.cloudinary.com" },
+            { hostname: "avatar.iran.liara.run" },
         ],
     },
-    images:{
-        remotePatterns:[{hostname:"photos.google.com"}],
-        remotePatterns: [{hostname:"avatar.iran.liara.run"}]// Add the required hostname here
-    }
+    async redirects() {
+        return [
+            {
+                source: "/",
+                destination: "/sora/home",
+                permanent: true,
+            },
+        ];
+    },
 };
 
 export default nextConfig;

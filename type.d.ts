@@ -126,6 +126,7 @@ export type Participant = {
 export type TProgram = {
     id: number;
     title: string;
+    slug: string;
     description: string;
     location: string;
     programCategory: string;
