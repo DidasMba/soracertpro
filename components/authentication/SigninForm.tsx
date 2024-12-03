@@ -7,22 +7,34 @@ import FormGroup from "../common/FormGroup";
 import { useFormik } from "formik";
 import Button from "../common/Button";
 import Link from "next/link";
+import { signinSchema } from "@/utils/validations/user";
 
 const SigninForm = () => {
-    const { values, errors, handleBlur, handleChange, touched, isSubmitting } =
-        useFormik({
-            initialValues: {
-                email: "",
-                password: "",
-            },
-            onSubmit: async () => {
-                try {
-                } catch (error) {}
-            },
-        });
+    const {
+        values,
+        errors,
+        handleBlur,
+        handleChange,
+        handleSubmit,
+        touched,
+        isSubmitting,
+    } = useFormik({
+        initialValues: {
+            email: "",
+            password: "",
+        },
+        validationSchema: signinSchema,
+        onSubmit: async () => {
+            try {
+            } catch (error) {}
+        },
+    });
     return (
         <div className='bg-gray-50 w-full min-h-svh flex items-center px-4 py-2 md:px-6'>
-            <form className='px-4 bg-white shadow-md md:px-6 max-w-md w-full mx-auto pb-6 pt-2 border border-gray-200 rounded-xl'>
+            <form
+                onSubmit={handleSubmit}
+                className='px-4 bg-white shadow-md md:px-6 max-w-md w-full mx-auto pb-6 pt-2 border border-gray-200 rounded-xl'
+            >
                 <div className='py-2 border-b border-gray-200 mb-4'>
                     <h3 className='text-customBlue text-base font-bold'>
                         Connectez Vous!

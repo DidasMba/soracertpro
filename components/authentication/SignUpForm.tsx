@@ -12,8 +12,16 @@ import { gender } from "@/utils/constant";
 import SelectInput from "../common/SelectInput";
 import TextField from "../common/TextField";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { createMember } from "@/lib/api/membership";
+import { useMutation } from "@tanstack/react-query";
+import ErrorMessage from "../common/ErrorMessage";
 
 const SignUpForm = () => {
+    const { mutateAsync: createMemberFn, data } = useMutation({
+        mutationFn: createMember,
+    });
+    const router = useRouter();
     const [previewUrl, setPreviewUrl] = useState<string>("");
     const [isHovered, setIsHovered] = useState(false);
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -59,23 +67,24 @@ const SignUpForm = () => {
                 email: value.email,
                 password: value.password,
                 gender: value.gender,
+                role: "PERSON",
                 username: value.username,
                 avatar: selectedFile,
             };
             try {
                 if (previewUrl.length !== 0) {
-                    // const response = await createMemberFn(newValue);
-                    // if (response) {
-                    //     toast.success("Enregistrer avec success");
-                    //     setTimeout(() => {
-                    //         router.push("/membership/success");
-                    //         resetForm();
-                    //         setPreviewUrl(
-                    //             "https://avatar.iran.liara.run/username?username=avatar"
-                    //         );
-                    //         setSelectedFile(null);
-                    //     }, 2000);
-                    // }
+                    const response = await createMemberFn(newValue);
+                    if (response?.status === "success") {
+                        toast.success("Compte Creer!!!");
+                        setTimeout(() => {
+                            router.push("/sora/membership/success");
+                            resetForm();
+                            setPreviewUrl(
+                                "https://avatar.iran.liara.run/username?username=avatar"
+                            );
+                            setSelectedFile(null);
+                        }, 2000);
+                    }
                 } else {
                     setErrorImage(true);
                 }
@@ -249,6 +258,9 @@ const SignUpForm = () => {
                         Se Connecter
                     </Link>
                 </div>
+                {data?.status === "error" && (
+                    <ErrorMessage text={data?.error_message} />
+                )}
             </form>
         </div>
     );

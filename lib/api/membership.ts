@@ -12,11 +12,12 @@ export const createMember = async (memberInputs: UserDataInput) => {
         formData.append("avatar", memberInputs.avatar!);
         formData.append("username", memberInputs.username!);
         formData.append("email", memberInputs.email);
-        formData.append("role", "MEMBER");
+        formData.append("role", memberInputs.role);
         formData.append("password", memberInputs.password);
         const response: {
             status: string;
             message: string;
+            error_message: string;
             data: UserResponse;
         } = await fetch(`${API_URL}/auth/register`, {
             method: "POST",
