@@ -58,12 +58,12 @@ const Navbar: React.FC = () => {
                     <div className='flex flex-row gap-4'>
                         <SignButton
                             text="S'inscrire"
-                            href='#'
+                            href='/signup'
                             variant='light'
                         />
                         <SignButton
                             text='Se connecter'
-                            href='#'
+                            href='/signin'
                             variant='dark'
                         />
                     </div>
