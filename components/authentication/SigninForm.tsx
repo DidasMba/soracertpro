@@ -8,8 +8,16 @@ import { useFormik } from "formik";
 import Button from "../common/Button";
 import Link from "next/link";
 import { signinSchema } from "@/utils/validations/user";
+import { useMutation } from "@tanstack/react-query";
+import { signinFn } from "@/lib/api/auth";
+import { toast } from "react-toastify";
+import ErrorMessage from "../common/ErrorMessage";
 
 const SigninForm = () => {
+    const { mutateAsync: signin, data } = useMutation({
+        mutationFn: signinFn,
+    });
+
     const {
         values,
         errors,
@@ -24,9 +32,19 @@ const SigninForm = () => {
             password: "",
         },
         validationSchema: signinSchema,
-        onSubmit: async () => {
+        onSubmit: async (value, { resetForm, setSubmitting }) => {
             try {
-            } catch (error) {}
+                const response = await signin({
+                    email: value.email,
+                    password: value.password,
+                });
+                if (response?.status === "success") {
+                    toast.success("Connexion avec Succes!!!");
+                    setSubmitting(false);
+                }
+            } catch (error) {
+                console.log(error);
+            }
         },
     });
     return (
@@ -82,6 +100,9 @@ const SigninForm = () => {
                             </Link>
                         </div>
                     </div>
+                    {data?.error_message && (
+                        <ErrorMessage text={data?.error_message} />
+                    )}
                 </div>
             </form>
         </div>
