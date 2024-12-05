@@ -1,6 +1,6 @@
 /** @format */
 
-import { Event, TEventParticipantInput } from "@/type";
+import { Event, GetParticipantsResponse, TEventParticipantInput } from "@/type";
 import { API_URL } from "./baseUrl";
 
 export const getAllEvents = async (date: string, category: string) => {
@@ -33,16 +33,30 @@ export const addParticipant = async (eventInput: TEventParticipantInput) => {
             status: string;
             message: string;
             error_message: string;
-        } = await fetch(`${API_URL}/add/participant`, {
+        } = await fetch(`${API_URL}/event/add/participant`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 eventId: eventInput.eventId,
                 userId: eventInput.userId,
-                isPayed: eventInput.isPayed,
             }),
             credentials: "include",
         }).then((res) => res.json());
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+export const getParticipantByEventId = async (id: number) => {
+    try {
+        const response: GetParticipantsResponse = await fetch(
+            `${API_URL}/event/participant/${id}`,
+            {
+                method: "GET",
+                credentials: "include",
+            }
+        ).then((res) => res.json());
         return response;
     } catch (error) {
         console.log(error);

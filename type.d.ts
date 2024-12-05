@@ -52,10 +52,8 @@ export type UserDataInput = {
 };
 
 export type ApiUserResponse = {
-    status: "success";
-    data: {
-        user: User;
-    };
+    status: string;
+    user: User;
 };
 
 export type TUser = {
@@ -101,9 +99,21 @@ type Pattern = {
 type TEventParticipantInput = {
     userId: number;
     eventId: number;
-    isPayed: boolean;
 };
 
+export type GetParticipantsResponse = {
+    status: string;
+    message: string;
+    data: Array<TParticipant>;
+};
+
+export type TParticipant = {
+    id: number;
+    userId: number;
+    eventId: number;
+    isPayed: boolean;
+    user: TUser;
+};
 export type EventSponsor = {
     id: number;
     eventId: number;
