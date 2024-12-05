@@ -51,6 +51,24 @@ export type UserDataInput = {
     gender: string;
 };
 
+export type ApiUserResponse = {
+    status: "success";
+    data: {
+        user: User;
+    };
+};
+
+export type TUser = {
+    id: number;
+    firstname: string;
+    lastname: string;
+    avatar: string;
+    email: string;
+    isVerified: boolean;
+    createdAt: string; // Can be improved for date parsing (optional)
+    updatedAt: string; // Can be improved for date parsing (optional)
+};
+
 export type Event = {
     id: number;
     slug: string;
@@ -78,6 +96,12 @@ export type Event = {
 type Pattern = {
     avatar: string;
     company: string;
+};
+
+type TEventParticipantInput = {
+    userId: number;
+    eventId: number;
+    isPayed: boolean;
 };
 
 export type EventSponsor = {
