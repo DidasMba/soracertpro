@@ -23,7 +23,7 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({
 
     useEffect(() => {
         if (!isLoading && userApiResponse) {
-            setUser(userApiResponse.data?.user);
+            setUser(userApiResponse?.user);
         }
     }, [isLoading, userApiResponse]);
 

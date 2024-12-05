@@ -1,18 +1,73 @@
 /** @format */
 
 import { Card } from "@/components/ui/card";
-import React from "react";
+import React, { useEffect } from "react";
 import { formatDateTimeToFrench } from "@/helper/funct";
+import { useUser } from "@/context/UserContext";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import { addParticipant, getParticipantByEventId } from "@/lib/api/event";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import Button from "@/components/common/Button";
+import { isRegistered } from "@/utils/fn/helper";
 
 const EventInfo: React.FC<{
+    isLogged: boolean;
+    id: number;
     title: string;
     description: string;
     dateEvent: string;
     location: string;
     price: number;
-}> = ({ title, description, location, dateEvent, price }) => {
+}> = ({
+    title,
+    description,
+    isLogged = false,
+    id,
+    location,
+    dateEvent,
+    price,
+}) => {
     let date_time = formatDateTimeToFrench(dateEvent);
+    const router = useRouter();
     const dateSplitted = date_time.split("-");
+    const { user } = useUser();
+    const {
+        mutateAsync: addEventParticant,
+        data,
+        isPending,
+    } = useMutation({
+        mutationFn: addParticipant,
+    });
+
+    const handleAddParticipant = async () => {
+        if (isLogged) {
+            try {
+                const response = await addEventParticant({
+                    userId: user?.id!,
+                    eventId: id,
+                });
+                if (response?.status === "success") {
+                    toast.success("Ajouter avec Success");
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            router.push("/signin");
+        }
+    };
+    useEffect(() => {
+        if (data?.error_message) {
+            toast.error(data.error_message);
+        }
+    }, [data?.error_message]);
+
+    const { data: Participants, isLoading } = useQuery({
+        queryKey: ["participants"],
+        queryFn: () => getParticipantByEventId(id),
+    });
+
     return (
         <>
             <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#05264f]'>
@@ -160,9 +215,28 @@ const EventInfo: React.FC<{
                                 </div>
                             </div>
                             <hr />
-                            <button className='px-6 py-2 rounded-xl mt-2 text-white font-semibold bg-customBlue hover:text-gray-500 hover:bg-customHoverBlue duration-300'>
-                                Joindre
-                            </button>
+                            <div className='mt-4'>
+                                {isLoading ? (
+                                    <span className='loading loading-spinner loading-sm'></span>
+                                ) : (
+                                    <div>
+                                        {!isRegistered(
+                                            user?.id!,
+                                            Participants?.data!
+                                        ) ? (
+                                            <Button
+                                                isLoading={isPending}
+                                                text='Joindre'
+                                                handClick={handleAddParticipant}
+                                            />
+                                        ) : (
+                                            <p className='text-sm font-semibold italic text-customHoverBlue'>
+                                                Vous etez enregistrer
+                                            </p>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
                         </Card>
                     </div>
                 </div>
