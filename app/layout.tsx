@@ -41,7 +41,7 @@ export default function RootLayout({
                         shadow='0 0 10px #2299DD,0 0 5px #2299DD'
                     />
 
-                    <div className='mt-20'>
+                    <div>
                         {children}
                         <ToastContainer />
                     </div>

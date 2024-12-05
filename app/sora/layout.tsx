@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar";
+import { getCcookie } from "@/lib";
 import React from "react";
 
 export default function SoraLayout({
@@ -9,9 +10,10 @@ export default function SoraLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const isLogged = getCcookie();
     return (
         <div>
-            <Navbar />
+            <Navbar isLogged={isLogged} />
             <div className='mt-20'>{children}</div>
             <Footer />
         </div>

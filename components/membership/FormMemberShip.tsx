@@ -14,9 +14,10 @@ import { useMutation } from "@tanstack/react-query";
 import { createMember } from "@/lib/api/membership";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+import ErrorMessage from "../common/ErrorMessage";
 
 const FormMemberShip = () => {
-    const { mutateAsync: createMemberFn } = useMutation({
+    const { mutateAsync: createMemberFn, data } = useMutation({
         mutationFn: createMember,
     });
     const router = useRouter();
@@ -64,6 +65,7 @@ const FormMemberShip = () => {
                 lastname: value.lastname,
                 email: value.email,
                 password: value.password,
+                role: "MEMBER",
                 gender: value.gender,
                 username: value.username,
                 avatar: selectedFile,
@@ -71,10 +73,10 @@ const FormMemberShip = () => {
             try {
                 if (previewUrl.length !== 0) {
                     const response = await createMemberFn(newValue);
-                    if (response) {
+                    if (response?.status === "success") {
                         toast.success("Enregistrer avec success");
                         setTimeout(() => {
-                            router.push("/membership/success");
+                            router.push("/sora/membership/success");
                             resetForm();
                             setPreviewUrl(
                                 "https://avatar.iran.liara.run/username?username=avatar"
@@ -246,6 +248,9 @@ const FormMemberShip = () => {
                     text='Enregistrer'
                 />
             </div>
+            {data?.status === "error" && (
+                <ErrorMessage text={data?.error_message} />
+            )}
         </form>
     );
 };

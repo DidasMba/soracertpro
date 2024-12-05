@@ -46,6 +46,7 @@ export type UserDataInput = {
     avatar?: File | null;
     username?: string;
     email: string;
+    role: string;
     password: string;
     gender: string;
 };
