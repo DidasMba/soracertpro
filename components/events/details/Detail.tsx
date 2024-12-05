@@ -35,6 +35,7 @@ const DetailEvent: React.FC<{ slug: string }> = ({ slug }) => {
                         location={data?.data.location!}
                         dateEvent={data?.data?.start_date!}
                         description={data?.data.description!}
+                        price={data?.data.price!}
                     />
                     <div className='py-8 flex flex-col gap-6'>
                         <h1 className='text-xl md:text-2xl font-bold text-customBlue'>
