@@ -12,11 +12,14 @@ import { useMutation } from "@tanstack/react-query";
 import { signinFn } from "@/lib/api/auth";
 import { toast } from "react-toastify";
 import ErrorMessage from "../common/ErrorMessage";
+import { useRouter } from "next/navigation";
 
 const SigninForm = () => {
     const { mutateAsync: signin, data } = useMutation({
         mutationFn: signinFn,
     });
+
+    const router = useRouter();
 
     const {
         values,
@@ -41,6 +44,10 @@ const SigninForm = () => {
                 if (response?.status === "success") {
                     toast.success("Connexion avec Succes!!!");
                     setSubmitting(false);
+                    setTimeout(() => {
+                        router.push("/sora/home");
+                        resetForm();
+                    }, 1000);
                 }
             } catch (error) {
                 console.log(error);

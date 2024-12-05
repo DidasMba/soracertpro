@@ -20,6 +20,7 @@ export const signinFn = async (SignInput: TSignInput) => {
                 email: SignInput.email,
                 password: SignInput.password,
             }),
+            credentials: "include",
         }).then((res) => res.json());
         return response;
     } catch (error) {

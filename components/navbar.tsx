@@ -9,8 +9,9 @@ import { usePathname } from "next/navigation";
 import { LuMenu } from "react-icons/lu";
 import NavMob from "./NavMob";
 import NavItem from "./NavItem";
+import Button from "./common/Button";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const pathName = usePathname();
     const [isNavMobOpen, setIsNavMobOpen] = useState(false);
@@ -54,19 +55,24 @@ const Navbar: React.FC = () => {
                             />
                         ))}
                     </ul>
-
-                    <div className='flex flex-row gap-4'>
-                        <SignButton
-                            text="S'inscrire"
-                            href='/signup'
-                            variant='light'
-                        />
-                        <SignButton
-                            text='Se connecter'
-                            href='/signin'
-                            variant='dark'
-                        />
-                    </div>
+                    {isLogged ? (
+                        <div className='flex flex-row gap-4'>
+                            <Button text='Deconnexion' />
+                        </div>
+                    ) : (
+                        <div className='flex flex-row gap-4'>
+                            <SignButton
+                                text="S'inscrire"
+                                href='/signup'
+                                variant='light'
+                            />
+                            <SignButton
+                                text='Se connecter'
+                                href='/signin'
+                                variant='dark'
+                            />
+                        </div>
+                    )}
                 </div>
                 <LuMenu
                     onClick={() => setIsNavMobOpen(true)}
