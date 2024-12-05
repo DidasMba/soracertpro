@@ -1,5 +1,6 @@
 /** @format */
 
+import { ApiUserResponse } from "@/type";
 import { API_URL } from "./baseUrl";
 
 type TSignInput = {
@@ -22,6 +23,21 @@ export const signinFn = async (SignInput: TSignInput) => {
             }),
             credentials: "include",
         }).then((res) => res.json());
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+export const getUserProfile = async () => {
+    try {
+        const response: ApiUserResponse = await fetch(
+            `${API_URL}/user/profile`,
+            {
+                method: "GET",
+                credentials: "include",
+            }
+        ).then((res) => res.json());
         return response;
     } catch (error) {
         console.log(error);
