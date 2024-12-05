@@ -61,7 +61,7 @@ const MemberShip = () => {
             <Section id='member-form'>
                 <div className='flex flex-col gap-8 my-8'>
                     <h1 className='text-xl md:text-2xl text-center font-bold text-customBlue'>
-                        Remplissez le formulaire pour devenir Membre
+                        
                     </h1>
                     <div className='max-w-4xl mx-auto w-full'>
                         <FormMemberShip />

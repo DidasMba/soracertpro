@@ -143,14 +143,6 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href='mailto:company@email.com'
-                                    className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
-                                >
-                                    Études de cas
-                                </a>
-                            </li>
-                            <li>
-                                <a
                                     href='#'
                                     className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
                                 >
