@@ -1,6 +1,7 @@
 /** @format */
 
 import DetailProgram from "@/components/program/detail/DetailProgram";
+import { getCcookie } from "@/lib";
 import { Metadata } from "next";
 import React from "react";
 
@@ -21,9 +22,10 @@ export async function generateMetadata({
 
 export default async function ProgramDetail({ params }: TProgram) {
     const { slug } = params;
+    const isLogged = getCcookie();
     return (
         <div>
-            <DetailProgram slug={slug} />
+            <DetailProgram isLogged={isLogged} slug={slug} />
         </div>
     );
 }
