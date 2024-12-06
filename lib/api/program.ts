@@ -1,6 +1,11 @@
 /** @format */
 
-import { TProgram } from "@/type";
+import {
+    ApiCreateProgramResponse,
+    TProgram,
+    TProgramParticipantInput,
+    TProgramParticipantResponse,
+} from "@/type";
 import { API_URL } from "./baseUrl";
 
 export const fetchAllProgram = async (
@@ -32,6 +37,43 @@ export const getProgramBySlug = async (slug: string) => {
             res.json()
         );
         return program;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+export const addParticipantToProgram = async (
+    inputs: TProgramParticipantInput
+) => {
+    try {
+        const response: ApiCreateProgramResponse = await fetch(
+            `${API_URL}/program/participant/add`,
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    userId: inputs.userId,
+                    programId: inputs.programId,
+                }),
+                credentials: "include",
+            }
+        ).then((res) => res.json());
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+export const getParticipantByProgramId = async (id: number) => {
+    try {
+        const participants: TProgramParticipantResponse = await fetch(
+            `${API_URL}/program/participant/program/${id}`,
+            {
+                method: "GET",
+                credentials: "include",
+            }
+        ).then((res) => res.json());
+        return participants;
     } catch (error) {
         console.log(error);
     }

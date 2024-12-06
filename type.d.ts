@@ -135,6 +135,26 @@ export type Comment = {
     event: Event;
 };
 
+export type TProgramParticipantInput = {
+    userId: number;
+    programId: number;
+};
+
+export type TParticipant = {
+    id: number;
+    isPayed: boolean;
+    userId: number;
+    programId: number;
+    createdAt: Date;
+    updatedAt: Date;
+};
+
+export type ApiCreateProgramResponse = {
+    status: string;
+    message: string;
+    error_message: string;
+};
+
 export type Moderator = {
     id: number;
     firstname: string;
@@ -156,6 +176,19 @@ export type Participant = {
     isPayed: boolean;
     user: User;
     event: Event;
+};
+
+export type TParticipantProgram = Array<{
+    userId: number;
+    programId: number;
+    user: TUser;
+    program: TProgram;
+}>;
+
+export type TProgramParticipantResponse = {
+    status: string;
+    message: string;
+    data: TParticipantProgram;
 };
 
 export type TProgram = {
