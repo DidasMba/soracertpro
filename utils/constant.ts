@@ -242,6 +242,27 @@ export const blogueData = [
     },
 ];
 
+export const blogueDataDetails  = [
+    {
+     id: 1,
+    title: "Bienvenue à Python Radio Marie ",
+    description: "Une introduction au monde passionnant de Python.",
+    image: "/path/to/image1.jpg", // Chemin ou image statique
+    alt: "Image de Python Radio",
+    date: "2024-12-05",
+    },
+    {
+      id: 2,
+      title: "Another Blog",
+      image: coaching,
+      alt: "html css",
+          description: "OKOJDICFIDHIIDHV"
+    },
+  ];
+  
+
+
+
 export const TimmingOptions = [
     { id: "tous", label: "Tout" },
     { id: "jour", label: "Jour" },
@@ -327,3 +348,5 @@ export const gender = [
     { value: "MALE", label: "Masculin" },
     { value: "FEMALE", label: "Feminin" },
 ];
+
+

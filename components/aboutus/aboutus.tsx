@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Heading from "@/components/common/Heading";
 import Paragraph from "@/components/common/Paragrah";
-import Aboutus from "./About";
+
 
 const FrameComponent6: NextPage = () => {
   return (
@@ -41,9 +41,9 @@ const FrameComponent6: NextPage = () => {
             />
           </div>
         </div>
+      
       </div>
-     
-    <Aboutus />
+      
     </section>
      
     
