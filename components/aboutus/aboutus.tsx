@@ -32,9 +32,6 @@ const FrameComponent6: NextPage = () => {
           data-aos-delay="200"
         >
           <div className="py-3 p-3 max-w-2xl">
-            {/* <h2 className="text-md font-bold leading-tight text-[#05264f] py-2">
-              About Us
-            </h2> */}
             <Heading text={`À propos`} />
             <Paragraph
               text={
