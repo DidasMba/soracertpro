@@ -51,6 +51,22 @@ export type UserDataInput = {
     gender: string;
 };
 
+export type ApiUserResponse = {
+    status: string;
+    user: User;
+};
+
+export type TUser = {
+    id: number;
+    firstname: string;
+    lastname: string;
+    avatar: string;
+    email: string;
+    isVerified: boolean;
+    createdAt: string; // Can be improved for date parsing (optional)
+    updatedAt: string; // Can be improved for date parsing (optional)
+};
+
 export type Event = {
     id: number;
     slug: string;
@@ -80,6 +96,24 @@ type Pattern = {
     company: string;
 };
 
+type TEventParticipantInput = {
+    userId: number;
+    eventId: number;
+};
+
+export type GetParticipantsResponse = {
+    status: string;
+    message: string;
+    data: Array<TParticipant>;
+};
+
+export type TParticipant = {
+    id: number;
+    userId: number;
+    eventId: number;
+    isPayed: boolean;
+    user: TUser;
+};
 export type EventSponsor = {
     id: number;
     eventId: number;
@@ -99,6 +133,26 @@ export type Comment = {
     updatedAt: Date;
     eventId: number;
     event: Event;
+};
+
+export type TProgramParticipantInput = {
+    userId: number;
+    programId: number;
+};
+
+export type TParticipant = {
+    id: number;
+    isPayed: boolean;
+    userId: number;
+    programId: number;
+    createdAt: Date;
+    updatedAt: Date;
+};
+
+export type ApiCreateProgramResponse = {
+    status: string;
+    message: string;
+    error_message: string;
 };
 
 export type Moderator = {
@@ -122,6 +176,19 @@ export type Participant = {
     isPayed: boolean;
     user: User;
     event: Event;
+};
+
+export type TParticipantProgram = Array<{
+    userId: number;
+    programId: number;
+    user: TUser;
+    program: TProgram;
+}>;
+
+export type TProgramParticipantResponse = {
+    status: string;
+    message: string;
+    data: TParticipantProgram;
 };
 
 export type TProgram = {

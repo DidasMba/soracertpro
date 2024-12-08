@@ -9,7 +9,10 @@ import Separator from "@/components/homepage/components/Separator";
 import Section from "@/components/common/Section";
 import Image from "next/image";
 
-const DetailEvent: React.FC<{ slug: string }> = ({ slug }) => {
+const DetailEvent: React.FC<{ slug: string; isLogged: boolean }> = ({
+    slug,
+    isLogged,
+}) => {
     const { data, isLoading } = useQuery({
         queryKey: ["event", slug],
         queryFn: () => getEventBySlug(slug),
@@ -31,10 +34,13 @@ const DetailEvent: React.FC<{ slug: string }> = ({ slug }) => {
             ) : (
                 <div>
                     <Eventregister
+                        isLogged={isLogged}
+                        id={data?.data.id!}
                         title={data?.data.theme!}
                         location={data?.data.location!}
                         dateEvent={data?.data?.start_date!}
                         description={data?.data.description!}
+                        price={data?.data.price!}
                     />
                     <div className='py-8 flex flex-col gap-6'>
                         <h1 className='text-xl md:text-2xl font-bold text-customBlue'>

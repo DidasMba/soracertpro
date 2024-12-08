@@ -67,6 +67,7 @@ const HeroSection = () => {
                             </h4>
                             <hr className='block lg:hidden' />
                             <Radios
+                                name={"date-filter"}
                                 options={dateEventFilter}
                                 selectedDate={dateFilter}
                                 setSelectedDate={setDateFilter}
