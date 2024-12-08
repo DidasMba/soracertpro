@@ -290,7 +290,7 @@ export const historyData = [
         title: "Commencement ",
         date: "2024-04-15",
         description:
-            "Fondée par Degaul BANZA, **SoraCert** a lancé son premier cycle de recrutement à Lubumbashi, en RDCongo, recrutant sa première cohorte de six ingénieurs logiciels Congolais après avoir reçu 100 candidatures..",
+            "Fondée par Degaul BANZA, SoraCert a lancé son premier cycle de recrutement à Lubumbashi, en RDCongo.",
     },
     {
         id: 2,

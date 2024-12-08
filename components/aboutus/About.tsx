@@ -22,7 +22,7 @@ function About() {
             <Paragraph
               text={
                
-               "Nous envisageons un avenir où notre communauté contribue activement à un monde plus inclusif, éduqué et durable."
+               "Nous aspirons à devenir la communauté tech de référence au niveau mondial, en maximisant le potentiel de la technologie pour ouvrir de nouvelles voies de développement et de croissance.Nous envisageons un avenir où notre communauté contribue activement à un monde plus inclusif, éduqué et durable."
               }
             />
 

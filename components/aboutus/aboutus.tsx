@@ -33,10 +33,10 @@ const FrameComponent6: NextPage = () => {
           data-aos-delay="200"
         >
           <div className="py-3 p-3 max-w-2xl">
-            <Heading text={`À propos`} />
+            <Heading text={`Notre Mission`} />
             <Paragraph
               text={
-                "SoraCert est une plateforme technologique qui propose formation, certification et événements pour accompagner étudiants, professionnels et entreprises. Grâce à la blockchain et à l’IA, elle offre des solutions modernes et des certifications reconnues, favorisant l’évolution dans un monde en transformation."
+                "Notre mission est de créer un espace inclusif où les membres se sentent soutenus, inspirés et encouragés à poursuivre leur passion ou leur cause. Nous cherchons à favoriser l'échange d'informations, la croissance personnelle et le développement de compétences au sein de notre communauté.Nous aspirons à avoir un impact positif sur notre société en encourageant l'action collective pour des causes importantes."
               }
             />
           </div>

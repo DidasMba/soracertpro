@@ -1,14 +1,18 @@
 import Image from "next/image";
-import LandingPage from "@/components/partener/landing";
-import Contact from "@/components/partener/contact";
+import Banner from "@/components/partener/Banner";
+
+// import FormPartner from "@/components/partener/FormPartner";
 import Partners from "@/components/partener/partners";
+import PartnerShip from "@/components/partener/PartnerShip";
+
 
 export default function AboutUs() {
   return (
     <main className="">
   
-   <LandingPage />
-    <Contact />
+   <Banner />
+    {/* <FormPartner />  */}
+    <PartnerShip />
     <Partners />
     </main>
   );
