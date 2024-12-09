@@ -26,7 +26,7 @@ const PartnerShip = () => {
 
                             <div className="place-items-center  py-3 p-3  max-w-2xl mx-auto">
 
-                                <div className="text-2xl font-bold uppercase  text-[#05264f] ">Trusted by 10,000+ companies around the world
+                                <div className="text-2xl font-bold   text-[#05264f] ">Fiable pour plus de 10 000 entreprises à travers le monde.
                                 </div>
                             </div>
                         </div>
@@ -36,7 +36,7 @@ const PartnerShip = () => {
                             <div className="text-xl font-bold uppercase  text-[#05264f] ">Tagline
                             </div>
 
-                            <p className="font-extralight">Our customers accomplish amazing things every day. They work to find cures to cancer, travel to space.</p>
+                            <p className="font-extralight">Nos clients accomplissent des choses incroyables chaque jour. Ils travaillent pour trouver des remèdes contre le cancer, voyagent dans l'espace.</p>
                         </div>
                         <div className="w-fullitems-center p-2 py-3" data-aos="fade-up" data-aos-delay="200">
                         </div>
