@@ -7,7 +7,7 @@ import FormGroup from "../common/FormGroup";
 import { useFormik } from "formik";
 import TextField from "../common/TextField";
 import SelectInput from "../common/SelectInput";
-import { gender } from "@/utils/constant";
+// import { gender } from "@/utils/constant";
 import Button from "../common/Button";
 import { membershipSchema } from "@/utils/validations/membership";
 import { useMutation } from "@tanstack/react-query";
@@ -54,7 +54,8 @@ const FormPartner = () => {
             email: "",
             password: "",
             confirmPassword: "",
-            gender: "",
+            // gender: "",
+            description: "",
             username: "",
         },
         validationSchema: membershipSchema,
@@ -64,7 +65,8 @@ const FormPartner = () => {
                 lastname: value.lastname,
                 email: value.email,
                 password: value.password,
-                gender: value.gender,
+                // gender: value.gender,
+                description: value.description,
                 username: value.username,
                 avatar: selectedFile,
             };
@@ -153,6 +155,7 @@ const FormPartner = () => {
                     </p>
                 )}
             </div>
+            <p className='text-center text-sm font-medium mt-2'>Logo de votre compagnie</p> {/* Ajouté ici */}
             <FormGroup col='col-2'>
                 <TextField
                     handleBlur={handleBlur}
@@ -160,7 +163,7 @@ const FormPartner = () => {
                     touched={touched.firstname!}
                     value={values.firstname}
                     name='firstname'
-                    placeholder='e.g. Degaul'
+                    placeholder='ex: Degaul'
                     handleChange={handleChange}
                     label='Nom'
                     type='text'
@@ -171,7 +174,7 @@ const FormPartner = () => {
                     touched={touched.lastname!}
                     value={values.lastname}
                     name='lastname'
-                    placeholder='e.g. Mbanza'
+                    placeholder='ex: Banza'
                     handleChange={handleChange}
                     label='Post nom'
                     type='text'
@@ -184,7 +187,7 @@ const FormPartner = () => {
                     touched={touched.email!}
                     value={values.email}
                     name='email'
-                    placeholder='e.g. degaulmbanza@gmail.com'
+                    placeholder='ex: degaulbanza@gmail.com'
                     handleChange={handleChange}
                     label='Addresse Email'
                     type='email'
@@ -197,20 +200,22 @@ const FormPartner = () => {
                     name='username'
                     placeholder='e.g. degaulb'
                     handleChange={handleChange}
-                    label="Nom d'utilisateur"
+                    label="Nom de la compagnie"
                     type='text'
                 />
             </FormGroup>
             <FormGroup col='col-1'>
-                <SelectInput
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    name='gender'
-                    touched={touched.gender!}
-                    error={errors.gender!}
-                    value={values.gender}
-                    options={gender}
-                    label='Votre Genre'
+                <TextField
+                 
+                    handleBlur={handleBlur}
+                    error={errors.description!}
+                    touched={touched.description!}
+                    value={values.description}
+                    name='description'
+                    placeholder='Décrivez votre compagnie'
+                    handleChange={handleChange}
+                    label="Description"
+                    type='text'
                 />
             </FormGroup>
             <FormGroup col='col-1'>
@@ -220,7 +225,7 @@ const FormPartner = () => {
                     touched={touched.password!}
                     value={values.password}
                     name='password'
-                    placeholder='e.g. *******'
+                    placeholder='e.g. ********'
                     handleChange={handleChange}
                     label='Mot de passe'
                     type='password'
@@ -239,7 +244,7 @@ const FormPartner = () => {
                     type='password'
                 />
             </FormGroup>
-            <div className='flex items-start'>
+            <div className='flex justify-end items-end'>
                 <Button
                     isLoading={isSubmitting}
                     type='submit'
