@@ -66,12 +66,7 @@ const config = {
                     foreground: "hsl(var(--card-foreground))",
                 },
             },
-            borderRadius: {
-                lg: "var(--radius)",
-                md: "calc(var(--radius) - 2px)",
-                sm: "calc(var(--radius) - 4px)",
-                "1xl": "1rem", // Taille personnalisée
-            },
+
             keyframes: {
                 "accordion-down": {
                     from: { height: "0" },
@@ -90,20 +85,23 @@ const config = {
                 monteserrat: ["Montserrat", "sans-serif"],
             },
             fontSize: {
-                '2xl': '1.5rem', // 24px
-                '3xl': '1.875rem', // 30px
-                '4xl': '2.25rem', // 36px
-                '8xl': '6rem', // 96px, or adjust to your desired size
-                
+                "2xl": "1.5rem", // 24px
+                "3xl": "1.875rem", // 30px
+                "4xl": "2.25rem", // 36px
+                "8xl": "6rem", // 96px, or adjust to your desired size
 
-                'custom-large': '3rem', // 48px (custom size)
+                "custom-large": "3rem", // 48px (custom size)
             },
         },
     },
     variants: {
         display: ["group-hover"],
     },
-    plugins: [require("tailwindcss-animate"), require("daisyui")],
+    plugins: [
+        require("tailwindcss-animate"),
+        require("daisyui"),
+        require("@tailwindcss/typography"),
+    ],
 } satisfies Config;
 
 export default config;
