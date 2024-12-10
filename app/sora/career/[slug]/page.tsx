@@ -16,7 +16,7 @@ export async function generateMetadata({
 }: TJobPage): Promise<Metadata> {
     const slug = params.slug; // Access slug directly from params
     return {
-        title: `Event Details - ${slug}`,
+        title: `Job Details - ${slug}`,
     };
 }
 export default function Career({ params }: TJobPage) {
