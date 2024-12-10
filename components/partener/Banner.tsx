@@ -13,16 +13,16 @@ const Banner: React.FC = () => {
             <Image
                 className='w-full hidden md:block h-full rounded-xl object-cover'
                 src={partnerImagecomputer}
-                alt={"banner-patener-mob"}
-                width={400}
-                height={600}
+                alt={"banner-patner-mob"}
+                width={300}
+                height={500}
             />
             <Image
                 className='w-full h-full block md:hidden rounded-xl object-cover'
                 src={partImagephone}
                 alt={"banner-patner-mob"}
-                width={400}
-                height={600}
+                width={300}
+                height={500}
             />
             <div className='absolute top-0 right-0 bottom-0 flex items-center  px-4 md:px-8 left-0 text-white w-full z-10 rounded-xl bg-black bg-opacity-60'>
                 <div className='max-w-lg w-full flex flex-col gap-8 items-start '>

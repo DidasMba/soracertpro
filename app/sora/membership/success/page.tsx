@@ -14,10 +14,10 @@ export default function page() {
                     boîte e-mail.
                 </h1>
                 <Link
-                    className='px-6 py-1 text-sm font-medium md:py-2 bg-customBlue duration-300 text-white rounded-full hover:bg-customHoverBlue hover:text-customBlue'
+                    className = 'px-6 py-1 text-sm font-medium md:py-2 bg-customBlue duration-300 text-white rounded-full hover:bg-customHoverBlue hover:text-customBlue'
                     href={"/"}
                 >
-                    Entrer a la page d'accueil
+                    Entrer a la page d' accueil.                
                 </Link>
             </div>
         </main>

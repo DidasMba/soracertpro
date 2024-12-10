@@ -50,6 +50,16 @@ export type UserDataInput = {
     gender: string;
 };
 
+export type PatnerDataInput = {
+    firstname: string;
+    lastname: string;
+    logo?: File | null;
+    company?: string;
+    email: string;
+    description: string;
+   
+};
+
 export type Event = {
     id: number;
     slug: string;

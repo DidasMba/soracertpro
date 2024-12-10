@@ -7,15 +7,15 @@ import FormGroup from "../common/FormGroup";
 import { useFormik } from "formik";
 import TextField from "../common/TextField";
 import Button from "../common/Button";
-import { membershipSchema } from "@/utils/validations/membership";
 import { useMutation } from "@tanstack/react-query";
-import { createMember } from "@/lib/api/membership";
+import { createParner } from "@/lib/api/partnership";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+import { partnerSchema } from "@/utils/validations/partnership";
 
 const FormPartner = () => {
-    const { mutateAsync: createMemberFn } = useMutation({
-        mutationFn: createMember,
+    const { mutateAsync: createPatnerFn } = useMutation({
+        mutationFn:createParner,
     });
     const router = useRouter();
     const [previewUrl, setPreviewUrl] = useState<string>("");
@@ -51,17 +51,17 @@ const FormPartner = () => {
             lastname: "",
             email: "",
             description: "",
-            username: "",
+            company: "",
         },
-        validationSchema: membershipSchema,
+        validationSchema: partnerSchema,
         onSubmit: async (value, { resetForm }) => {
             const newValue = {
                 ...value,
-                avatar: selectedFile,
+                logo: selectedFile,
             };
             try {
                 if (selectedFile) {
-                    const response = await createMemberFn(newValue);
+                    const response = await createPatnerFn(newValue);
                     if (response) {
                         toast.success("Enregistrer avec succès");
                         setTimeout(() => {
@@ -124,10 +124,10 @@ const FormPartner = () => {
                 />
                 <TextField
                     handleBlur={handleBlur}
-                    error={errors.username!}
-                    touched={touched.username!}
-                    value={values.username}
-                    name='username'
+                    error={errors.company!}
+                    touched={touched.company!}
+                    value={values.company}
+                    name='company'
                     placeholder='ex: Nom de la compagnie'
                     handleChange={handleChange}
                     label='Nom de la compagnie'
@@ -149,40 +149,40 @@ const FormPartner = () => {
             </FormGroup>
             {/* Bouton et prévisualisation */}
             <div className='flex flex-col items-start gap-4 w-fit p-4 border border-gray-200 rounded-md bg-white'>
-    {/* Bouton Upload Logo */}
-    <button
-        type='button'
-        onClick={handleUploadClick}
-        className='w-auto px-3 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 flex items-center justify-center'
-    >
-        Upload Logo
-    </button>
-    
-    {/* Carré de prévisualisation */}
-    <div className='w-24 h-24 border border-gray-300 rounded-md flex items-center justify-center bg-gray-50'>
-        {previewUrl ? (
-            <img
-                src={previewUrl}
-                alt='Logo Preview'
-                className='w-full h-full object-cover'
-            />
-        ) : (
-            <span className='text-gray-400 text-sm'>Aucun logo</span>
-        )}
-    </div>
-    
-    {/* Input caché */}
-    <input
-        ref={fileInputRef}
-        type='file'
-        accept='image/*'
-        onChange={handleFileChange}
-        className='hidden'
-    />
-    {errorImage && (
-        <p className='text-red-500 text-sm'>Le logo est obligatoire.</p>
-    )}
-</div>
+                {/* Bouton Upload Logo */}
+                <button
+                    type='button'
+                    onClick={handleUploadClick}
+                    className='w-auto px-3 py-2  bg-customBlue text-white rounded-1xl text-sm  flex items-center justify-center'
+                >
+                    Télécharger le logo
+                </button>
+
+                {/* Carré de prévisualisation */}
+                <div className='w-24 h-24 border  border-gray-300 rounded-md flex items-center justify-center bg-gray-50'>
+                    {previewUrl ? (
+                        <img
+                            src={previewUrl}
+                            alt='Logo Preview'
+                            className='w-full h-full object-cover'
+                        />
+                    ) : (
+                        <span className='text-gray-400 text-sm'>Aucun logo</span>
+                    )}
+                </div>
+
+                {/* Input caché */}
+                <input
+                    ref={fileInputRef}
+                    type='file'
+                    accept='image/*'
+                    onChange={handleFileChange}
+                    className='hidden'
+                />
+                {errorImage && (
+                    <p className='text-red-500 text-sm'>Le logo est obligatoire.</p>
+                )}
+            </div>
 
             <div className='flex justify-end items-end'>
                 <Button
