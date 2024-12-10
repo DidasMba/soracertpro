@@ -33,6 +33,18 @@ type TextFieldType = {
     handleBlur: (e: React.FocusEvent<HTMLInputElement, Element>) => void;
 };
 
+type TextAreaType = {
+    label: string;
+    placeholder: string;
+    error: string;
+    touched: boolean;
+    name: string;
+    value: string | number;
+    type: React.HTMLInputTypeAttribute;
+    handleChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+    handleBlur: (e: React.FocusEvent<HTMLTextAreaElement, Element>) => void;
+};
+
 export type UserResponse = {
     firstname: string;
     lastname: string;
@@ -50,6 +62,16 @@ export type UserDataInput = {
     password: string;
     gender: string;
 };
+
+export type PatnerDataInput = {
+    firstname: string;
+    lastname: string;
+    logo?: File | null;
+    company?: string;
+    email: string;
+    description: string;
+   
+}
 
 export type ApiUserResponse = {
     status: string;

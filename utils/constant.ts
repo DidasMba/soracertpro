@@ -242,6 +242,27 @@ export const blogueData = [
     },
 ];
 
+export const blogueDataDetails  = [
+    {
+     id: 1,
+    title: "Bienvenue à Python Radio Marie ",
+    description: "Une introduction au monde passionnant de Python.",
+    image: "/path/to/image1.jpg", // Chemin ou image statique
+    alt: "Image de Python Radio",
+    date: "2024-12-05",
+    },
+    {
+      id: 2,
+      title: "Another Blog",
+      image: coaching,
+      alt: "html css",
+          description: "OKOJDICFIDHIIDHV"
+    },
+  ];
+  
+
+
+
 export const TimmingOptions = [
     { id: "tous", label: "Tout" },
     { id: "jour", label: "Jour" },
@@ -269,35 +290,35 @@ export const historyData = [
         title: "Commencement ",
         date: "2024-04-15",
         description:
-            "Fondée par Degaul BANZA, **SoraCert** a lancé son premier cycle de recrutement à Lubumbashi, en RDCongo, recrutant sa première cohorte de six ingénieurs logiciels Congolais après avoir reçu 100 candidatures..",
+            "Fondée par Degaul BANZA, SoraCert a lancé son premier cycle de recrutement à Lubumbashi, en RDCongo.",
     },
     {
         id: 2,
-        title: "commencement 2 ",
-        date: "2024-04-15",
+        title: "SoraCert obtient un financement de série A",
+        date: "2023",
         description:
-            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+            "SoraCert a obtenu de dollars de financement en série A, avec la participation des investisseurs, et a ouvert des opérations au Congo, Kinshasa.",
     },
     {
         id: 3,
-        title: "commencement 3",
-        date: "2024-04-15",
+        title: "Première cohorte entièrement féminine",
+        date: "2022",
         description:
-            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+            "SoraCert a réalisé sa levée de fonds de série B,  organise sa première cohorte entièrement féminine au Congo...",
     },
     {
         id: 4,
-        title: "commencement 4",
-        date: "2024-04-15",
+        title: "SoraCert obtient un financement de série C",
+        date: "2021",
         description:
-            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+            "La levée de fonds de série C porte le financement total ; SoraCert atteint 500 développeurs..",
     },
     {
         id: 5,
-        title: "commencement 4",
-        date: "2024-04-15",
+        title: "La première cohorte termine un programme",
+        date: "2020",
         description:
-            "Apprenez les bases du web : HTML pour la structure et CSS pour le style.",
+            "Les deux premières promotions d'ingénieurs terminent le programme de quatre ans.",
     },
 ];
 
@@ -327,6 +348,7 @@ export const gender = [
     { value: "MALE", label: "Masculin" },
     { value: "FEMALE", label: "Feminin" },
 ];
+
 
 export const jobDepartments = [
     { id: "all", label: "🗂️ Tous" },
@@ -364,3 +386,4 @@ export const levels = [
     { id: "MID_LEVEL", label: "Mid level" },
     { id: "SENIOR", label: "Senior" },
 ];
+
