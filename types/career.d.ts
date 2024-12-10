@@ -21,6 +21,8 @@ export type TJob = {
     location: string;
     jobType: string;
     company: string;
+    benefits: string;
+    desirable: string;
     experienceLevel: string;
     postedAt: string;
     deadline: string;

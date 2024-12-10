@@ -12,3 +12,7 @@
 .reactMarkDown pre {
     font-family: "Montserrat", serif !important;
 }
+
+.reactMarkDown p {
+    margin: 0.525rem 0;
+}

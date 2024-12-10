@@ -53,7 +53,7 @@ const CareerDetail: React.FC<{ slug: string; isLogged: boolean }> = ({
                     </div>
                 </div>
             ) : (
-                <div className='min-h-[65svh] w-full flex flex-col gap-8 md:gap-10'>
+                <div className='min-h-[65svh] mb-4 md:mb-6 w-full flex flex-col gap-8 md:gap-10'>
                     <div className='flex flex-col items-start'>
                         <Link
                             className='bg-customBlue px-6 py-2 flex text-white gap-2 font-medium hover:bg-blue-900 rounded items-center'
@@ -95,9 +95,14 @@ const CareerDetail: React.FC<{ slug: string; isLogged: boolean }> = ({
                                 <h2 className='text-base font-bold'>
                                     Description de poste:
                                 </h2>
-                                <p className='text-base text-gray-700'>
-                                    {data?.data.description}
-                                </p>
+                                {data?.data.description && (
+                                    <ReactMarkdown
+                                        className={style.reactMarkDown}
+                                        remarkPlugins={[remarkGfm]}
+                                    >
+                                        {data.data.description}
+                                    </ReactMarkdown>
+                                )}
                             </div>
                             <div className='flex flex-col gap-2'>
                                 <h2 className='text-base font-bold'>
@@ -116,12 +121,38 @@ const CareerDetail: React.FC<{ slug: string; isLogged: boolean }> = ({
                                 <h2 className='text-base font-bold'>
                                     Responsabilites:
                                 </h2>
-                                {data?.data.requirements && (
+                                {data?.data.responsibilities && (
                                     <ReactMarkdown
                                         className={style.reactMarkDown}
                                         remarkPlugins={[remarkGfm]}
                                     >
                                         {data.data.responsibilities}
+                                    </ReactMarkdown>
+                                )}
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <h2 className='text-base font-bold'>
+                                    Desirable :
+                                </h2>
+                                {data?.data.desirable && (
+                                    <ReactMarkdown
+                                        className={style.reactMarkDown}
+                                        remarkPlugins={[remarkGfm]}
+                                    >
+                                        {data.data.desirable}
+                                    </ReactMarkdown>
+                                )}
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <h2 className='text-base font-bold'>
+                                    Benefices :
+                                </h2>
+                                {data?.data.benefits && (
+                                    <ReactMarkdown
+                                        className={style.reactMarkDown}
+                                        remarkPlugins={[remarkGfm]}
+                                    >
+                                        {data.data.benefits}
                                     </ReactMarkdown>
                                 )}
                             </div>
