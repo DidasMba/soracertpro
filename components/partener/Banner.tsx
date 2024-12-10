@@ -3,7 +3,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import testimonialImageMob from "@/assets/testimonial-desk.png";
+import partImagephone from "@/assets/testimonial-desk.png";
 import partnerImagecomputer from "@/assets/partcomputer.png";
 import SectionHeading from "../common/SectionHeading";
 
@@ -19,7 +19,7 @@ const Banner: React.FC = () => {
             />
             <Image
                 className='w-full h-full block md:hidden rounded-xl object-cover'
-                src={testimonialImageMob}
+                src={partImagephone}
                 alt={"banner-member-mob"}
                 width={400}
                 height={600}
