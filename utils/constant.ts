@@ -35,9 +35,9 @@ export const navItems = [
                 href: "/sora/blogue",
             },
             {
-                pathName: "carieure",
-                text: "Carieure",
-                href: "#",
+                pathName: "career",
+                text: "carrière",
+                href: "/sora/career",
             },
             {
                 pathName: "partner",
@@ -326,4 +326,41 @@ export const CategoryProgramOptions = [
 export const gender = [
     { value: "MALE", label: "Masculin" },
     { value: "FEMALE", label: "Feminin" },
+];
+
+export const jobDepartments = [
+    { id: "all", label: "🗂️ Tous" },
+    { id: "ENGINEERING", label: "🛠️ Engineering" },
+    { id: "MARKETING", label: "📢 Marketing" },
+    { id: "DESIGN", label: "🎨 Design" },
+    { id: "PRODUCT", label: "📦 Product" },
+    { id: "SALES", label: "💼 Sales" },
+];
+
+export const jobTeams = [
+    { id: "all", label: "Tous" },
+    { id: "FRONTEND", label: "Frontend" },
+    { id: "BACKEND", label: "Backend" },
+    { id: "QA", label: "QA" },
+    { id: "DEVOPS", label: "Devops" },
+    { id: "UI/UX", label: "UI/UX" },
+    { id: "DATA ANALYTICS", label: "Data analytics" },
+    { id: "PROJECT MANAGEMENT", label: "Project management" },
+];
+
+export const jobTypes = [
+    { id: "all", label: "Tous" },
+    { id: "FULL_TIME", label: "Full time" },
+    { id: "PART_TIME", label: "Part time" },
+    { id: "CONTRACT", label: "Contract" },
+    { id: "FREELANCE", label: "Freelance" },
+    { id: "INTERNSHIP", label: "Internship" },
+];
+
+export const levels = [
+    { id: "all", label: "Tous" },
+    { id: "ENTRY_LEVEL", label: "Entry level" },
+    { id: "JUNIOR", label: "Junior" },
+    { id: "MID_LEVEL", label: "Mid level" },
+    { id: "SENIOR", label: "Senior" },
 ];
