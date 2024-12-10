@@ -1,15 +1,11 @@
-import Image from "next/image";
-import LandiingPage from "@/components/career/landing";
-import Sample from "@/components/career/sample";
-import Featured from "@/components/career/featured";
+/** @format */
+
+import CareerMain from "@/components/career/CareerMain";
 
 export default function Career() {
-  return (
-    <main className="">
-  
-    <LandiingPage />
-    <Sample />
-    <Featured />
-    </main>
-  );
+    return (
+        <main>
+            <CareerMain />
+        </main>
+    );
 }
