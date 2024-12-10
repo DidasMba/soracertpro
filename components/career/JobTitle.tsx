@@ -14,7 +14,7 @@ const JobTitle: React.FC<{
 }> = ({ slug, title, salary_range, location, jobtypeCat, company }) => {
     return (
         <Link href={`/sora/career/${slug}`}>
-            <div className='w-full shadow-sm rounded-lg flex flex-col gap-4 hover:-translate-y-1 duration-300 transition-all ease-in-out px-6 py-3 bg-gray-50'>
+            <div className='w-full shadow-sm rounded-lg flex flex-col gap-4 hover:-translate-y-1 duration-300 transition-all ease-in-out px-6 py-3 bg-gray-100'>
                 <div>
                     <h5 className='font-medium font-base'>{title}</h5>
                     <div className='flex gap-4 text-sm'>

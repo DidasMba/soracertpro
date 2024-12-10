@@ -11,6 +11,7 @@ import { CiCalendar } from "react-icons/ci";
 import { ImAlarm } from "react-icons/im";
 import { LiaCopySolid } from "react-icons/lia";
 import { PiStack } from "react-icons/pi";
+import { IoMdArrowBack } from "react-icons/io";
 
 import React from "react";
 import ReactMarkdown from "react-markdown";
@@ -53,6 +54,15 @@ const CareerDetail: React.FC<{ slug: string; isLogged: boolean }> = ({
                 </div>
             ) : (
                 <div className='min-h-[65svh] w-full flex flex-col gap-8 md:gap-10'>
+                    <div className='flex flex-col items-start'>
+                        <Link
+                            className='bg-customBlue px-6 py-2 flex text-white gap-2 font-medium hover:bg-blue-900 rounded items-center'
+                            href={"/sora/career"}
+                        >
+                            <IoMdArrowBack size={20} />
+                            Voir tous
+                        </Link>
+                    </div>
                     <div className='flex justify-between items-center gap-6 flex-col md:flex-row'>
                         <div className='flex flex-col gap-1'>
                             <h1 className='text-lg md:text-xl font-bold'>
