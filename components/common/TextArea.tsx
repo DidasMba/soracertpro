@@ -1,9 +1,9 @@
 /** @format */
 
-import { TextFieldType } from "@/type";
+import { TextAreaType} from "@/type";
 import React from "react";
 
-const TextAreaField: React.FC<TextFieldType> = ({
+const TextAreaField: React.FC<TextAreaType> = ({
     label,
     placeholder,
     touched,
