@@ -98,7 +98,7 @@ const FormPartner = () => {
             onSubmit={handleSubmit}
             className='flex flex-col gap-4 md:gap-5 border border-gray-200 rounded-xl md:p-6 p-4'
         >
-            <div className='relative w-40 h-40 mx-auto'>
+            {/* <div className='relative w-40 h-40 mx-auto'>
                 <div
                     className='relative w-full h-full rounded-full overflow-hidden cursor-pointer group'
                     onMouseEnter={() => setIsHovered(true)}
@@ -154,7 +154,7 @@ const FormPartner = () => {
                         Profile est obligatoire
                     </p>
                 )}
-            </div>
+            </div> */}
             <p className='text-center text-sm font-medium mt-2'>Logo de votre compagnie</p> {/* Ajouté ici */}
             <FormGroup col='col-2'>
                 <TextField
@@ -218,32 +218,9 @@ const FormPartner = () => {
                     type='text'
                 />
             </FormGroup>
-            <FormGroup col='col-1'>
-                <TextField
-                    handleBlur={handleBlur}
-                    error={errors.password!}
-                    touched={touched.password!}
-                    value={values.password}
-                    name='password'
-                    placeholder='e.g. ********'
-                    handleChange={handleChange}
-                    label='Mot de passe'
-                    type='password'
-                />
-            </FormGroup>
-            <FormGroup col='col-1'>
-                <TextField
-                    handleBlur={handleBlur}
-                    error={errors.confirmPassword!}
-                    touched={touched.confirmPassword!}
-                    value={values.confirmPassword}
-                    name='confirmPassword'
-                    placeholder='e.g. *******'
-                    handleChange={handleChange}
-                    label='Confirme mot de passe'
-                    type='password'
-                />
-            </FormGroup>
+          
+            
+          
             <div className='flex justify-end items-end'>
                 <Button
                     isLoading={isSubmitting}
