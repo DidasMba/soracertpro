@@ -1,0 +1,18 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+.reactMarkDown {
+    font-size: 1rem;
+}
+
+.reactMarkDown code,
+.reactMarkDown kbd,
+.reactMarkDown samp,
+.reactMarkDown pre {
+    font-family: "Montserrat", serif !important;
+}
+
+.reactMarkDown p {
+    margin: 0.525rem 0;
+}

@@ -46,7 +46,7 @@ const EventTile: React.FC<{
 
                         <SignButton
                             text='Enregister Maintenant'
-                            href={`/events/${slug}`}
+                            href={`/sora/events/${slug}`}
                             variant='dark'
                         />
                     </div>

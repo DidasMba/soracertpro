@@ -2,6 +2,8 @@
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar";
+import ProviderUserContext from "@/components/providers/ProviderUserContext";
+import { getCcookie } from "@/lib";
 import React from "react";
 
 export default function SoraLayout({
@@ -9,10 +11,13 @@ export default function SoraLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const isLogged = getCcookie();
     return (
         <div>
-            <Navbar />
-            <div className='mt-20'>{children}</div>
+            <Navbar isLogged={isLogged} />
+            <div className='mt-20'>
+                <ProviderUserContext>{children}</ProviderUserContext>
+            </div>
             <Footer />
         </div>
     );

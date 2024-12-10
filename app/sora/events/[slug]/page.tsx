@@ -2,6 +2,7 @@
 
 import { Metadata } from "next";
 import DetailEvent from "@/components/events/details/Detail";
+import { getCcookie } from "@/lib";
 
 type TEvent = {
     params: {
@@ -18,10 +19,10 @@ export async function generateMetadata({ params }: TEvent): Promise<Metadata> {
 
 export default async function EventDetail({ params }: TEvent) {
     const slug = params.slug; // `params` is awaited in server-side rendering.
-
+    const isLogged = getCcookie();
     return (
         <main className=''>
-            <DetailEvent slug={slug} />
+            <DetailEvent isLogged={isLogged} slug={slug} />
         </main>
     );
 }

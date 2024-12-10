@@ -3,19 +3,80 @@
 "use client";
 import Button from "@/components/common/Button";
 import Section from "@/components/common/Section";
+import { useUser } from "@/context/UserContext";
 import { formatDateTimeToFrench } from "@/helper/funct";
-import { getProgramBySlug } from "@/lib/api/program";
-import { useQuery } from "@tanstack/react-query";
+import {
+    addParticipantToProgram,
+    getParticipantByProgramId,
+    getProgramBySlug,
+} from "@/lib/api/program";
+import { isRegisteredProgram } from "@/utils/fn/helper";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import Image from "next/image";
-import React, { FC } from "react";
+import { useRouter } from "next/navigation";
+import React, { FC, useEffect, useState } from "react";
 import { IoCalendarNumberOutline } from "react-icons/io5";
 import { MdPlace } from "react-icons/md";
+import { toast } from "react-toastify";
 
-const DetailProgram: FC<{ slug: string }> = ({ slug }) => {
+const DetailProgram: FC<{ slug: string; isLogged: boolean }> = ({
+    slug,
+    isLogged = false,
+}) => {
+    const [idProgram, setIdProgram] = useState(1);
+
+    const router = useRouter();
+
     const { data, isLoading } = useQuery({
         queryKey: ["program", slug],
         queryFn: () => getProgramBySlug(slug),
     });
+
+    const { user } = useUser();
+
+    const {
+        mutateAsync: addParticipant,
+        isPending,
+        data: responseData,
+    } = useMutation({
+        mutationFn: addParticipantToProgram,
+    });
+
+    const { data: participants, isLoading: loadingParticipants } = useQuery({
+        queryKey: ["participant"],
+        queryFn: () => getParticipantByProgramId(idProgram),
+    });
+
+    const handleAddParticipant = async () => {
+        if (isLogged) {
+            try {
+                const response = await addParticipant({
+                    programId: data?.data.id!,
+                    userId: user?.id!,
+                });
+                if (response?.status === "success") {
+                    toast.success("Ajouter au programme avess Success");
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            router.push("/signin");
+        }
+    };
+
+    useEffect(() => {
+        if (!isLoading && data?.data) {
+            setIdProgram(data.data.id);
+        }
+    }, [isLoading, data]);
+
+    useEffect(() => {
+        if (responseData?.error_message) {
+            toast.error(responseData.error_message);
+        }
+    }, [responseData]);
+
     return (
         <Section id='program-detail'>
             {isLoading ? (
@@ -81,10 +142,26 @@ const DetailProgram: FC<{ slug: string }> = ({ slug }) => {
                                         </p>
                                     </div>
                                 </div>
-                                <Button
-                                    text="S'enregister"
-                                    handClick={() => {}}
-                                />
+                                {loadingParticipants ? (
+                                    <span className='loading loading-spinner loading-sm'></span>
+                                ) : (
+                                    <div>
+                                        {!isRegisteredProgram(
+                                            user?.id!,
+                                            participants?.data!
+                                        ) ? (
+                                            <Button
+                                                isLoading={isPending}
+                                                text="S'enregister"
+                                                handClick={handleAddParticipant}
+                                            />
+                                        ) : (
+                                            <p className='text-sm font-semibold italic text-customHoverBlue'>
+                                                Vous etez enregistrer
+                                            </p>
+                                        )}
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>

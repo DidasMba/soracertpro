@@ -1,18 +1,73 @@
 /** @format */
 
 import { Card } from "@/components/ui/card";
-import Heading from "@/components/common/Heading";
-import React from "react";
+import React, { useEffect } from "react";
 import { formatDateTimeToFrench } from "@/helper/funct";
+import { useUser } from "@/context/UserContext";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import { addParticipant, getParticipantByEventId } from "@/lib/api/event";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import Button from "@/components/common/Button";
+import { isRegistered } from "@/utils/fn/helper";
 
 const EventInfo: React.FC<{
+    isLogged: boolean;
+    id: number;
     title: string;
     description: string;
     dateEvent: string;
     location: string;
-}> = ({ title, description, location, dateEvent }) => {
+    price: number;
+}> = ({
+    title,
+    description,
+    isLogged = false,
+    id,
+    location,
+    dateEvent,
+    price,
+}) => {
     let date_time = formatDateTimeToFrench(dateEvent);
+    const router = useRouter();
     const dateSplitted = date_time.split("-");
+    const { user } = useUser();
+    const {
+        mutateAsync: addEventParticant,
+        data,
+        isPending,
+    } = useMutation({
+        mutationFn: addParticipant,
+    });
+
+    const handleAddParticipant = async () => {
+        if (isLogged) {
+            try {
+                const response = await addEventParticant({
+                    userId: user?.id!,
+                    eventId: id,
+                });
+                if (response?.status === "success") {
+                    toast.success("Ajouter avec Success");
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            router.push("/signin");
+        }
+    };
+    useEffect(() => {
+        if (data?.error_message) {
+            toast.error(data.error_message);
+        }
+    }, [data?.error_message]);
+
+    const { data: Participants, isLoading } = useQuery({
+        queryKey: ["participants"],
+        queryFn: () => getParticipantByEventId(id),
+    });
+
     return (
         <>
             <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#05264f]'>
@@ -25,6 +80,56 @@ const EventInfo: React.FC<{
                         <p>{description}</p>
                     </div>
                     <div className='w-full md:w-2/5 space-y-8 mt-8 md:sticky top-16'>
+                        <Card
+                            className='p-9 shadow-lg '
+                            style={{ borderRadius: "20px" }}
+                        >
+                            <div className='flex sm:flex-row flex-col justify-between'>
+                                <div className='flex flex-col justify-center items-center'>
+                                    <div className='self-stretch flex flex-row items-start font-semibold justify-center'>
+                                        <div className=' rounded-xl bg-whitesmoke-200 hidden' />
+                                        Prix
+                                    </div>
+                                    <div className='self-stretch flex flex-col items-center justify-center gap-[2px] mx-auto'>
+                                        <h2
+                                            className='text-xl leading-[38px] font-bold items-center text-[#05264f] justify-center'
+                                            style={{
+                                                textDecoration: "uppercase",
+                                            }}
+                                        >
+                                            ${price}
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <div className='flex flex-col h-[20px]' />
+
+                                <div className='flex flex-col justify-center items-center'>
+                                    <div className='self-stretch flex flex-row items-start justify-center'>
+                                        <svg
+                                            className=' w-8 h-6 font-mono justify-center items-center'
+                                            xmlns='http://www.w3.org/2000/svg'
+                                            viewBox='0 0 512 512'
+                                        >
+                                            <path d='M232.5 5.171C247.4-1.718 264.6-1.718 279.5 5.171L498.1 106.2C506.6 110.1 512 118.6 512 127.1C512 137.3 506.6 145.8 498.1 149.8L279.5 250.8C264.6 257.7 247.4 257.7 232.5 250.8L13.93 149.8C5.438 145.8 0 137.3 0 127.1C0 118.6 5.437 110.1 13.93 106.2L232.5 5.171zM498.1 234.2C506.6 238.1 512 246.6 512 255.1C512 265.3 506.6 273.8 498.1 277.8L279.5 378.8C264.6 385.7 247.4 385.7 232.5 378.8L13.93 277.8C5.438 273.8 0 265.3 0 255.1C0 246.6 5.437 238.1 13.93 234.2L67.13 209.6L219.1 279.8C242.5 290.7 269.5 290.7 292.9 279.8L444.9 209.6L498.1 234.2zM292.9 407.8L444.9 337.6L498.1 362.2C506.6 366.1 512 374.6 512 383.1C512 393.3 506.6 401.8 498.1 405.8L279.5 506.8C264.6 513.7 247.4 513.7 232.5 506.8L13.93 405.8C5.438 401.8 0 393.3 0 383.1C0 374.6 5.437 366.1 13.93 362.2L67.13 337.6L219.1 407.8C242.5 418.7 269.5 418.7 292.9 407.8V407.8z' />
+                                        </svg>
+                                    </div>
+                                    <div className='self-stretch flex flex-col items-center justify-center gap-[8px] mx-auto'>
+                                        <h2
+                                            className='text-xl leading-[38px] font-bold items-center text-[#05264f] justify-center'
+                                            style={{
+                                                textDecoration: "uppercase",
+                                            }}
+                                        >
+                                            Location
+                                        </h2>
+                                        <div className='items-center justify-center text-center  font-extralight'>
+                                            Lubumbashi
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Card>
                         <Card
                             className='p-6 shadow-lg '
                             style={{ borderRadius: "20px" }}
@@ -110,6 +215,28 @@ const EventInfo: React.FC<{
                                 </div>
                             </div>
                             <hr />
+                            <div className='mt-4'>
+                                {isLoading ? (
+                                    <span className='loading loading-spinner loading-sm'></span>
+                                ) : (
+                                    <div>
+                                        {!isRegistered(
+                                            user?.id!,
+                                            Participants?.data!
+                                        ) ? (
+                                            <Button
+                                                isLoading={isPending}
+                                                text='Joindre'
+                                                handClick={handleAddParticipant}
+                                            />
+                                        ) : (
+                                            <p className='text-sm font-semibold italic text-customHoverBlue'>
+                                                Vous etez enregistrer
+                                            </p>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
                         </Card>
                     </div>
                 </div>
