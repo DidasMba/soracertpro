@@ -21,13 +21,13 @@ export const navItems = [
         id: 2,
         pathName: "resource",
         name: "Ressources",
-        href: "/",
+        href: "#",
         hasDropdow: true,
         children: [
             {
-                pathName: "membership",
-                text: "Membership",
-                href: "/sora/membership",
+                pathName: "volunteer",
+                text: "Devenir Voluntaire",
+                href: "/sora/volunteer",
             },
             {
                 pathName: "blogue",
@@ -42,7 +42,7 @@ export const navItems = [
             {
                 pathName: "partner",
                 text: "Nos Partenaire",
-                href: "#",
+                href: "/sora/partners",
             },
         ],
     },
@@ -242,26 +242,23 @@ export const blogueData = [
     },
 ];
 
-export const blogueDataDetails  = [
+export const blogueDataDetails = [
     {
-     id: 1,
-    title: "Bienvenue à Python Radio Marie ",
-    description: "Une introduction au monde passionnant de Python.",
-    image: "/path/to/image1.jpg", // Chemin ou image statique
-    alt: "Image de Python Radio",
-    date: "2024-12-05",
+        id: 1,
+        title: "Bienvenue à Python Radio Marie ",
+        description: "Une introduction au monde passionnant de Python.",
+        image: "/path/to/image1.jpg", // Chemin ou image statique
+        alt: "Image de Python Radio",
+        date: "2024-12-05",
     },
     {
-      id: 2,
-      title: "Another Blog",
-      image: coaching,
-      alt: "html css",
-          description: "OKOJDICFIDHIIDHV"
+        id: 2,
+        title: "Another Blog",
+        image: coaching,
+        alt: "html css",
+        description: "OKOJDICFIDHIIDHV",
     },
-  ];
-  
-
-
+];
 
 export const TimmingOptions = [
     { id: "tous", label: "Tout" },
@@ -349,7 +346,6 @@ export const gender = [
     { value: "FEMALE", label: "Feminin" },
 ];
 
-
 export const jobDepartments = [
     { id: "all", label: "🗂️ Tous" },
     { id: "ENGINEERING", label: "🛠️ Engineering" },
@@ -386,4 +382,3 @@ export const levels = [
     { id: "MID_LEVEL", label: "Mid level" },
     { id: "SENIOR", label: "Senior" },
 ];
-

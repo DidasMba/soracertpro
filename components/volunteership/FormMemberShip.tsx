@@ -9,16 +9,16 @@ import TextField from "../common/TextField";
 import SelectInput from "../common/SelectInput";
 import { gender } from "@/utils/constant";
 import Button from "../common/Button";
-import { membershipSchema } from "@/utils/validations/membership";
+import { volunteerSchema } from "@/utils/validations/volunteer";
 import { useMutation } from "@tanstack/react-query";
-import { createMember } from "@/lib/api/membership";
+import { createVolunteer } from "@/lib/api/volunteer";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import ErrorMessage from "../common/ErrorMessage";
 
-const FormMemberShip = () => {
-    const { mutateAsync: createMemberFn, data } = useMutation({
-        mutationFn: createMember,
+const FormVolunteerShip = () => {
+    const { mutateAsync: createVolunteerFn, data } = useMutation({
+        mutationFn: createVolunteer,
     });
     const router = useRouter();
     const [previewUrl, setPreviewUrl] = useState<string>("");
@@ -58,25 +58,25 @@ const FormMemberShip = () => {
             gender: "",
             username: "",
         },
-        validationSchema: membershipSchema,
+        validationSchema: volunteerSchema,
         onSubmit: async (value, { resetForm }) => {
             const newValue = {
                 firstname: value.firstname,
                 lastname: value.lastname,
                 email: value.email,
                 password: value.password,
-                role: "MEMBER",
+                role: "VOLUNTEER",
                 gender: value.gender,
                 username: value.username,
                 avatar: selectedFile,
             };
             try {
                 if (previewUrl.length !== 0) {
-                    const response = await createMemberFn(newValue);
+                    const response = await createVolunteerFn(newValue);
                     if (response?.status === "success") {
                         toast.success("Enregistrer avec success");
                         setTimeout(() => {
-                            router.push("/sora/membership/success");
+                            router.push("/sora/volunteer/success");
                             resetForm();
                             setPreviewUrl(
                                 "https://avatar.iran.liara.run/username?username=avatar"
@@ -255,4 +255,4 @@ const FormMemberShip = () => {
     );
 };
 
-export default FormMemberShip;
+export default FormVolunteerShip;

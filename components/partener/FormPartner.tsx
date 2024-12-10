@@ -12,10 +12,11 @@ import { createParner } from "@/lib/api/partnership";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import { partnerSchema } from "@/utils/validations/partnership";
+import { PiImage } from "react-icons/pi";
 
 const FormPartner = () => {
     const { mutateAsync: createPatnerFn } = useMutation({
-        mutationFn:createParner,
+        mutationFn: createParner,
     });
     const router = useRouter();
     const [previewUrl, setPreviewUrl] = useState<string>("");
@@ -147,27 +148,29 @@ const FormPartner = () => {
                     type='text'
                 />
             </FormGroup>
-            {/* Bouton et prévisualisation */}
-            <div className='flex flex-col items-start gap-4 w-fit p-4 border border-gray-200 rounded-md bg-white'>
+            <div className='flex flex-col gap-2 items-start w-full'>
                 {/* Bouton Upload Logo */}
                 <button
                     type='button'
                     onClick={handleUploadClick}
-                    className='w-auto px-3 py-2  bg-customBlue text-white rounded-1xl text-sm  flex items-center justify-center'
+                    className='px-6 py-2 w-auto bg-gray-300 rounded text-sm font-medium flex gap-2'
                 >
+                    <PiImage className='text-customBlue' size={20} />{" "}
                     Télécharger le logo
                 </button>
 
                 {/* Carré de prévisualisation */}
-                <div className='w-24 h-24 border  border-gray-300 rounded-md flex items-center justify-center bg-gray-50'>
+                <div className='w-52 h-32 border  border-gray-300 rounded-md flex items-center justify-center bg-gray-50'>
                     {previewUrl ? (
                         <img
                             src={previewUrl}
                             alt='Logo Preview'
-                            className='w-full h-full object-cover'
+                            className='w-full h-full object-contain'
                         />
                     ) : (
-                        <span className='text-gray-400 text-sm'>Aucun logo</span>
+                        <span className='text-gray-400 text-sm'>
+                            Aucun logo
+                        </span>
                     )}
                 </div>
 
@@ -180,7 +183,9 @@ const FormPartner = () => {
                     className='hidden'
                 />
                 {errorImage && (
-                    <p className='text-red-500 text-sm'>Le logo est obligatoire.</p>
+                    <p className='text-red-500 text-sm'>
+                        Le logo est obligatoire.
+                    </p>
                 )}
             </div>
 
@@ -196,4 +201,3 @@ const FormPartner = () => {
 };
 
 export default FormPartner;
-

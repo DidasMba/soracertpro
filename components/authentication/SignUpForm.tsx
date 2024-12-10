@@ -13,13 +13,13 @@ import SelectInput from "../common/SelectInput";
 import TextField from "../common/TextField";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { createMember } from "@/lib/api/membership";
+import { createVolunteer } from "@/lib/api/volunteer";
 import { useMutation } from "@tanstack/react-query";
 import ErrorMessage from "../common/ErrorMessage";
 
 const SignUpForm = () => {
     const { mutateAsync: createMemberFn, data } = useMutation({
-        mutationFn: createMember,
+        mutationFn: createVolunteer,
     });
     const router = useRouter();
     const [previewUrl, setPreviewUrl] = useState<string>("");
@@ -77,7 +77,7 @@ const SignUpForm = () => {
                     if (response?.status === "success") {
                         toast.success("Compte Creer!!!");
                         setTimeout(() => {
-                            router.push("/sora/membership/success");
+                            router.push("/sora/volunteer/success");
                             resetForm();
                             setPreviewUrl(
                                 "https://avatar.iran.liara.run/username?username=avatar"
