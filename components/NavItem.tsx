@@ -24,7 +24,7 @@ const NavItem: React.FC<{
                 {hasDropdown && <IoChevronDownOutline size={20} />}
             </Link>
             {hasDropdown && (
-                <div className='px-6 hidden bg-white rounded-xl z-12 absolute py-6 group-hover:flex flex-col gap-2 shadow-xl'>
+                <div className='px-6 hidden bg-white w-[80rem] -left-56 top-6  rounded-xl z-12 absolute py-6 group-hover:flex flex-col gap-2 shadow-xl'>
                     {subLink?.map((sublink, _) => (
                         <Link
                             className={`font-semibold text-customBlue text-sm hover:text-customHoverBlue whitespace-nowrap hover:underline ${
