@@ -148,12 +148,12 @@ const FormPartner = () => {
                     type='text'
                 />
             </FormGroup>
-            <div className='flex flex-col gap-2 items-start'>
+            <div className='flex flex-col gap-2 items-start w-full'>
                 {/* Bouton Upload Logo */}
                 <button
                     type='button'
                     onClick={handleUploadClick}
-                    className='px-6 py-2 bg-gray-300 rounded text-sm font-medium flex gap-2'
+                    className='px-6 py-2 w-auto bg-gray-300 rounded text-sm font-medium flex gap-2'
                 >
                     <PiImage className='text-customBlue' size={20} />{" "}
                     Télécharger le logo

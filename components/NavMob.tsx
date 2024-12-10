@@ -28,8 +28,8 @@ const NavMob: FC<{
             } top-0 bottom-0 left-0 h-svh right-0`}
         >
             <div
-                onChange={(e) => {
-                    e.stopPropagation();
+                onClick={(e) => {
+                    e.stopPropagation(); // Prevent click from propagating to the parent
                 }}
                 className='bg-customBlue w-[70%] h-full flex flex-col p-6 text-white'
             >
@@ -82,8 +82,18 @@ const NavMob: FC<{
                                         <div
                                             className={`${
                                                 isDropped ? "flex" : "hidden"
-                                            } flex-col pt-2`}
-                                        ></div>
+                                            } flex-col gap-2 pt-2`}
+                                        >
+                                            {item.children?.map((child) => (
+                                                <Link
+                                                    className='text-sm text-nowrap text-gray-100 underline'
+                                                    key={child.pathName}
+                                                    href={child.href}
+                                                >
+                                                    {child.text}
+                                                </Link>
+                                            ))}
+                                        </div>
                                     </ul>
                                 )}
                             </Link>

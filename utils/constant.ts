@@ -21,7 +21,7 @@ export const navItems = [
         id: 2,
         pathName: "resource",
         name: "Ressources",
-        href: "/",
+        href: "#",
         hasDropdow: true,
         children: [
             {
