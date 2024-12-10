@@ -1,13 +1,11 @@
-import Image from "next/image";
+/** @format */
+
 import PartnerShip from "@/components/partener/PartnerShip";
 
-
 export default function AboutUs() {
-  return (
-    <main className="">
-
-     <PartnerShip /> 
-   
-    </main>
-  );
+    return (
+        <main>
+            <PartnerShip />
+        </main>
+    );
 }

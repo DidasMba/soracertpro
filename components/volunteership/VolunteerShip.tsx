@@ -9,7 +9,7 @@ import memberImage from "@/assets/world-pana.png";
 import Heading from "../common/Heading";
 import FormMemberShip from "./FormMemberShip";
 
-const MemberShip = () => {
+const VolunteerShip = () => {
     return (
         <div className='flex flex-col gap-8 w-full '>
             <div className='mx-auto px-4 md:px-8 max-w-7xl w-full'>
@@ -31,7 +31,7 @@ const MemberShip = () => {
                         <div className='flex flex-col gap-4'>
                             <Heading
                                 text={
-                                    "Avantages de devenir membre de Soracert :"
+                                    "Avantages de devenir Volontaire de Soracert :"
                                 }
                             />
                             <div>
@@ -61,7 +61,7 @@ const MemberShip = () => {
             <Section id='member-form'>
                 <div className='flex flex-col gap-8 my-8'>
                     <h1 className='text-xl md:text-2xl text-center font-bold text-customBlue'>
-                        
+                        Remplissez ces formulaire pour devenir Volontaire
                     </h1>
                     <div className='max-w-4xl mx-auto w-full'>
                         <FormMemberShip />
@@ -72,4 +72,4 @@ const MemberShip = () => {
     );
 };
 
-export default MemberShip;
+export default VolunteerShip;

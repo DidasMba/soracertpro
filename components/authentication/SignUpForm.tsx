@@ -13,7 +13,7 @@ import SelectInput from "../common/SelectInput";
 import TextField from "../common/TextField";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { createMember } from "@/lib/api/membership";
+import { createMember } from "@/lib/api/volunteer";
 import { useMutation } from "@tanstack/react-query";
 import ErrorMessage from "../common/ErrorMessage";
 

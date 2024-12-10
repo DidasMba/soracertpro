@@ -7,7 +7,7 @@ const SectionHeading: React.FC<{ text: string }> = ({ text }) => {
     const [firstPart, secondPart] = text.split(splitWord);
 
     return (
-        <h1 className='text-xl md:text-2xl lg:text-3xl font-bold text-white max-w-4xl'>
+        <h1 className='text-xl md:text-2xl lg:text-3xl font-bold text-white leading-9 max-w-4xl'>
             {firstPart}
             <span className='bg-gradient-to-r from-blue-400 via-customButton to-customHoverBlue inline-block text-transparent bg-clip-text'>
                 {splitWord}
