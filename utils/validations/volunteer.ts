@@ -2,7 +2,7 @@
 
 import * as Yup from "yup";
 
-export const membershipSchema = Yup.object().shape({
+export const volunteerSchema = Yup.object().shape({
     firstname: Yup.string().required("Nom est obligatoire"),
 
     lastname: Yup.string().required("Postnom de famille est obligatoire"),

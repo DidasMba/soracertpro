@@ -3,7 +3,7 @@
 import { UserDataInput, UserResponse } from "@/type";
 import { API_URL } from "./baseUrl";
 
-export const createMember = async (memberInputs: UserDataInput) => {
+export const createVolunteer = async (memberInputs: UserDataInput) => {
     try {
         const formData = new FormData();
         formData.append("firstname", memberInputs.firstname);
