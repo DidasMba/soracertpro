@@ -43,9 +43,8 @@ const NavMob: FC<{
                 <div className='flex-1 flex flex-col justify-between'>
                     <ul className='flex flex-col gap-4 pt-10'>
                         {navItems.map((item) => (
-                            <Link
+                            <div
                                 key={item.id}
-                                href={item.href}
                                 onClick={() => {
                                     if (item.hasDropdow) {
                                         handleDropDown(item.hasDropdow);
@@ -71,7 +70,7 @@ const NavMob: FC<{
                                         />
                                     </div>
                                 ) : (
-                                    item.name
+                                    <Link href={item.href}>{item.name}</Link>
                                 )}
                                 {item.hasDropdow && (
                                     <ul
@@ -96,7 +95,7 @@ const NavMob: FC<{
                                         </div>
                                     </ul>
                                 )}
-                            </Link>
+                            </div>
                         ))}
                     </ul>
                     <div className='flex flex-row justify-center gap-2'>
