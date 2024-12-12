@@ -5,11 +5,11 @@
 import React, { useState } from "react";
 import Section from "@/components/common/Section";
 import FilterButton from "../program/common/FilterButton";
-import { blogueData } from "@/utils/constant";
 import BlogueTile from "@/components/blogue/BlogueTile";
 import { useQuery } from "@tanstack/react-query";
 import { fetchBlogue } from "@/lib/api/blogue";
 import { formatDateTimeToFrench } from "@/helper/funct";
+import { blogueWebOptions } from "@/utils/constant";
 
 function BlogList() {
     const [category, setCategory] = useState("all");
@@ -19,11 +19,11 @@ function BlogList() {
     })
     return (
         <Section id=''>
-            {/* <FilterButton
-        options={blogueWebOptions}
-        selectedItem={category}
-        setSelectedItem={setCategory}
-      /> */}
+            <FilterButton
+                options={blogueWebOptions}
+                selectedItem={category}
+                setSelectedItem={setCategory}
+            />
             {isLoading ? (
                 <div className='flex justify-center min-h-[40svh] items-center'>
                     <span className='loading loading-spinner loading-lg'></span>
