@@ -44,6 +44,11 @@ export const navItems = [
                 text: "Nos Partenaire",
                 href: "/sora/partners",
             },
+            {
+                pathName: "membership",
+                text: "Devenir Membre",
+                href: "/sora/membership",
+            },
         ],
     },
     {
@@ -383,9 +388,56 @@ export const levels = [
     { id: "SENIOR", label: "Senior" },
 ];
 
+
+const basicPlan = [
+    "All analytics features",
+    "Up to 250,000 tracked visits",
+    "Normal support",
+    "Mobile app",
+    "Up to 3 team members",
+];
+
+const growthPlan = [
+    "Everything on Basic plan",
+    "Up to 1,000,000 tracked visits",
+    "Premium support",
+    "Mobile app",
+    "Up to 10 team members",
+];
+
+const enterprisePlan = [
+    "Everything on Growth plan",
+    "Up to 5,000,000 tracked visits",
+    "Dedicated support",
+    "Mobile app",
+    "Up to 50 team members",
+];
+
+export const plansData = [
+    {
+        id: 1,
+        title: "Basic",
+        price: 99,
+        plans: basicPlan,
+    },
+    {
+        id: 2,
+        title: "Growth",
+        price: 199,
+        plans: growthPlan,
+    },
+    {
+        id: 3,
+        title: "Entreprise",
+        price: 399,
+        plans: enterprisePlan,
+    },
+];
+
 export const blogueWebOptions = [
     {id: "all", label: "Tous"},
     {id: "WEB DEVELOPMENT", label: "Web Development"},
     {id: "NETWORK", label: "Network"},
     {id: "CYBER SECURITY", label: "Cyber Security"}
 ]
+
