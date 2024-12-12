@@ -382,3 +382,7 @@ export const levels = [
     { id: "MID_LEVEL", label: "Mid level" },
     { id: "SENIOR", label: "Senior" },
 ];
+
+// export const blogueWebOptions = [
+
+// ]
