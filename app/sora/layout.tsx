@@ -15,9 +15,7 @@ export default function SoraLayout({
     return (
         <div>
             <Navbar isLogged={isLogged} />
-            <div className='mt-20'>
-                <ProviderUserContext>{children}</ProviderUserContext>
-            </div>
+            <div className='mt-20'>{children}</div>
             <Footer />
         </div>
     );

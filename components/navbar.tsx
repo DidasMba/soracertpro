@@ -9,12 +9,16 @@ import { usePathname } from "next/navigation";
 import { LuMenu } from "react-icons/lu";
 import NavMob from "./NavMob";
 import NavItem from "./NavItem";
-import Button from "./common/Button";
+import { useUser } from "@/context/UserContext";
+import { IoSettingsOutline } from "react-icons/io5";
+import { PiSignOutLight } from "react-icons/pi";
 
 const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const pathName = usePathname();
     const [isNavMobOpen, setIsNavMobOpen] = useState(false);
+    const [isOpenDrop, setIsOpenDrop] = useState(false);
+    const user = useUser();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -56,8 +60,42 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
                         ))}
                     </ul>
                     {isLogged ? (
-                        <div className='flex flex-row gap-4'>
-                            <Button text='Deconnexion' />
+                        <div className='relative'>
+                            <div
+                                onClick={() => setIsOpenDrop(!isOpenDrop)}
+                                className='cursor-pointer flex items-center gap-1'
+                            >
+                                <span className='text-sm font-semibold'>
+                                    {user.user?.firstname}
+                                </span>
+                                <div className='h-10  w-10 rounded-full border border-gray-300'>
+                                    <Image
+                                        src={user.user?.avatar!}
+                                        alt='user'
+                                        width={40}
+                                        height={40}
+                                        className='w-full h-full rounded-full'
+                                    />
+                                </div>
+                            </div>
+                            {isOpenDrop && (
+                                <div className='absolute top-11 bg-white left-4 shadow-lg border border-gray-200 rounded-md flex flex-col gap-2 px-4 py-2'>
+                                    <button
+                                        className='flex items-center gap-1 text-sm font-medium text-customBlue hover:text-customHoverBlue'
+                                        type='button'
+                                    >
+                                        <IoSettingsOutline size={18} /> Voir
+                                        Profile
+                                    </button>
+                                    <button
+                                        className='flex items-center gap-1 text-sm font-medium text-customBlue hover:text-customHoverBlue'
+                                        type='button'
+                                    >
+                                        <PiSignOutLight size={18} />
+                                        Deconnexion
+                                    </button>
+                                </div>
+                            )}
                         </div>
                     ) : (
                         <div className='flex flex-row gap-4'>

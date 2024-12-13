@@ -16,7 +16,7 @@ const NavItem: React.FC<{
         <div className='relative group'>
             <Link
                 href={href}
-                className={`font-semibold text-customBlue flex items-center gap-1 hover:text-customHoverBlue ${
+                className={`font-semibold text-customBlue text-sm flex items-center gap-1 hover:text-customHoverBlue ${
                     isActive && `text-customHoverBlue`
                 }`}
             >
@@ -27,7 +27,7 @@ const NavItem: React.FC<{
                 <div className='px-6 hidden bg-white w-[80rem] -left-56 top-6  rounded-xl z-12 absolute py-6 group-hover:flex flex-col gap-2 shadow-xl'>
                     {subLink?.map((sublink, _) => (
                         <Link
-                            className={`font-semibold text-customBlue text-sm hover:text-customHoverBlue whitespace-nowrap hover:underline ${
+                            className={`font-semibold text-sm text-customBlue hover:text-customHoverBlue whitespace-nowrap hover:underline ${
                                 isActive && `text-customHoverBlue text-sm`
                             }`}
                             key={`${sublink.text}-header`}

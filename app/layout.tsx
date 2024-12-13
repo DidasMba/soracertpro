@@ -9,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import NextTopLoader from "nextjs-toploader";
 import QueryProvider from "@/lib/QueryProvider";
+import ProviderUserContext from "@/components/providers/ProviderUserContext";
 export const metadata: Metadata = {
     title: "Soracert",
     description: "",
@@ -41,10 +42,10 @@ export default function RootLayout({
                         shadow='0 0 10px #2299DD,0 0 5px #2299DD'
                     />
 
-                    <div>
+                    <ProviderUserContext>
                         {children}
                         <ToastContainer />
-                    </div>
+                    </ProviderUserContext>
                 </body>
             </QueryProvider>
         </html>
