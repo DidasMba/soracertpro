@@ -281,6 +281,7 @@ export const programWebOptions = [
 ];
 
 export const categoryEventOptions = [
+    { id: "all", label: "Tous" },
     { id: "CONFERENCE", label: "Conference" },
     { id: "ATELIER", label: "Atelier" },
     { id: "HACKATHON", label: "Hackathon" },
@@ -388,7 +389,6 @@ export const levels = [
     { id: "SENIOR", label: "Senior" },
 ];
 
-
 const basicPlan = [
     "All analytics features",
     "Up to 250,000 tracked visits",
@@ -435,9 +435,8 @@ export const plansData = [
 ];
 
 export const blogueWebOptions = [
-    {id: "all", label: "Tous"},
-    {id: "WEB DEVELOPMENT", label: "Web Development"},
-    {id: "NETWORK", label: "Network"},
-    {id: "CYBER SECURITY", label: "Cyber Security"}
-]
-
+    { id: "all", label: "Tous" },
+    { id: "WEB DEVELOPMENT", label: "Web Development" },
+    { id: "NETWORK", label: "Network" },
+    { id: "CYBER SECURITY", label: "Cyber Security" },
+];
