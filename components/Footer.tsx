@@ -34,8 +34,7 @@ const Footer = () => {
                                     href='#'
                                     className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
                                 >
-                                    Mission et Vision
-                                </a>
+                                    ok                                </a>
                             </li>
                             <li>
                                 <a
@@ -101,30 +100,9 @@ const Footer = () => {
                                     Ressources
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    href='#'
-                                    className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
-                                >
-                                    Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href='#'
-                                    className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
-                                >
-                                    Communauté
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href='#'
-                                    className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
-                                >
-                                    Carrières
-                                </a>
-                            </li>
+                           
+                           
+                          
                         </ul>
                     </div>
                     {/* Columns3 */}
@@ -138,7 +116,7 @@ const Footer = () => {
                                     href='tel:1234567890'
                                     className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
                                 >
-                                    Guides et tutoriels
+                                    Blogue
                                 </a>
                             </li>
                             <li>
@@ -146,7 +124,32 @@ const Footer = () => {
                                     href='#'
                                     className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
                                 >
-                                    Vidéos et webinaires
+                                    Partenaire
+                                
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='tel:1234567890'
+                                    className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
+                                >
+                                    Membre
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='tel:1234567890'
+                                    className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
+                                >
+                                    Volontaire
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='tel:1234567890'
+                                    className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
+                                >
+                                    Carrières
                                 </a>
                             </li>
                         </ul>
