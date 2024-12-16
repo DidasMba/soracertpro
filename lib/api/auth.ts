@@ -43,3 +43,18 @@ export const getUserProfile = async () => {
         console.log(error);
     }
 };
+
+export const signOut = async () => {
+    try {
+        const response: { status: string; message: string } = await fetch(
+            `${API_URL}/auth/signout`,
+            {
+                method: "POST",
+                credentials: "include",
+            }
+        ).then((res) => res.json());
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+};

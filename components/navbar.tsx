@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import SignButton from "./Button";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { LuMenu } from "react-icons/lu";
 import NavMob from "./NavMob";
 import NavItem from "./NavItem";
@@ -15,6 +15,9 @@ import { PiSignOutLight } from "react-icons/pi";
 import { GoGlobe } from "react-icons/go";
 import { LucideChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useMutation } from "@tanstack/react-query";
+import { signOut } from "@/lib/api/auth";
+import { toast } from "react-toastify";
 
 const languages = [
     { code: "en", name: "English" },
@@ -26,6 +29,8 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
     const pathName = usePathname();
     const [isNavMobOpen, setIsNavMobOpen] = useState(false);
     const [isOpenDrop, setIsOpenDrop] = useState(false);
+
+    const route = useRouter();
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [currentLang, setCurrentLang] = useState(languages[1]);
@@ -83,6 +88,23 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
         window.location.reload();
     };
 
+    const { mutateAsync: logout, isPending } = useMutation({
+        mutationFn: signOut,
+    });
+
+    const handleLogOut = async () => {
+        try {
+            const response = await logout();
+            if (response?.status === "success") {
+                toast.success("Bye bye 👋🏾");
+                window.location.reload();
+                route.push("/sora/home");
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     return (
         <header
             className={`fixed top-0 right-0 flex items-center left-0 w-full h-16 inset-0 ${
@@ -115,32 +137,42 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
                         {/* user logged button */}
                         {isLogged ? (
                             <div className='relative'>
-                                <div
-                                    onClick={() => setIsOpenDrop(!isOpenDrop)}
-                                    className='cursor-pointer flex items-center gap-1'
-                                >
-                                    <span className='text-sm font-semibold'>
-                                        {user.user?.firstname}
-                                    </span>
-                                    <div className='h-10  w-10 rounded-full border border-gray-300'>
-                                        <Image
-                                            src={
-                                                user.user?.avatar!
-                                                    ? user.user?.avatar!
-                                                    : "/10.png"
-                                            }
-                                            alt='user'
-                                            width={40}
-                                            height={40}
-                                            className='w-full h-full rounded-full'
-                                        />
+                                {isPending ? (
+                                    <span className='loading loading-spinner loading-sm'></span>
+                                ) : (
+                                    <div
+                                        onClick={() =>
+                                            setIsOpenDrop(!isOpenDrop)
+                                        }
+                                        className='cursor-pointer flex items-center gap-1'
+                                    >
+                                        <span className='text-sm font-semibold'>
+                                            {user.user?.firstname}
+                                        </span>
+                                        <div className='h-10  w-10 rounded-full border border-gray-300'>
+                                            <Image
+                                                src={
+                                                    user.user?.avatar!
+                                                        ? user.user?.avatar!
+                                                        : "/10.png"
+                                                }
+                                                alt='user'
+                                                width={40}
+                                                height={40}
+                                                className='w-full h-full rounded-full'
+                                            />
+                                        </div>
                                     </div>
-                                </div>
+                                )}
+
                                 {isOpenDrop && (
                                     <div className='absolute top-11 bg-white left-4 shadow-lg border border-gray-200 rounded-md flex flex-col gap-2 px-4 py-2'>
                                         <button
                                             className='flex items-center gap-1 text-sm font-medium text-customBlue hover:text-customHoverBlue'
                                             type='button'
+                                            onClick={() => {
+                                                setIsDropdownOpen(false);
+                                            }}
                                         >
                                             <IoSettingsOutline size={18} /> Voir
                                             Profile
@@ -148,6 +180,7 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
                                         <button
                                             className='flex items-center gap-1 text-sm font-medium text-customBlue hover:text-customHoverBlue'
                                             type='button'
+                                            onClick={handleLogOut}
                                         >
                                             <PiSignOutLight size={18} />
                                             Deconnexion
