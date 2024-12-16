@@ -35,6 +35,7 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [currentLang, setCurrentLang] = useState(languages[1]);
     const dropdownRef = useRef<HTMLDivElement>(null);
+    const dropdownSettingRef = useRef<HTMLDivElement>(null);
     const [t, i18n] = useTranslation("global");
 
     const user = useUser();
@@ -76,6 +77,25 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
         };
     }, []);
 
+    useEffect(() => {
+        const handleClickOutsideSetting = (event: MouseEvent) => {
+            if (
+                dropdownSettingRef.current &&
+                !dropdownSettingRef.current.contains(event.target as Node)
+            ) {
+                setIsOpenDrop(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutsideSetting);
+        return () => {
+            document.removeEventListener(
+                "mousedown",
+                handleClickOutsideSetting
+            );
+        };
+    }, []);
+
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
@@ -100,6 +120,7 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
                 window.location.reload();
                 route.push("/sora/home");
             }
+            setIsOpenDrop(false);
         } catch (error) {
             console.log(error);
         }
@@ -136,7 +157,7 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
                     <div className='flex gap-4'>
                         {/* user logged button */}
                         {isLogged ? (
-                            <div className='relative'>
+                            <div ref={dropdownSettingRef} className='relative'>
                                 {isPending ? (
                                     <span className='loading loading-spinner loading-sm'></span>
                                 ) : (
@@ -171,7 +192,7 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
                                             className='flex items-center gap-1 text-sm font-medium text-customBlue hover:text-customHoverBlue'
                                             type='button'
                                             onClick={() => {
-                                                setIsDropdownOpen(false);
+                                                setIsOpenDrop(false);
                                             }}
                                         >
                                             <IoSettingsOutline size={18} /> Voir
