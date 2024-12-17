@@ -1,8 +1,14 @@
 {
-    "header": {},
-    "hero": {
-        "title": "innovez avec la technologie.",
-        "description": "Nous offrons l'accès à la technologie à ceux qui en ont le plus besoin.",
-        "cta": "Explorer"
+  "header": {},
+  "hero": {
+    "title": "innovez avec la technologie.",
+    "description": "Nous offrons l'accès à la technologie à ceux qui en ont le plus besoin.",
+    "cta": "Explorer"
+  },
+  "home": {
+    "about": {
+      "title": "Apprenez auprès d'experts du secteur qui vous consacreront du temps",
+      "description": "Participez à des événements, programmes élaborés par des experts du secteur, et mettez en pratique des projets concrets pour acquérir des compétences utiles. Développez un portfolio remarquable afin d'être prêt pour votre recherche d'emploi.."
     }
+  }
 }

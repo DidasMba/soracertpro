@@ -4,5 +4,11 @@
     "title": "Innovate with technology.",
     "description": "We provide access to technology to those who need it most.",
     "cta": "Explore"
+  },
+  "home": {
+    "about": {
+      "title": "Learn from industry experts who will dedicate their time to you",
+      "description": "Take part in events and programs designed by industry experts, and apply your knowledge to real-world projects to acquire valuable skills. Build an impressive portfolio to be prepared for your job search."
+    }
   }
 }
