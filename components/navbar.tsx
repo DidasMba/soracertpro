@@ -24,6 +24,7 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
+            
         };
     }, []);
 
@@ -72,6 +73,7 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
                                 variant='dark'
                             />
                         </div>
+        
                     )}
                 </div>
                 <LuMenu

@@ -541,7 +541,7 @@ const Footer = () => {
                                     href='#'
                                     className='text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out'
                                 >
-                                    Partenaires et sponsors
+                                    Notre Mission et Vision
                                 </a>
                             </li>
                             <li>
