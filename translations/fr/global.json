@@ -1,14 +1,22 @@
 {
-  "header": {},
-  "hero": {
-    "title": "innovez avec la technologie.",
-    "description": "Nous offrons l'accès à la technologie à ceux qui en ont le plus besoin.",
-    "cta": "Explorer"
-  },
-  "home": {
-    "about": {
-      "title": "Apprenez auprès d'experts du secteur qui vous consacreront du temps",
-      "description": "Participez à des événements, programmes élaborés par des experts du secteur, et mettez en pratique des projets concrets pour acquérir des compétences utiles. Développez un portfolio remarquable afin d'être prêt pour votre recherche d'emploi.."
+    "header": {},
+    "hero": {
+        "title": "innovez avec la technologie.",
+        "description": "Nous offrons l'accès à la technologie à ceux qui en ont le plus besoin.",
+        "cta": "Explorer"
+    },
+    "home": {
+        "about": {
+            "title": "Apprenez auprès d'experts du secteur qui vous consacreront du temps",
+            "description": "Participez à des événements, programmes élaborés par des experts du secteur, et mettez en pratique des projets concrets pour acquérir des compétences utiles. Développez un portfolio remarquable afin d'être prêt pour votre recherche d'emploi.."
+        },
+        "separator-1": {
+            "title": "Formation et développement des jeunes chez Soracert: un accompagnement vers l'excellence.",
+            "description": "Chez Soracert, nous offrons un parcours unique pour les jeunes passionnés de technologie, alliant formation et accompagnement personnalisé. Nos programmes inspirants et immersifs permettent à chaque participant de renforcer ses compétences, de développer sa confiance et de se préparer à réussir dans un secteur en pleine croissance."
+        },
+        "separator-2": {
+            "title": "Découvrez comment Soracerta transformé la vie de jeunes passionnés de technologie",
+            "description": "À travers nos programmes, ateliers, et bootcamps, Soracert aide chaque participant à débloquer son potentiel et à atteindre de nouveaux sommets dans le monde de la technologie. Lisez les témoignages inspirants de ceux qui ont vécu une véritable transformation, renforçant leurs compétences et leur confiance en eux pour bâtir un avenir prometteur."
+        }
     }
-  }
 }
