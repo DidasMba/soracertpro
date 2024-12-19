@@ -1,14 +1,22 @@
 {
-  "header": {},
-  "hero": {
-    "title": "Innovate with technology.",
-    "description": "We provide access to technology to those who need it most.",
-    "cta": "Explore"
-  },
-  "home": {
-    "about": {
-      "title": "Learn from industry experts who will dedicate their time to you",
-      "description": "Take part in events and programs designed by industry experts, and apply your knowledge to real-world projects to acquire valuable skills. Build an impressive portfolio to be prepared for your job search."
+    "header": {},
+    "hero": {
+        "title": "Innovate with technology.",
+        "description": "We provide access to technology to those who need it most.",
+        "cta": "Explore"
+    },
+    "home": {
+        "about": {
+            "title": "Learn from industry experts who will dedicate their time to you",
+            "description": "Take part in events and programs designed by industry experts, and apply your knowledge to real-world projects to acquire valuable skills. Build an impressive portfolio to be prepared for your job search."
+        },
+        "separator-1": {
+            "title": "Youth Training and Development at Soracert: A Journey Towards Excellence.",
+            "description": "At Soracert, we offer a unique journey for young technology enthusiasts, combining training and personalized support. Our inspiring and immersive programs enable each participant to strengthen their skills, build confidence, and prepare for success in a rapidly growing industry."
+        },
+        "separator-2": {
+            "title": "Discover how Soracert has transformed the lives of young technology enthusiasts",
+            "description": "Through our programs, workshops, and bootcamps, Soracert helps each participant unlock their potential and reach new heights in the world of technology. Read inspiring testimonials from those who have experienced a true transformation, enhancing their skills and confidence to build a promising future."
+        }
     }
-  }
 }
