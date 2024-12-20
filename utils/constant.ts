@@ -77,7 +77,7 @@ export const navItems = [
 export const statBanner = [
     {
         id: 1,
-        label: "Estudiants depuis notre création en 2022",
+        label: "Etudiants depuis notre création en 2022",
         num: 100,
     },
     {
