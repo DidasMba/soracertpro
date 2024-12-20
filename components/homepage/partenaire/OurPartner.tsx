@@ -7,8 +7,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import voda from "@/assets/images.png";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const OurPartner = () => {
+    const [t] = useTranslation("global");
     const settings = {
         dots: false,
         infinite: true,
@@ -38,8 +40,7 @@ const OurPartner = () => {
             <div className='relative'>
                 <div className='absolute left-0 w-full flex items-center max-w-[300px] backdrop-blur-md bg-white bg-opacity-40 top-0 z-20 bottom-0 px-2'>
                     <h1 className='text-xl font-bold text-[#05264f] mb-1 py-4'>
-                        Les leaders technologiques font le partenaria avec
-                        Soracert
+                        {t("home.partner.title")}
                     </h1>
                 </div>
                 <div className=''>

@@ -1,9 +1,30 @@
 {
-    "header": {},
     "hero": {
         "title": "innovez avec la technologie.",
         "description": "Nous offrons l'accès à la technologie à ceux qui en ont le plus besoin.",
-        "cta": "Explorer"
+        "cta": "Explorer",
+        "statBanner": [
+            {
+                "id": 1,
+                "label": "Étudiants depuis notre création en 2022",
+                "num": 100
+            },
+            {
+                "id": 2,
+                "label": "Éducateurs du monde entier",
+                "num": 190
+            },
+            {
+                "id": 3,
+                "label": "Organismes proposant nos cours",
+                "num": 900
+            },
+            {
+                "id": 4,
+                "label": "Pays où nous servons les apprenants",
+                "num": 40
+            }
+        ]
     },
     "home": {
         "about": {
@@ -17,6 +38,89 @@
         "separator-2": {
             "title": "Découvrez comment Soracerta transformé la vie de jeunes passionnés de technologie",
             "description": "À travers nos programmes, ateliers, et bootcamps, Soracert aide chaque participant à débloquer son potentiel et à atteindre de nouveaux sommets dans le monde de la technologie. Lisez les témoignages inspirants de ceux qui ont vécu une véritable transformation, renforçant leurs compétences et leur confiance en eux pour bâtir un avenir prometteur."
-        }
+        },
+        "partner": {
+            "title": " Les leaders technologiques font le partenaria avec Soracert"
+        },
+        "howitwork": [
+            {
+                "title": "Nous aidons les jeunes a lancer leurs carrieres",
+                "description": "Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains."
+            },
+            {
+                "title": "Certification & Bourses",
+                "description": "Nous offrons des Certification reconnues et des Bourses des formations internationales."
+            },
+            {
+                "title": "Communaute",
+                "description": "Nous sommes une Communaute des passionnes da la technologie et de innovation."
+            }
+        ]
+    },
+    "navigation": {
+        "navItems": [
+            {
+                "id": 1,
+                "pageName": "accueil",
+                "name": "Accueil",
+                "href": "/sora/accueil",
+                "hasDropdown": false
+            },
+            {
+                "id": 2,
+                "pathName": "ressource",
+                "name": "Ressources",
+                "href": "#",
+                "hasDropdown": true,
+                "children": [
+                    {
+                        "pathName": "benevole",
+                        "text": "Devenir Bénévole",
+                        "href": "/sora/benevole"
+                    },
+                    {
+                        "pathName": "blog",
+                        "text": "Blog",
+                        "href": "/sora/blog"
+                    },
+                    {
+                        "pathName": "carriere",
+                        "text": "Carrière",
+                        "href": "/sora/carriere"
+                    },
+                    {
+                        "pathName": "partenaire",
+                        "text": "Nos Partenaires",
+                        "href": "/sora/partenaires"
+                    },
+                    {
+                        "pathName": "adhesion",
+                        "text": "Devenir Membre",
+                        "href": "/sora/adhesion"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "pageName": "a-propos",
+                "name": "À Propos",
+                "href": "/sora/a-propos",
+                "hasDropdown": false
+            },
+            {
+                "id": 4,
+                "pageName": "programmes",
+                "name": "Nos Programmes",
+                "href": "/sora/programmes",
+                "hasDropdown": false
+            },
+            {
+                "id": 5,
+                "pageName": "evenements",
+                "name": "Nos Événements",
+                "href": "/sora/evenements",
+                "hasDropdown": false
+            }
+        ]
     }
 }
