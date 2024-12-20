@@ -10,5 +10,16 @@
       "title": "Learn from industry experts who will dedicate their time to you",
       "description": "Take part in events and programs designed by industry experts, and apply your knowledge to real-world projects to acquire valuable skills. Build an impressive portfolio to be prepared for your job search."
     }
+  },
+  "aboutall": {
+    "abouttitle": {
+      "title": "Our Mission",
+      "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
+    },
+
+    "abouttitlevision": {
+      "title": "Our Vision",
+      "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
+    }
   }
 }
