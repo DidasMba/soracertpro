@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 import { useMutation } from "@tanstack/react-query";
 import { signOut } from "@/lib/api/auth";
 import { toast } from "react-toastify";
+import { TNavItem } from "@/types/home";
 
 const languages = [
     { code: "en", name: "English" },
@@ -126,6 +127,10 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
         }
     };
 
+    const navitems = t("navigation.navItems", {
+        returnObjects: true,
+    }) as Array<TNavItem>;
+
     return (
         <header
             className={`fixed top-0 right-0 flex items-center left-0 w-full h-16 inset-0 ${
@@ -143,13 +148,13 @@ const Navbar: React.FC<{ isLogged: boolean }> = ({ isLogged }) => {
                 </Link>
                 <div className='flex-1 lg:flex  sm:hidden hidden justify-between items-center'>
                     <ul className='flex gap-8 flex-row'>
-                        {navItems.map((item) => (
+                        {navitems.map((item) => (
                             <NavItem
                                 key={item.id}
-                                hasDropdown={item.hasDropdow}
+                                hasDropdown={item.hasDropdown}
                                 text={item.name}
                                 href={item.href}
-                                subLink={item.children}
+                                subLink={item?.children}
                                 isActive={pathName.includes(item.pageName!)}
                             />
                         ))}
