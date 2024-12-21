@@ -10,5 +10,19 @@
       "title": "Apprenez auprès d'experts du secteur qui vous consacreront du temps",
       "description": "Participez à des événements, programmes élaborés par des experts du secteur, et mettez en pratique des projets concrets pour acquérir des compétences utiles. Développez un portfolio remarquable afin d'être prêt pour votre recherche d'emploi.."
     }
+  },
+  "aboutall": {
+    "abouttitle": {
+      "title": "Notre Mission",
+      "description": "Notre mission est de créer un espace inclusif où les membres se sentent soutenus, inspirés et encouragés à poursuivre leur passion ou leur cause. Nous cherchons à favoriser l'échange d'informations, la croissance personnelle et le développement de compétences au sein de notre communauté.Nous aspirons à avoir un impact positif sur notre société en encourageant l'action collective pour des causes importantes."
+    },
+    "abouttitlevision": {
+      "title": "Notre Vision",
+      "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
+    },
+    "abouttitleteam": {
+      "title": "Rencontrez notre équipe dirigeante",
+      "description": "Chez Soracert, notre leadership repose sur une équipe dévouée de professionnels expérimentés et passionnés. Ensemble, ils guident notre vision pour offrir des solutions innovantes et fiables. Découvrez qui se cache derrière notre succès."
+    }
   }
 }
