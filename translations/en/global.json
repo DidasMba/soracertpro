@@ -20,6 +20,10 @@
     "abouttitlevision": {
       "title": "Our Vision",
       "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
+    },
+    "abouttitleteam": {
+      "title": "Our Vision",
+      "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
     }
   }
 }
