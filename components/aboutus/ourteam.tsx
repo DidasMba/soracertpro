@@ -51,11 +51,6 @@ const MeetOurTeam = () => {
             center={true}
           />
           <div className="mt-4 max-w-2xl mx-auto text-base md:text-lg py-2 font-medium">
-            {/* Chez Soracert, notre leadership repose sur une équipe dévouée de
-            professionnels expérimentés et passionnés. Ensemble, ils guident
-            notre vision pour offrir des solutions innovantes et fiables.
-            Découvrez qui se cache derrière notre succès. */}
-
             {t("aboutall.abouttitleteam.description")}
           </div>
         </div>
