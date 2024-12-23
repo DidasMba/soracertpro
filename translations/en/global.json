@@ -22,8 +22,12 @@
       "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
     },
     "abouttitleteam": {
-      "title": "Our Vision",
-      "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
+      "title": "Meet our leadership team.",
+      "description": "At Soracert, our leadership is built on a dedicated team of experienced and passionate professionals. Together, they drive our vision to deliver innovative and reliable solutions. Meet the people behind our success."
+    },
+    "abouttitlestory": {
+      "title": "Our Story",
+      "description": "SoraCert has always been able to connect trust with innovation throughout its history."
     }
   }
 }
