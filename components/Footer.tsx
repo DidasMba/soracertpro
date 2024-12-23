@@ -1,8 +1,10 @@
 /** @format */
 
 "use client";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
 import {
   FaFacebook,
   FaTwitter,
@@ -19,6 +21,7 @@ const Footer = () => {
   useEffect(() => {
     setYear(new Date().getFullYear());
   }, []);
+
   return (
     <footer className="px-8 bg-customBlue text-white">
       <div className="max-w-7xl mx-auto py-14 px-6">
