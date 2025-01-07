@@ -11,6 +11,13 @@ const getInitialToken = () => {
   return null;
 };
 
+export const getLanguage = () => {
+  if (typeof window !== "undefined") {
+    return localStorage.getItem("langugae") || "fr";
+  }
+  return "fr";
+};
+
 export const saveTokenToLocalStorage = (token: string) => {
   if (typeof window !== undefined) {
     localStorage.setItem(TOKEN_NAME, token);

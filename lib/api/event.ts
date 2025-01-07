@@ -3,11 +3,15 @@
 import { Event, GetParticipantsResponse, TEventParticipantInput } from "@/type";
 import { API_URL, token } from "./baseUrl";
 
-export const getAllEvents = async (date: string, category: string) => {
+export const getAllEvents = async (
+  date: string,
+  category: string,
+  lang: string
+) => {
   try {
     const events: { status: string; message: string; data: Array<Event> } =
       await fetch(
-        `${API_URL}/event/published?date=${date}&eventType=${category}`
+        `${API_URL}/event/published?date=${date}&eventType=${category}&lang=${lang}`
       ).then((res) => res.json());
     return events;
   } catch (error) {
@@ -15,10 +19,10 @@ export const getAllEvents = async (date: string, category: string) => {
   }
 };
 
-export const getEventBySlug = async (id: string) => {
+export const getEventBySlug = async (id: string, lng: string) => {
   try {
     const event: { status: string; message: string; data: Event } = await fetch(
-      `${API_URL}/event/slug/${id}`
+      `${API_URL}/event/slug/${id}?lng=${lng}`
     ).then((res) => res.json());
     return event;
   } catch (error) {
