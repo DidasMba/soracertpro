@@ -1,25 +1,70 @@
 {
-  "header": {},
   "hero": {
     "title": "Innovate with technology.",
     "description": "We provide access to technology to those who need it most.",
-    "cta": "Explore"
+    "cta": "Explore",
+    "statBanner": [
+      {
+        "id": 1,
+        "label": "Students since our creation in 2022",
+        "num": 100
+      },
+      {
+        "id": 2,
+        "label": "Educators from around the world",
+        "num": 190
+      },
+      {
+        "id": 3,
+        "label": "Organizations offering our courses",
+        "num": 900
+      },
+      {
+        "id": 4,
+        "label": "Countries where we serve learners",
+        "num": 40
+      }
+    ]
   },
   "home": {
     "about": {
       "title": "Learn from industry experts who will dedicate their time to you",
       "description": "Take part in events and programs designed by industry experts, and apply your knowledge to real-world projects to acquire valuable skills. Build an impressive portfolio to be prepared for your job search."
-    }
+    },
+    "separator-1": {
+      "title": "Youth Training and Development at Soracert: A Journey Towards Excellence.",
+      "description": "At Soracert, we offer a unique journey for young technology enthusiasts, combining training and personalized support. Our inspiring and immersive programs enable each participant to strengthen their skills, build confidence, and prepare for success in a rapidly growing industry."
+    },
+    "separator-2": {
+      "title": "Discover how Soracert has transformed the lives of young technology enthusiasts",
+      "description": "Through our programs, workshops, and bootcamps, Soracert helps each participant unlock their potential and reach new heights in the world of technology. Read inspiring testimonials from those who have experienced a true transformation, enhancing their skills and confidence to build a promising future."
+    },
+    "partner": {
+      "title": "Technology leaders partner with Soracert"
+    },
+    "howitwork": [
+      {
+        "title": "We help young people launch their careers",
+        "description": "Since 2020, we have made a significant impact on the ecosystem by training and offering scholarships to thousands of young Africans."
+      },
+      {
+        "title": "Certification & Scholarships",
+        "description": "We offer recognized certifications and scholarships for international training programs."
+      },
+      {
+        "title": "Community",
+        "description": "We are a community of technology and innovation enthusiasts."
+      }
+    ]
   },
   "aboutall": {
     "abouttitle": {
       "title": "Our Mission",
       "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
     },
-
     "abouttitlevision": {
       "title": "Our Vision",
-      "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to make a positive impact on our society by fostering collective action for important causes."
+      "description": "Our vision is to create a space where members feel empowered and motivated to drive positive change. By focusing on skill development and collective action, we aim to leave a lasting impact on the global community."
     },
     "abouttitleteam": {
       "title": "Meet our leadership team.",
@@ -27,7 +72,73 @@
     },
     "abouttitlestory": {
       "title": "Our Story",
-      "description": "SoraCert has always been able to connect trust with innovation throughout its history."
+      "description": "Soracert has always been able to connect trust with innovation throughout its history."
     }
+  },
+  "navigation": {
+    "navItems": [
+      {
+        "id": 1,
+        "pageName": "home",
+        "name": "Home",
+        "href": "/sora/home",
+        "hasDropdown": false
+      },
+      {
+        "id": 2,
+        "pathName": "resource",
+        "name": "Resources",
+        "href": "#",
+        "hasDropdown": true,
+        "children": [
+          {
+            "pathName": "volunteer",
+            "text": "Become a Volunteer",
+            "href": "/sora/volunteer"
+          },
+          {
+            "pathName": "blogue",
+            "text": "Blog",
+            "href": "/sora/blogue"
+          },
+          {
+            "pathName": "career",
+            "text": "Career",
+            "href": "/sora/career"
+          },
+          {
+            "pathName": "partner",
+            "text": "Our Partners",
+            "href": "/sora/partners"
+          },
+          {
+            "pathName": "membership",
+            "text": "Become a Member",
+            "href": "/sora/membership"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "pageName": "about",
+        "name": "About Us",
+        "href": "/sora/about-us",
+        "hasDropdown": false
+      },
+      {
+        "id": 4,
+        "pageName": "programs",
+        "name": "Our Programs",
+        "href": "/sora/programs",
+        "hasDropdown": false
+      },
+      {
+        "id": 5,
+        "pageName": "events",
+        "name": "Our Events",
+        "href": "/sora/events",
+        "hasDropdown": false
+      }
+    ]
   }
 }
