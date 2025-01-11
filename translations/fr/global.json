@@ -29,34 +29,52 @@
   "home": {
     "about": {
       "title": "Apprenez auprès d'experts du secteur qui vous consacreront du temps",
-      "description": "Participez à des événements, programmes élaborés par des experts du secteur, et mettez en pratique des projets concrets pour acquérir des compétences utiles. Développez un portfolio remarquable afin d'être prêt pour votre recherche d'emploi.."
-    },
-    "separator-1": {
-      "title": "Formation et développement des jeunes chez Soracert: un accompagnement vers l'excellence.",
-      "description": "Chez Soracert, nous offrons un parcours unique pour les jeunes passionnés de technologie, alliant formation et accompagnement personnalisé. Nos programmes inspirants et immersifs permettent à chaque participant de renforcer ses compétences, de développer sa confiance et de se préparer à réussir dans un secteur en pleine croissance."
-    },
-    "separator-2": {
-      "title": "Découvrez comment Soracerta transformé la vie de jeunes passionnés de technologie",
-      "description": "À travers nos programmes, ateliers, et bootcamps, Soracert aide chaque participant à débloquer son potentiel et à atteindre de nouveaux sommets dans le monde de la technologie. Lisez les témoignages inspirants de ceux qui ont vécu une véritable transformation, renforçant leurs compétences et leur confiance en eux pour bâtir un avenir prometteur."
-    },
-    "partner": {
-      "title": " Les leaders technologiques font le partenaria avec Soracert"
-    },
-    "howitwork": [
-      {
-        "title": "Nous aidons les jeunes a lancer leurs carrieres",
-        "description": "Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains."
-      },
-      {
-        "title": "Certification & Bourses",
-        "description": "Nous offrons des Certification reconnues et des Bourses des formations internationales."
-      },
-      {
-        "title": "Communaute",
-        "description": "Nous sommes une Communaute des passionnes da la technologie et de innovation."
-      }
-    ]
+      "description": "Participez à des événements, programmes élaborés par des experts du secteur, et mettez en pratique des projets concrets pour acquérir des compétences utiles. Développez un portfolio remarquable afin d'être prêt pour votre recherche d'emploi."
+    }
   },
+  "aboutall": {
+    "abouttitle": {
+      "title": "Notre Mission",
+      "description": "Notre mission est de créer un espace inclusif où les membres se sentent soutenus, inspirés et encouragés à poursuivre leur passion ou leur cause. Nous cherchons à favoriser l'échange d'informations, la croissance personnelle et le développement de compétences au sein de notre communauté. Nous aspirons à avoir un impact positif sur notre société en encourageant l'action collective pour des causes importantes."
+    },
+    "abouttitlevision": {
+      "title": "Notre Vision",
+      "description": "Notre mission est de créer un espace inclusif où les membres se sentent soutenus, inspirés et encouragés à poursuivre leur passion ou leur cause. Nous visons à promouvoir l'échange d'informations, le développement personnel et l'acquisition de compétences au sein de notre communauté. Nous aspirons à avoir un impact positif sur notre société en favorisant l'action collective pour des causes importantes."
+    },
+    "abouttitleteam": {
+      "title": "Rencontrez notre équipe dirigeante",
+      "description": "Chez Soracert, notre leadership repose sur une équipe dévouée de professionnels expérimentés et passionnés. Ensemble, ils guident notre vision pour offrir des solutions innovantes et fiables. Découvrez qui se cache derrière notre succès."
+    },
+    "abouttitlestory": {
+      "title": "Notre Histoire",
+      "description": "SoraCert a toujours su connecter la confiance à l'innovation tout au long de son histoire."
+    }
+  },
+  "separator-1": {
+    "title": "Formation et développement des jeunes chez Soracert: un accompagnement vers l'excellence.",
+    "description": "Chez Soracert, nous offrons un parcours unique pour les jeunes passionnés de technologie, alliant formation et accompagnement personnalisé. Nos programmes inspirants et immersifs permettent à chaque participant de renforcer ses compétences, de développer sa confiance et de se préparer à réussir dans un secteur en pleine croissance."
+  },
+  "separator-2": {
+    "title": "Découvrez comment Soracert a transformé la vie de jeunes passionnés de technologie",
+    "description": "À travers nos programmes, ateliers, et bootcamps, Soracert aide chaque participant à débloquer son potentiel et à atteindre de nouveaux sommets dans le monde de la technologie. Lisez les témoignages inspirants de ceux qui ont vécu une véritable transformation, renforçant leurs compétences et leur confiance en eux pour bâtir un avenir prometteur."
+  },
+  "partner": {
+    "title": "Les leaders technologiques font le partenariat avec Soracert"
+  },
+  "howitwork": [
+    {
+      "title": "Nous aidons les jeunes à lancer leurs carrières",
+      "description": "Depuis 2020, nous avons eu un impact significatif sur l'écosystème, en formant et en offrant des bourses à des milliers de jeunes africains."
+    },
+    {
+      "title": "Certification & Bourses",
+      "description": "Nous offrons des certifications reconnues et des bourses pour des formations internationales."
+    },
+    {
+      "title": "Communauté",
+      "description": "Nous sommes une communauté de passionnés de technologie et d'innovation."
+    }
+  ],
   "navigation": {
     "navItems": [
       {
