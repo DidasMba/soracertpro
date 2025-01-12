@@ -1,13 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Paragrah from "../common/Paragrah";
 import Heading from "../common/Heading";
+import { useTranslation } from "react-i18next";
 
 const teamMembers = [
   {
     name: "John Carter",
     role: "CEO & Co-Founder",
     imageSrc: "/sora2.jpg", // Assurez-vous que l'image est dans le dossier 'public/images'
-    
   },
   {
     name: "Jane Doe",
@@ -37,22 +39,20 @@ const teamMembers = [
 ];
 
 const MeetOurTeam = () => {
+  const [t] = useTranslation("global");
   return (
     <>
       <section id="faq-2" className="faq-2 section py-5 max-w-full">
         <div className="text-center">
-          <Heading 
-          text = {`Rencontrez notre équipe dirigeante`}
-          noLine={true}
-          uppercase={false}
-          center={true}
-      />
+          <Heading
+            text={t("aboutus.ourteam.title")}
+            noLine={true}
+            uppercase={false}
+            center={true}
+          />
           <div className="mt-4 max-w-2xl mx-auto text-base md:text-lg py-2 font-medium">
-          
-          Chez Soracert, notre leadership repose sur une équipe dévouée de professionnels expérimentés et passionnés. 
-          Ensemble, ils guident notre vision pour offrir des
-          solutions innovantes et fiables. Découvrez qui se cache derrière notre succès.
-          </div> 
+            {t("aboutus.ourteam.description")}
+          </div>
         </div>
         <div className="max-w-6xl mx-auto py-5" data-aos="fade-up">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-5">
