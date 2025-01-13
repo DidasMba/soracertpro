@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Columns2 */}
           <div className="lg:col-span-1 col-span-12">
             <h3 className="tracking-wide text-gray-300 font-semibold">
-              LIENS RAPIDES
+              {t("footer.footer2.t0")}
             </h3>
             <ul className="list-none mt-6 space-y-2">
               <li>
@@ -63,7 +63,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
                 >
-                  Accueil
+                  {t("footer.footer2.t1")}
                 </a>
               </li>
               <li>
@@ -71,7 +71,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
                 >
-                  Événements
+                  {t("footer.footer2.t2")}
                 </a>
               </li>
               <li>
@@ -79,7 +79,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
                 >
-                  Programmes
+                  {t("footer.footer2.t3")}
                 </a>
               </li>
               <li>
@@ -87,7 +87,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
                 >
-                  Ressources
+                  {t("footer.footer2.t4")}
                 </a>
               </li>
             </ul>
