@@ -95,7 +95,8 @@ const Footer = () => {
           {/* Columns3 */}
           <div className="lg:col-span-1 col-span-12">
             <h3 className="tracking-wide text-gray-300 font-semibold">
-              RESSOURCES
+              {/* RESSOURCES */}
+              {t("footer.footer3.t0")}
             </h3>
             <ul className="list-none mt-6 space-y-2">
               <li>
@@ -103,7 +104,8 @@ const Footer = () => {
                   href="tel:1234567890"
                   className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
                 >
-                  Blogue
+                  {/* Blogue */}
+                  {t("footer.footer3.t1")}
                 </a>
               </li>
               <li>
@@ -111,7 +113,18 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
                 >
-                  Partenaire
+                  {/* Partenaire */}
+                  {t("footer.footer3.t2")}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="tel:1234567890"
+                  className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
+                >
+                  {/* Volontaire */}
+                  {t("footer.footer3.t3")}
                 </a>
               </li>
               <li>
@@ -119,23 +132,8 @@ const Footer = () => {
                   href="tel:1234567890"
                   className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
                 >
-                  Membre
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:1234567890"
-                  className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
-                >
-                  Volontaire
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:1234567890"
-                  className="text-gray-300 hover:text-customHoverBlue transition-all duration-500 ease-in-out"
-                >
-                  Carrières
+                  {/* Carrières */}
+                  {t("footer.footer3.t4")}
                 </a>
               </li>
             </ul>
@@ -144,7 +142,8 @@ const Footer = () => {
           {/* Columns4 */}
           <div className="lg:col-span-1 col-span-12">
             <h3 className="tracking-wide text-gray-300 font-semibold">
-              CONTACT
+              {/* CONTACT */}
+              {t("footer.footer4.t0")}
             </h3>
             <ul className="list-none mt-6 space-y-2">
               <li className="flex items-center">
