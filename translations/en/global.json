@@ -122,5 +122,51 @@
         "hasDropdown": false
       }
     ]
+  },
+  "aboutus": {
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our mission is to create an inclusive space where members feel supported, inspired, and encouraged to pursue their passion or cause. We aim to promote the exchange of information, personal growth, and skill development within our community. We aspire to have a positive impact on our society by fostering collective action for important causes."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "We aspire to become the leading global tech community, maximizing the potential of technology to pave new paths for development and growth. We envision a future where our community actively contributes to a more inclusive, educated, and sustainable world."
+    },
+    "ourteam": {
+      "title": "Meet Our Leadership Team",
+      "description": "At Soracert, our leadership is built on a dedicated team of experienced and passionate professionals. Together, they drive our vision to deliver innovative and reliable solutions. Discover the people behind our success."
+    },
+    "history": {
+      "title": "Our Story",
+      "description": "SoraCert has always been able to connect trust with innovation throughout its history."
+    },
+    "historySection": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "footer": {
+    "footer1": {
+      "titre": "ABOUT",
+      "text1": "Partners and Sponsors",
+      "text2": "Member"
+    },
+    "footer2": {
+      "t0": "QUICK LINKS",
+      "t1": "Home",
+      "t2": "Events",
+      "t3": "Programs",
+      "t4": "Resources"
+    },
+    "footer3": {
+      "t0": "RESOURCES",
+      "t1": "Blog",
+      "t2": "Partner",
+      "t3": "Volunteer",
+      "t4": "Careers"
+    },
+    "footer4": {
+      "t0": "CONTACT"
+    }
   }
 }
