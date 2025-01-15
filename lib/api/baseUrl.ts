@@ -1,6 +1,6 @@
 /** @format */
 
-export const API_URL = "http://soralearn.com/api/v1";
+export const API_URL = "https://soralearn.com/api/v1";
 
 const TOKEN_NAME = "auth-sora-user-token";
 
